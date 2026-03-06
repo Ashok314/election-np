@@ -19,8 +19,22 @@ Everything you need to know about the election is instantly available just by mo
 ### Features
 * **Bilingual Search**: Search for candidates and parties in English or Nepali.
 * **Auto-Scraping (Every 5 Minutes)**: Fetches data dynamically and pipes it through Supabase Realtime using a scheduled GitHub Actions Cron Job that runs every 5 minutes.
+* **Real-time Updates**: Powered by Supabase Realtime.
+* **AI Powered Insights**: Powered by Gemini 3 Pro.
+
+
+
 
 ## Architecture
 - **Frontend**: React + Vite + Tailwind CSS + Leaflet
 - **Backend**: Supabase Postgres + Realtime
 - **Scraper**: Puppeteer + GitHub Actions Cron
+
+## Contributing & Bug Reports 🐛
+Since this entire dashboard was completely **vibe-coded**, there's a strong chance you might encounter layout bugs, missing candidate data, or mobile responsiveness issues! 
+If you notice any weird behavior or data discrepancies, please [open an issue](https://github.com/Ashok314/election-np/issues) on this repository so it can be fixed.
+
+## License
+**Under Consideration.** Permission to copy, modify, or deploy this code for commercial or official use is currently restricted while the licensing model is decided.
+
+* **Support the Project**: [☕ Buy me a coffee](https://buymeacoffee.com/ashok314)

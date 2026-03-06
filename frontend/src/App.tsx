@@ -509,15 +509,25 @@ function App() {
       </div>
 
       {/* Footer */}
-      <footer className={`mt-4 py-6 text-center text-xs font-medium border-t ${isDark ? 'border-zinc-800 text-zinc-500' : 'border-gray-200 text-gray-500'}`}>
-        Developed by{' '}
+      <footer className={`mt-4 py-8 text-center text-xs font-medium border-t flex flex-col items-center justify-center gap-2 ${isDark ? 'border-zinc-800 text-zinc-500' : 'border-gray-200 text-gray-500'}`}>
+        <div>
+          Vibe Coded with antigravity by{' '}
+          <a
+            href="https://github.com/Ashok314"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`font-semibold hover:underline transition-colors ${isDark ? 'text-emerald-400 hover:text-emerald-300' : 'text-emerald-600 hover:text-emerald-500'}`}
+          >
+            @Ashok314
+          </a>
+        </div>
         <a
-          href="https://github.com/Ashok314"
+          href="https://buymeacoffee.com/ashok314"
           target="_blank"
           rel="noopener noreferrer"
-          className={`hover:underline transition-colors ${isDark ? 'text-emerald-400 hover:text-emerald-300' : 'text-emerald-600 hover:text-emerald-500'}`}
+          className={`px-3 py-1.5 rounded-full border transition-all hover:scale-105 flex items-center gap-2 ${isDark ? 'border-zinc-700 bg-zinc-800 text-zinc-300 hover:bg-zinc-700 hover:text-white' : 'border-gray-200 bg-gray-50 text-gray-700 hover:bg-gray-100 hover:text-gray-900'}`}
         >
-          @Ashok314
+          ☕ Buy me a coffee
         </a>
       </footer>
     </div>
