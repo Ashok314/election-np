@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.live {
+    animation: pulse 2s infinite;
+}
+
+table {
+    border-collapse: collapse;
+}

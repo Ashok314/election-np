@@ -1,0 +1,32 @@
+name: Scrape ECN and Push to Supabase
+
+on:
+  schedule:
+    - cron: '*/5 * * * *' # Every 5 minutes
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  scrape-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get install -y libgbm-dev
+          cd backend
+          npm install puppeteer @supabase/supabase-js
+
+      - name: Run Puppeteer Scraper
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          cd backend
+          node push-ecn-to-supabase.js

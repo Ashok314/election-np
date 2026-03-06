@@ -1,0 +1,7 @@
+node_modules
+.env
+# Old backend files
+backend/server.js
+backend/fetch-live-results.js
+backend/node_modules
+backend/package-lock.json
