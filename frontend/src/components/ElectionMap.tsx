@@ -321,6 +321,11 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
                 ))}
             </div>
 
+            {/* Japan Easter Egg */}
+            <div className={`absolute bottom-2 left-1/2 -translate-x-1/2 z-[1000] text-[9px] opacity-40 font-mono tracking-widest uppercase pointer-events-none ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
+                Made with ❤️ in Japan
+            </div>
+
         </div>
     );
 }
