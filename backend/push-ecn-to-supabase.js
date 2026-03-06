@@ -110,8 +110,18 @@ async function scrapeAndPush() {
             }
 
             if (data && Array.isArray(data)) {
+                // Deduplicate by candidate name since ECN API returns identical duplicates sometimes
+                const uniqueCandidates = new Map();
+                data.forEach(row => {
+                    const name = row.CandidateName;
+                    const votes = row.TotalVoteReceived || 0;
+                    if (!uniqueCandidates.has(name) || votes > (uniqueCandidates.get(name).TotalVoteReceived || 0)) {
+                        uniqueCandidates.set(name, row);
+                    }
+                });
+
                 // Enrich and prepare for Supabase upsert
-                const rowsToInsert = data.map(row => ({
+                const rowsToInsert = Array.from(uniqueCandidates.values()).map(row => ({
                     scraped_at: new Date().toISOString(),
                     dist_id: distId,
                     const_id: c,
