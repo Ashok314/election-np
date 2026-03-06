@@ -93,9 +93,19 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
         const map = L.map(mapDivRef.current, {
             center: [28.3, 84.1],
             zoom: 7,
+            minZoom: 2, // allow zooming out to see Japan
             zoomControl: true,
             attributionControl: false,
         });
+
+        // Japan Easter Egg Marker
+        const japanIcon = L.divIcon({
+            html: `<div style="font-family: monospace; font-size: 10px; color: #ec4899; white-space: nowrap; font-weight: bold; text-shadow: 0 0 4px rgba(255,255,255,0.8); background: rgba(255,255,255,0.6); backdrop-filter: blur(4px); padding: 4px 8px; border-radius: 4px; border: 1px solid #fbcfe8; pointer-events: none;">Made with ❤️ in Japan</div>`,
+            className: 'empty-class',
+            iconSize: [200, 20]
+        });
+        L.marker([36.2048, 138.2529], { icon: japanIcon, interactive: false }).addTo(map);
+
         mapRef.current = map;
 
         return () => {
@@ -320,11 +330,6 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
                     </div>
                 ))}
             </div>
-
-            {/* Japan Easter Egg */}
-            <a href="https://github.com/Ashok314" target="_blank" rel="noopener noreferrer" className={`absolute bottom-2 left-1/2 -translate-x-1/2 z-[1000] text-[9px] opacity-40 hover:opacity-100 transition-opacity font-mono tracking-widest uppercase ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
-                Made with ❤️ in Japan
-            </a>
 
         </div>
     );

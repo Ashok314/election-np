@@ -140,6 +140,17 @@ export default function InsightCards({ allCandidates, leaders, theme, lang }: Pr
         color: '#f97316',
     };
 
+    // 7. Total Candidates
+    const uniqueCandidateNames = new Set(allCandidates.map(c => `${c.MetaDistId}-${c.MetaConstId}-${c.CandidateName}`));
+    const totalCandidatesCard: InsightItem = {
+        emoji: '👥',
+        label: 'Total Candidates',
+        labelNp: 'जम्मा उम्मेदवार',
+        value: uniqueCandidateNames.size.toLocaleString(),
+        sub: 'Across all compiled districts',
+        color: '#3b82f6',
+    };
+
     const insights: InsightItem[] = [
         closestRace!,
         highestVote,
@@ -147,6 +158,7 @@ export default function InsightCards({ allCandidates, leaders, theme, lang }: Pr
         oldestCard,
         womenCard,
         mostContestedCard,
+        totalCandidatesCard,
     ];
 
     return (

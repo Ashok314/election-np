@@ -507,6 +507,19 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className={`mt-4 py-6 text-center text-xs font-medium border-t ${isDark ? 'border-zinc-800 text-zinc-500' : 'border-gray-200 text-gray-500'}`}>
+        Developed by{' '}
+        <a
+          href="https://github.com/Ashok314"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`hover:underline transition-colors ${isDark ? 'text-emerald-400 hover:text-emerald-300' : 'text-emerald-600 hover:text-emerald-500'}`}
+        >
+          @Ashok314
+        </a>
+      </footer>
     </div>
   );
 }

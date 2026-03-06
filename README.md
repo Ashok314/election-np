@@ -19,7 +19,6 @@ Everything you need to know about the election is instantly available just by mo
 ### Features
 * **Bilingual Search**: Search for candidates and parties in English or Nepali.
 * **Auto-Scraping (Every 5 Minutes)**: Fetches data dynamically and pipes it through Supabase Realtime using a scheduled GitHub Actions Cron Job that runs every 5 minutes.
-* **Japan Easter Egg**: Made with ❤️ in Japan.
 
 ## Architecture
 - **Frontend**: React + Vite + Tailwind CSS + Leaflet
