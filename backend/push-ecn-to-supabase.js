@@ -47,7 +47,10 @@ async function delay(ms) {
 
 async function scrapeAndPush() {
     console.log(`[${new Date().toISOString()}] Starting Puppeteer Scraper...`);
-    const browser = await puppeteer.launch({ headless: 'new' });
+    const browser = await puppeteer.launch({
+        headless: 'new',
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
     const page = await browser.newPage();
 
     // 1. Visit to get CSRF cookies
@@ -144,4 +147,22 @@ async function scrapeAndPush() {
     await browser.close();
 }
 
-scrapeAndPush().catch(console.error);
+async function executeWithRetry(maxRetries = 3) {
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+        try {
+            await scrapeAndPush();
+            console.log(`[${new Date().toISOString()}] Scraper completed successfully on attempt ${attempt}.`);
+            return; // Success, exit the loop
+        } catch (err) {
+            console.error(`[${new Date().toISOString()}] Scrape attempt ${attempt} failed:`, err.message);
+            if (attempt === maxRetries) {
+                console.error("FATAL ERROR: Maximum retries reached. Exiting with failure.");
+                process.exit(1); // Force the GitHub action to fail
+            }
+            console.log(`Waiting 10 seconds before retrying...`);
+            await delay(10000);
+        }
+    }
+}
+
+executeWithRetry();

@@ -322,9 +322,9 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
             </div>
 
             {/* Japan Easter Egg */}
-            <div className={`absolute bottom-2 left-1/2 -translate-x-1/2 z-[1000] text-[9px] opacity-40 font-mono tracking-widest uppercase pointer-events-none ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
+            <a href="https://github.com/Ashok314" target="_blank" rel="noopener noreferrer" className={`absolute bottom-2 left-1/2 -translate-x-1/2 z-[1000] text-[9px] opacity-40 hover:opacity-100 transition-opacity font-mono tracking-widest uppercase ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
                 Made with ❤️ in Japan
-            </div>
+            </a>
 
         </div>
     );

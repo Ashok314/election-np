@@ -3,7 +3,7 @@
 A beautifully designed, real-time dashboard for tracking the House of Representatives (HOR) Nepal elections. Features an interactive choropleth map, live candidate sorting, and multi-language support.
 
 > **⚠️ DISCLAIMER** 
-> This project is completely vibe-coded and should **NOT** be used as a credible or official source for election results YET. We do not guarantee real-time data fetch accuracy, completeness, or consistency with the official Election Commission Nepal (ECN) systems.
+> This project is completely vibe-coded and should **NOT** be used as a credible or official source for election results. We do not guarantee real-time data fetch accuracy, completeness, or consistency with the official Election Commission Nepal (ECN) systems.
 
 ## 🌟 Why this Dashboard? (The "No-Click" Philosophy)
 Most election portals (like eKantipur or NepalVotes) force you to click through multiple pages, drop-downs, and tables just to find out who is winning in a specific district. 
@@ -18,8 +18,7 @@ Everything you need to know about the election is instantly available just by mo
 
 ### Features
 * **Bilingual Search**: Search for candidates and parties in English or Nepali.
-* **Auto-Scraping**: Fetches data dynamically and pipes it through Supabase Realtime using GitHub Actions.
-* **Japan Easter Egg**: Made with ❤️ in Japan.
+* **Auto-Scraping (Every 5 Minutes)**: Fetches data dynamically and pipes it through Supabase Realtime using a scheduled GitHub Actions Cron Job that runs every 5 minutes.
 * **Japan Easter Egg**: Made with ❤️ in Japan.
 
 ## Architecture
