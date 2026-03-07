@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - hotfix-local-scrape
+      # - hotfix-local-scrape
   workflow_dispatch:
 
 permissions:
