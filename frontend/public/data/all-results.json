@@ -134,7 +134,7 @@
     "const_id": 1,
     "candidate_name": "हस्त राज शेर्मा",
     "party_name": "श्रम संस्कृति पार्टी",
-    "votes": 8836,
+    "votes": 9585,
     "remarks": null,
     "gender": "पुरुष",
     "age": 40
@@ -144,7 +144,7 @@
     "const_id": 1,
     "candidate_name": "नरेन्द्र कुमार केरुङ",
     "party_name": "नेपाली काँग्रेस",
-    "votes": 10270,
+    "votes": 10921,
     "remarks": null,
     "gender": "पुरुष",
     "age": 53
@@ -154,7 +154,7 @@
     "const_id": 1,
     "candidate_name": "अइन्द्र सुन्दर नेम्वाङ",
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "votes": 7746,
+    "votes": 8742,
     "remarks": null,
     "gender": "पुरुष",
     "age": 48
@@ -164,7 +164,7 @@
     "const_id": 1,
     "candidate_name": "हर्क बहादुर नेम्बाङ",
     "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "votes": 5895,
+    "votes": 6369,
     "remarks": null,
     "gender": "पुरुष",
     "age": 45
@@ -174,7 +174,7 @@
     "const_id": 1,
     "candidate_name": "महेन्द्र विक्रम थाम्सुहाङ",
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "votes": 1319,
+    "votes": 1498,
     "remarks": null,
     "gender": "पुरुष",
     "age": 57
@@ -184,7 +184,7 @@
     "const_id": 1,
     "candidate_name": "टेकबहादुर सुब्बा",
     "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "votes": 1761,
+    "votes": 1919,
     "remarks": null,
     "gender": "पुरुष",
     "age": 42
@@ -194,7 +194,7 @@
     "const_id": 1,
     "candidate_name": "तेज कुमार कुरुम्वाङ्ग",
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "votes": 346,
+    "votes": 448,
     "remarks": null,
     "gender": "पुरुष",
     "age": 62
@@ -204,7 +204,7 @@
     "const_id": 1,
     "candidate_name": "भानु भक्त फियाक",
     "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
-    "votes": 137,
+    "votes": 145,
     "remarks": null,
     "gender": "पुरुष",
     "age": 50
@@ -214,7 +214,7 @@
     "const_id": 1,
     "candidate_name": "मित्र लिङदेन",
     "party_name": "राष्ट्रिय मुक्ति पार्टी नेपाल(एकल चुनाव चिन्ह)",
-    "votes": 89,
+    "votes": 100,
     "remarks": null,
     "gender": "पुरुष",
     "age": 52
@@ -224,7 +224,7 @@
     "const_id": 1,
     "candidate_name": "नरेन्द्र प्रसाद कुरुम्‍वाङ",
     "party_name": "नेपाल जनमुक्ति पार्टी",
-    "votes": 53,
+    "votes": 54,
     "remarks": null,
     "gender": "पुरुष",
     "age": 68
@@ -234,7 +234,7 @@
     "const_id": 1,
     "candidate_name": "मचिन्द्र प्रसाद बेघा",
     "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "votes": 153,
+    "votes": 159,
     "remarks": null,
     "gender": "पुरुष",
     "age": 69
@@ -244,7 +244,7 @@
     "const_id": 1,
     "candidate_name": "प्रकाश काफ्ले",
     "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "votes": 61,
+    "votes": 73,
     "remarks": null,
     "gender": "पुरुष",
     "age": 38
@@ -254,7 +254,7 @@
     "const_id": 1,
     "candidate_name": "विजय नेम्वाङ",
     "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "votes": 62,
+    "votes": 66,
     "remarks": null,
     "gender": "पुरुष",
     "age": 43
@@ -264,7 +264,7 @@
     "const_id": 1,
     "candidate_name": "राम कुमार तुम्रोक",
     "party_name": "मंगोल नेशनल अर्गनाइजेसन",
-    "votes": 28,
+    "votes": 29,
     "remarks": null,
     "gender": "पुरुष",
     "age": 47
@@ -274,7 +274,7 @@
     "const_id": 1,
     "candidate_name": "लक्षुमान तामाङ",
     "party_name": "नेपाल मजदुर किसान पार्टी",
-    "votes": 25,
+    "votes": 26,
     "remarks": null,
     "gender": "पुरुष",
     "age": 40
@@ -1854,7 +1854,7 @@
     "const_id": 1,
     "candidate_name": "राजेन्द्र कुमार राई",
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "votes": 15227,
+    "votes": 15411,
     "remarks": null,
     "gender": "पुरुष",
     "age": 59
@@ -1864,7 +1864,7 @@
     "const_id": 1,
     "candidate_name": "सान बहादुर​ राई",
     "party_name": "श्रम संस्कृति पार्टी",
-    "votes": 10575,
+    "votes": 10658,
     "remarks": null,
     "gender": "पुरुष",
     "age": 46
@@ -1874,7 +1874,7 @@
     "const_id": 1,
     "candidate_name": "दिनेश राई",
     "party_name": "नेपाली काँग्रेस",
-    "votes": 9236,
+    "votes": 9564,
     "remarks": null,
     "gender": "पुरुष",
     "age": 45
@@ -1884,7 +1884,7 @@
     "const_id": 1,
     "candidate_name": "दिनेश भण्डारी",
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "votes": 7272,
+    "votes": 7551,
     "remarks": null,
     "gender": "पुरुष",
     "age": 37
@@ -1894,7 +1894,7 @@
     "const_id": 1,
     "candidate_name": "धर्म राज पौडेल",
     "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "votes": 1429,
+    "votes": 1466,
     "remarks": null,
     "gender": "पुरुष",
     "age": 65
@@ -1904,7 +1904,7 @@
     "const_id": 1,
     "candidate_name": "आइत राज लिम्‍वु",
     "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "votes": 398,
+    "votes": 399,
     "remarks": null,
     "gender": "पुरुष",
     "age": 50
@@ -1914,7 +1914,7 @@
     "const_id": 1,
     "candidate_name": "बिभत्सु थापा",
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "votes": 521,
+    "votes": 540,
     "remarks": null,
     "gender": "पुरुष",
     "age": 30
@@ -1924,7 +1924,7 @@
     "const_id": 1,
     "candidate_name": "लाक्‍पा तामाङ्ग",
     "party_name": "स्वतन्त्र",
-    "votes": 584,
+    "votes": 609,
     "remarks": null,
     "gender": "पुरुष",
     "age": 36
@@ -1934,7 +1934,7 @@
     "const_id": 1,
     "candidate_name": "निशान राई",
     "party_name": "जनता समाजवादी पार्टी(एकल चुनाव चिन्ह)",
-    "votes": 221,
+    "votes": 222,
     "remarks": null,
     "gender": "पुरुष",
     "age": 35
@@ -1944,7 +1944,7 @@
     "const_id": 1,
     "candidate_name": "शालिक राम राई",
     "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "votes": 188,
+    "votes": 192,
     "remarks": null,
     "gender": "पुरुष",
     "age": 25
@@ -1964,7 +1964,7 @@
     "const_id": 1,
     "candidate_name": "जीतेन्द्र राई",
     "party_name": "स्वतन्त्र",
-    "votes": 72,
+    "votes": 78,
     "remarks": null,
     "gender": "पुरुष",
     "age": 54
@@ -1974,7 +1974,7 @@
     "const_id": 1,
     "candidate_name": "रविन कुमार राई",
     "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "votes": 102,
+    "votes": 106,
     "remarks": null,
     "gender": "पुरुष",
     "age": 37
@@ -1984,7 +1984,7 @@
     "const_id": 1,
     "candidate_name": "मन कुमार योञ्जन",
     "party_name": "स्वतन्त्र",
-    "votes": 50,
+    "votes": 51,
     "remarks": null,
     "gender": "पुरुष",
     "age": 31
@@ -1994,7 +1994,7 @@
     "const_id": 1,
     "candidate_name": "सागर राई",
     "party_name": "मंगोल नेशनल अर्गनाइजेसन",
-    "votes": 71,
+    "votes": 75,
     "remarks": null,
     "gender": "पुरुष",
     "age": 31
@@ -2014,7 +2014,7 @@
     "const_id": 1,
     "candidate_name": "उत्तम साखकर्मी",
     "party_name": "नेपाल मजदुर किसान पार्टी",
-    "votes": 17,
+    "votes": 18,
     "remarks": null,
     "gender": "पुरुष",
     "age": 40
@@ -2194,7 +2194,7 @@
     "const_id": 2,
     "candidate_name": "कृष्ण कुमार कार्की",
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "votes": 40924,
+    "votes": 39029,
     "remarks": null,
     "gender": "पुरुष",
     "age": 40
@@ -2204,7 +2204,7 @@
     "const_id": 2,
     "candidate_name": "दिलीप कुमार अग्रवाल",
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "votes": 15624,
+    "votes": 14899,
     "remarks": null,
     "gender": "पुरुष",
     "age": 59
@@ -2214,7 +2214,7 @@
     "const_id": 2,
     "candidate_name": "मिनेन्द्र प्रसाद रिजाल",
     "party_name": "नेपाली काँग्रेस",
-    "votes": 12764,
+    "votes": 12249,
     "remarks": null,
     "gender": "पुरुष",
     "age": 68
@@ -2224,7 +2224,7 @@
     "const_id": 2,
     "candidate_name": "अबुहो रैरह",
     "party_name": "श्रम संस्कृति पार्टी",
-    "votes": 1822,
+    "votes": 1772,
     "remarks": null,
     "gender": "पुरुष",
     "age": 37
@@ -2234,7 +2234,7 @@
     "const_id": 2,
     "candidate_name": "चन्द्र वीर राई",
     "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "votes": 1366,
+    "votes": 1315,
     "remarks": null,
     "gender": "पुरुष",
     "age": 70
@@ -2244,7 +2244,7 @@
     "const_id": 2,
     "candidate_name": "कन्स राज राजवंशी",
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "votes": 766,
+    "votes": 751,
     "remarks": null,
     "gender": "पुरुष",
     "age": 41
@@ -2254,7 +2254,7 @@
     "const_id": 2,
     "candidate_name": "धन बहादुर लिम्बु",
     "party_name": "मंगोल नेशनल अर्गनाइजेसन",
-    "votes": 270,
+    "votes": 267,
     "remarks": null,
     "gender": "पुरुष",
     "age": 35
@@ -2264,7 +2264,7 @@
     "const_id": 2,
     "candidate_name": "घनश्याम चौधरी",
     "party_name": "जनमत पार्टी",
-    "votes": 310,
+    "votes": 283,
     "remarks": null,
     "gender": "पुरुष",
     "age": 44
@@ -2274,7 +2274,7 @@
     "const_id": 2,
     "candidate_name": "धन वहादुर सुनुवार",
     "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "votes": 277,
+    "votes": 264,
     "remarks": null,
     "gender": "पुरुष",
     "age": 38
@@ -2284,7 +2284,7 @@
     "const_id": 2,
     "candidate_name": "विनोद कुमार सिंह गनगाई",
     "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "votes": 87,
+    "votes": 81,
     "remarks": null,
     "gender": "पुरुष",
     "age": 53
@@ -2294,7 +2294,7 @@
     "const_id": 2,
     "candidate_name": "मेघेन्द्र कुमार रोक्का",
     "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "votes": 82,
+    "votes": 79,
     "remarks": null,
     "gender": "पुरुष",
     "age": 43
@@ -2304,7 +2304,7 @@
     "const_id": 2,
     "candidate_name": "माधव प्रसाद राजवंशी",
     "party_name": "राष्ट्रिय मुक्ति पार्टी नेपाल(एकल चुनाव चिन्ह)",
-    "votes": 80,
+    "votes": 79,
     "remarks": null,
     "gender": "पुरुष",
     "age": 53
@@ -2314,7 +2314,7 @@
     "const_id": 2,
     "candidate_name": "अनिल कुमार साह",
     "party_name": "स्वतन्त्र",
-    "votes": 56,
+    "votes": 54,
     "remarks": null,
     "gender": "पुरुष",
     "age": 42
@@ -2334,7 +2334,7 @@
     "const_id": 2,
     "candidate_name": "मनोज कुमार राजवंशी",
     "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
-    "votes": 74,
+    "votes": 71,
     "remarks": null,
     "gender": "पुरुष",
     "age": 34
@@ -2354,7 +2354,7 @@
     "const_id": 2,
     "candidate_name": "नरेश कुमार साह",
     "party_name": "स्वतन्त्र",
-    "votes": 18,
+    "votes": 17,
     "remarks": null,
     "gender": "पुरुष",
     "age": 54
@@ -3124,7 +3124,7 @@
     "const_id": 1,
     "candidate_name": "हर्क राज राई",
     "party_name": "श्रम संस्कृति पार्टी",
-    "votes": 14035,
+    "votes": 14512,
     "remarks": null,
     "gender": "पुरुष",
     "age": 43
@@ -3134,7 +3134,7 @@
     "const_id": 1,
     "candidate_name": "गोमा तामाङ",
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "votes": 8890,
+    "votes": 9461,
     "remarks": null,
     "gender": "महिला",
     "age": 52
@@ -3144,7 +3144,7 @@
     "const_id": 1,
     "candidate_name": "सूर्य बहादुर भट्टराई",
     "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "votes": 2242,
+    "votes": 2319,
     "remarks": null,
     "gender": "पुरुष",
     "age": 42
@@ -3154,7 +3154,7 @@
     "const_id": 1,
     "candidate_name": "टिका राम लिम्बु",
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "votes": 1949,
+    "votes": 2131,
     "remarks": null,
     "gender": "पुरुष",
     "age": 41
@@ -3164,7 +3164,7 @@
     "const_id": 1,
     "candidate_name": "सुजेन्‍द्र तामाङ",
     "party_name": "नेपाली काँग्रेस",
-    "votes": 1439,
+    "votes": 1553,
     "remarks": null,
     "gender": "पुरुष",
     "age": 49
@@ -3174,7 +3174,7 @@
     "const_id": 1,
     "candidate_name": "उद्धव श्रेष्‍ठ",
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "votes": 530,
+    "votes": 599,
     "remarks": null,
     "gender": "पुरुष",
     "age": 66
@@ -3184,7 +3184,7 @@
     "const_id": 1,
     "candidate_name": "डम्वर लावती",
     "party_name": "उज्यालो नेपाल पार्टी",
-    "votes": 235,
+    "votes": 244,
     "remarks": null,
     "gender": "पुरुष",
     "age": 38
@@ -3194,7 +3194,7 @@
     "const_id": 1,
     "candidate_name": "भुपी राई",
     "party_name": "राष्ट्रिय साझा पार्टी",
-    "votes": 70,
+    "votes": 73,
     "remarks": null,
     "gender": "पुरुष",
     "age": 68
@@ -3204,7 +3204,7 @@
     "const_id": 1,
     "candidate_name": "नगेन्द्र बहादुर लिम्वु",
     "party_name": "जनता समाजवादी पार्टी(एकल चुनाव चिन्ह)",
-    "votes": 45,
+    "votes": 46,
     "remarks": null,
     "gender": "पुरुष",
     "age": 51
@@ -3224,7 +3224,7 @@
     "const_id": 1,
     "candidate_name": "महेश श्रेष्ठ",
     "party_name": "नेपाल मजदुर किसान पार्टी",
-    "votes": 29,
+    "votes": 30,
     "remarks": null,
     "gender": "पुरुष",
     "age": 58
@@ -3234,7 +3234,7 @@
     "const_id": 1,
     "candidate_name": "नरेश वि.क.",
     "party_name": "संयुक्त नागरिक पार्टी",
-    "votes": 28,
+    "votes": 29,
     "remarks": null,
     "gender": "पुरुष",
     "age": 39
@@ -3244,7 +3244,7 @@
     "const_id": 1,
     "candidate_name": "राज कुमार राई",
     "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
-    "votes": 34,
+    "votes": 37,
     "remarks": null,
     "gender": "पुरुष",
     "age": 41
@@ -3264,7 +3264,7 @@
     "const_id": 1,
     "candidate_name": "जिवन कला राई",
     "party_name": "स्वतन्त्र",
-    "votes": 18,
+    "votes": 19,
     "remarks": null,
     "gender": "महिला",
     "age": 43
@@ -3284,7 +3284,7 @@
     "const_id": 1,
     "candidate_name": "संजय राई",
     "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "votes": 20,
+    "votes": 21,
     "remarks": null,
     "gender": "पुरुष",
     "age": 43
@@ -3294,7 +3294,7 @@
     "const_id": 1,
     "candidate_name": "राज कुमार लिम्‍बु",
     "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
-    "votes": 26,
+    "votes": 27,
     "remarks": null,
     "gender": "पुरुष",
     "age": 31
@@ -3354,7 +3354,7 @@
     "const_id": 1,
     "candidate_name": "चेत बहादुर राई",
     "party_name": "स्वतन्त्र",
-    "votes": 6,
+    "votes": 7,
     "remarks": null,
     "gender": "पुरुष",
     "age": 44
@@ -3364,7 +3364,7 @@
     "const_id": 1,
     "candidate_name": "याम बहादुर लिम्बु",
     "party_name": "नेपाल जनमुक्ति पार्टी",
-    "votes": 6,
+    "votes": 11,
     "remarks": null,
     "gender": "पुरुष",
     "age": 63
@@ -3664,7 +3664,7 @@
     "const_id": 3,
     "candidate_name": "अशोक कुमार चौधरी",
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "votes": 36603,
+    "votes": 37704,
     "remarks": null,
     "gender": "पुरुष",
     "age": 42
@@ -3674,7 +3674,7 @@
     "const_id": 3,
     "candidate_name": "विजय कुमार गच्‍छदार",
     "party_name": "नेपाली काँग्रेस",
-    "votes": 13475,
+    "votes": 13774,
     "remarks": null,
     "gender": "पुरुष",
     "age": 72
@@ -3684,7 +3684,7 @@
     "const_id": 3,
     "candidate_name": "भगवती चौधरी",
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "votes": 11600,
+    "votes": 11764,
     "remarks": null,
     "gender": "महिला",
     "age": 54
@@ -3694,7 +3694,7 @@
     "const_id": 3,
     "candidate_name": "दुर्गेश कुमार चौधरी",
     "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "votes": 1257,
+    "votes": 1268,
     "remarks": null,
     "gender": "पुरुष",
     "age": 46
@@ -3704,7 +3704,7 @@
     "const_id": 3,
     "candidate_name": "कृष्ण कुमार चौधरी",
     "party_name": "सार्वभौम नागरिक पार्टी",
-    "votes": 482,
+    "votes": 483,
     "remarks": null,
     "gender": "पुरुष",
     "age": 41
@@ -3714,7 +3714,7 @@
     "const_id": 3,
     "candidate_name": "राम प्रसाद सदा",
     "party_name": "श्रम संस्कृति पार्टी",
-    "votes": 1591,
+    "votes": 1617,
     "remarks": null,
     "gender": "पुरुष",
     "age": 43
@@ -3724,7 +3724,7 @@
     "const_id": 3,
     "candidate_name": "राम नारायण थारु",
     "party_name": "जनमत पार्टी",
-    "votes": 276,
+    "votes": 278,
     "remarks": null,
     "gender": "पुरुष",
     "age": 58
@@ -3734,7 +3734,7 @@
     "const_id": 3,
     "candidate_name": "घनश्याम गुरुङ्ग",
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "votes": 797,
+    "votes": 805,
     "remarks": null,
     "gender": "पुरुष",
     "age": 43
@@ -3744,7 +3744,7 @@
     "const_id": 3,
     "candidate_name": "बद्री प्रसाद यादव",
     "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "votes": 153,
+    "votes": 157,
     "remarks": null,
     "gender": "पुरुष",
     "age": 52
@@ -3754,7 +3754,7 @@
     "const_id": 3,
     "candidate_name": "जागेश्‍वर यादव",
     "party_name": "उज्यालो नेपाल पार्टी",
-    "votes": 250,
+    "votes": 251,
     "remarks": null,
     "gender": "पुरुष",
     "age": 66
@@ -3764,7 +3764,7 @@
     "const_id": 3,
     "candidate_name": "आसुतोष ढुङगेल",
     "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "votes": 104,
+    "votes": 105,
     "remarks": null,
     "gender": "पुरुष",
     "age": 41
@@ -3784,7 +3784,7 @@
     "const_id": 3,
     "candidate_name": "किशोर कुमार विश्‍वास",
     "party_name": "समावेशी समाजवादी पार्टी नेपाल",
-    "votes": 130,
+    "votes": 140,
     "remarks": null,
     "gender": "पुरुष",
     "age": 53
@@ -6584,7 +6584,7 @@
     "const_id": 3,
     "candidate_name": "शम्भु कुमार यादव",
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "votes": 18728,
+    "votes": 20513,
     "remarks": null,
     "gender": "पुरुष",
     "age": 41
@@ -6594,7 +6594,7 @@
     "const_id": 3,
     "candidate_name": "विश्‍वनाथ साह",
     "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "votes": 7551,
+    "votes": 7736,
     "remarks": null,
     "gender": "पुरुष",
     "age": 72
@@ -6604,7 +6604,7 @@
     "const_id": 3,
     "candidate_name": "लिलानाथ श्रेष्ठ",
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "votes": 7228,
+    "votes": 7449,
     "remarks": null,
     "gender": "पुरुष",
     "age": 68
@@ -6614,7 +6614,7 @@
     "const_id": 3,
     "candidate_name": "सुभाष चन्द्र यादव",
     "party_name": "नेपाली काँग्रेस",
-    "votes": 5203,
+    "votes": 5512,
     "remarks": null,
     "gender": "पुरुष",
     "age": 49
@@ -6624,7 +6624,7 @@
     "const_id": 3,
     "candidate_name": "असेश्वर यादव",
     "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "votes": 3573,
+    "votes": 4030,
     "remarks": null,
     "gender": "पुरुष",
     "age": 54
@@ -6634,7 +6634,7 @@
     "const_id": 3,
     "candidate_name": "रोहित महतो",
     "party_name": "जनमत पार्टी",
-    "votes": 419,
+    "votes": 469,
     "remarks": null,
     "gender": "पुरुष",
     "age": 57
@@ -6644,7 +6644,7 @@
     "const_id": 3,
     "candidate_name": "दिप कुमार लामा",
     "party_name": "श्रम संस्कृति पार्टी",
-    "votes": 254,
+    "votes": 258,
     "remarks": null,
     "gender": "पुरुष",
     "age": 50
@@ -6654,7 +6654,7 @@
     "const_id": 3,
     "candidate_name": "श्रवण पासवान",
     "party_name": "उज्यालो नेपाल पार्टी",
-    "votes": 349,
+    "votes": 373,
     "remarks": null,
     "gender": "पुरुष",
     "age": 26
@@ -6664,7 +6664,7 @@
     "const_id": 3,
     "candidate_name": "देव दयाल सिंह",
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "votes": 176,
+    "votes": 182,
     "remarks": null,
     "gender": "पुरुष",
     "age": 47
@@ -6674,7 +6674,7 @@
     "const_id": 3,
     "candidate_name": "दिलीप कुमार पासमान",
     "party_name": "स्वतन्त्र",
-    "votes": 143,
+    "votes": 154,
     "remarks": null,
     "gender": "पुरुष",
     "age": 47
@@ -6684,7 +6684,7 @@
     "const_id": 3,
     "candidate_name": "पुजन कुमार सिंह",
     "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "votes": 54,
+    "votes": 55,
     "remarks": null,
     "gender": "पुरुष",
     "age": 40
@@ -6694,7 +6694,7 @@
     "const_id": 3,
     "candidate_name": "अरविन्द कुमार यादव",
     "party_name": "स्वतन्त्र",
-    "votes": 69,
+    "votes": 80,
     "remarks": null,
     "gender": "पुरुष",
     "age": 33
@@ -6704,7 +6704,7 @@
     "const_id": 3,
     "candidate_name": "बैजनाथ कामी",
     "party_name": "स्वतन्त्र",
-    "votes": 35,
+    "votes": 40,
     "remarks": null,
     "gender": "पुरुष",
     "age": 55
@@ -6714,7 +6714,7 @@
     "const_id": 3,
     "candidate_name": "ज्ञानु देवी दनुवार",
     "party_name": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
-    "votes": 31,
+    "votes": 33,
     "remarks": null,
     "gender": "महिला",
     "age": 63
@@ -6724,7 +6724,7 @@
     "const_id": 3,
     "candidate_name": "कमल राय",
     "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "votes": 41,
+    "votes": 42,
     "remarks": null,
     "gender": "पुरुष",
     "age": 64
@@ -6764,7 +6764,7 @@
     "const_id": 3,
     "candidate_name": "इन्दिला कुमारी यादव",
     "party_name": "स्वतन्त्र",
-    "votes": 8,
+    "votes": 9,
     "remarks": null,
     "gender": "महिला",
     "age": 33
@@ -6774,7 +6774,7 @@
     "const_id": 3,
     "candidate_name": "उमेश कुमार बराल",
     "party_name": "स्वतन्त्र",
-    "votes": 8,
+    "votes": 9,
     "remarks": null,
     "gender": "पुरुष",
     "age": 49
@@ -6784,7 +6784,7 @@
     "const_id": 3,
     "candidate_name": "रामचरित्र प्रसाद साह",
     "party_name": "स्वतन्त्र",
-    "votes": 11,
+    "votes": 12,
     "remarks": null,
     "gender": "पुरुष",
     "age": 58
@@ -6804,7 +6804,7 @@
     "const_id": 3,
     "candidate_name": "दिनेश यादव",
     "party_name": "स्वतन्त्र",
-    "votes": 6,
+    "votes": 8,
     "remarks": null,
     "gender": "पुरुष",
     "age": 39
@@ -6814,7 +6814,7 @@
     "const_id": 3,
     "candidate_name": "दुष्यन्त कुमार कर्ण",
     "party_name": "स्वतन्त्र",
-    "votes": 4,
+    "votes": 5,
     "remarks": null,
     "gender": "पुरुष",
     "age": 51
@@ -6844,7 +6844,7 @@
     "const_id": 3,
     "candidate_name": "नविन कुमार यादव",
     "party_name": "स्वतन्त्र",
-    "votes": 5,
+    "votes": 6,
     "remarks": null,
     "gender": "पुरुष",
     "age": 36
@@ -6864,7 +6864,7 @@
     "const_id": 3,
     "candidate_name": "सोभित कुमार यादव",
     "party_name": "स्वतन्त्र",
-    "votes": 4,
+    "votes": 5,
     "remarks": null,
     "gender": "पुरुष",
     "age": 42
@@ -6884,7 +6884,7 @@
     "const_id": 3,
     "candidate_name": "दीपेन्द्र कुमार यादव",
     "party_name": "स्वतन्त्र",
-    "votes": 2,
+    "votes": 4,
     "remarks": null,
     "gender": "पुरुष",
     "age": 60
@@ -6894,7 +6894,7 @@
     "const_id": 3,
     "candidate_name": "प्रदिप कुमार श्रेष्ठ",
     "party_name": "स्वतन्त्र",
-    "votes": 1,
+    "votes": 2,
     "remarks": null,
     "gender": "पुरुष",
     "age": 43
@@ -6924,7 +6924,7 @@
     "const_id": 3,
     "candidate_name": "राकेश कुमार यादव",
     "party_name": "स्वतन्त्र",
-    "votes": 2,
+    "votes": 3,
     "remarks": null,
     "gender": "पुरुष",
     "age": 34
@@ -6954,7 +6954,7 @@
     "const_id": 3,
     "candidate_name": "जिवछ कुमार यादव",
     "party_name": "स्वतन्त्र",
-    "votes": 0,
+    "votes": 1,
     "remarks": null,
     "gender": "पुरुष",
     "age": 42
@@ -6964,7 +6964,7 @@
     "const_id": 3,
     "candidate_name": "बब्लु कुमार यादव",
     "party_name": "स्वतन्त्र",
-    "votes": 4,
+    "votes": 5,
     "remarks": null,
     "gender": "पुरुष",
     "age": 27
@@ -7354,7 +7354,7 @@
     "const_id": 1,
     "candidate_name": "जगदीश खरेल",
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "votes": 17230,
+    "votes": 18367,
     "remarks": null,
     "gender": "पुरुष",
     "age": 36
@@ -7364,7 +7364,7 @@
     "const_id": 1,
     "candidate_name": "पार्वत गुरुङ",
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "votes": 11187,
+    "votes": 11810,
     "remarks": null,
     "gender": "पुरुष",
     "age": 57
@@ -7374,7 +7374,7 @@
     "const_id": 1,
     "candidate_name": "विशाल खड्का",
     "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "votes": 8989,
+    "votes": 9708,
     "remarks": null,
     "gender": "पुरुष",
     "age": 44
@@ -7384,7 +7384,7 @@
     "const_id": 1,
     "candidate_name": "अजय बाबु शिवाकोटी",
     "party_name": "नेपाली काँग्रेस",
-    "votes": 5716,
+    "votes": 7421,
     "remarks": null,
     "gender": "पुरुष",
     "age": 46
@@ -7394,7 +7394,7 @@
     "const_id": 1,
     "candidate_name": "निमा दोर्जे लामा",
     "party_name": "उज्यालो नेपाल पार्टी",
-    "votes": 1094,
+    "votes": 1152,
     "remarks": null,
     "gender": "पुरुष",
     "age": 43
@@ -7404,7 +7404,7 @@
     "const_id": 1,
     "candidate_name": "प्रविण कुमार थोकर/तामाङ्ग",
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "votes": 762,
+    "votes": 787,
     "remarks": null,
     "gender": "पुरुष",
     "age": 44
@@ -7414,7 +7414,7 @@
     "const_id": 1,
     "candidate_name": "हेप बहादुर थामी",
     "party_name": "श्रम संस्कृति पार्टी",
-    "votes": 231,
+    "votes": 236,
     "remarks": null,
     "gender": "पुरुष",
     "age": 56
@@ -7424,7 +7424,7 @@
     "const_id": 1,
     "candidate_name": "कर्ण बहादुर फुयाल",
     "party_name": "स्वतन्त्र",
-    "votes": 223,
+    "votes": 234,
     "remarks": null,
     "gender": "पुरुष",
     "age": 42
@@ -7434,7 +7434,7 @@
     "const_id": 1,
     "candidate_name": "शुदर्शन कार्की",
     "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "votes": 233,
+    "votes": 252,
     "remarks": null,
     "gender": "पुरुष",
     "age": 37
@@ -7444,7 +7444,7 @@
     "const_id": 1,
     "candidate_name": "राज कुमार लामिछाने",
     "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "votes": 62,
+    "votes": 85,
     "remarks": null,
     "gender": "पुरुष",
     "age": 33
@@ -7454,7 +7454,7 @@
     "const_id": 1,
     "candidate_name": "विनोद घिमिरे",
     "party_name": "स्वतन्त्र",
-    "votes": 83,
+    "votes": 92,
     "remarks": null,
     "gender": "पुरुष",
     "age": 30
@@ -7464,7 +7464,7 @@
     "const_id": 1,
     "candidate_name": "कुमार तामाङ्ग",
     "party_name": "मंगोल नेशनल अर्गनाइजेसन",
-    "votes": 54,
+    "votes": 60,
     "remarks": null,
     "gender": "पुरुष",
     "age": 39
@@ -7474,7 +7474,7 @@
     "const_id": 1,
     "candidate_name": "गोपाल नेपाली",
     "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "votes": 37,
+    "votes": 42,
     "remarks": null,
     "gender": "पुरुष",
     "age": 31
@@ -7504,7 +7504,7 @@
     "const_id": 1,
     "candidate_name": "सुक्र तमाङ्ग",
     "party_name": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
-    "votes": 18,
+    "votes": 20,
     "remarks": null,
     "gender": "पुरुष",
     "age": 44
@@ -7524,7 +7524,7 @@
     "const_id": 1,
     "candidate_name": "सुदिप  खड्‍का ",
     "party_name": "स्वतन्त्र",
-    "votes": 6,
+    "votes": 7,
     "remarks": null,
     "gender": "पुरुष",
     "age": 33
@@ -7564,7 +7564,7 @@
     "const_id": 1,
     "candidate_name": "रिम बहादुर ओली",
     "party_name": "स्वतन्त्र",
-    "votes": 4,
+    "votes": 5,
     "remarks": null,
     "gender": "पुरुष",
     "age": 33
@@ -7594,7 +7594,7 @@
     "const_id": 1,
     "candidate_name": "हरि बोल बस्नेत",
     "party_name": "स्वतन्त्र",
-    "votes": 8,
+    "votes": 10,
     "remarks": null,
     "gender": "पुरुष",
     "age": 49
@@ -7604,7 +7604,7 @@
     "const_id": 1,
     "candidate_name": "विमला  श्रेष्ठ ",
     "party_name": "नेपाल मजदुर किसान पार्टी",
-    "votes": 9,
+    "votes": 18,
     "remarks": null,
     "gender": "महिला",
     "age": 53
@@ -7654,7 +7654,7 @@
     "const_id": 1,
     "candidate_name": "संगीता श्रेष्‍ठ",
     "party_name": "स्वतन्त्र",
-    "votes": 7,
+    "votes": 9,
     "remarks": null,
     "gender": "महिला",
     "age": 39
@@ -7674,7 +7674,7 @@
     "const_id": 1,
     "candidate_name": "लुक दोर्जे शेर्पा",
     "party_name": "स्वतन्त्र",
-    "votes": 4,
+    "votes": 5,
     "remarks": null,
     "gender": "पुरुष",
     "age": 33
@@ -7684,7 +7684,7 @@
     "const_id": 1,
     "candidate_name": "श्याम कुमार श्रेष्‍ठ",
     "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "votes": 4183,
+    "votes": 4342,
     "remarks": null,
     "gender": "पुरुष",
     "age": 54
@@ -7694,7 +7694,7 @@
     "const_id": 1,
     "candidate_name": "राम चन्द्र खडका",
     "party_name": "नेपाली काँग्रेस",
-    "votes": 4475,
+    "votes": 4694,
     "remarks": null,
     "gender": "पुरुष",
     "age": 65
@@ -7704,7 +7704,7 @@
     "const_id": 1,
     "candidate_name": "कृष्ण हरी बुढाथोकी",
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "votes": 6295,
+    "votes": 6934,
     "remarks": null,
     "gender": "पुरुष",
     "age": 44
@@ -7714,7 +7714,7 @@
     "const_id": 1,
     "candidate_name": "दिप बहादुर योञ्जन",
     "party_name": "उज्यालो नेपाल पार्टी",
-    "votes": 2839,
+    "votes": 2886,
     "remarks": null,
     "gender": "पुरुष",
     "age": 42
@@ -7724,7 +7724,7 @@
     "const_id": 1,
     "candidate_name": "माधव प्रसाद ढुंगेल",
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "votes": 4209,
+    "votes": 4654,
     "remarks": null,
     "gender": "पुरुष",
     "age": 48
@@ -7734,7 +7734,7 @@
     "const_id": 1,
     "candidate_name": "ढाल बहादुर खपाङ्गी मगर",
     "party_name": "श्रम संस्कृति पार्टी",
-    "votes": 430,
+    "votes": 435,
     "remarks": null,
     "gender": "पुरुष",
     "age": 37
@@ -7744,7 +7744,7 @@
     "const_id": 1,
     "candidate_name": "गोरे तामाङ",
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "votes": 145,
+    "votes": 152,
     "remarks": null,
     "gender": "पुरुष",
     "age": 60
@@ -7754,7 +7754,7 @@
     "const_id": 1,
     "candidate_name": "यमुन बहादुर बस्नेत",
     "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "votes": 41,
+    "votes": 45,
     "remarks": null,
     "gender": "पुरुष",
     "age": 50
@@ -7774,7 +7774,7 @@
     "const_id": 1,
     "candidate_name": "अर्जुन बहादुर थापा मगर",
     "party_name": "राष्ट्रिय जनमोर्चा",
-    "votes": 48,
+    "votes": 49,
     "remarks": null,
     "gender": "पुरुष",
     "age": 51
@@ -7824,7 +7824,7 @@
     "const_id": 1,
     "candidate_name": "विनोद घिसिङ",
     "party_name": "मंगोल नेशनल अर्गनाइजेसन",
-    "votes": 16,
+    "votes": 17,
     "remarks": null,
     "gender": "पुरुष",
     "age": 35
@@ -7844,7 +7844,7 @@
     "const_id": 1,
     "candidate_name": "सन्तोष घिमिरे",
     "party_name": "स्वतन्त्र",
-    "votes": 13,
+    "votes": 15,
     "remarks": null,
     "gender": "पुरुष",
     "age": 34
@@ -8554,7 +8554,7 @@
     "const_id": 2,
     "candidate_name": "राम विनोद यादव",
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "votes": 17151,
+    "votes": 17454,
     "remarks": null,
     "gender": "पुरुष",
     "age": 49
@@ -8564,7 +8564,7 @@
     "const_id": 2,
     "candidate_name": "राम चन्द्र झा",
     "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "votes": 4195,
+    "votes": 4292,
     "remarks": null,
     "gender": "पुरुष",
     "age": 71
@@ -8574,7 +8574,7 @@
     "const_id": 2,
     "candidate_name": "दिनेश प्रसाद  यादव परसैला",
     "party_name": "नेपाली काँग्रेस",
-    "votes": 4572,
+    "votes": 4669,
     "remarks": null,
     "gender": "पुरुष",
     "age": 57
@@ -8584,7 +8584,7 @@
     "const_id": 2,
     "candidate_name": "उमाशंकर अरगरिया",
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "votes": 3894,
+    "votes": 3945,
     "remarks": null,
     "gender": "पुरुष",
     "age": 48
@@ -8594,7 +8594,7 @@
     "const_id": 2,
     "candidate_name": "पशुपति यादव",
     "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "votes": 2273,
+    "votes": 2293,
     "remarks": null,
     "gender": "पुरुष",
     "age": 45
@@ -8604,7 +8604,7 @@
     "const_id": 2,
     "candidate_name": "जय नाथ अधिकारी",
     "party_name": "स्वतन्त्र",
-    "votes": 359,
+    "votes": 364,
     "remarks": null,
     "gender": "पुरुष",
     "age": 33
@@ -8614,7 +8614,7 @@
     "const_id": 2,
     "candidate_name": "सुरेन्द्र प्रसाद यादव",
     "party_name": "जनमत पार्टी",
-    "votes": 426,
+    "votes": 431,
     "remarks": null,
     "gender": "पुरुष",
     "age": 44
@@ -8624,7 +8624,7 @@
     "const_id": 2,
     "candidate_name": "लक्ष्‍मी मुखिया",
     "party_name": "स्वतन्त्र",
-    "votes": 243,
+    "votes": 246,
     "remarks": null,
     "gender": "पुरुष",
     "age": 40
@@ -8634,7 +8634,7 @@
     "const_id": 2,
     "candidate_name": "महेश्वर मंडल",
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "votes": 99,
+    "votes": 102,
     "remarks": null,
     "gender": "पुरुष",
     "age": 60
@@ -8644,7 +8644,7 @@
     "const_id": 2,
     "candidate_name": "श्‍याम सुन्दर पजियार",
     "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "votes": 139,
+    "votes": 143,
     "remarks": null,
     "gender": "पुरुष",
     "age": 61
@@ -8664,7 +8664,7 @@
     "const_id": 2,
     "candidate_name": "उमेश दास",
     "party_name": "स्वतन्त्र",
-    "votes": 27,
+    "votes": 28,
     "remarks": null,
     "gender": "पुरुष",
     "age": 41
@@ -8674,7 +8674,7 @@
     "const_id": 2,
     "candidate_name": "विनोद कुमार ठाकुर",
     "party_name": "राष्ट्रिय मुक्ति पार्टी नेपाल(एकल चुनाव चिन्ह)",
-    "votes": 16,
+    "votes": 17,
     "remarks": null,
     "gender": "पुरुष",
     "age": 50
@@ -8684,7 +8684,7 @@
     "const_id": 2,
     "candidate_name": "राम किशोर पासमान",
     "party_name": "स्वतन्त्र",
-    "votes": 15,
+    "votes": 16,
     "remarks": null,
     "gender": "पुरुष",
     "age": 43
@@ -8814,7 +8814,7 @@
     "const_id": 2,
     "candidate_name": "सुजित कुमार दास",
     "party_name": "स्वतन्त्र",
-    "votes": 2,
+    "votes": 3,
     "remarks": null,
     "gender": "पुरुष",
     "age": 38
@@ -18064,7 +18064,7 @@
     "const_id": 1,
     "candidate_name": "हरि ढकाल",
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "votes": 54979,
+    "votes": 56707,
     "remarks": null,
     "gender": "पुरुष",
     "age": 42
@@ -18074,7 +18074,7 @@
     "const_id": 1,
     "candidate_name": "दावा दोर्जे लामा",
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "votes": 10433,
+    "votes": 10707,
     "remarks": null,
     "gender": "पुरुष",
     "age": 66
@@ -18084,7 +18084,7 @@
     "const_id": 1,
     "candidate_name": "राजेन्द्र प्रसाद वुर्लाकोटी",
     "party_name": "नेपाली काँग्रेस",
-    "votes": 12284,
+    "votes": 12606,
     "remarks": null,
     "gender": "पुरुष",
     "age": 66
@@ -18094,7 +18094,7 @@
     "const_id": 1,
     "candidate_name": "कृष्ण राज पन्त",
     "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "votes": 3812,
+    "votes": 3960,
     "remarks": null,
     "gender": "पुरुष",
     "age": 61
@@ -18104,7 +18104,7 @@
     "const_id": 1,
     "candidate_name": "वलराम शर्मा खनाल",
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "votes": 2165,
+    "votes": 2252,
     "remarks": null,
     "gender": "पुरुष",
     "age": 56
@@ -18114,7 +18114,7 @@
     "const_id": 1,
     "candidate_name": "अनिल तामाङ",
     "party_name": "श्रम संस्कृति पार्टी",
-    "votes": 1146,
+    "votes": 1153,
     "remarks": null,
     "gender": "पुरुष",
     "age": 50
@@ -18124,7 +18124,7 @@
     "const_id": 1,
     "candidate_name": "धन बहादुर गुरुङ्ग",
     "party_name": "उज्यालो नेपाल पार्टी",
-    "votes": 893,
+    "votes": 894,
     "remarks": null,
     "gender": "पुरुष",
     "age": 62
@@ -18134,7 +18134,7 @@
     "const_id": 1,
     "candidate_name": "संजय रिजाल",
     "party_name": "स्वतन्त्र",
-    "votes": 741,
+    "votes": 768,
     "remarks": null,
     "gender": "पुरुष",
     "age": 30
@@ -18154,7 +18154,7 @@
     "const_id": 1,
     "candidate_name": "सीता देवी क्षेत्री",
     "party_name": "राष्ट्रिय जनमोर्चा",
-    "votes": 90,
+    "votes": 91,
     "remarks": null,
     "gender": "महिला",
     "age": 50
@@ -18164,7 +18164,7 @@
     "const_id": 1,
     "candidate_name": "गणेश बहादुर श्रेष्ठ",
     "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "votes": 82,
+    "votes": 86,
     "remarks": null,
     "gender": "पुरुष",
     "age": 48
@@ -18184,7 +18184,7 @@
     "const_id": 1,
     "candidate_name": "बिकाश कामी",
     "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "votes": 75,
+    "votes": 76,
     "remarks": null,
     "gender": "पुरुष",
     "age": 25
@@ -18214,7 +18214,7 @@
     "const_id": 1,
     "candidate_name": "दुर्गा दत्त अर्याल",
     "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
-    "votes": 13,
+    "votes": 16,
     "remarks": null,
     "gender": "पुरुष",
     "age": 57
@@ -18704,7 +18704,7 @@
     "const_id": 1,
     "candidate_name": "राम चन्द्र लामिछाने",
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "votes": 0,
+    "votes": 88,
     "remarks": null,
     "gender": "पुरुष",
     "age": 44
@@ -18714,7 +18714,7 @@
     "const_id": 1,
     "candidate_name": "प्रेम कुमार खत्री",
     "party_name": "नेपाली काँग्रेस",
-    "votes": 0,
+    "votes": 590,
     "remarks": null,
     "gender": "पुरुष",
     "age": 42
@@ -18724,7 +18724,7 @@
     "const_id": 1,
     "candidate_name": "हरि राज अधिकारी",
     "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "votes": 0,
+    "votes": 530,
     "remarks": null,
     "gender": "पुरुष",
     "age": 58
@@ -18734,7 +18734,7 @@
     "const_id": 1,
     "candidate_name": "सुधन गुरुङ",
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "votes": 0,
+    "votes": 1029,
     "remarks": null,
     "gender": "पुरुष",
     "age": 38
@@ -18744,7 +18744,7 @@
     "const_id": 1,
     "candidate_name": "केदार मणी खनाल",
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "votes": 0,
+    "votes": 6,
     "remarks": null,
     "gender": "पुरुष",
     "age": 40
@@ -18754,7 +18754,7 @@
     "const_id": 1,
     "candidate_name": "मनु कुमारी श्रेष्‍ठ",
     "party_name": "नेपाल मजदुर किसान पार्टी",
-    "votes": 0,
+    "votes": 1,
     "remarks": null,
     "gender": "महिला",
     "age": 56
@@ -18764,7 +18764,7 @@
     "const_id": 1,
     "candidate_name": "देव बहादुर थापा",
     "party_name": "मंगोल नेशनल अर्गनाइजेसन",
-    "votes": 0,
+    "votes": 6,
     "remarks": null,
     "gender": "पुरुष",
     "age": 29
@@ -18774,7 +18774,7 @@
     "const_id": 1,
     "candidate_name": "जित बहादुर घले",
     "party_name": "संयुक्त नागरिक पार्टी",
-    "votes": 0,
+    "votes": 5,
     "remarks": null,
     "gender": "पुरुष",
     "age": 53
@@ -18794,7 +18794,7 @@
     "const_id": 1,
     "candidate_name": "विष्णु प्रसाद रिजाल",
     "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "votes": 0,
+    "votes": 6,
     "remarks": null,
     "gender": "पुरुष",
     "age": 72
@@ -18804,7 +18804,7 @@
     "const_id": 1,
     "candidate_name": "रामकाजी राना मगर",
     "party_name": "उज्यालो नेपाल पार्टी",
-    "votes": 0,
+    "votes": 13,
     "remarks": null,
     "gender": "पुरुष",
     "age": 55
@@ -18814,7 +18814,7 @@
     "const_id": 1,
     "candidate_name": "कविता भट्टराई",
     "party_name": "स्वतन्त्र",
-    "votes": 0,
+    "votes": 2,
     "remarks": null,
     "gender": "महिला",
     "age": 34
