@@ -57,8 +57,20 @@ async function scrapeData() {
     }
     const constsList = JSON.parse(fs.readFileSync(constLookupPath, 'utf8'));
 
-    const allResults = [];
+    const existingDataMap = new Map();
+    if (fs.existsSync(OUTPUT_PATH)) {
+        try {
+            const existing = JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8'));
+            existing.forEach(row => {
+                const key = `${row.dist_id}-${row.const_id}-${row.candidate_name}`;
+                existingDataMap.set(key, row);
+            });
+        } catch (e) {
+            console.warn("Could not read existing all-results.json, starting fresh.");
+        }
+    }
 
+    let requestCount = 0;
     // Process each constituency sequentially
     for (const item of constsList) {
         const distId = item.distId;
@@ -75,71 +87,86 @@ async function scrapeData() {
             }
 
             if (data && Array.isArray(data)) {
-                const uniqueCandidates = new Map();
-                data.forEach(row => {
-                    const name = row.CandidateName;
-                    const votes = row.TotalVoteReceived || 0;
-                    if (!uniqueCandidates.has(name) || votes > (uniqueCandidates.get(name).TotalVoteReceived || 0)) {
-                        uniqueCandidates.set(name, row);
-                    }
-                });
+                if (data.length === 0) {
+                    console.log(`[EMPTY] HOR-${distId}-${c} returned an empty array.`);
+                } else {
+                    console.log(`[SUCCESS] HOR-${distId}-${c} returned ${data.length} records.`);
+                    const uniqueCandidates = new Map();
+                    data.forEach(row => {
+                        const name = row.CandidateName;
+                        const votes = row.TotalVoteReceived || 0;
+                        if (!uniqueCandidates.has(name) || votes > (uniqueCandidates.get(name).TotalVoteReceived || 0)) {
+                            uniqueCandidates.set(name, row);
+                        }
+                    });
 
-                // Format to exactly mimic Supabase Postgres schema shape
-                const formattedRows = Array.from(uniqueCandidates.values()).map(row => ({
-                    dist_id: distId,
-                    const_id: c,
-                    candidate_name: row.CandidateName,
-                    party_name: row.PoliticalPartyName,
-                    votes: row.TotalVoteReceived || 0,
-                    remarks: row.Remarks,
-                    gender: row.Gender,
-                    age: row.Age,
-                }));
+                    // Format to exactly mimic Supabase Postgres schema shape
+                    const formattedRows = Array.from(uniqueCandidates.values()).map(row => ({
+                        dist_id: distId,
+                        const_id: c,
+                        candidate_name: row.CandidateName,
+                        party_name: row.PoliticalPartyName,
+                        votes: row.TotalVoteReceived || 0,
+                        remarks: row.Remarks,
+                        gender: row.Gender,
+                        age: row.Age,
+                    }));
 
-                allResults.push(...formattedRows);
+                    formattedRows.forEach(row => {
+                        const key = `${row.dist_id}-${row.const_id}-${row.candidate_name}`;
+                        existingDataMap.set(key, row);
+                    });
+                }
+            } else {
+                console.warn(`[FAILED/403] Could not fetch data for HOR-${distId}-${c}. data:`, data);
             }
+
+            requestCount++;
 
             // Incrementally write file directly so the dashboard populates immediately while running
             try {
-                fs.writeFileSync(OUTPUT_PATH, JSON.stringify(allResults, null, 2), 'utf8');
+                fs.writeFileSync(OUTPUT_PATH, JSON.stringify(Array.from(existingDataMap.values()), null, 2), 'utf8');
             } catch (e) {
                 console.error(`[ERROR] Failed to save JSON file incrementally: ${e.message}`);
             }
 
-            await delay(150);
-        }
-    }
-
-    console.log(`[SUCCESS] Finished scrape loop. Total ${allResults.length} candidates.`);
-    await browser.close();
-    return allResults.length;
-}
-
-async function runLoop() {
-    console.log("Starting Loop...");
-    while (true) {
-        try {
-            const count = await scrapeData();
-            if (count > 0) {
-                console.log("Pushing to git hotfix-local-scrape branch...");
-                execSync('git add ../frontend/public/data/all-results.json', { stdio: 'inherit' });
-                // Check if there are changes to commit
-                const status = execSync('git status --porcelain').toString();
-                if (status.includes('all-results.json')) {
-                    execSync('git commit -m "chore: auto-update local election data" --no-verify', { stdio: 'inherit' });
-                    execSync('git push origin hotfix-local-scrape', { stdio: 'inherit' });
-                    console.log("[SUCCESS] Git push complete.");
-                } else {
-                    console.log("No new data changes to commit.");
-                }
+            if (requestCount % 10 === 0) {
+                console.log(`[WAIT] Batch of 10 reached. Waiting 3 seconds to avoid rate limit...`);
+                await delay(5000);
+            } else {
+                await delay(1000);
             }
-        } catch (e) {
-            console.error("Error in scraping loop attempt:", e);
         }
+    }
 
-        console.log("Waiting 3 minutes before next scrape...");
-        await delay(3 * 60 * 1000); // 3 minutes
+    console.log(`[SUCCESS] Finished scrape loop. Total ${existingDataMap.size} candidates.`);
+    await browser.close();
+    return existingDataMap.size;
+}
+
+async function main() {
+    try {
+        console.log("Starting scrape...");
+        const count = await scrapeData();
+        console.log(`Scrape finished. Total candidates in database: ${count}`);
+
+        if (count > 0) {
+            console.log("Pushing to git hotfix-local-scrape branch...");
+            execSync('git add ../frontend/public/data/all-results.json', { stdio: 'inherit' });
+
+            const status = execSync('git status --porcelain').toString();
+            if (status.includes('all-results.json')) {
+                execSync('git commit -m "chore: auto-update local election data" --no-verify', { stdio: 'inherit' });
+                execSync('git push origin hotfix-local-scrape', { stdio: 'inherit' });
+                console.log("[SUCCESS] Git push complete.");
+            } else {
+                console.log("No new data changes to commit.");
+            }
+        }
+    } catch (e) {
+        console.error("Error in scraping attempt:", e);
+        process.exit(1);
     }
 }
 
-runLoop();
+main();
