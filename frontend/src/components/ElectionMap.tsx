@@ -28,9 +28,22 @@ interface Props {
 
 // ── Component ────────────────────────────────────────────────────────────────
 
+function useIsMobile() {
+    const [isMobile, setIsMobile] = useState(false);
+    useEffect(() => {
+        const check = () => setIsMobile(window.innerWidth < 1024 || L.Browser.mobile);
+        check();
+        window.addEventListener('resize', check);
+        return () => window.removeEventListener('resize', check);
+    }, []);
+    return isMobile;
+}
+
 export default function ElectionMap({ resultsData, allCandidates, partyColors, theme, lang, mapMode = 'fptp' }: Props) {
     const mapDivRef = useRef<HTMLDivElement>(null);
     const mapRef = useRef<L.Map | null>(null);
+    const isMobile = useIsMobile();
+    const [showMobileOverlay, setShowMobileOverlay] = useState(false);
     const geojsonLayerRef = useRef<L.GeoJSON | null>(null);
     const tileLayerRef = useRef<L.TileLayer | null>(null);
     const [hoverInfo, setHoverInfo] = useState<{
@@ -102,9 +115,12 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
 
         const map = L.map(mapDivRef.current, {
             center: [28.3, 84.1],
-            zoom: 7,
-            minZoom: 2, // allow zooming out to see Japan
-            zoomControl: true,
+            zoom: isMobile ? 6 : 7,
+            minZoom: 2,
+            zoomControl: !isMobile,
+            dragging: !isMobile, // Disable single-finger drag on mobile to allow page scroll
+            touchZoom: true,
+            scrollWheelZoom: false,
             attributionControl: false,
         });
 
@@ -139,6 +155,29 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
         tile.addTo(map);
         tileLayerRef.current = tile;
     }, [theme]);
+
+    // Handle mobile overlay trigger
+    useEffect(() => {
+        if (!isMobile || !mapDivRef.current) return;
+        const el = mapDivRef.current;
+        let timer: any;
+
+        const handleTouchStart = (e: TouchEvent) => {
+            if (e.touches.length === 1) {
+                setShowMobileOverlay(true);
+                clearTimeout(timer);
+                timer = setTimeout(() => setShowMobileOverlay(false), 2500);
+            } else {
+                setShowMobileOverlay(false);
+            }
+        };
+
+        el.addEventListener('touchstart', handleTouchStart, { passive: true });
+        return () => {
+            el.removeEventListener('touchstart', handleTouchStart);
+            clearTimeout(timer);
+        };
+    }, [isMobile]);
 
     // Load & render GeoJSON
     useEffect(() => {
@@ -346,6 +385,18 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
                             </div>
                         </div>
                     )}
+                </div>
+            )}
+
+            {/* Mobile Scroll Overlay */}
+            {isMobile && showMobileOverlay && (
+                <div className="absolute inset-0 z-[5000] bg-black/40 backdrop-blur-[2px] flex items-center justify-center p-6 text-center pointer-events-none">
+                    <div className="bg-zinc-900/90 border border-zinc-700 rounded-2xl px-6 py-4 shadow-2xl animate-in fade-in zoom-in duration-200">
+                        <div className="text-2xl mb-2">✌️</div>
+                        <div className="text-white font-bold text-sm">
+                            {lang === 'en' ? 'Use two fingers to move the map' : 'नक्सा सार्न दुई औंला प्रयोग गर्नुहोस्'}
+                        </div>
+                    </div>
                 </div>
             )}
 
