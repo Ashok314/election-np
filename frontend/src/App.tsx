@@ -10,10 +10,12 @@ const ElectionMap = lazy(() => import('./components/ElectionMap'));
 
 ChartJS.register(ArcElement, Tooltip, Legend, ChartDataLabels);
 
-// Create a lookup for District ID -> Name
+// Create a lookup for District ID -> Name & Nepali Name
 const districtLookup: Record<number, string> = {};
+const districtLookupNp: Record<number, string> = {};
 districtsData.forEach((d: any) => {
   districtLookup[d.id] = d.name;
+  districtLookupNp[d.id] = d.name_np || d.name;
 });
 
 // Define expected Types
@@ -93,7 +95,8 @@ function App() {
 
   // Initial load from Supabase or local backend
   async function loadData() {
-    // Option 1: Supabase
+    // Option 1: Supabase (COMMENTED OUT FOR HOTFIX)
+    /*
     if (supabase) {
       const { data, error } = await supabase
         .from('election_results')
@@ -104,15 +107,21 @@ function App() {
         return;
       }
     }
+    */
 
     // Option 2: Local backend fallback (dev)
     try {
-      const url = import.meta.env.DEV
-        ? 'http://localhost:3001/api/candidates/all'
-        : `${import.meta.env.BASE_URL}data/all-results.json`;
-      const res = await fetch(url);
-      const raw: CandidateResult[] = await res.json();
-      if (raw.length > 0) { processData(raw); return; }
+      setLiveStatus('connecting');
+      // HOTFIX: Aggressively read local JSON instead of hitting an API in dev mode
+      const url = `${import.meta.env.BASE_URL}data/all-results.json`;
+      const res = await fetch(url + `?t=${new Date().getTime()}`); // Cache-bust
+      const raw: any[] = await res.json();
+      if (raw.length > 0) {
+        // Run the scraped json through the exact same mapping function Supabase used
+        processData(raw.map(mapRow));
+        setLiveStatus('live');
+        return;
+      }
     } catch { /* ignore */ }
 
     // Demo fallback
@@ -123,28 +132,17 @@ function App() {
     ]);
   }
 
-  // Subscribe to Supabase Realtime
+  // HOTFIX: Disable Supabase Realtime Subscriptions
   function subscribeRealtime() {
-    if (!supabase) { setLiveStatus('polling'); return; }
-    const channel = supabase
-      .channel('election_results_changes')
-      .on('postgres_changes', { event: '*', schema: 'public', table: 'election_results' }, () => {
-        loadData();
-      })
-      .subscribe((status) => {
-        setLiveStatus(status === 'SUBSCRIBED' ? 'live' : 'connecting');
-      });
-    channelRef.current = channel as any;
+    // By-pass realtime and rely purely on the polling interval
+    setLiveStatus('polling');
   }
 
   useEffect(() => {
     loadData();
-    subscribeRealtime();
-    const interval = !supabase ? setInterval(loadData, 30_000) : undefined;
-    return () => {
-      if (channelRef.current) supabase!.removeChannel(channelRef.current as any);
-      if (interval) clearInterval(interval);
-    };
+    // 5-second interval polling for local hotfix
+    const interval = setInterval(loadData, 5000);
+    return () => clearInterval(interval);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const [sortBy, setSortBy] = useState<'votes' | 'district' | 'party'>('votes');
@@ -376,6 +374,8 @@ function App() {
               leaders={leaders}
               theme={theme}
               lang={lang}
+              districtLookup={districtLookup}
+              districtLookupNp={districtLookupNp}
             />
           </div>
 
