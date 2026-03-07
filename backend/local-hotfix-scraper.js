@@ -147,8 +147,11 @@ async function scrapeData() {
 async function main() {
     try {
         console.log("Starting scrape...");
+        const startTime = Date.now();
         const count = await scrapeData();
+        const endTime = Date.now();
         console.log(`Scrape finished. Total candidates in database: ${count}`);
+        console.log(`Scrape took ${((endTime - startTime) / 1000).toFixed(2)} seconds.`);
 
         if (count > 0) {
             console.log("Pushing to git hotfix-local-scrape branch...");
