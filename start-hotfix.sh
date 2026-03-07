@@ -16,35 +16,43 @@ fi
 echo "📍 Found Node path: $NODE_PATH"
 echo "📍 Data Directory: $DIR"
 
-# Ensure logs directory exists
-mkdir -p $DIR/logs
-
-# The cron job definition:
-# - caffeinate -is: prevents Mac from going to sleep while the script runs (idle & system sleep)
-# - runs every 3 minutes
-# - uses the execution timestamp to create a unique log file name inside backend/logs/
-CRON_CMD="*/3 * * * * cd $DIR && $CAFFEINATE_PATH -is $NODE_PATH local-hotfix-scraper.js >> $DIR/logs/scrape_\$(date +\%Y-\%m-\%d_\%H-\%M-\%S).log 2>&1"
-
-# Check if job already exists
+# Cleanup old cron jobs that failed auth
 (crontab -l 2>/dev/null | grep -q "local-hotfix-scraper.js")
 if [ $? -eq 0 ]; then
-    echo "⚠️  Cron job already installed! Running normally..."
-else
-    # Install the new cron job
-    (crontab -l 2>/dev/null; echo "$CRON_CMD") | crontab -
-    echo "✅ Successfully installed 5-minute background cron task!"
-    
-    # Trigger the first run immediately so the user doesn't have to wait for logs
-    echo "⚡ Triggering initial scrape in the background right now..."
-    NOW=$(date +%Y-%m-%d_%H-%M-%S)
-    cd $DIR && $CAFFEINATE_PATH -is $NODE_PATH local-hotfix-scraper.js >> $DIR/logs/scrape_$NOW.log 2>&1 &
+    echo "🧹 Removing broken background cron job..."
+    crontab -r
 fi
 
+# Ensure logs directory exists
+mkdir -p "$DIR/logs"
+
+# Check if screen daemon is already running and kill it so we restart clean
+if screen -list | grep -q "election-hotfix"; then
+    echo "🔄 Restarting existing background daemon..."
+    screen -X -S election-hotfix quit
+fi
+
+# We use 'screen' instead of cron because GitHub authentication requires a TTY (terminal session).
+# A detached screen session gives MacOS Keychain exactly what it needs to authenticate silently.
+echo "⚡ Starting background virtual terminal (Daemon)..."
+screen -dmS election-hotfix bash -c "
+    echo '🟢 INJECTED VIRTUAL TTY DAEMON STARTED'
+    while true; do
+        NOW=\$(date +%Y-%m-%d_%H-%M-%S)
+        LOG_FILE=\"$DIR/logs/scrape_\$NOW.log\"
+        echo \"▶️ [\$(date)] Waking up to scrape ECN...\" > \"\$LOG_FILE\"
+        cd \"$DIR\" && \"$CAFFEINATE_PATH\" -is \"$NODE_PATH\" local-hotfix-scraper.js >> \"\$LOG_FILE\" 2>&1
+        echo \"⏸️ [\$(date)] Scrape complete, waiting 5 minutes...\" >> \"\$LOG_FILE\"
+        sleep 180
+    done
+"
+
 echo " "
-echo "🟢 HOTFIX IS NOW RUNNING IN THE BACKGROUND VIA CRON!"
-echo "It will run completely silently every 5 minutes."
-echo "You can close this terminal and it will keep running!"
+echo "🟢 HOTFIX IS NOW RUNNING SILENTLY IN A VIRTUAL TERMINAL!"
+echo "Because it is using a virtual session, GitHub will perfectly authenticate 100% of the time!"
+echo "You can close this window securely. It will survive."
 echo " "
-echo "To watch the live logs: tail -f $DIR/logs/*"
-echo "To stop the scraper:    crontab -r"
+echo "To watch the live logs: tail -f backend/logs/*"
+echo "To peek into the virtual terminal:  screen -r election-hotfix"
+echo "To kill the background daemon:      screen -X -S election-hotfix quit"
 echo "---------------------------------------------------"

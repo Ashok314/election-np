@@ -45,12 +45,19 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
 
     // Build fast lookup maps
     const leaderByConstKey = useRef<Record<string, CandidateResult>>({});
+    const leaderByDistKey = useRef<Record<string, CandidateResult>>({});  // district fallback for PR mode
     const allByConstKey = useRef<Record<string, CandidateResult[]>>({});
 
     useEffect(() => {
         leaderByConstKey.current = {};
+        leaderByDistKey.current = {};
         resultsData.forEach(r => {
             leaderByConstKey.current[`${r.MetaDistId}-${r.MetaConstId}`] = r;
+            // Also index by district only (used as fallback for PR district-level data)
+            if (!leaderByDistKey.current[`${r.MetaDistId}`] ||
+                (r.TotalVoteReceived || 0) > (leaderByDistKey.current[`${r.MetaDistId}`].TotalVoteReceived || 0)) {
+                leaderByDistKey.current[`${r.MetaDistId}`] = r;
+            }
         });
         allByConstKey.current = {};
         allCandidates.forEach(r => {
@@ -71,17 +78,18 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
     const styleFeature = useCallback((feature: any) => {
         const distId = feature?.properties?.distId;
         const constId = feature?.properties?.constId;
-        const leader = leaderByConstKey.current[`${distId}-${constId}`];
+        // Exact constituency match first; fall back to district-level (used in PR mode)
+        const leader = leaderByConstKey.current[`${distId}-${constId}`]
+            || leaderByDistKey.current[`${distId}`];
         const color = leader ? getPartyColor(leader.PoliticalPartyName) : (theme === 'dark' ? '#27272a' : '#e5e7eb');
         const isElected = leader?.Remarks === 'Elected' || leader?.Remarks === 'निर्वाचित';
+        const hasData = !!leader;
         const isLeading = leader && !isElected;
         return {
             fillColor: color,
-            // Elected: full solid. Leading: semi-transparent. No data: very faint.
-            fillOpacity: isElected ? 0.92 : isLeading ? 0.5 : 0.15,
-            // Elected: solid border. Leading: dashed border.
-            color: isElected ? '#ffffff' : (isLeading ? color : (theme === 'dark' ? '#3f3f46' : '#d1d5db')),
-            weight: isElected ? 1.2 : (isLeading ? 0.8 : 0.5),
+            fillOpacity: isElected ? 0.92 : isLeading ? 0.5 : hasData ? 0.75 : 0.15,
+            color: isElected ? '#ffffff' : (isLeading ? color : hasData ? color : (theme === 'dark' ? '#3f3f46' : '#d1d5db')),
+            weight: isElected ? 1.2 : (isLeading ? 0.8 : hasData ? 0.6 : 0.5),
             dashArray: isLeading ? '4 3' : undefined,
         };
     }, [getPartyColor, theme]);
