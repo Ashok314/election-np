@@ -1,4 +1,4 @@
-import { useState, useEffect, lazy, Suspense } from 'react';
+import { useState, useEffect, lazy, Suspense, useMemo } from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 import { Doughnut } from 'react-chartjs-2';
@@ -61,12 +61,14 @@ function App() {
   const [leaders, setLeaders] = useState<CandidateResult[]>([]);
   const [allCandidates, setAllCandidates] = useState<CandidateResult[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [lang, setLang] = useState<'np' | 'en'>('en');
+  const [lang, setLang] = useState<'np' | 'en'>('np');
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const [liveStatus, setLiveStatus] = useState<'connecting' | 'live' | 'polling'>('connecting');
   const [prByDistrict, setPRByDistrict] = useState<{ dist_id: number; const_id: number; party_name: string; total_votes: number }[]>([]);
   const [prData, setPRData] = useState<{ party_name: string; total_votes: number }[]>([]);
   const [mapMode, setMapMode] = useState<'fptp' | 'pr'>('fptp');
+  const [prSearchTerm, setPrSearchTerm] = useState('');
+  const [prSortBy, setPrSortBy] = useState<'name' | 'votes' | 'best-district'>('votes');
   const { width, height } = useWindowSize();
   // const channelRef = useRef<any>(null);
 
@@ -219,9 +221,68 @@ function App() {
     .slice(0, 5);
 
   const totalElected = leaders.filter(r => r.Remarks === 'Elected' || r.Remarks === 'निर्वाचित').length;
-
   // Convert pr-by-district data to CandidateResult shape for the map
-  const prMapData: CandidateResult[] = prByDistrict.map(d => ({
+  // Deduplicate: pick only the top party per constituency for coloring
+  const prMapData: CandidateResult[] = useMemo(() => {
+    const leaderMap = new Map<string, typeof prByDistrict[0]>();
+    for (const d of prByDistrict) {
+      const key = `${d.dist_id}-${d.const_id}`;
+      if (!leaderMap.has(key) || d.total_votes > leaderMap.get(key)!.total_votes) {
+        leaderMap.set(key, d);
+      }
+    }
+    return Array.from(leaderMap.values()).map(d => ({
+      MetaDistId: d.dist_id,
+      MetaConstId: d.const_id,
+      CandidateName: d.party_name,
+      PoliticalPartyName: d.party_name,
+      TotalVoteReceived: d.total_votes,
+      Remarks: '',
+    }));
+  }, [prByDistrict]);
+  // Filter and sort for PR Table
+  const filteredPRData = useMemo(() => {
+    // 1. Calculate best district for each party
+    const partyStats = prData.map(p => {
+      const partyRows = prByDistrict.filter(d => d.party_name === p.party_name);
+      const distMap = new Map<number, number>();
+      partyRows.forEach(d => {
+        distMap.set(d.dist_id, (distMap.get(d.dist_id) || 0) + d.total_votes);
+      });
+      let bestDistId = -1;
+      let bestDistVotes = 0;
+      for (const [dId, votes] of distMap.entries()) {
+        if (votes > bestDistVotes) {
+          bestDistVotes = votes;
+          bestDistId = dId;
+        }
+      }
+      return {
+        ...p,
+        bestDistId,
+        bestDistVotes,
+        bestDistName: bestDistId > 0 ? (districtLookup[bestDistId] || `Dist ${bestDistId}`) : '—'
+      };
+    });
+
+    // 2. Filter
+    const q = prSearchTerm.toLowerCase();
+    const filtered = partyStats.filter(p => {
+      return !q ||
+        p.party_name.toLowerCase().includes(q) ||
+        p.bestDistName.toLowerCase().includes(q);
+    });
+
+    // 3. Sort
+    return filtered.sort((a, b) => {
+      if (prSortBy === 'votes') return b.total_votes - a.total_votes;
+      if (prSortBy === 'best-district') return b.bestDistVotes - a.bestDistVotes;
+      return a.party_name.localeCompare(b.party_name);
+    });
+  }, [prData, prByDistrict, prSearchTerm, prSortBy]);
+
+  // Full flat list for hover tooltips in PR mode
+  const prAllCandidates: CandidateResult[] = prByDistrict.map(d => ({
     MetaDistId: d.dist_id,
     MetaConstId: d.const_id,
     CandidateName: d.party_name,
@@ -368,7 +429,7 @@ function App() {
               }>
                 <ElectionMap
                   resultsData={mapMode === 'pr' ? prMapData : leaders}
-                  allCandidates={mapMode === 'pr' ? [] : allCandidates}
+                  allCandidates={mapMode === 'pr' ? prAllCandidates : allCandidates}
                   partyColors={PARTY_COLORS}
                   theme={theme}
                   lang={lang}
@@ -563,17 +624,39 @@ function App() {
         </div>
 
         {/* ── समानुपातिक (PR) Table ── */}
-        <div className={`lg:w-80 rounded-2xl border overflow-hidden ${card}`}>
-          <div className={`px-5 py-3 border-b flex items-center gap-2 ${isDark ? 'border-zinc-800' : 'border-slate-200'}`}>
-            <div className="w-1.5 h-5 bg-blue-500 rounded-full" />
-            <span className={`font-bold text-sm ${isDark ? 'text-zinc-200' : 'text-gray-700'}`}>
+        <div className={`lg:w-[420px] rounded-2xl border overflow-hidden flex-shrink-0 ${card}`}>
+          <div className={`px-5 py-3 border-b flex flex-col sm:flex-row sm:items-center gap-3 ${isDark ? 'border-zinc-800' : 'border-slate-200'}`}>
+            <div className={`font-bold text-sm flex items-center gap-2 ${isDark ? 'text-zinc-200' : 'text-gray-700'}`}>
+              <div className="w-1.5 h-5 bg-blue-500 rounded-full" />
               {lang === 'en' ? 'Samanupatik (PR)' : 'समानुपातिक'}
-            </span>
-            {prData.length > 0 && (
-              <span className={`text-xs font-normal ml-1 ${isDark ? 'text-zinc-500' : 'text-slate-400'}`}>
-                {prData.length} {lang === 'en' ? 'parties' : 'दल'}
-              </span>
-            )}
+            </div>
+
+            <div className="flex flex-wrap items-center gap-2 ml-auto">
+              <input
+                type="text"
+                placeholder={lang === 'en' ? 'Search...' : 'खोज्नुहोस्...'}
+                value={prSearchTerm}
+                onChange={(e) => setPrSearchTerm(e.target.value)}
+                className={`text-[10px] rounded-xl px-3 py-1.5 w-28 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all ${isDark ? 'bg-zinc-800 border-zinc-700 text-zinc-100 placeholder-zinc-500' : 'bg-slate-50 border-slate-200 text-gray-700 placeholder-gray-400'}`}
+              />
+
+              <div className={`flex rounded-xl overflow-hidden border text-[10px] font-bold ${isDark ? 'border-zinc-700' : 'border-slate-200'}`}>
+                {(['votes', 'name', 'best-district'] as const).map((opt) => (
+                  <button
+                    key={opt}
+                    onClick={() => setPrSortBy(opt)}
+                    className={`px-2 py-1.5 transition-all ${prSortBy === opt
+                      ? 'bg-blue-600 text-white'
+                      : isDark ? 'bg-zinc-800 text-zinc-400 hover:bg-zinc-700' : 'bg-white text-gray-500 hover:bg-slate-50'
+                      }`}
+                  >
+                    {opt === 'votes' ? (lang === 'en' ? 'Votes' : 'मत') :
+                      opt === 'name' ? (lang === 'en' ? 'A-Z' : 'दल') :
+                        (lang === 'en' ? 'Best' : 'उत्कृष्ट')}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
           <div className="overflow-y-auto" style={{ maxHeight: 480 }}>
             {prData.length > 0 ? (
@@ -582,14 +665,30 @@ function App() {
                   <tr>
                     <th className="px-4 py-2.5">#</th>
                     <th className="px-4 py-2.5">{lang === 'en' ? 'Party' : 'दल'}</th>
-                    <th className="px-4 py-2.5 text-right">{lang === 'en' ? 'Votes' : 'मत'}</th>
+                    <th className="px-4 py-2.5 text-right">{lang === 'en' ? 'Best District' : 'उत्कृष्ट जिल्ला'}</th>
+                    <th className="px-4 py-2.5 text-right">{lang === 'en' ? 'Nat. Votes' : 'कुल मत'}</th>
                   </tr>
                 </thead>
                 <tbody className={`divide-y ${isDark ? 'divide-zinc-800/60' : 'divide-slate-100'}`}>
-                  {prData.map((p, idx) => {
+                  {filteredPRData.map((p, idx) => {
                     const color = getPartyColor(p.party_name);
                     const totalPRVotes = prData.reduce((s, x) => s + x.total_votes, 0);
                     const pct = totalPRVotes > 0 ? ((p.total_votes / totalPRVotes) * 100).toFixed(1) : '0.0';
+
+                    // Find best district for this party
+                    const partyDistricts = prByDistrict.filter(d => d.party_name === p.party_name);
+                    const distVotes = new Map<number, number>();
+                    partyDistricts.forEach(d => {
+                      distVotes.set(d.dist_id, (distVotes.get(d.dist_id) || 0) + d.total_votes);
+                    });
+
+                    let bestDistId = -1;
+                    let bestDistVotes = 0;
+                    for (const [d, v] of distVotes.entries()) {
+                      if (v > bestDistVotes) { bestDistVotes = v; bestDistId = d; }
+                    }
+                    const bestDistName = bestDistId > 0 ? (districtLookup[bestDistId] || `Dist ${bestDistId}`) : '—';
+
                     return (
                       <tr key={p.party_name} className={`transition-colors ${isDark ? 'hover:bg-zinc-800/40' : 'hover:bg-slate-50'}`}>
                         <td className={`px-4 py-2.5 font-mono text-[10px] ${isDark ? 'text-zinc-600' : 'text-slate-400'}`}>{idx + 1}</td>
@@ -598,6 +697,16 @@ function App() {
                             <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: color }} />
                             <span className={`font-medium truncate max-w-[150px] ${isDark ? 'text-zinc-300' : 'text-gray-700'}`}>{p.party_name}</span>
                           </div>
+                        </td>
+                        <td className="px-4 py-2.5 text-right">
+                          {bestDistId > 0 ? (
+                            <>
+                              <div className={`font-medium ${isDark ? 'text-zinc-300' : 'text-gray-700'}`}>{bestDistName}</div>
+                              <div className={`text-[9px] font-mono ${isDark ? 'text-zinc-500' : 'text-slate-500'}`}>{bestDistVotes.toLocaleString()} votes</div>
+                            </>
+                          ) : (
+                            <span className={isDark ? 'text-zinc-600' : 'text-slate-400'}>—</span>
+                          )}
                         </td>
                         <td className="px-4 py-2.5 text-right">
                           <div className={`font-mono font-bold text-[11px] ${isDark ? 'text-zinc-200' : 'text-gray-800'}`}>{p.total_votes.toLocaleString()}</div>
@@ -622,8 +731,7 @@ function App() {
       </div>
 
       {/* Footer */}
-      < footer className={`mt-4 py-8 text-center text-xs font-medium border-t flex flex-col items-center justify-center gap-2 ${isDark ? 'border-zinc-800 text-zinc-500' : 'border-gray-200 text-gray-500'}`
-      }>
+      <footer className={`mt-4 py-8 text-center text-xs font-medium border-t flex flex-col items-center justify-center gap-2 ${isDark ? 'border-zinc-800 text-zinc-500' : 'border-gray-200 text-gray-500'}`}>
         <div>
           Vibe Coded with antigravity by{' '}
           <a

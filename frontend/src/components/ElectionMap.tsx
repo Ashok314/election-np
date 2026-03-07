@@ -21,12 +21,13 @@ interface Props {
     partyColors: Record<string, string>;
     theme: 'dark' | 'light';
     lang: 'en' | 'np';
+    mapMode?: 'fptp' | 'pr';
 }
 
 
 // ── Component ────────────────────────────────────────────────────────────────
 
-export default function ElectionMap({ resultsData, allCandidates, partyColors, theme, lang }: Props) {
+export default function ElectionMap({ resultsData, allCandidates, partyColors, theme, lang, mapMode = 'fptp' }: Props) {
     const mapDivRef = useRef<HTMLDivElement>(null);
     const mapRef = useRef<L.Map | null>(null);
     const geojsonLayerRef = useRef<L.GeoJSON | null>(null);
@@ -159,9 +160,39 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
                         const constId: number = props.constId;
 
                         layer.on('mousemove', (e: L.LeafletMouseEvent) => {
-                            const allInConst = allByConstKey.current[`${distId}-${constId}`] || [];
+                            let candidates: CandidateResult[] = [];
+                            let hoverTitleEn = '';
+                            let hoverTitleNp = '';
 
-                            // Build party counts for district
+                            if (mapMode === 'pr') {
+                                // For PR, aggregate all parties across the whole district (since PR is district-oriented)
+                                const distData = allCandidates.filter(r => r.MetaDistId === distId);
+                                const partyMap = new Map<string, number>();
+                                distData.forEach(r => {
+                                    partyMap.set(r.PoliticalPartyName, (partyMap.get(r.PoliticalPartyName) || 0) + (r.TotalVoteReceived || 0));
+                                });
+                                candidates = Array.from(partyMap.entries())
+                                    .map(([party, votes]) => ({
+                                        MetaDistId: distId,
+                                        MetaConstId: 0,
+                                        CandidateName: party,
+                                        PoliticalPartyName: party,
+                                        TotalVoteReceived: votes,
+                                        Remarks: ''
+                                    }))
+                                    .sort((a, b) => (b.TotalVoteReceived || 0) - (a.TotalVoteReceived || 0))
+                                    .slice(0, 5);
+
+                                hoverTitleEn = `${props.districtName} (District Totals)`;
+                                hoverTitleNp = `${props.districtNameNp} (जिल्ला नतिजा)`;
+                            } else {
+                                // For FPTP, show only this constituency
+                                candidates = allByConstKey.current[`${distId}-${constId}`] || [];
+                                hoverTitleEn = `${props.districtName} • Const ${constId}`;
+                                hoverTitleNp = `${props.districtNameNp} • क्षेत्र ${constId}`;
+                            }
+
+                            // Build party counts for district (seats won/leads)
                             const distParties: Record<string, number> = {};
                             resultsData
                                 .filter(r => r.MetaDistId === distId)
@@ -174,13 +205,13 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
                             if (!containerRect) return;
 
                             setHoverInfo({
-                                level: 'constituency',
-                                name: `${props.districtName} • Constituency ${constId}`,
-                                nameNp: `${props.districtNameNp} • क्षेत्र ${constId}`,
+                                level: mapMode === 'pr' ? 'district' : 'constituency',
+                                name: hoverTitleEn,
+                                nameNp: hoverTitleNp,
                                 distId,
                                 constId,
                                 parties: distParties,
-                                candidates: allInConst.slice(0, 5),
+                                candidates: candidates.slice(0, 5),
                                 mouseX: e.originalEvent.clientX - containerRect.left,
                                 mouseY: e.originalEvent.clientY - containerRect.top,
                             });

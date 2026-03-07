@@ -99,23 +99,28 @@ async function scrapePRData() {
                     });
                 });
 
-                // Find winning party for this constituency
-                let topParty = null, topVotes = 0;
-                data.forEach(row => {
-                    const votes = row.TotalVoteReceived || 0;
-                    if (votes > topVotes) { topVotes = votes; topParty = row.PoliticalPartyName; }
-                });
+                // Store ALL parties for this constituency (sorted by votes desc)
+                // Flat rows: {dist_id, const_id, party_name, total_votes}
+                const sorted = data
+                    .filter(row => row.PoliticalPartyName && (row.TotalVoteReceived || 0) > 0)
+                    .sort((a, b) => (b.TotalVoteReceived || 0) - (a.TotalVoteReceived || 0));
 
-                if (topParty) {
-                    const key = `${distId}-${c}`;
-                    const entry = { dist_id: distId, const_id: c, party_name: topParty, total_votes: topVotes };
-                    if (constResultsMap.has(key)) {
-                        constResults[constResultsMap.get(key)] = entry;
-                    } else {
-                        constResultsMap.set(key, constResults.length);
-                        constResults.push(entry);
-                    }
+                // Remove any existing entries for this constituency then append all
+                const key = `${distId}-${c}`;
+                if (constResultsMap.has(key)) {
+                    const startIdx = constResultsMap.get(key);
+                    // Remove old entries for this key (they're contiguous)
+                    constResults.splice(startIdx);
                 }
+                constResultsMap.set(key, constResults.length);
+                sorted.forEach(row => {
+                    constResults.push({
+                        dist_id: distId,
+                        const_id: c,
+                        party_name: row.PoliticalPartyName,
+                        total_votes: row.TotalVoteReceived || 0,
+                    });
+                });
             } else {
                 console.log(`[SKIP] PR HOR-${distId}-${c}: no data`);
             }
@@ -123,8 +128,8 @@ async function scrapePRData() {
             requestCount++;
 
             // Write both output files incrementally
-            const sorted = Array.from(partyTotals.values()).sort((a, b) => b.total_votes - a.total_votes);
-            fs.writeFileSync(OUTPUT_PATH, JSON.stringify(sorted, null, 2), 'utf8');
+            const natSorted = Array.from(partyTotals.values()).sort((a, b) => b.total_votes - a.total_votes);
+            fs.writeFileSync(OUTPUT_PATH, JSON.stringify(natSorted, null, 2), 'utf8');
             fs.writeFileSync(DIST_OUTPUT_PATH, JSON.stringify(constResults, null, 2), 'utf8');
 
             if (requestCount % 10 === 0) {
@@ -158,13 +163,10 @@ async function main() {
             execSync('git add ../frontend/public/data/pr-results.json ../frontend/public/data/pr-by-district.json', { stdio: 'inherit' });
             const status = execSync('git status --porcelain', { env: process.env }).toString();
             if (status.includes('pr-results.json') || status.includes('pr-by-district.json')) {
-                try {
-                    execSync('git commit -m "chore: update PR election data" --no-verify', { stdio: 'inherit', env: process.env });
-                } catch {
-                    execSync('git commit --amend --no-edit --no-verify ../frontend/public/data/pr-results.json ../frontend/public/data/pr-by-district.json', { stdio: 'inherit', env: process.env });
-                }
-                execSync('git push -f origin hotfix-local-scrape', { stdio: 'inherit', env: process.env });
-                console.log('[SUCCESS] Pushed to git.');
+                execSync('git commit -m "chore: update PR election data" --no-verify', { stdio: 'inherit', env: process.env });
+                execSync('git pull --rebase origin hotfix-local-scrape', { stdio: 'inherit', env: process.env });
+                execSync('git push origin hotfix-local-scrape', { stdio: 'inherit', env: process.env });
+                console.log('[SUCCESS] Pushed PR data to git.');
             } else {
                 console.log('No changes to commit.');
             }
