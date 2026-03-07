@@ -13,6 +13,7 @@ export interface CandidateResult {
     Gender?: string;
     Age?: number;
     DistrictName?: string;
+    Qualification?: string;
 }
 
 interface Props {
@@ -285,6 +286,11 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
                                                     {(c.TotalVoteReceived || 0).toLocaleString()}
                                                 </span>
                                             </div>
+                                            {c.Qualification && (
+                                                <div className={`text-[9px] italic ${theme === 'dark' ? 'text-zinc-500' : 'text-slate-400'} truncate`}>
+                                                    {c.Qualification}
+                                                </div>
+                                            )}
                                             <div className="flex items-center gap-1 mt-0.5">
                                                 <div className={`h-1 rounded-full flex-1 ${theme === 'dark' ? 'bg-zinc-800' : 'bg-gray-100'}`}>
                                                     <div className="h-1 rounded-full transition-all" style={{ width: `${pct}%`, backgroundColor: color }} />

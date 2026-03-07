@@ -33,6 +33,7 @@ export interface CandidateResult {
   Remarks: string;
   Gender?: string;
   Age?: number;
+  Qualification?: string;
 }
 
 // Custom colors for popular parties (Nepali API names)
@@ -131,12 +132,17 @@ function App() {
     // Option 2: Local backend fallback (dev)
     try {
       setLiveStatus('connecting');
-      // HOTFIX: Read data directly from GitHub's raw server on the hotfix branch to decouple data updates from UI builds
-      const url = `https://raw.githubusercontent.com/Ashok314/election-np/hotfix-local-scrape/frontend/public/data/all-results.json`;
-      const res = await fetch(url + `?t=${new Date().getTime()}`); // Cache-bust
+      const t = `?t=${new Date().getTime()}`;
+      // Try local JSON first (updated by local scrapers)
+      let res = await fetch(`/data/all-results.json${t}`);
+      if (!res.ok) {
+        // Fallback to GitHub for production/remote environments
+        const ghUrl = `https://raw.githubusercontent.com/Ashok314/election-np/hotfix-local-scrape/frontend/public/data/all-results.json`;
+        res = await fetch(ghUrl + t);
+      }
+
       const raw: any[] = await res.json();
       if (raw.length > 0) {
-        // Run the scraped json through the exact same mapping function Supabase used
         processData(raw.map(mapRow));
         setLiveStatus('live');
         return;
@@ -314,6 +320,7 @@ function App() {
     statusLeading: lang === 'en' ? 'Leading' : 'अग्रता',
     totalDeclared: lang === 'en' ? 'DECLARATIONS' : 'विजयी',
     prFinished: lang === 'en' ? 'PR DISTRICTS' : 'समानुपातिक जिल्ला',
+    colEdu: lang === 'en' ? 'Qualification' : 'शिक्षा',
   };
 
   const isDark = theme === 'dark';
@@ -609,7 +616,7 @@ function App() {
               <thead className={`sticky top-0 z-10 uppercase font-semibold tracking-wide ${isDark ? 'bg-zinc-950 text-zinc-500' : 'bg-slate-100 text-slate-400'}`}>
                 <tr>
                   <th className="px-4 py-2.5">{t.colConst}</th>
-                  <th className="px-4 py-2.5">{t.colCand}</th>
+                  <th className="px-4 py-2.5">{t.colCand}{lang === 'en' ? ' (Qualification)' : ' (शैक्षिक योग्यता)'}</th>
                   <th className="px-4 py-2.5">{lang === 'en' ? 'Party' : 'दल'}</th>
                   <th className="px-4 py-2.5 text-right">{t.colVotes}</th>
                   <th className="px-4 py-2.5 text-center">{t.colStatus}</th>
@@ -627,6 +634,9 @@ function App() {
                       </td>
                       <td className={`px-4 py-2.5 font-semibold ${isDark ? 'text-zinc-100 group-hover:text-emerald-400' : 'text-gray-900 group-hover:text-emerald-600'} transition-colors`}>
                         {row.CandidateName || '—'}
+                        <span className={`px-4 py-2.5 ${isDark ? 'text-zinc-500' : 'text-slate-400'} italic truncate max-w-[40px]`}>
+                          ({row.Qualification || '—'})
+                        </span>
                       </td>
                       <td className="px-4 py-2.5">
                         <div className="flex items-center gap-1.5">

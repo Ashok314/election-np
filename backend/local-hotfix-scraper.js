@@ -110,6 +110,7 @@ async function scrapeData() {
                         remarks: row.Remarks,
                         gender: row.Gender,
                         age: row.Age,
+                        qualification: row.QUALIFICATION,
                     }));
 
                     formattedRows.forEach(row => {

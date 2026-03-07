@@ -24,6 +24,7 @@ export type ElectionResult = {
   state_name: string;
   district_name: string;
   scraped_at: string;
+  qualification?: string;
 };
 
 // Map Supabase row -> frontend CandidateResult shape
@@ -37,5 +38,6 @@ export function mapRow(row: ElectionResult) {
     Remarks: row.remarks ?? '',
     Gender: row.gender,
     Age: row.age,
+    Qualification: row.qualification,
   };
 }

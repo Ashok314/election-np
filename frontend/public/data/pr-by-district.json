@@ -3,138 +3,180 @@
     "dist_id": 6,
     "const_id": 1,
     "party_name": "नेपाली काँग्रेस",
-    "total_votes": 2191
+    "total_votes": 3906
   },
   {
     "dist_id": 6,
     "const_id": 1,
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "total_votes": 2036
+    "total_votes": 3707
   },
   {
     "dist_id": 6,
     "const_id": 1,
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "total_votes": 1014
+    "total_votes": 2256
   },
   {
     "dist_id": 6,
     "const_id": 1,
     "party_name": "श्रम संस्कृति पार्टी",
-    "total_votes": 980
+    "total_votes": 2105
   },
   {
     "dist_id": 6,
     "const_id": 1,
     "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "total_votes": 363
+    "total_votes": 518
   },
   {
     "dist_id": 6,
     "const_id": 1,
     "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "total_votes": 164
+    "total_votes": 332
   },
   {
     "dist_id": 6,
     "const_id": 1,
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "total_votes": 43
-  },
-  {
-    "dist_id": 6,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 32
+    "total_votes": 116
   },
   {
     "dist_id": 6,
     "const_id": 1,
     "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
-    "total_votes": 30
+    "total_votes": 75
   },
   {
     "dist_id": 6,
     "const_id": 1,
-    "party_name": "जनमत पार्टी",
-    "total_votes": 16
-  },
-  {
-    "dist_id": 6,
-    "const_id": 1,
-    "party_name": "संयुक्त नागरिक पार्टी",
-    "total_votes": 16
-  },
-  {
-    "dist_id": 6,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय गौरव पार्टी",
-    "total_votes": 15
+    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "total_votes": 35
   },
   {
     "dist_id": 6,
     "const_id": 1,
     "party_name": "मंगोल नेशनल अर्गनाइजेशन",
-    "total_votes": 14
+    "total_votes": 35
   },
   {
     "dist_id": 6,
     "const_id": 1,
-    "party_name": "सार्वभौम नागरिक पार्टी",
-    "total_votes": 11
+    "party_name": "जनमत पार्टी",
+    "total_votes": 30
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय गौरव पार्टी",
+    "total_votes": 28
   },
   {
     "dist_id": 6,
     "const_id": 1,
     "party_name": "नेपाल जनता संरक्षण पार्टी",
-    "total_votes": 10
+    "total_votes": 27
   },
   {
     "dist_id": 6,
     "const_id": 1,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
-    "total_votes": 8
+    "party_name": "सार्वभौम नागरिक पार्टी",
+    "total_votes": 24
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "संयुक्त नागरिक पार्टी",
+    "total_votes": 20
   },
   {
     "dist_id": 6,
     "const_id": 1,
     "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
-    "total_votes": 8
-  },
-  {
-    "dist_id": 6,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
-    "total_votes": 7
+    "total_votes": 20
   },
   {
     "dist_id": 6,
     "const_id": 1,
     "party_name": "जन अधिकार पार्टी",
-    "total_votes": 6
+    "total_votes": 16
   },
   {
     "dist_id": 6,
     "const_id": 1,
-    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
-    "total_votes": 5
+    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
+    "total_votes": 16
   },
   {
     "dist_id": 6,
     "const_id": 1,
-    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
-    "total_votes": 5
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "total_votes": 13
   },
   {
     "dist_id": 6,
     "const_id": 1,
     "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
-    "total_votes": 5
+    "total_votes": 13
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
+    "total_votes": 12
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "जनता समाजवादी पार्टी, नेपाल",
+    "total_votes": 10
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "total_votes": 9
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
+    "total_votes": 9
   },
   {
     "dist_id": 6,
     "const_id": 1,
     "party_name": "राष्ट्रिय एकता दल",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "जय मातृभूमि पार्टी",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "नेपाल मजदुर किसान पार्टी",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "नेपालका लागि नेपाली पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "समावेशी समाजवादी पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "नेपाल जनता पार्टी",
     "total_votes": 4
   },
   {
@@ -146,31 +188,61 @@
   {
     "dist_id": 6,
     "const_id": 1,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
+    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "नागरिक शक्ति, नेपाल",
     "total_votes": 3
   },
   {
     "dist_id": 6,
     "const_id": 1,
-    "party_name": "नेपाल जनता पार्टी",
+    "party_name": "नेपाल सद्‍भावना पार्टी",
     "total_votes": 3
   },
   {
     "dist_id": 6,
     "const_id": 1,
-    "party_name": "जनता समाजवादी पार्टी, नेपाल",
+    "party_name": "नेपाली काँग्रेस (वी.पी.)",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "नेपाल जनमुक्ति पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "बहुजन शक्ति पार्टी",
     "total_votes": 2
   },
   {
     "dist_id": 6,
     "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
     "total_votes": 2
   },
   {
     "dist_id": 6,
     "const_id": 1,
-    "party_name": "नेपाल मजदुर किसान पार्टी",
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनमोर्चा",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "स्वाभिमान पार्टी",
     "total_votes": 2
   },
   {
@@ -182,67 +254,283 @@
   {
     "dist_id": 6,
     "const_id": 1,
-    "party_name": "नेशनल रिपब्लिक नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 6,
-    "const_id": 1,
-    "party_name": "नेपाली काँग्रेस (वी.पी.)",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 6,
-    "const_id": 1,
-    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 6,
-    "const_id": 1,
-    "party_name": "समावेशी समाजवादी पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 6,
-    "const_id": 1,
-    "party_name": "स्वाभिमान पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 6,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 6,
-    "const_id": 1,
-    "party_name": "जय मातृभूमि पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 6,
-    "const_id": 1,
     "party_name": "त्रिमुल नेपाल",
     "total_votes": 1
   },
   {
     "dist_id": 6,
     "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "नेपाली जनता दल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "पिपुल फर्ष्ट पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "नेशनल रिपब्लिक नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 6,
+    "const_id": 1,
+    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "total_votes": 1329
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "नेपाली काँग्रेस",
+    "total_votes": 443
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
+    "total_votes": 424
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "नेपाली कम्युनिष्ट पार्टी",
+    "total_votes": 105
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "श्रम संस्कृति पार्टी",
+    "total_votes": 49
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
+    "total_votes": 37
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "total_votes": 19
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "जनता समाजवादी पार्टी, नेपाल",
+    "total_votes": 17
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "नेपाल जनता संरक्षण पार्टी",
+    "total_votes": 16
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
+    "total_votes": 15
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "जनमत पार्टी",
+    "total_votes": 13
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
+    "total_votes": 10
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "सार्वभौम नागरिक पार्टी",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय एकता दल",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "संयुक्त नागरिक पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "राष्ट्र निर्माण दल नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "नेपाल मजदुर किसान पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "नेपाल सद्‍भावना पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "नेपाल जनता पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
     "party_name": "नागरिक शक्ति, नेपाल",
     "total_votes": 1
   },
   {
-    "dist_id": 6,
-    "const_id": 1,
-    "party_name": "नेपाल जनमुक्ति पार्टी",
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "पिपुल फर्ष्ट पार्टी",
     "total_votes": 1
   },
   {
-    "dist_id": 6,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनमोर्चा",
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "एकल चिन्ह जगर भएको सिंह(सचेत नेपाली पार्टी/नागरिक सर्वोच्चता पार्टी नेपाल)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "नेपाली जनता दल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 9,
+    "const_id": 2,
+    "party_name": "नेपाल मातृभूमि पार्टी",
     "total_votes": 1
   },
   {
@@ -320,13 +608,13 @@
   {
     "dist_id": 9,
     "const_id": 4,
-    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
+    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
     "total_votes": 35
   },
   {
     "dist_id": 9,
     "const_id": 4,
-    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
     "total_votes": 35
   },
   {
@@ -386,13 +674,13 @@
   {
     "dist_id": 9,
     "const_id": 4,
-    "party_name": "संयुक्त नागरिक पार्टी",
+    "party_name": "नेपालका लागि नेपाली पार्टी",
     "total_votes": 10
   },
   {
     "dist_id": 9,
     "const_id": 4,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
+    "party_name": "संयुक्त नागरिक पार्टी",
     "total_votes": 10
   },
   {
@@ -404,14 +692,20 @@
   {
     "dist_id": 9,
     "const_id": 4,
+    "party_name": "समावेशी समाजवादी पार्टी",
+    "total_votes": 9
+  },
+  {
+    "dist_id": 9,
+    "const_id": 4,
     "party_name": "नेपाल सद्‍भावना पार्टी",
     "total_votes": 9
   },
   {
     "dist_id": 9,
     "const_id": 4,
-    "party_name": "समावेशी समाजवादी पार्टी",
-    "total_votes": 9
+    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "total_votes": 8
   },
   {
     "dist_id": 9,
@@ -428,18 +722,6 @@
   {
     "dist_id": 9,
     "const_id": 4,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
-    "total_votes": 8
-  },
-  {
-    "dist_id": 9,
-    "const_id": 4,
-    "party_name": "नागरिक शक्ति, नेपाल",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 9,
-    "const_id": 4,
     "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
     "total_votes": 6
   },
@@ -452,14 +734,8 @@
   {
     "dist_id": 9,
     "const_id": 4,
-    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 9,
-    "const_id": 4,
-    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
-    "total_votes": 5
+    "party_name": "नागरिक शक्ति, नेपाल",
+    "total_votes": 6
   },
   {
     "dist_id": 9,
@@ -476,7 +752,43 @@
   {
     "dist_id": 9,
     "const_id": 4,
+    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 9,
+    "const_id": 4,
+    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 9,
+    "const_id": 4,
+    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 9,
+    "const_id": 4,
+    "party_name": "नेपाल जनमुक्ति पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 9,
+    "const_id": 4,
+    "party_name": "नेपाली काँग्रेस (वी.पी.)",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 9,
+    "const_id": 4,
     "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 9,
+    "const_id": 4,
+    "party_name": "जन अधिकार पार्टी",
     "total_votes": 4
   },
   {
@@ -489,18 +801,6 @@
     "dist_id": 9,
     "const_id": 4,
     "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 9,
-    "const_id": 4,
-    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 9,
-    "const_id": 4,
-    "party_name": "नेपाल जनमुक्ति पार्टी",
     "total_votes": 4
   },
   {
@@ -519,18 +819,6 @@
     "dist_id": 9,
     "const_id": 4,
     "party_name": "गतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 9,
-    "const_id": 4,
-    "party_name": "जन अधिकार पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 9,
-    "const_id": 4,
-    "party_name": "नेपाली काँग्रेस (वी.पी.)",
     "total_votes": 4
   },
   {
@@ -566,13 +854,13 @@
   {
     "dist_id": 9,
     "const_id": 4,
-    "party_name": "पिपुल फर्ष्ट पार्टी",
+    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
     "total_votes": 1
   },
   {
     "dist_id": 9,
     "const_id": 4,
-    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
+    "party_name": "पिपुल फर्ष्ट पार्टी",
     "total_votes": 1
   },
   {
@@ -728,13 +1016,13 @@
   {
     "dist_id": 9,
     "const_id": 6,
-    "party_name": "संयुक्त नागरिक पार्टी",
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
     "total_votes": 41
   },
   {
     "dist_id": 9,
     "const_id": 6,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "party_name": "संयुक्त नागरिक पार्टी",
     "total_votes": 41
   },
   {
@@ -764,13 +1052,13 @@
   {
     "dist_id": 9,
     "const_id": 6,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
+    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
     "total_votes": 31
   },
   {
     "dist_id": 9,
     "const_id": 6,
-    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
+    "party_name": "नेपालका लागि नेपाली पार्टी",
     "total_votes": 31
   },
   {
@@ -800,13 +1088,13 @@
   {
     "dist_id": 9,
     "const_id": 6,
-    "party_name": "नेपाली काँग्रेस (वी.पी.)",
+    "party_name": "जय मातृभूमि पार्टी",
     "total_votes": 22
   },
   {
     "dist_id": 9,
     "const_id": 6,
-    "party_name": "जय मातृभूमि पार्टी",
+    "party_name": "नेपाली काँग्रेस (वी.पी.)",
     "total_votes": 22
   },
   {
@@ -860,13 +1148,13 @@
   {
     "dist_id": 9,
     "const_id": 6,
-    "party_name": "बहुजन शक्ति पार्टी",
+    "party_name": "जन अधिकार पार्टी",
     "total_votes": 9
   },
   {
     "dist_id": 9,
     "const_id": 6,
-    "party_name": "जन अधिकार पार्टी",
+    "party_name": "बहुजन शक्ति पार्टी",
     "total_votes": 9
   },
   {
@@ -880,6 +1168,12 @@
     "const_id": 6,
     "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
     "total_votes": 7
+  },
+  {
+    "dist_id": 9,
+    "const_id": 6,
+    "party_name": "समावेशी समाजवादी पार्टी",
+    "total_votes": 6
   },
   {
     "dist_id": 9,
@@ -902,12 +1196,6 @@
   {
     "dist_id": 9,
     "const_id": 6,
-    "party_name": "समावेशी समाजवादी पार्टी",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 9,
-    "const_id": 6,
     "party_name": "उन्‍नत लोकतन्त्र पार्टी",
     "total_votes": 5
   },
@@ -918,94 +1206,1366 @@
     "total_votes": 3
   },
   {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेपाली काँग्रेस",
+    "total_votes": 6403
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "total_votes": 6278
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
+    "total_votes": 2583
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
+    "total_votes": 1420
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेपाली कम्युनिष्ट पार्टी",
+    "total_votes": 841
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
+    "total_votes": 256
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "श्रम संस्कृति पार्टी",
+    "total_votes": 198
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "total_votes": 153
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेपाल जनता संरक्षण पार्टी",
+    "total_votes": 69
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "जनमत पार्टी",
+    "total_votes": 63
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "संयुक्त नागरिक पार्टी",
+    "total_votes": 54
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "सार्वभौम नागरिक पार्टी",
+    "total_votes": 22
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "total_votes": 18
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 17
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय एकता दल",
+    "total_votes": 12
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेपालका लागि नेपाली पार्टी",
+    "total_votes": 10
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेपाल मजदुर किसान पार्टी",
+    "total_votes": 10
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "total_votes": 9
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेपाल मातृभूमि पार्टी",
+    "total_votes": 9
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेपाल जनता पार्टी",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनमोर्चा",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "राष्ट्र निर्माण दल नेपाल",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "बहुजन शक्ति पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "जनता समाजवादी पार्टी, नेपाल",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "समावेशी समाजवादी पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "जय मातृभूमि पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेपाली जनता दल",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "स्वाभिमान पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय गौरव पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नागरिक शक्ति, नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "त्रिमुल नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेशनल रिपब्लिक नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेपाली काँग्रेस (वी.पी.)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "नेपाल सद्‍भावना पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "मितेरी पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 23,
+    "const_id": 1,
+    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "total_votes": 6990
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेपाली काँग्रेस",
+    "total_votes": 3300
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
+    "total_votes": 2470
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेपाली कम्युनिष्ट पार्टी",
+    "total_votes": 1632
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "total_votes": 462
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
+    "total_votes": 451
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "श्रम संस्कृति पार्टी",
+    "total_votes": 110
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेपाल जनता संरक्षण पार्टी",
+    "total_votes": 57
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "सार्वभौम नागरिक पार्टी",
+    "total_votes": 30
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "जनमत पार्टी",
+    "total_votes": 24
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
+    "total_votes": 23
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "total_votes": 19
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "total_votes": 17
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
+    "total_votes": 14
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
+    "total_votes": 11
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेपाल मजदुर किसान पार्टी",
+    "total_votes": 11
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 9
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेपाल मातृभूमि पार्टी",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय एकता दल",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "राष्ट्र निर्माण दल नेपाल",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "संयुक्त नागरिक पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेपाल सद्‍भावना पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेपाल जनता पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "जय मातृभूमि पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय जनमोर्चा",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "जनता समाजवादी पार्टी, नेपाल",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "बहुजन शक्ति पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेपाली जनता दल",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "समावेशी समाजवादी पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "जन अधिकार पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "स्वाभिमान पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "मितेरी पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेपालका लागि नेपाली पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेपाली काँग्रेस (वी.पी.)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेशनल रिपब्लिक नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय गौरव पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "त्रिमुल नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 25,
+    "const_id": 2,
+    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "total_votes": 18830
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नेपाली काँग्रेस",
+    "total_votes": 5560
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "total_votes": 2848
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
+    "total_votes": 2101
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "श्रम संस्कृति पार्टी",
+    "total_votes": 784
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नेपाली कम्युनिष्ट पार्टी",
+    "total_votes": 619
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
+    "total_votes": 413
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नेपाल मजदुर किसान पार्टी",
+    "total_votes": 111
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नेपाल जनता संरक्षण पार्टी",
+    "total_votes": 92
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
+    "total_votes": 80
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 51
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "जनता समाजवादी पार्टी, नेपाल",
+    "total_votes": 42
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 30
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नेपाल मातृभूमि पार्टी",
+    "total_votes": 28
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "जनमत पार्टी",
+    "total_votes": 24
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "जय मातृभूमि पार्टी",
+    "total_votes": 23
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "total_votes": 18
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "total_votes": 17
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनमोर्चा",
+    "total_votes": 17
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "संयुक्त नागरिक पार्टी",
+    "total_votes": 15
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
+    "total_votes": 13
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "total_votes": 12
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
+    "total_votes": 12
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "total_votes": 11
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नेपालका लागि नेपाली पार्टी",
+    "total_votes": 10
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय गौरव पार्टी",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय एकता दल",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "सार्वभौम नागरिक पार्टी",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नेपाल जनता पार्टी",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "समावेशी समाजवादी पार्टी",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "बहुजन शक्ति पार्टी",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "राष्ट्र निर्माण दल नेपाल",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नेपाली जनता दल",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नेपाल जनमुक्ति पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह जगर भएको सिंह(सचेत नेपाली पार्टी/नागरिक सर्वोच्चता पार्टी नेपाल)",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नेपाली काँग्रेस (वी.पी.)",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "पिपुल फर्ष्ट पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "नागरिक शक्ति, नेपाल",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "जन अधिकार पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "मितेरी पार्टी नेपाल",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "स्वाभिमान पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "total_votes": 11756
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
+    "total_votes": 2451
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपाली काँग्रेस",
+    "total_votes": 2448
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
+    "total_votes": 1650
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "total_votes": 1315
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "श्रम संस्कृति पार्टी",
+    "total_votes": 413
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपाली कम्युनिष्ट पार्टी",
+    "total_votes": 413
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपाल मातृभूमि पार्टी",
+    "total_votes": 69
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपाल जनता संरक्षण पार्टी",
+    "total_votes": 47
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपाल मजदुर किसान पार्टी",
+    "total_votes": 47
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "संयुक्त नागरिक पार्टी",
+    "total_votes": 33
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "जनमत पार्टी",
+    "total_votes": 21
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 21
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
+    "total_votes": 20
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय एकता दल",
+    "total_votes": 14
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "total_votes": 13
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "total_votes": 12
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "सार्वभौम नागरिक पार्टी",
+    "total_votes": 11
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "total_votes": 9
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपालका लागि नेपाली पार्टी",
+    "total_votes": 9
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपाल सद्‍भावना पार्टी",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "जनता समाजवादी पार्टी, नेपाल",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपाल जनता पार्टी",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय जनमोर्चा",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "राष्ट्र निर्माण दल नेपाल",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपाली जनता दल",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नागरिक शक्ति, नेपाल",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "जन अधिकार पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपाल जनमुक्ति पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय गौरव पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "जय मातृभूमि पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "स्वाभिमान पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "पिपुल फर्ष्ट पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेशनल रिपब्लिक नेपाल",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "मितेरी पार्टी नेपाल",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "एकल चिन्ह जगर भएको सिंह(सचेत नेपाली पार्टी/नागरिक सर्वोच्चता पार्टी नेपाल)",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "नेपाली काँग्रेस (वी.पी.)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "समावेशी समाजवादी पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 3,
+    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
+    "total_votes": 1
+  },
+  {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "total_votes": 8596
+    "total_votes": 10794
   },
   {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "नेपाली काँग्रेस",
-    "total_votes": 2077
+    "total_votes": 2537
   },
   {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "total_votes": 1522
+    "total_votes": 1905
   },
   {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "total_votes": 809
+    "total_votes": 1010
   },
   {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "total_votes": 679
+    "total_votes": 724
   },
   {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "श्रम संस्कृति पार्टी",
-    "total_votes": 448
+    "total_votes": 562
   },
   {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "total_votes": 303
+    "total_votes": 391
   },
   {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "संयुक्त नागरिक पार्टी",
-    "total_votes": 39
+    "total_votes": 48
   },
   {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "नेपाल मजदुर किसान पार्टी",
-    "total_votes": 23
-  },
-  {
-    "dist_id": 26,
-    "const_id": 4,
-    "party_name": "राष्ट्रिय जनमोर्चा",
-    "total_votes": 12
+    "total_votes": 26
   },
   {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 11
+    "total_votes": 18
+  },
+  {
+    "dist_id": 26,
+    "const_id": 4,
+    "party_name": "राष्ट्रिय जनमोर्चा",
+    "total_votes": 13
   },
   {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "नेपाल मातृभूमि पार्टी",
-    "total_votes": 9
+    "total_votes": 11
   },
   {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
-    "total_votes": 8
+    "total_votes": 9
   },
   {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "नेपाल जनता संरक्षण पार्टी",
-    "total_votes": 7
+    "total_votes": 9
   },
   {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "जनमत पार्टी",
-    "total_votes": 6
+    "total_votes": 7
+  },
+  {
+    "dist_id": 26,
+    "const_id": 4,
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "total_votes": 7
   },
   {
     "dist_id": 26,
@@ -1016,49 +2576,61 @@
   {
     "dist_id": 26,
     "const_id": 4,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "party_name": "राष्ट्रिय एकता दल",
     "total_votes": 6
   },
   {
     "dist_id": 26,
     "const_id": 4,
-    "party_name": "राष्ट्रिय एकता दल",
+    "party_name": "राष्ट्रिय गौरव पार्टी",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 26,
+    "const_id": 4,
+    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
     "total_votes": 5
   },
   {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 26,
-    "const_id": 4,
-    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
-    "total_votes": 3
+    "total_votes": 5
   },
   {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
-    "total_votes": 3
+    "total_votes": 4
   },
   {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
-    "total_votes": 3
+    "total_votes": 4
   },
   {
     "dist_id": 26,
     "const_id": 4,
     "party_name": "गतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 26,
+    "const_id": 4,
+    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 26,
+    "const_id": 4,
+    "party_name": "राष्ट्र निर्माण दल नेपाल",
     "total_votes": 3
   },
   {
     "dist_id": 26,
     "const_id": 4,
-    "party_name": "स्वाभिमान पार्टी",
+    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
     "total_votes": 3
   },
   {
@@ -1070,7 +2642,7 @@
   {
     "dist_id": 26,
     "const_id": 4,
-    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
+    "party_name": "स्वाभिमान पार्टी",
     "total_votes": 3
   },
   {
@@ -1082,26 +2654,8 @@
   {
     "dist_id": 26,
     "const_id": 4,
-    "party_name": "राष्ट्रिय गौरव पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 26,
-    "const_id": 4,
     "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
     "total_votes": 3
-  },
-  {
-    "dist_id": 26,
-    "const_id": 4,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 26,
-    "const_id": 4,
-    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
-    "total_votes": 2
   },
   {
     "dist_id": 26,
@@ -1112,19 +2666,19 @@
   {
     "dist_id": 26,
     "const_id": 4,
-    "party_name": "नेपाली जनता दल",
+    "party_name": "नेपालका लागि नेपाली पार्टी",
     "total_votes": 2
   },
   {
     "dist_id": 26,
     "const_id": 4,
-    "party_name": "राष्ट्र निर्माण दल नेपाल",
+    "party_name": "नेशनल रिपब्लिक नेपाल",
     "total_votes": 2
   },
   {
     "dist_id": 26,
     "const_id": 4,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "party_name": "नागरिक शक्ति, नेपाल",
     "total_votes": 2
   },
   {
@@ -1138,6 +2692,36 @@
     "const_id": 4,
     "party_name": "जनता समाजवादी पार्टी, नेपाल",
     "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 4,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 4,
+    "party_name": "नेपाल जनता पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 4,
+    "party_name": "नेपाली जनता दल",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 4,
+    "party_name": "समावेशी समाजवादी पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 4,
+    "party_name": "मितेरी पार्टी नेपाल",
+    "total_votes": 1
   },
   {
     "dist_id": 26,
@@ -1160,12 +2744,6 @@
   {
     "dist_id": 26,
     "const_id": 4,
-    "party_name": "मितेरी पार्टी नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 26,
-    "const_id": 4,
     "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
     "total_votes": 1
   },
@@ -1179,30 +2757,6 @@
     "dist_id": 26,
     "const_id": 4,
     "party_name": "बहुजन शक्ति पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 26,
-    "const_id": 4,
-    "party_name": "समावेशी समाजवादी पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 26,
-    "const_id": 4,
-    "party_name": "नेशनल रिपब्लिक नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 26,
-    "const_id": 4,
-    "party_name": "नागरिक शक्ति, नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 26,
-    "const_id": 4,
-    "party_name": "नेपाल जनता पार्टी",
     "total_votes": 1
   },
   {
@@ -1322,6 +2876,12 @@
   {
     "dist_id": 26,
     "const_id": 5,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "total_votes": 14
+  },
+  {
+    "dist_id": 26,
+    "const_id": 5,
     "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
     "total_votes": 14
   },
@@ -1329,12 +2889,6 @@
     "dist_id": 26,
     "const_id": 5,
     "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 14
-  },
-  {
-    "dist_id": 26,
-    "const_id": 5,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
     "total_votes": 14
   },
   {
@@ -1376,13 +2930,7 @@
   {
     "dist_id": 26,
     "const_id": 5,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 26,
-    "const_id": 5,
-    "party_name": "राष्ट्रिय एकता दल",
+    "party_name": "सार्वभौम नागरिक पार्टी",
     "total_votes": 7
   },
   {
@@ -1394,7 +2942,13 @@
   {
     "dist_id": 26,
     "const_id": 5,
-    "party_name": "सार्वभौम नागरिक पार्टी",
+    "party_name": "राष्ट्रिय एकता दल",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 26,
+    "const_id": 5,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
     "total_votes": 7
   },
   {
@@ -1402,6 +2956,12 @@
     "const_id": 5,
     "party_name": "त्रिमुल नेपाल",
     "total_votes": 7
+  },
+  {
+    "dist_id": 26,
+    "const_id": 5,
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "total_votes": 4
   },
   {
     "dist_id": 26,
@@ -1418,19 +2978,7 @@
   {
     "dist_id": 26,
     "const_id": 5,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 26,
-    "const_id": 5,
-    "party_name": "बहुजन शक्ति पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 26,
-    "const_id": 5,
-    "party_name": "मितेरी पार्टी नेपाल",
+    "party_name": "नेपाली जनता दल",
     "total_votes": 3
   },
   {
@@ -1442,13 +2990,7 @@
   {
     "dist_id": 26,
     "const_id": 5,
-    "party_name": "नेपाली जनता दल",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 26,
-    "const_id": 5,
-    "party_name": "राष्ट्रिय गौरव पार्टी",
+    "party_name": "मितेरी पार्टी नेपाल",
     "total_votes": 3
   },
   {
@@ -1460,7 +3002,19 @@
   {
     "dist_id": 26,
     "const_id": 5,
-    "party_name": "नेपाली काँग्रेस (वी.पी.)",
+    "party_name": "राष्ट्रिय गौरव पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 5,
+    "party_name": "बहुजन शक्ति पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 5,
+    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
     "total_votes": 2
   },
   {
@@ -1472,19 +3026,13 @@
   {
     "dist_id": 26,
     "const_id": 5,
-    "party_name": "नेशनल रिपब्लिक नेपाल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 26,
-    "const_id": 5,
     "party_name": "स्वाभिमान पार्टी",
     "total_votes": 2
   },
   {
     "dist_id": 26,
     "const_id": 5,
-    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
+    "party_name": "नेपाली काँग्रेस (वी.पी.)",
     "total_votes": 2
   },
   {
@@ -1496,13 +3044,13 @@
   {
     "dist_id": 26,
     "const_id": 5,
-    "party_name": "नेपाल सद्‍भावना पार्टी",
-    "total_votes": 1
+    "party_name": "नेशनल रिपब्लिक नेपाल",
+    "total_votes": 2
   },
   {
     "dist_id": 26,
     "const_id": 5,
-    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
+    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
     "total_votes": 1
   },
   {
@@ -1514,31 +3062,37 @@
   {
     "dist_id": 26,
     "const_id": 5,
-    "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 26,
-    "const_id": 5,
-    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 26,
-    "const_id": 5,
     "party_name": "जन अधिकार पार्टी",
     "total_votes": 1
   },
   {
     "dist_id": 26,
     "const_id": 5,
-    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
+    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 5,
+    "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
     "total_votes": 1
   },
   {
     "dist_id": 26,
     "const_id": 5,
     "party_name": "एकल चिन्ह जगर भएको सिंह(सचेत नेपाली पार्टी/नागरिक सर्वोच्चता पार्टी नेपाल)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 5,
+    "party_name": "नेपाल सद्‍भावना पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 5,
+    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
     "total_votes": 1
   },
   {
@@ -1610,6 +3164,12 @@
   {
     "dist_id": 26,
     "const_id": 6,
+    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 6,
     "party_name": "जनमत पार्टी",
     "total_votes": 3
   },
@@ -1622,19 +3182,19 @@
   {
     "dist_id": 26,
     "const_id": 6,
-    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 26,
-    "const_id": 6,
     "party_name": "गतिशील लोकतान्त्रिक पार्टी",
     "total_votes": 2
   },
   {
     "dist_id": 26,
     "const_id": 6,
-    "party_name": "मितेरी पार्टी नेपाल",
+    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 6,
+    "party_name": "राष्ट्रिय एकता दल",
     "total_votes": 2
   },
   {
@@ -1652,37 +3212,31 @@
   {
     "dist_id": 26,
     "const_id": 6,
-    "party_name": "राष्ट्रिय एकता दल",
+    "party_name": "मितेरी पार्टी नेपाल",
     "total_votes": 2
   },
   {
     "dist_id": 26,
     "const_id": 6,
-    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 26,
-    "const_id": 6,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 26,
-    "const_id": 6,
-    "party_name": "नेपाल मातृभूमि पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 26,
-    "const_id": 6,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
     "total_votes": 1
   },
   {
     "dist_id": 26,
     "const_id": 6,
     "party_name": "नेपाल जनमुक्ति पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 6,
+    "party_name": "बहुजन शक्ति पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 6,
+    "party_name": "नेपाल मातृभूमि पार्टी",
     "total_votes": 1
   },
   {
@@ -1700,13 +3254,13 @@
   {
     "dist_id": 26,
     "const_id": 6,
-    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
     "total_votes": 1
   },
   {
     "dist_id": 26,
     "const_id": 6,
-    "party_name": "बहुजन शक्ति पार्टी",
+    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
     "total_votes": 1
   },
   {
@@ -1724,6 +3278,12 @@
   {
     "dist_id": 26,
     "const_id": 6,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 6,
     "party_name": "नेपाल सद्‍भावना पार्टी",
     "total_votes": 1
   },
@@ -1731,12 +3291,6 @@
     "dist_id": 26,
     "const_id": 6,
     "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 26,
-    "const_id": 6,
-    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
     "total_votes": 1
   },
   {
@@ -1820,13 +3374,13 @@
   {
     "dist_id": 26,
     "const_id": 7,
-    "party_name": "संयुक्त नागरिक पार्टी",
+    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
     "total_votes": 29
   },
   {
     "dist_id": 26,
     "const_id": 7,
-    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "party_name": "संयुक्त नागरिक पार्टी",
     "total_votes": 29
   },
   {
@@ -1850,13 +3404,13 @@
   {
     "dist_id": 26,
     "const_id": 7,
-    "party_name": "जनता समाजवादी पार्टी, नेपाल",
+    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
     "total_votes": 21
   },
   {
     "dist_id": 26,
     "const_id": 7,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "party_name": "जनता समाजवादी पार्टी, नेपाल",
     "total_votes": 21
   },
   {
@@ -1868,13 +3422,13 @@
   {
     "dist_id": 26,
     "const_id": 7,
-    "party_name": "राष्ट्र निर्माण दल नेपाल",
+    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
     "total_votes": 15
   },
   {
     "dist_id": 26,
     "const_id": 7,
-    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
+    "party_name": "राष्ट्र निर्माण दल नेपाल",
     "total_votes": 15
   },
   {
@@ -1892,13 +3446,13 @@
   {
     "dist_id": 26,
     "const_id": 7,
-    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
+    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
     "total_votes": 13
   },
   {
     "dist_id": 26,
     "const_id": 7,
-    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
+    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
     "total_votes": 13
   },
   {
@@ -1940,13 +3494,13 @@
   {
     "dist_id": 26,
     "const_id": 7,
-    "party_name": "नागरिक शक्ति, नेपाल",
+    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
     "total_votes": 8
   },
   {
     "dist_id": 26,
     "const_id": 7,
-    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
+    "party_name": "नागरिक शक्ति, नेपाल",
     "total_votes": 8
   },
   {
@@ -1970,7 +3524,7 @@
   {
     "dist_id": 26,
     "const_id": 7,
-    "party_name": "स्वाभिमान पार्टी",
+    "party_name": "समावेशी समाजवादी पार्टी",
     "total_votes": 4
   },
   {
@@ -1982,7 +3536,7 @@
   {
     "dist_id": 26,
     "const_id": 7,
-    "party_name": "समावेशी समाजवादी पार्टी",
+    "party_name": "स्वाभिमान पार्टी",
     "total_votes": 4
   },
   {
@@ -2000,19 +3554,25 @@
   {
     "dist_id": 26,
     "const_id": 7,
-    "party_name": "बहुजन शक्ति पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 26,
-    "const_id": 7,
     "party_name": "उन्‍नत लोकतन्त्र पार्टी",
     "total_votes": 3
   },
   {
     "dist_id": 26,
     "const_id": 7,
+    "party_name": "बहुजन शक्ति पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 7,
     "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 7,
+    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
     "total_votes": 2
   },
   {
@@ -2030,25 +3590,13 @@
   {
     "dist_id": 26,
     "const_id": 7,
-    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 26,
-    "const_id": 7,
     "party_name": "जन अधिकार पार्टी",
     "total_votes": 2
   },
   {
     "dist_id": 26,
     "const_id": 7,
-    "party_name": "नेशनल रिपब्लिक नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 26,
-    "const_id": 7,
-    "party_name": "नेपाली काँग्रेस (वी.पी.)",
+    "party_name": "नेपाली जनता दल",
     "total_votes": 1
   },
   {
@@ -2060,13 +3608,19 @@
   {
     "dist_id": 26,
     "const_id": 7,
-    "party_name": "नेपाली जनता दल",
+    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
     "total_votes": 1
   },
   {
     "dist_id": 26,
     "const_id": 7,
-    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
+    "party_name": "नेशनल रिपब्लिक नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 7,
+    "party_name": "नेपाली काँग्रेस (वी.पी.)",
     "total_votes": 1
   },
   {
@@ -2150,13 +3704,13 @@
   {
     "dist_id": 26,
     "const_id": 8,
-    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
+    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
     "total_votes": 20
   },
   {
     "dist_id": 26,
     "const_id": 8,
-    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
+    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
     "total_votes": 20
   },
   {
@@ -2180,13 +3734,13 @@
   {
     "dist_id": 26,
     "const_id": 8,
-    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
+    "party_name": "सार्वभौम नागरिक पार्टी",
     "total_votes": 12
   },
   {
     "dist_id": 26,
     "const_id": 8,
-    "party_name": "सार्वभौम नागरिक पार्टी",
+    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
     "total_votes": 12
   },
   {
@@ -2198,26 +3752,14 @@
   {
     "dist_id": 26,
     "const_id": 8,
-    "party_name": "जय मातृभूमि पार्टी",
-    "total_votes": 9
-  },
-  {
-    "dist_id": 26,
-    "const_id": 8,
     "party_name": "नागरिक शक्ति, नेपाल",
     "total_votes": 9
   },
   {
     "dist_id": 26,
     "const_id": 8,
-    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
-    "total_votes": 8
-  },
-  {
-    "dist_id": 26,
-    "const_id": 8,
-    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 8
+    "party_name": "जय मातृभूमि पार्टी",
+    "total_votes": 9
   },
   {
     "dist_id": 26,
@@ -2229,6 +3771,18 @@
     "dist_id": 26,
     "const_id": 8,
     "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 26,
+    "const_id": 8,
+    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 26,
+    "const_id": 8,
+    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
     "total_votes": 8
   },
   {
@@ -2252,19 +3806,19 @@
   {
     "dist_id": 26,
     "const_id": 8,
-    "party_name": "नेपाल जनता पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 26,
-    "const_id": 8,
     "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
     "total_votes": 4
   },
   {
     "dist_id": 26,
     "const_id": 8,
-    "party_name": "नेपाल जनमुक्ति पार्टी",
+    "party_name": "नेपाल जनता पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 26,
+    "const_id": 8,
+    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
     "total_votes": 3
   },
   {
@@ -2276,25 +3830,7 @@
   {
     "dist_id": 26,
     "const_id": 8,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 26,
-    "const_id": 8,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 26,
-    "const_id": 8,
-    "party_name": "पिपुल फर्ष्ट पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 26,
-    "const_id": 8,
-    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "party_name": "नेपाली काँग्रेस (वी.पी.)",
     "total_votes": 3
   },
   {
@@ -2306,13 +3842,31 @@
   {
     "dist_id": 26,
     "const_id": 8,
+    "party_name": "नेपाल जनमुक्ति पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 8,
     "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
     "total_votes": 3
   },
   {
     "dist_id": 26,
     "const_id": 8,
-    "party_name": "नेपाली काँग्रेस (वी.पी.)",
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 8,
+    "party_name": "पिपुल फर्ष्ट पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 8,
+    "party_name": "नेपालका लागि नेपाली पार्टी",
     "total_votes": 3
   },
   {
@@ -2324,19 +3878,13 @@
   {
     "dist_id": 26,
     "const_id": 8,
-    "party_name": "समावेशी समाजवादी पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 26,
-    "const_id": 8,
     "party_name": "राष्ट्रिय एकता दल",
     "total_votes": 2
   },
   {
     "dist_id": 26,
     "const_id": 8,
-    "party_name": "राष्ट्रिय गौरव पार्टी",
+    "party_name": "समावेशी समाजवादी पार्टी",
     "total_votes": 2
   },
   {
@@ -2348,31 +3896,25 @@
   {
     "dist_id": 26,
     "const_id": 8,
-    "party_name": "स्वाभिमान पार्टी",
+    "party_name": "राष्ट्रिय गौरव पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 8,
+    "party_name": "त्रिमुल नेपाल",
     "total_votes": 1
   },
   {
     "dist_id": 26,
     "const_id": 8,
-    "party_name": "मितेरी पार्टी नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 26,
-    "const_id": 8,
-    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
     "total_votes": 1
   },
   {
     "dist_id": 26,
     "const_id": 8,
     "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 26,
-    "const_id": 8,
-    "party_name": "त्रिमुल नेपाल",
     "total_votes": 1
   },
   {
@@ -2396,7 +3938,19 @@
   {
     "dist_id": 26,
     "const_id": 8,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 8,
+    "party_name": "मितेरी पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 8,
+    "party_name": "स्वाभिमान पार्टी",
     "total_votes": 1
   },
   {
@@ -2468,13 +4022,13 @@
   {
     "dist_id": 26,
     "const_id": 9,
-    "party_name": "नेपाल जनता संरक्षण पार्टी",
+    "party_name": "संयुक्त नागरिक पार्टी",
     "total_votes": 26
   },
   {
     "dist_id": 26,
     "const_id": 9,
-    "party_name": "संयुक्त नागरिक पार्टी",
+    "party_name": "नेपाल जनता संरक्षण पार्टी",
     "total_votes": 26
   },
   {
@@ -2534,18 +4088,6 @@
   {
     "dist_id": 26,
     "const_id": 9,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
-    "total_votes": 9
-  },
-  {
-    "dist_id": 26,
-    "const_id": 9,
-    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
-    "total_votes": 9
-  },
-  {
-    "dist_id": 26,
-    "const_id": 9,
     "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
     "total_votes": 9
   },
@@ -2558,13 +4100,25 @@
   {
     "dist_id": 26,
     "const_id": 9,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
-    "total_votes": 8
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "total_votes": 9
+  },
+  {
+    "dist_id": 26,
+    "const_id": 9,
+    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
+    "total_votes": 9
   },
   {
     "dist_id": 26,
     "const_id": 9,
     "party_name": "मंगोल नेशनल अर्गनाइजेशन",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 26,
+    "const_id": 9,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
     "total_votes": 8
   },
   {
@@ -2594,7 +4148,7 @@
   {
     "dist_id": 26,
     "const_id": 9,
-    "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
+    "party_name": "त्रिमुल नेपाल",
     "total_votes": 4
   },
   {
@@ -2606,25 +4160,19 @@
   {
     "dist_id": 26,
     "const_id": 9,
-    "party_name": "त्रिमुल नेपाल",
+    "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
     "total_votes": 4
   },
   {
     "dist_id": 26,
     "const_id": 9,
-    "party_name": "नेपाल सद्‍भावना पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 26,
-    "const_id": 9,
-    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 26,
-    "const_id": 9,
     "party_name": "नेपाल जनमुक्ति पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 9,
+    "party_name": "नेपाल सद्‍भावना पार्टी",
     "total_votes": 3
   },
   {
@@ -2636,13 +4184,19 @@
   {
     "dist_id": 26,
     "const_id": 9,
+    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 9,
     "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
     "total_votes": 2
   },
   {
     "dist_id": 26,
     "const_id": 9,
-    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
+    "party_name": "पिपुल फर्ष्ट पार्टी",
     "total_votes": 2
   },
   {
@@ -2660,20 +4214,14 @@
   {
     "dist_id": 26,
     "const_id": 9,
-    "party_name": "पिपुल फर्ष्ट पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 26,
-    "const_id": 9,
     "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
     "total_votes": 2
   },
   {
     "dist_id": 26,
     "const_id": 9,
-    "party_name": "नेपाली काँग्रेस (वी.पी.)",
-    "total_votes": 1
+    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
+    "total_votes": 2
   },
   {
     "dist_id": 26,
@@ -2684,13 +4232,19 @@
   {
     "dist_id": 26,
     "const_id": 9,
-    "party_name": "राष्ट्रिय एकता दल",
+    "party_name": "नेपाली काँग्रेस (वी.पी.)",
     "total_votes": 1
   },
   {
     "dist_id": 26,
     "const_id": 9,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
+    "party_name": "नेशनल रिपब्लिक नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 9,
+    "party_name": "राष्ट्रिय एकता दल",
     "total_votes": 1
   },
   {
@@ -2702,98 +4256,98 @@
   {
     "dist_id": 26,
     "const_id": 9,
-    "party_name": "नेशनल रिपब्लिक नेपाल",
+    "party_name": "नेपालका लागि नेपाली पार्टी",
     "total_votes": 1
   },
   {
     "dist_id": 26,
     "const_id": 10,
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "total_votes": 7737
+    "total_votes": 10288
   },
   {
     "dist_id": 26,
     "const_id": 10,
     "party_name": "नेपाली काँग्रेस",
-    "total_votes": 1590
+    "total_votes": 2047
   },
   {
     "dist_id": 26,
     "const_id": 10,
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "total_votes": 986
+    "total_votes": 1188
   },
   {
     "dist_id": 26,
     "const_id": 10,
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "total_votes": 934
+    "total_votes": 1107
   },
   {
     "dist_id": 26,
     "const_id": 10,
     "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "total_votes": 896
+    "total_votes": 1005
   },
   {
     "dist_id": 26,
     "const_id": 10,
     "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "total_votes": 419
+    "total_votes": 756
   },
   {
     "dist_id": 26,
     "const_id": 10,
     "party_name": "श्रम संस्कृति पार्टी",
-    "total_votes": 101
+    "total_votes": 157
   },
   {
     "dist_id": 26,
     "const_id": 10,
     "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 57
-  },
-  {
-    "dist_id": 26,
-    "const_id": 10,
-    "party_name": "संयुक्त नागरिक पार्टी",
-    "total_votes": 25
+    "total_votes": 58
   },
   {
     "dist_id": 26,
     "const_id": 10,
     "party_name": "नेपाल जनता संरक्षण पार्टी",
-    "total_votes": 24
-  },
-  {
-    "dist_id": 26,
-    "const_id": 10,
-    "party_name": "जनमत पार्टी",
-    "total_votes": 17
-  },
-  {
-    "dist_id": 26,
-    "const_id": 10,
-    "party_name": "स्वाभिमान पार्टी",
-    "total_votes": 14
+    "total_votes": 43
   },
   {
     "dist_id": 26,
     "const_id": 10,
     "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 14
+    "total_votes": 31
+  },
+  {
+    "dist_id": 26,
+    "const_id": 10,
+    "party_name": "संयुक्त नागरिक पार्टी",
+    "total_votes": 26
+  },
+  {
+    "dist_id": 26,
+    "const_id": 10,
+    "party_name": "जनमत पार्टी",
+    "total_votes": 25
   },
   {
     "dist_id": 26,
     "const_id": 10,
     "party_name": "नेपाल मजदुर किसान पार्टी",
-    "total_votes": 13
+    "total_votes": 23
+  },
+  {
+    "dist_id": 26,
+    "const_id": 10,
+    "party_name": "स्वाभिमान पार्टी",
+    "total_votes": 18
   },
   {
     "dist_id": 26,
     "const_id": 10,
     "party_name": "राष्ट्रिय एकता दल",
-    "total_votes": 12
+    "total_votes": 13
   },
   {
     "dist_id": 26,
@@ -2805,13 +4359,19 @@
     "dist_id": 26,
     "const_id": 10,
     "party_name": "नेपाल मातृभूमि पार्टी",
-    "total_votes": 10
+    "total_votes": 12
+  },
+  {
+    "dist_id": 26,
+    "const_id": 10,
+    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
+    "total_votes": 11
   },
   {
     "dist_id": 26,
     "const_id": 10,
     "party_name": "राष्ट्रिय जनमोर्चा",
-    "total_votes": 9
+    "total_votes": 10
   },
   {
     "dist_id": 26,
@@ -2822,25 +4382,43 @@
   {
     "dist_id": 26,
     "const_id": 10,
-    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
-    "total_votes": 7
+    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
+    "total_votes": 9
+  },
+  {
+    "dist_id": 26,
+    "const_id": 10,
+    "party_name": "राष्ट्र निर्माण दल नेपाल",
+    "total_votes": 8
   },
   {
     "dist_id": 26,
     "const_id": 10,
     "party_name": "सार्वभौम नागरिक पार्टी",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 26,
+    "const_id": 10,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
     "total_votes": 7
   },
   {
     "dist_id": 26,
     "const_id": 10,
-    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
+    "party_name": "जय मातृभूमि पार्टी",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 26,
+    "const_id": 10,
+    "party_name": "नेपाल जनता पार्टी",
     "total_votes": 6
   },
   {
     "dist_id": 26,
     "const_id": 10,
-    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
+    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
     "total_votes": 6
   },
   {
@@ -2852,49 +4430,49 @@
   {
     "dist_id": 26,
     "const_id": 10,
-    "party_name": "राष्ट्र निर्माण दल नेपाल",
+    "party_name": "नेपालका लागि नेपाली पार्टी",
     "total_votes": 5
   },
   {
     "dist_id": 26,
     "const_id": 10,
-    "party_name": "नेपाल जनता पार्टी",
+    "party_name": "नागरिक शक्ति, नेपाल",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 26,
+    "const_id": 10,
+    "party_name": "जनता समाजवादी पार्टी, नेपाल",
     "total_votes": 5
   },
   {
     "dist_id": 26,
     "const_id": 10,
     "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
-    "total_votes": 4
+    "total_votes": 5
   },
   {
     "dist_id": 26,
     "const_id": 10,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "party_name": "नेपाल जनमुक्ति पार्टी",
     "total_votes": 4
-  },
-  {
-    "dist_id": 26,
-    "const_id": 10,
-    "party_name": "नागरिक शक्ति, नेपाल",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 26,
-    "const_id": 10,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 26,
-    "const_id": 10,
-    "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "total_votes": 3
   },
   {
     "dist_id": 26,
     "const_id": 10,
     "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 26,
+    "const_id": 10,
+    "party_name": "एकल चिन्ह जगर भएको सिंह(सचेत नेपाली पार्टी/नागरिक सर्वोच्चता पार्टी नेपाल)",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 26,
+    "const_id": 10,
+    "party_name": "पिपुल फर्ष्ट पार्टी",
     "total_votes": 3
   },
   {
@@ -2906,19 +4484,31 @@
   {
     "dist_id": 26,
     "const_id": 10,
-    "party_name": "नेपाल जनमुक्ति पार्टी",
+    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
     "total_votes": 3
   },
   {
     "dist_id": 26,
     "const_id": 10,
-    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
+    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
     "total_votes": 2
   },
   {
     "dist_id": 26,
     "const_id": 10,
-    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
+    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 10,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 26,
+    "const_id": 10,
+    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
     "total_votes": 2
   },
   {
@@ -2930,50 +4520,8 @@
   {
     "dist_id": 26,
     "const_id": 10,
-    "party_name": "पिपुल फर्ष्ट पार्टी",
+    "party_name": "राष्ट्रिय गौरव पार्टी",
     "total_votes": 2
-  },
-  {
-    "dist_id": 26,
-    "const_id": 10,
-    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 26,
-    "const_id": 10,
-    "party_name": "जय मातृभूमि पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 26,
-    "const_id": 10,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 26,
-    "const_id": 10,
-    "party_name": "एकल चिन्ह जगर भएको सिंह(सचेत नेपाली पार्टी/नागरिक सर्वोच्चता पार्टी नेपाल)",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 26,
-    "const_id": 10,
-    "party_name": "त्रिमुल नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 26,
-    "const_id": 10,
-    "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 26,
-    "const_id": 10,
-    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
-    "total_votes": 1
   },
   {
     "dist_id": 26,
@@ -2984,13 +4532,13 @@
   {
     "dist_id": 26,
     "const_id": 10,
-    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
+    "party_name": "त्रिमुल नेपाल",
     "total_votes": 1
   },
   {
     "dist_id": 26,
     "const_id": 10,
-    "party_name": "राष्ट्रिय गौरव पार्टी",
+    "party_name": "नेपाली जनता दल",
     "total_votes": 1
   },
   {
@@ -3000,63 +4548,105 @@
     "total_votes": 1
   },
   {
+    "dist_id": 26,
+    "const_id": 10,
+    "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 10,
+    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 26,
+    "const_id": 10,
+    "party_name": "जन अधिकार पार्टी",
+    "total_votes": 1
+  },
+  {
     "dist_id": 28,
     "const_id": 1,
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "total_votes": 1873
+    "total_votes": 4180
   },
   {
     "dist_id": 28,
     "const_id": 1,
     "party_name": "नेपाली काँग्रेस",
-    "total_votes": 345
+    "total_votes": 1082
   },
   {
     "dist_id": 28,
     "const_id": 1,
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "total_votes": 205
+    "total_votes": 382
   },
   {
     "dist_id": 28,
     "const_id": 1,
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "total_votes": 188
+    "total_votes": 271
   },
   {
     "dist_id": 28,
     "const_id": 1,
     "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "total_votes": 46
+    "total_votes": 87
   },
   {
     "dist_id": 28,
     "const_id": 1,
     "party_name": "श्रम संस्कृति पार्टी",
-    "total_votes": 29
-  },
-  {
-    "dist_id": 28,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "total_votes": 12
-  },
-  {
-    "dist_id": 28,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 8
+    "total_votes": 70
   },
   {
     "dist_id": 28,
     "const_id": 1,
     "party_name": "नेपाल मजदुर किसान पार्टी",
-    "total_votes": 4
+    "total_votes": 61
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
+    "total_votes": 54
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "total_votes": 11
   },
   {
     "dist_id": 28,
     "const_id": 1,
     "party_name": "संयुक्त नागरिक पार्टी",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "पिपुल फर्ष्ट पार्टी",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "जनता समाजवादी पार्टी, नेपाल",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "नेपाल जनता संरक्षण पार्टी",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "नेपाल मातृभूमि पार्टी",
     "total_votes": 4
   },
   {
@@ -3064,516 +4654,1308 @@
     "const_id": 1,
     "party_name": "सार्वभौम नागरिक पार्टी",
     "total_votes": 3
-  },
-  {
-    "dist_id": 28,
-    "const_id": 1,
-    "party_name": "नेपाल जनता संरक्षण पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 28,
-    "const_id": 1,
-    "party_name": "जय मातृभूमि पार्टी",
-    "total_votes": 2
   },
   {
     "dist_id": 28,
     "const_id": 1,
     "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 28,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 28,
-    "const_id": 1,
-    "party_name": "पिपुल फर्ष्ट पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 28,
-    "const_id": 1,
-    "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 28,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय गौरव पार्टी",
-    "total_votes": 1
+    "total_votes": 3
   },
   {
     "dist_id": 28,
     "const_id": 1,
     "party_name": "नेपाल जनता पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 28,
-    "const_id": 1,
-    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 28,
-    "const_id": 1,
-    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 28,
-    "const_id": 1,
-    "party_name": "बहुजन शक्ति पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 28,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
-    "total_votes": 1
+    "total_votes": 3
   },
   {
     "dist_id": 28,
     "const_id": 1,
     "party_name": "राष्ट्रिय जनमोर्चा",
-    "total_votes": 1
+    "total_votes": 2
   },
   {
     "dist_id": 28,
-    "const_id": 1,
-    "party_name": "नेपाली जनता दल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 28,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 28,
-    "const_id": 1,
-    "party_name": "नागरिक शक्ति, नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 28,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय एकता दल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "total_votes": 12966
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "total_votes": 4111
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "नेपाली काँग्रेस",
-    "total_votes": 3579
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "total_votes": 1112
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "total_votes": 514
-  },
-  {
-    "dist_id": 34,
     "const_id": 1,
     "party_name": "राष्ट्र निर्माण दल नेपाल",
-    "total_votes": 388
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "total_votes": 237
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "जनमत पार्टी",
-    "total_votes": 167
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "पिपुल फर्ष्ट पार्टी",
-    "total_votes": 118
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
-    "total_votes": 69
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "श्रम संस्कृति पार्टी",
-    "total_votes": 50
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "नेपाल जनता संरक्षण पार्टी",
-    "total_votes": 43
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "total_votes": 37
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "सार्वभौम नागरिक पार्टी",
-    "total_votes": 34
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "जन अधिकार पार्टी",
-    "total_votes": 24
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
-    "total_votes": 22
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "नेपाल जनता पार्टी",
-    "total_votes": 20
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
-    "total_votes": 19
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "नेपाल मजदुर किसान पार्टी",
-    "total_votes": 17
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 11
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय एकता दल",
-    "total_votes": 9
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
-    "total_votes": 9
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
-    "total_votes": 9
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "संयुक्त नागरिक पार्टी",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "नेपाल सद्‍भावना पार्टी",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "नेपाली काँग्रेस (वी.पी.)",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "बहुजन शक्ति पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "नागरिक शक्ति, नेपाल",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "जय मातृभूमि पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनमोर्चा",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
     "total_votes": 2
   },
   {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "नेपाली जनता दल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 34,
+    "dist_id": 28,
     "const_id": 1,
     "party_name": "राष्ट्रिय गौरव पार्टी",
     "total_votes": 2
   },
   {
-    "dist_id": 34,
+    "dist_id": 28,
     "const_id": 1,
-    "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
+    "party_name": "जय मातृभूमि पार्टी",
     "total_votes": 2
   },
   {
-    "dist_id": 34,
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय एकता दल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 28,
     "const_id": 1,
     "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 34,
-    "const_id": 1,
-    "party_name": "नेपाल जनमुक्ति पार्टी",
     "total_votes": 1
   },
   {
-    "dist_id": 34,
+    "dist_id": 28,
     "const_id": 1,
-    "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
+    "party_name": "जनमत पार्टी",
     "total_votes": 1
   },
   {
-    "dist_id": 34,
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "बहुजन शक्ति पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "मितेरी पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "नागरिक शक्ति, नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 28,
     "const_id": 1,
     "party_name": "स्वाभिमान पार्टी",
     "total_votes": 1
   },
   {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "नेपाली जनता दल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 28,
+    "const_id": 1,
+    "party_name": "नेपाल जनमुक्ति पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "total_votes": 29149
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेपाली काँग्रेस",
+    "total_votes": 7183
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
+    "total_votes": 5861
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "total_votes": 1686
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेपाली कम्युनिष्ट पार्टी",
+    "total_votes": 1263
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "श्रम संस्कृति पार्टी",
+    "total_votes": 690
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
+    "total_votes": 141
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 117
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
+    "total_votes": 67
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय जनमोर्चा",
+    "total_votes": 56
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेपाल जनता संरक्षण पार्टी",
+    "total_votes": 45
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
+    "total_votes": 27
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेपाल मातृभूमि पार्टी",
+    "total_votes": 24
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "total_votes": 22
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय एकता दल",
+    "total_votes": 19
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "संयुक्त नागरिक पार्टी",
+    "total_votes": 19
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
+    "total_votes": 18
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "जनमत पार्टी",
+    "total_votes": 18
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेपाल जनमुक्ति पार्टी",
+    "total_votes": 18
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
+    "total_votes": 17
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेपाल मजदुर किसान पार्टी",
+    "total_votes": 16
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "सार्वभौम नागरिक पार्टी",
+    "total_votes": 15
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेशनल रिपब्लिक नेपाल",
+    "total_votes": 13
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नागरिक शक्ति, नेपाल",
+    "total_votes": 11
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "total_votes": 11
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "जनता समाजवादी पार्टी, नेपाल",
+    "total_votes": 10
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "पिपुल फर्ष्ट पार्टी",
+    "total_votes": 9
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "total_votes": 9
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय गौरव पार्टी",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेपालका लागि नेपाली पार्टी",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेपाल जनता पार्टी",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "एकल चिन्ह जगर भएको सिंह(सचेत नेपाली पार्टी/नागरिक सर्वोच्चता पार्टी नेपाल)",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "जय मातृभूमि पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "जन अधिकार पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "बहुजन शक्ति पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेपाली काँग्रेस (वी.पी.)",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेपाल सद्‍भावना पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "राष्ट्र निर्माण दल नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "मितेरी पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "स्वाभिमान पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "समावेशी समाजवादी पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 39,
+    "const_id": 3,
+    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "total_votes": 7596
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "नेपाली काँग्रेस",
+    "total_votes": 2491
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
+    "total_votes": 1522
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "नेपाली कम्युनिष्ट पार्टी",
+    "total_votes": 1165
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "श्रम संस्कृति पार्टी",
+    "total_votes": 489
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "total_votes": 385
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
+    "total_votes": 63
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "नेपाल जनता संरक्षण पार्टी",
+    "total_votes": 43
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
+    "total_votes": 31
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "सार्वभौम नागरिक पार्टी",
+    "total_votes": 17
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "नेशनल रिपब्लिक नेपाल",
+    "total_votes": 17
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
+    "total_votes": 15
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "जनमत पार्टी",
+    "total_votes": 14
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "total_votes": 14
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय गौरव पार्टी",
+    "total_votes": 13
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "नेपाल जनमुक्ति पार्टी",
+    "total_votes": 12
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय एकता दल",
+    "total_votes": 11
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 11
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "total_votes": 9
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "नेपाल मजदुर किसान पार्टी",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "नेपाल सद्‍भावना पार्टी",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "नेपाल जनता पार्टी",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "जनता समाजवादी पार्टी, नेपाल",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "बहुजन शक्ति पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "जन अधिकार पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "नेपाल मातृभूमि पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "नागरिक शक्ति, नेपाल",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "संयुक्त नागरिक पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "नेपाली काँग्रेस (वी.पी.)",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "जय मातृभूमि पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "नेपालका लागि नेपाली पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "राष्ट्र निर्माण दल नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "मितेरी पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "स्वाभिमान पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "समावेशी समाजवादी पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "पिपुल फर्ष्ट पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "त्रिमुल नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 40,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "total_votes": 4598
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
+    "total_votes": 3675
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "नेपाली काँग्रेस",
+    "total_votes": 3149
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "नेपाली कम्युनिष्ट पार्टी",
+    "total_votes": 466
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "श्रम संस्कृति पार्टी",
+    "total_votes": 246
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "total_votes": 73
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
+    "total_votes": 65
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "नेपाल जनता संरक्षण पार्टी",
+    "total_votes": 25
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "सार्वभौम नागरिक पार्टी",
+    "total_votes": 11
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
+    "total_votes": 11
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "जनमत पार्टी",
+    "total_votes": 10
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय गौरव पार्टी",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनमोर्चा",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "जनता समाजवादी पार्टी, नेपाल",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "नेपाल मजदुर किसान पार्टी",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "नेशनल रिपब्लिक नेपाल",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "संयुक्त नागरिक पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "नेपाल सद्‍भावना पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "नेपाली काँग्रेस (वी.पी.)",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "नेपाल जनमुक्ति पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय एकता दल",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "राष्ट्र निर्माण दल नेपाल",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "पिपुल फर्ष्ट पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "समावेशी समाजवादी पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "नेपालका लागि नेपाली पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "नेपाल जनता पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 41,
+    "const_id": 1,
+    "party_name": "नेपाल मातृभूमि पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "total_votes": 1187
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
+    "total_votes": 471
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "नेपाली काँग्रेस",
+    "total_votes": 447
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "नेपाली कम्युनिष्ट पार्टी",
+    "total_votes": 71
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "total_votes": 44
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनमोर्चा",
+    "total_votes": 40
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "श्रम संस्कृति पार्टी",
+    "total_votes": 10
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "जनमत पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "सार्वभौम नागरिक पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय एकता दल",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "संयुक्त नागरिक पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "राष्ट्र निर्माण दल नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "समावेशी समाजवादी पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "नेपाल सद्‍भावना पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय गौरव पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "नेपाल जनता संरक्षण पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 44,
+    "const_id": 1,
+    "party_name": "नेपाल जनता पार्टी",
+    "total_votes": 1
+  },
+  {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "total_votes": 6642
+    "total_votes": 8090
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "total_votes": 5437
+    "total_votes": 5939
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "नेपाली काँग्रेस",
-    "total_votes": 4870
+    "total_votes": 5354
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "total_votes": 1196
-  },
-  {
-    "dist_id": 46,
-    "const_id": 4,
-    "party_name": "जनमत पार्टी",
-    "total_votes": 596
+    "total_votes": 1281
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "total_votes": 522
+    "total_votes": 697
+  },
+  {
+    "dist_id": 46,
+    "const_id": 4,
+    "party_name": "जनमत पार्टी",
+    "total_votes": 697
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "राष्ट्र निर्माण दल नेपाल",
-    "total_votes": 316
+    "total_votes": 343
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "total_votes": 153
+    "total_votes": 186
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
-    "total_votes": 126
+    "total_votes": 128
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "सार्वभौम नागरिक पार्टी",
-    "total_votes": 73
+    "total_votes": 78
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "नेपाल जनता संरक्षण पार्टी",
-    "total_votes": 60
+    "total_votes": 71
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "नेपाल जनता पार्टी",
-    "total_votes": 47
+    "total_votes": 51
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 40
+    "total_votes": 45
+  },
+  {
+    "dist_id": 46,
+    "const_id": 4,
+    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
+    "total_votes": 29
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "total_votes": 25
+  },
+  {
+    "dist_id": 46,
+    "const_id": 4,
+    "party_name": "राष्ट्रिय एकता दल",
     "total_votes": 22
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "गतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 20
+    "total_votes": 21
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
-    "total_votes": 18
+    "total_votes": 21
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "नेपाल मजदुर किसान पार्टी",
-    "total_votes": 18
-  },
-  {
-    "dist_id": 46,
-    "const_id": 4,
-    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
-    "total_votes": 15
-  },
-  {
-    "dist_id": 46,
-    "const_id": 4,
-    "party_name": "राष्ट्रिय एकता दल",
-    "total_votes": 14
+    "total_votes": 20
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "समावेशी समाजवादी पार्टी नेपाल",
+    "total_votes": 16
+  },
+  {
+    "dist_id": 46,
+    "const_id": 4,
+    "party_name": "श्रम संस्कृति पार्टी",
     "total_votes": 14
+  },
+  {
+    "dist_id": 46,
+    "const_id": 4,
+    "party_name": "राष्ट्रिय जनमोर्चा",
+    "total_votes": 13
+  },
+  {
+    "dist_id": 46,
+    "const_id": 4,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "total_votes": 13
   },
   {
     "dist_id": 46,
@@ -3584,61 +5966,61 @@
   {
     "dist_id": 46,
     "const_id": 4,
-    "party_name": "श्रम संस्कृति पार्टी",
-    "total_votes": 11
+    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
+    "total_votes": 12
   },
   {
     "dist_id": 46,
     "const_id": 4,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
     "total_votes": 10
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "संयुक्त नागरिक पार्टी",
-    "total_votes": 9
-  },
-  {
-    "dist_id": 46,
-    "const_id": 4,
-    "party_name": "राष्ट्रिय जनमोर्चा",
-    "total_votes": 9
-  },
-  {
-    "dist_id": 46,
-    "const_id": 4,
-    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 8
-  },
-  {
-    "dist_id": 46,
-    "const_id": 4,
-    "party_name": "नेपाली काँग्रेस (वी.पी.)",
-    "total_votes": 8
+    "total_votes": 10
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
-    "total_votes": 8
+    "total_votes": 10
+  },
+  {
+    "dist_id": 46,
+    "const_id": 4,
+    "party_name": "नेपाली काँग्रेस (वी.पी.)",
+    "total_votes": 9
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "जय मातृभूमि पार्टी",
-    "total_votes": 7
+    "total_votes": 9
+  },
+  {
+    "dist_id": 46,
+    "const_id": 4,
+    "party_name": "बहुजन शक्ति पार्टी",
+    "total_votes": 8
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "नेपाल लोकतान्त्रिक पार्टी",
-    "total_votes": 6
+    "total_votes": 7
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 46,
+    "const_id": 4,
+    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
     "total_votes": 6
   },
   {
@@ -3650,8 +6032,8 @@
   {
     "dist_id": 46,
     "const_id": 4,
-    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "total_votes": 5
+    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "total_votes": 6
   },
   {
     "dist_id": 46,
@@ -3662,8 +6044,14 @@
   {
     "dist_id": 46,
     "const_id": 4,
-    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
-    "total_votes": 5
+    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 46,
+    "const_id": 4,
+    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
+    "total_votes": 4
   },
   {
     "dist_id": 46,
@@ -3680,18 +6068,6 @@
   {
     "dist_id": 46,
     "const_id": 4,
-    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 46,
-    "const_id": 4,
-    "party_name": "बहुजन शक्ति पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 46,
-    "const_id": 4,
     "party_name": "नेपाल जनमुक्ति पार्टी",
     "total_votes": 4
   },
@@ -3699,24 +6075,12 @@
     "dist_id": 46,
     "const_id": 4,
     "party_name": "राष्ट्रिय गौरव पार्टी",
-    "total_votes": 3
+    "total_votes": 4
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 46,
-    "const_id": 4,
-    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 46,
-    "const_id": 4,
-    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
     "total_votes": 3
   },
   {
@@ -3734,19 +6098,25 @@
   {
     "dist_id": 46,
     "const_id": 4,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 46,
-    "const_id": 4,
     "party_name": "जन अधिकार पार्टी",
     "total_votes": 2
   },
   {
     "dist_id": 46,
     "const_id": 4,
-    "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
+    "party_name": "समावेशी समाजवादी पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 46,
+    "const_id": 4,
+    "party_name": "नेपालका लागि नेपाली पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 46,
+    "const_id": 4,
+    "party_name": "स्वाभिमान पार्टी",
     "total_votes": 1
   },
   {
@@ -3758,19 +6128,13 @@
   {
     "dist_id": 46,
     "const_id": 4,
-    "party_name": "स्वाभिमान पार्टी",
+    "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
     "total_votes": 1
   },
   {
     "dist_id": 46,
     "const_id": 4,
     "party_name": "पिपुल फर्ष्ट पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 46,
-    "const_id": 4,
-    "party_name": "समावेशी समाजवादी पार्टी",
     "total_votes": 1
   },
   {
@@ -3812,13 +6176,13 @@
   {
     "dist_id": 48,
     "const_id": 1,
-    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
     "total_votes": 34
   },
   {
     "dist_id": 48,
     "const_id": 1,
-    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
+    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
     "total_votes": 34
   },
   {
@@ -3836,13 +6200,13 @@
   {
     "dist_id": 48,
     "const_id": 1,
-    "party_name": "नेपाल जनता पार्टी",
+    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
     "total_votes": 7
   },
   {
     "dist_id": 48,
     "const_id": 1,
-    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
+    "party_name": "नेपाल जनता पार्टी",
     "total_votes": 7
   },
   {
@@ -3866,19 +6230,19 @@
   {
     "dist_id": 48,
     "const_id": 1,
-    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 48,
-    "const_id": 1,
     "party_name": "राष्ट्रिय गौरव पार्टी",
     "total_votes": 3
   },
   {
     "dist_id": 48,
     "const_id": 1,
-    "party_name": "समावेशी समाजवादी पार्टी",
+    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 48,
+    "const_id": 1,
+    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
     "total_votes": 2
   },
   {
@@ -3890,19 +6254,19 @@
   {
     "dist_id": 48,
     "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 48,
-    "const_id": 1,
     "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
     "total_votes": 2
   },
   {
     "dist_id": 48,
     "const_id": 1,
-    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 48,
+    "const_id": 1,
+    "party_name": "समावेशी समाजवादी पार्टी",
     "total_votes": 2
   },
   {
@@ -3914,19 +6278,7 @@
   {
     "dist_id": 48,
     "const_id": 1,
-    "party_name": "संयुक्त नागरिक पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 48,
-    "const_id": 1,
     "party_name": "समावेशी समाजवादी पार्टी नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 48,
-    "const_id": 1,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
     "total_votes": 1
   },
   {
@@ -3944,6 +6296,18 @@
   {
     "dist_id": 48,
     "const_id": 1,
+    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 48,
+    "const_id": 1,
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 48,
+    "const_id": 1,
     "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
     "total_votes": 1
   },
@@ -3956,7 +6320,7 @@
   {
     "dist_id": 48,
     "const_id": 1,
-    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "party_name": "संयुक्त नागरिक पार्टी",
     "total_votes": 1
   },
   {
@@ -4100,13 +6464,13 @@
   {
     "dist_id": 49,
     "const_id": 1,
-    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
     "total_votes": 12
   },
   {
     "dist_id": 49,
     "const_id": 1,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
     "total_votes": 12
   },
   {
@@ -4142,13 +6506,13 @@
   {
     "dist_id": 49,
     "const_id": 1,
-    "party_name": "नेपाल मजदुर किसान पार्टी",
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
     "total_votes": 8
   },
   {
     "dist_id": 49,
     "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "party_name": "नेपाल मजदुर किसान पार्टी",
     "total_votes": 8
   },
   {
@@ -4160,7 +6524,7 @@
   {
     "dist_id": 49,
     "const_id": 1,
-    "party_name": "एकल चिन्ह जगर भएको सिंह(सचेत नेपाली पार्टी/नागरिक सर्वोच्चता पार्टी नेपाल)",
+    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
     "total_votes": 6
   },
   {
@@ -4172,7 +6536,7 @@
   {
     "dist_id": 49,
     "const_id": 1,
-    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
+    "party_name": "एकल चिन्ह जगर भएको सिंह(सचेत नेपाली पार्टी/नागरिक सर्वोच्चता पार्टी नेपाल)",
     "total_votes": 6
   },
   {
@@ -4226,6 +6590,12 @@
   {
     "dist_id": 49,
     "const_id": 1,
+    "party_name": "नेपाली काँग्रेस (वी.पी.)",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 49,
+    "const_id": 1,
     "party_name": "जनता समाजवादी पार्टी, नेपाल",
     "total_votes": 3
   },
@@ -4238,13 +6608,7 @@
   {
     "dist_id": 49,
     "const_id": 1,
-    "party_name": "नेपाली काँग्रेस (वी.पी.)",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 49,
-    "const_id": 1,
-    "party_name": "नेपाल जनमुक्ति पार्टी",
+    "party_name": "नेपाली जनता दल",
     "total_votes": 2
   },
   {
@@ -4256,19 +6620,19 @@
   {
     "dist_id": 49,
     "const_id": 1,
-    "party_name": "मितेरी पार्टी नेपाल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 49,
-    "const_id": 1,
     "party_name": "त्रिमुल नेपाल",
     "total_votes": 2
   },
   {
     "dist_id": 49,
     "const_id": 1,
-    "party_name": "नेपाली जनता दल",
+    "party_name": "नेपाल जनमुक्ति पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 49,
+    "const_id": 1,
+    "party_name": "मितेरी पार्टी नेपाल",
     "total_votes": 2
   },
   {
@@ -4280,2305 +6644,343 @@
   {
     "dist_id": 49,
     "const_id": 1,
-    "party_name": "नेपाल मातृभूमि पार्टी",
+    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
     "total_votes": 1
   },
   {
     "dist_id": 49,
     "const_id": 1,
-    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "party_name": "नेपाल मातृभूमि पार्टी",
     "total_votes": 1
   },
   {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "total_votes": 1830
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "total_votes": 1561
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "नेपाली काँग्रेस",
-    "total_votes": 944
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
+    "dist_id": 69,
+    "const_id": 1,
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "total_votes": 570
+    "total_votes": 9173
   },
   {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "राष्ट्रिय जनमोर्चा",
-    "total_votes": 223
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "नेपाली काँग्रेस",
+    "total_votes": 8548
   },
   {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "श्रम संस्कृति पार्टी",
-    "total_votes": 165
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "total_votes": 8351
   },
   {
-    "dist_id": 50,
-    "const_id": 2,
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "नेपाली कम्युनिष्ट पार्टी",
+    "total_votes": 5582
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
     "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 52
+    "total_votes": 346
   },
   {
-    "dist_id": 50,
-    "const_id": 2,
+    "dist_id": 69,
+    "const_id": 1,
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "total_votes": 40
+    "total_votes": 246
   },
   {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
-    "total_votes": 33
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "नेपाल जनता पार्टी",
-    "total_votes": 11
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "नेपाल जनता संरक्षण पार्टी",
-    "total_votes": 9
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "राष्ट्र निर्माण दल नेपाल",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "राष्ट्रिय एकता दल",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "जनमत पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "नागरिक शक्ति, नेपाल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "जन अधिकार पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "नेपाल जनमुक्ति पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "संयुक्त नागरिक पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "नेशनल रिपब्लिक नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
+    "dist_id": 69,
+    "const_id": 1,
     "party_name": "सार्वभौम नागरिक पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "राष्ट्रिय गौरव पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "नेपाल सद्‍भावना पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "जय मातृभूमि पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "नेपाली जनता दल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 50,
-    "const_id": 2,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "total_votes": 9995
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "नेपाली काँग्रेस",
-    "total_votes": 4172
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "total_votes": 4124
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "total_votes": 1503
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "total_votes": 499
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "श्रम संस्कृति पार्टी",
     "total_votes": 205
   },
   {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "नेशनल रिपब्लिक नेपाल",
-    "total_votes": 86
-  },
-  {
-    "dist_id": 51,
+    "dist_id": 69,
     "const_id": 1,
     "party_name": "नेपाल जनता संरक्षण पार्टी",
-    "total_votes": 36
+    "total_votes": 178
   },
   {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "total_votes": 21
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "सार्वभौम नागरिक पार्टी",
-    "total_votes": 17
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
-    "total_votes": 15
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनमोर्चा",
-    "total_votes": 14
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 14
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
-    "total_votes": 13
-  },
-  {
-    "dist_id": 51,
+    "dist_id": 69,
     "const_id": 1,
     "party_name": "जनमत पार्टी",
-    "total_votes": 12
+    "total_votes": 93
   },
   {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
-    "total_votes": 9
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "नेपाल मजदुर किसान पार्टी",
-    "total_votes": 8
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय एकता दल",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "संयुक्त नागरिक पार्टी",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "नागरिक शक्ति, नेपाल",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "नेपाल जनता पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 51,
+    "dist_id": 69,
     "const_id": 1,
     "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "total_votes": 4
+    "total_votes": 69
   },
   {
-    "dist_id": 51,
+    "dist_id": 69,
     "const_id": 1,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
-    "total_votes": 3
+    "party_name": "नेपाल जनता पार्टी",
+    "total_votes": 51
   },
   {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "नेपाल जनमुक्ति पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "नेपाल सद्‍भावना पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 51,
+    "dist_id": 69,
     "const_id": 1,
     "party_name": "समावेशी समाजवादी पार्टी नेपाल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "जन अधिकार पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "पिपुल फर्ष्ट पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "नेपाल मातृभूमि पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह जगर भएको सिंह(सचेत नेपाली पार्टी/नागरिक सर्वोच्चता पार्टी नेपाल)",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "नेपाली जनता दल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 51,
-    "const_id": 1,
-    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "total_votes": 6873
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "total_votes": 2676
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपाली काँग्रेस",
-    "total_votes": 2312
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "total_votes": 1705
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "total_votes": 147
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "श्रम संस्कृति पार्टी",
-    "total_votes": 128
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 99
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 97
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
-    "total_votes": 57
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
-    "total_votes": 53
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेशनल रिपब्लिक नेपाल",
-    "total_votes": 41
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनमोर्चा",
-    "total_votes": 28
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
-    "total_votes": 26
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
-    "total_votes": 25
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "सार्वभौम नागरिक पार्टी",
-    "total_votes": 24
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपाल जनता संरक्षण पार्टी",
-    "total_votes": 21
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "जनमत पार्टी",
-    "total_votes": 14
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "total_votes": 13
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "संयुक्त नागरिक पार्टी",
-    "total_votes": 13
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "total_votes": 8
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह जगर भएको सिंह(सचेत नेपाली पार्टी/नागरिक सर्वोच्चता पार्टी नेपाल)",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "जय मातृभूमि पार्टी",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "राष्ट्र निर्माण दल नेपाल",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपाल जनता पार्टी",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय एकता दल",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपाल सद्‍भावना पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपाली काँग्रेस (वी.पी.)",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "जन अधिकार पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपाल मातृभूमि पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपाल मजदुर किसान पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय गौरव पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपाली जनता दल",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "पिपुल फर्ष्ट पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "त्रिमुल नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "समावेशी समाजवादी पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नागरिक शक्ति, नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "बहुजन शक्ति पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "नेपाल जनमुक्ति पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 52,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "total_votes": 4553
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "total_votes": 1299
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "नेपाली काँग्रेस",
-    "total_votes": 1297
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "total_votes": 570
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "total_votes": 157
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "श्रम संस्कृति पार्टी",
-    "total_votes": 65
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
-    "total_votes": 37
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "राष्ट्रिय जनमोर्चा",
-    "total_votes": 17
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 15
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "जनमत पार्टी",
-    "total_votes": 13
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "नेपाल मजदुर किसान पार्टी",
-    "total_votes": 10
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "नेपाल जनता संरक्षण पार्टी",
-    "total_votes": 10
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 9
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "राष्ट्रिय एकता दल",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "नेशनल रिपब्लिक नेपाल",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "सार्वभौम नागरिक पार्टी",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "संयुक्त नागरिक पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "जय मातृभूमि पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "नेपाल जनता पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "जन अधिकार पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "नेपाली काँग्रेस (वी.पी.)",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "एकल चिन्ह जगर भएको सिंह(सचेत नेपाली पार्टी/नागरिक सर्वोच्चता पार्टी नेपाल)",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "बहुजन शक्ति पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "पिपुल फर्ष्ट पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "राष्ट्रिय गौरव पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "राष्ट्र निर्माण दल नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "नेपाल मातृभूमि पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "नेपाली जनता दल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 56,
-    "const_id": 2,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "total_votes": 5462
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "total_votes": 4295
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "नेपाली काँग्रेस",
-    "total_votes": 3677
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "total_votes": 2300
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 1650
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "नेपाल मजदुर किसान पार्टी",
-    "total_votes": 709
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "total_votes": 526
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनमोर्चा",
-    "total_votes": 144
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "नेपाल जनता पार्टी",
-    "total_votes": 108
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 85
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "सार्वभौम नागरिक पार्टी",
-    "total_votes": 42
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "नेपाल जनता संरक्षण पार्टी",
-    "total_votes": 34
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
-    "total_votes": 24
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "total_votes": 19
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "जनमत पार्टी",
-    "total_votes": 19
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
-    "total_votes": 19
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय गौरव पार्टी",
-    "total_votes": 16
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "जय मातृभूमि पार्टी",
-    "total_votes": 16
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "श्रम संस्कृति पार्टी",
-    "total_votes": 13
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
-    "total_votes": 11
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
-    "total_votes": 10
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "मितेरी पार्टी नेपाल",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "राष्ट्र निर्माण दल नेपाल",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "बहुजन शक्ति पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "नागरिक शक्ति, नेपाल",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय एकता दल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "नेपाल जनमुक्ति पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "नेपाल सद्‍भावना पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "नेपाली जनता दल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह जगर भएको सिंह(सचेत नेपाली पार्टी/नागरिक सर्वोच्चता पार्टी नेपाल)",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "जन अधिकार पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "नेपाल मातृभूमि पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "त्रिमुल नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "पिपुल फर्ष्ट पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 60,
-    "const_id": 1,
-    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "total_votes": 9476
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपाली काँग्रेस",
-    "total_votes": 8483
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "total_votes": 8361
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "total_votes": 2572
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "total_votes": 770
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "श्रम संस्कृति पार्टी",
-    "total_votes": 320
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपाल मजदुर किसान पार्टी",
-    "total_votes": 313
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 95
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनमोर्चा",
-    "total_votes": 49
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "जनमत पार्टी",
-    "total_votes": 32
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपाल जनता संरक्षण पार्टी",
-    "total_votes": 26
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "सार्वभौम नागरिक पार्टी",
-    "total_votes": 24
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
-    "total_votes": 18
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
-    "total_votes": 17
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "total_votes": 16
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
-    "total_votes": 10
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपाल जनता पार्टी",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "बहुजन शक्ति पार्टी",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय गौरव पार्टी",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपाली काँग्रेस (वी.पी.)",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "त्रिमुल नेपाल",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपाल मातृभूमि पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह जगर भएको सिंह(सचेत नेपाली पार्टी/नागरिक सर्वोच्चता पार्टी नेपाल)",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "समावेशी समाजवादी पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपाली जनता दल",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "पिपुल फर्ष्ट पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय एकता दल",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "राष्ट्र निर्माण दल नेपाल",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "जन अधिकार पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपाल सद्‍भावना पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "मितेरी पार्टी नेपाल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "संयुक्त नागरिक पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेपाल जनमुक्ति पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "जय मातृभूमि पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नेशनल रिपब्लिक नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "नागरिक शक्ति, नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "स्वाभिमान पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 63,
-    "const_id": 1,
-    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "total_votes": 23325
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपाली काँग्रेस",
-    "total_votes": 7591
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "total_votes": 5424
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "total_votes": 2722
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "total_votes": 1607
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "श्रम संस्कृति पार्टी",
-    "total_votes": 474
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 183
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
-    "total_votes": 135
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपाल जनता संरक्षण पार्टी",
-    "total_votes": 103
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनमोर्चा",
-    "total_votes": 96
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "जनमत पार्टी",
-    "total_votes": 76
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपाल मजदुर किसान पार्टी",
-    "total_votes": 71
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "सार्वभौम नागरिक पार्टी",
-    "total_votes": 44
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 40
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "संयुक्त नागरिक पार्टी",
-    "total_votes": 36
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "total_votes": 31
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "total_votes": 30
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
-    "total_votes": 26
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
-    "total_votes": 22
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
-    "total_votes": 21
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय एकता दल",
-    "total_votes": 19
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
-    "total_votes": 18
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "राष्ट्र निर्माण दल नेपाल",
-    "total_votes": 16
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपाल जनता पार्टी",
-    "total_votes": 11
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
-    "total_votes": 10
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
-    "total_votes": 10
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 8
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "बहुजन शक्ति पार्टी",
-    "total_votes": 8
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नागरिक शक्ति, नेपाल",
-    "total_votes": 8
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय गौरव पार्टी",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "पिपुल फर्ष्ट पार्टी",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "जय मातृभूमि पार्टी",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपाल मातृभूमि पार्टी",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "मितेरी पार्टी नेपाल",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "समावेशी समाजवादी पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपाल जनमुक्ति पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपाल सद्‍भावना पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "त्रिमुल नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "स्वाभिमान पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपाली जनता दल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेपाली काँग्रेस (वी.पी.)",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "जन अधिकार पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 65,
-    "const_id": 1,
-    "party_name": "नेशनल रिपब्लिक नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "नेपाली काँग्रेस",
-    "total_votes": 2535
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "total_votes": 2265
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "total_votes": 2176
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "total_votes": 1293
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 72
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "सार्वभौम नागरिक पार्टी",
-    "total_votes": 47
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
     "total_votes": 45
   },
   {
     "dist_id": 69,
     "const_id": 1,
-    "party_name": "नेपाल जनता संरक्षण पार्टी",
-    "total_votes": 38
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "जनमत पार्टी",
-    "total_votes": 29
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "जनता समाजवादी पार्टी, नेपाल",
-    "total_votes": 24
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
-    "total_votes": 17
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
     "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
-    "total_votes": 16
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "नेपाल जनता पार्टी",
-    "total_votes": 16
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय एकता दल",
-    "total_votes": 12
+    "total_votes": 35
   },
   {
     "dist_id": 69,
     "const_id": 1,
     "party_name": "नेपाल मजदुर किसान पार्टी",
-    "total_votes": 11
+    "total_votes": 31
   },
   {
     "dist_id": 69,
     "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
-    "total_votes": 11
+    "party_name": "राष्ट्रिय गौरव पार्टी",
+    "total_votes": 30
   },
   {
     "dist_id": 69,
     "const_id": 1,
-    "party_name": "राष्ट्र निर्माण दल नेपाल",
-    "total_votes": 9
+    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 28
   },
   {
     "dist_id": 69,
     "const_id": 1,
-    "party_name": "श्रम संस्कृति पार्टी",
-    "total_votes": 8
+    "party_name": "राष्ट्रिय एकता दल",
+    "total_votes": 28
   },
   {
     "dist_id": 69,
     "const_id": 1,
     "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
-    "total_votes": 8
+    "total_votes": 25
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "total_votes": 25
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "total_votes": 24
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "जय मातृभूमि पार्टी",
+    "total_votes": 18
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "श्रम संस्कृति पार्टी",
+    "total_votes": 18
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "राष्ट्र निर्माण दल नेपाल",
+    "total_votes": 18
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "नेपाली काँग्रेस (वी.पी.)",
+    "total_votes": 17
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनमोर्चा",
+    "total_votes": 17
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
+    "total_votes": 17
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "बहुजन शक्ति पार्टी",
+    "total_votes": 15
   },
   {
     "dist_id": 69,
     "const_id": 1,
     "party_name": "मितेरी पार्टी नेपाल",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय गौरव पार्टी",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "जय मातृभूमि पार्टी",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "समावेशी समाजवादी पार्टी",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "बहुजन शक्ति पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "नेशनल रिपब्लिक नेपाल",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
-    "total_votes": 4
+    "total_votes": 15
   },
   {
     "dist_id": 69,
     "const_id": 1,
     "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "total_votes": 4
+    "total_votes": 14
   },
   {
     "dist_id": 69,
     "const_id": 1,
-    "party_name": "नेपाली काँग्रेस (वी.पी.)",
-    "total_votes": 4
+    "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "total_votes": 13
   },
   {
     "dist_id": 69,
     "const_id": 1,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
-    "total_votes": 4
+    "party_name": "समावेशी समाजवादी पार्टी",
+    "total_votes": 13
   },
   {
     "dist_id": 69,
     "const_id": 1,
-    "party_name": "नागरिक शक्ति, नेपाल",
-    "total_votes": 4
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "total_votes": 12
   },
   {
     "dist_id": 69,
     "const_id": 1,
-    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
-    "total_votes": 3
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "total_votes": 12
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "total_votes": 12
   },
   {
     "dist_id": 69,
     "const_id": 1,
     "party_name": "नेपाली जनता दल",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "त्रिमुल नेपाल",
-    "total_votes": 3
+    "total_votes": 11
   },
   {
     "dist_id": 69,
     "const_id": 1,
     "party_name": "एकल चिन्ह जगर भएको सिंह(सचेत नेपाली पार्टी/नागरिक सर्वोच्चता पार्टी नेपाल)",
-    "total_votes": 3
+    "total_votes": 9
   },
   {
     "dist_id": 69,
     "const_id": 1,
-    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
-    "total_votes": 3
+    "party_name": "नेपालका लागि नेपाली पार्टी",
+    "total_votes": 9
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "नेशनल रिपब्लिक नेपाल",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "नागरिक शक्ति, नेपाल",
+    "total_votes": 7
   },
   {
     "dist_id": 69,
     "const_id": 1,
     "party_name": "नेपाल जनमुक्ति पार्टी",
-    "total_votes": 2
+    "total_votes": 7
   },
   {
     "dist_id": 69,
     "const_id": 1,
-    "party_name": "पिपुल फर्ष्ट पार्टी",
-    "total_votes": 2
+    "party_name": "त्रिमुल नेपाल",
+    "total_votes": 7
   },
   {
     "dist_id": 69,
     "const_id": 1,
-    "party_name": "राष्ट्रिय जनमोर्चा",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
-    "total_votes": 2
+    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
+    "total_votes": 7
   },
   {
     "dist_id": 69,
     "const_id": 1,
     "party_name": "नेपाल मातृभूमि पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "संयुक्त नागरिक पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "जन अधिकार पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 69,
-    "const_id": 1,
-    "party_name": "स्वाभिमान पार्टी",
-    "total_votes": 1
+    "total_votes": 6
   },
   {
     "dist_id": 69,
     "const_id": 1,
     "party_name": "नेपाली जनश्रमदान संस्कृति पार्टी",
-    "total_votes": 1
+    "total_votes": 5
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "जन अधिकार पार्टी",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "पिपुल फर्ष्ट पार्टी",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "संयुक्त नागरिक पार्टी",
+    "total_votes": 5
   },
   {
     "dist_id": 69,
     "const_id": 1,
     "party_name": "नेपाल सद्‍भावना पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "गतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "स्वाभिमान पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 69,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
     "total_votes": 1
   },
   {
@@ -6591,108 +6993,168 @@
     "dist_id": 70,
     "const_id": 1,
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "total_votes": 438
+    "total_votes": 1083
   },
   {
     "dist_id": 70,
     "const_id": 1,
     "party_name": "नेपाली काँग्रेस",
-    "total_votes": 303
+    "total_votes": 1076
   },
   {
     "dist_id": 70,
     "const_id": 1,
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "total_votes": 77
+    "total_votes": 581
   },
   {
     "dist_id": 70,
     "const_id": 1,
     "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "total_votes": 44
+    "total_votes": 336
   },
   {
     "dist_id": 70,
     "const_id": 1,
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "total_votes": 17
+    "total_votes": 112
   },
   {
     "dist_id": 70,
     "const_id": 1,
     "party_name": "नेपाल जनता संरक्षण पार्टी",
-    "total_votes": 15
-  },
-  {
-    "dist_id": 70,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 5
+    "total_votes": 22
   },
   {
     "dist_id": 70,
     "const_id": 1,
     "party_name": "सार्वभौम नागरिक पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 70,
-    "const_id": 1,
-    "party_name": "जनमत पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 70,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनमोर्चा",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 70,
-    "const_id": 1,
-    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 70,
-    "const_id": 1,
-    "party_name": "नेपाल मजदुर किसान पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 70,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 70,
-    "const_id": 1,
-    "party_name": "नेपाल जनता पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 70,
-    "const_id": 1,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
-    "total_votes": 2
+    "total_votes": 15
   },
   {
     "dist_id": 70,
     "const_id": 1,
     "party_name": "श्रम संस्कृति पार्टी",
-    "total_votes": 2
+    "total_votes": 11
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "total_votes": 10
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "जनमत पार्टी",
+    "total_votes": 9
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनमोर्चा",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "नेपाल जनता पार्टी",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "जनता समाजवादी पार्टी, नेपाल",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "नेपाल मजदुर किसान पार्टी",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "राष्ट्र निर्माण दल नेपाल",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "बहुजन शक्ति पार्टी",
+    "total_votes": 3
   },
   {
     "dist_id": 70,
     "const_id": 1,
     "party_name": "नेपाली काँग्रेस (वी.पी.)",
-    "total_votes": 2
+    "total_votes": 3
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "total_votes": 3
   },
   {
     "dist_id": 70,
     "const_id": 1,
     "party_name": "जय मातृभूमि पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय परिवर्तन पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "नेपालका लागि नेपाली पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
     "total_votes": 1
   },
   {
@@ -6704,13 +7166,25 @@
   {
     "dist_id": 70,
     "const_id": 1,
-    "party_name": "नेपाल मातृभूमि पार्टी",
+    "party_name": "समावेशी समाजवादी पार्टी",
     "total_votes": 1
   },
   {
     "dist_id": 70,
     "const_id": 1,
-    "party_name": "बहुजन शक्ति पार्टी",
+    "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "नेशनल रिपब्लिक नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
     "total_votes": 1
   },
   {
@@ -6722,193 +7196,223 @@
   {
     "dist_id": 70,
     "const_id": 1,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 70,
-    "const_id": 1,
     "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
     "total_votes": 1
   },
   {
     "dist_id": 70,
     "const_id": 1,
-    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
+    "party_name": "राष्ट्रिय गौरव पार्टी",
     "total_votes": 1
   },
   {
     "dist_id": 70,
     "const_id": 1,
-    "party_name": "जनता समाजवादी पार्टी, नेपाल",
+    "party_name": "राष्ट्रिय एकता दल",
     "total_votes": 1
   },
   {
     "dist_id": 70,
     "const_id": 1,
-    "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
+    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "नेपाल मातृभूमि पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 70,
+    "const_id": 1,
+    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
     "total_votes": 1
   },
   {
     "dist_id": 71,
     "const_id": 1,
     "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "total_votes": 2493
+    "total_votes": 3563
   },
   {
     "dist_id": 71,
     "const_id": 1,
     "party_name": "नेपाली काँग्रेस",
-    "total_votes": 1405
+    "total_votes": 2140
   },
   {
     "dist_id": 71,
     "const_id": 1,
     "party_name": "एकल चिन्ह चकिया (जाँतो) (राष्ट्रिय मुक्ति पार्टी नेपाल/जनता समाजवादी पार्टी/नागरिक उन्मुक्ति पार्टी, नेपाल)",
-    "total_votes": 1053
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "नेपाली कम्युनिष्ट पार्टी",
-    "total_votes": 577
+    "total_votes": 1916
   },
   {
     "dist_id": 71,
     "const_id": 1,
     "party_name": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "total_votes": 481
+    "total_votes": 847
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "नेपाली कम्युनिष्ट पार्टी",
+    "total_votes": 833
   },
   {
     "dist_id": 71,
     "const_id": 1,
     "party_name": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "total_votes": 440
+    "total_votes": 583
   },
   {
     "dist_id": 71,
     "const_id": 1,
     "party_name": "राष्ट्रिय परिवर्तन पार्टी",
-    "total_votes": 207
+    "total_votes": 222
   },
   {
     "dist_id": 71,
     "const_id": 1,
     "party_name": "श्रम संस्कृति पार्टी",
-    "total_votes": 103
+    "total_votes": 141
   },
   {
     "dist_id": 71,
     "const_id": 1,
     "party_name": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "total_votes": 60
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "नेपाल जनता संरक्षण पार्टी",
-    "total_votes": 27
+    "total_votes": 76
   },
   {
     "dist_id": 71,
     "const_id": 1,
     "party_name": "सार्वभौम नागरिक पार्टी",
-    "total_votes": 25
+    "total_votes": 44
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "नेपाल जनता संरक्षण पार्टी",
+    "total_votes": 35
   },
   {
     "dist_id": 71,
     "const_id": 1,
     "party_name": "नेपाल मजदुर किसान पार्टी",
-    "total_votes": 25
+    "total_votes": 27
   },
   {
     "dist_id": 71,
     "const_id": 1,
     "party_name": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
-    "total_votes": 14
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "जनमत पार्टी",
-    "total_votes": 12
+    "total_votes": 22
   },
   {
     "dist_id": 71,
     "const_id": 1,
     "party_name": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
-    "total_votes": 11
+    "total_votes": 19
   },
   {
     "dist_id": 71,
     "const_id": 1,
     "party_name": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "total_votes": 10
+    "total_votes": 19
   },
   {
     "dist_id": 71,
     "const_id": 1,
-    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
-    "total_votes": 7
+    "party_name": "जनमत पार्टी",
+    "total_votes": 15
   },
   {
     "dist_id": 71,
     "const_id": 1,
     "party_name": "एकल चिन्ह मोबाइल (आम जनता पार्टी/जनादेश पार्टी नेपाल)",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय एकता दल",
-    "total_votes": 7
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "राष्ट्र निर्माण दल नेपाल",
-    "total_votes": 6
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "नेपालका लागि नेपाली पार्टी",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
-    "total_votes": 5
+    "total_votes": 13
   },
   {
     "dist_id": 71,
     "const_id": 1,
     "party_name": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
-    "total_votes": 5
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "संयुक्त नागरिक पार्टी",
-    "total_votes": 4
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
-    "total_votes": 4
+    "total_votes": 11
   },
   {
     "dist_id": 71,
     "const_id": 1,
     "party_name": "नेपाली जनता दल",
+    "total_votes": 10
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय एकता दल",
+    "total_votes": 10
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय उर्जाशील पार्टी, नेपाल",
+    "total_votes": 9
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "नेपालका लागि नेपाली पार्टी",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "नेपाल लोकतान्त्रिक पार्टी",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "समावेशी समाजवादी पार्टी नेपाल",
+    "total_votes": 8
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "राष्ट्र निर्माण दल नेपाल",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय गौरव पार्टी",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "संयुक्त नागरिक पार्टी",
+    "total_votes": 7
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "total_votes": 6
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "नेपाल मातृभूमि पार्टी",
+    "total_votes": 5
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "नेपाल जनता पार्टी",
     "total_votes": 4
   },
   {
@@ -6920,43 +7424,55 @@
   {
     "dist_id": 71,
     "const_id": 1,
-    "party_name": "नेपाल मातृभूमि पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय गौरव पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
     "party_name": "स्वाभिमान पार्टी",
-    "total_votes": 3
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "जन अधिकार पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "नागरिक शक्ति, नेपाल",
-    "total_votes": 2
+    "total_votes": 4
   },
   {
     "dist_id": 71,
     "const_id": 1,
     "party_name": "जनता समाजवादी पार्टी, नेपाल",
+    "total_votes": 4
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनता पार्टी नेपाल",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "नागरिक शक्ति, नेपाल",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
+    "total_votes": 3
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "बहुजन शक्ति पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "समावेशी समाजवादी पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "नेपाल जनमुक्ति पार्टी",
     "total_votes": 2
   },
   {
@@ -6968,7 +7484,13 @@
   {
     "dist_id": 71,
     "const_id": 1,
-    "party_name": "जनता लोकतान्त्रिक पार्टी, नेपाल",
+    "party_name": "नेपाल सद्‍भावना पार्टी",
+    "total_votes": 2
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "जन अधिकार पार्टी",
     "total_votes": 2
   },
   {
@@ -6980,56 +7502,8 @@
   {
     "dist_id": 71,
     "const_id": 1,
-    "party_name": "राष्ट्रिय जनमुक्ति पार्टी",
-    "total_votes": 2
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
     "party_name": "जनप्रिय लोकतान्त्रिक पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "नेपाल जनमुक्ति पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "बहुजन शक्ति पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "त्रिमुल नेपाल",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "नेपाल जनता पार्टी",
-    "total_votes": 1
-  },
-  {
-    "dist_id": 71,
-    "const_id": 1,
-    "party_name": "समावेशी समाजवादी पार्टी",
-    "total_votes": 1
+    "total_votes": 2
   },
   {
     "dist_id": 71,
@@ -7040,13 +7514,49 @@
   {
     "dist_id": 71,
     "const_id": 1,
-    "party_name": "प्रजातान्त्रिक पार्टी नेपाल",
+    "party_name": "पिपुल फर्ष्ट पार्टी",
     "total_votes": 1
   },
   {
     "dist_id": 71,
     "const_id": 1,
-    "party_name": "नेपाल सद्‍भावना पार्टी",
+    "party_name": "मितेरी पार्टी नेपाल",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "उन्‍नत लोकतन्त्र पार्टी",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह  बस (नेपाल संघीय समाजवादी पार्टी/बहुजन एकता पार्टी नेपाल/नेपाल जनजागृति पार्टी)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "मंगोल नेशनल अर्गनाइजेशन",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "एकल चिन्ह जगर भएको सिंह(सचेत नेपाली पार्टी/नागरिक सर्वोच्चता पार्टी नेपाल)",
+    "total_votes": 1
+  },
+  {
+    "dist_id": 71,
+    "const_id": 1,
+    "party_name": "त्रिमुल नेपाल",
     "total_votes": 1
   }
 ]
