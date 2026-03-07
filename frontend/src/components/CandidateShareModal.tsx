@@ -183,12 +183,12 @@ const CandidateShareModal: React.FC<CandidateShareModalProps> = ({
 
                             {/* Stealth Watermark */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/5 font-black text-6xl tracking-tighter rotate-[-35deg] pointer-events-none select-none uppercase text-center leading-none">
-                                ELECTION<br />NEPAL
+                                ELECTION-NP
                             </div>
 
                             {/* Visible URL for branding */}
                             <div className="mt-auto pt-2 text-[8px] font-bold opacity-60 tracking-widest text-right">
-                                ELECTION-NP.COM
+                                {window.location.hostname}
                             </div>
                         </div>
                     </div>
