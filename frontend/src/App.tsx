@@ -1,19 +1,34 @@
-import { useState, useEffect, useRef, lazy, Suspense } from 'react';
+import { useState, useEffect, lazy, Suspense, useMemo } from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 import { Doughnut } from 'react-chartjs-2';
+import Confetti from 'react-confetti';
+import { useWindowSize } from 'react-use';
+import 'leaflet/dist/leaflet.css';
+import './index.css';
 import districtsData from './data/districts.json';
 import InsightCards from './components/InsightCards';
-import { supabase, mapRow } from './lib/supabase';
+import PRHighlights from './components/PRHighlights';
+import { mapRow } from './lib/supabase'; // { supabase, mapRow }
+import CandidateShareModal from './components/CandidateShareModal';
 
 const ElectionMap = lazy(() => import('./components/ElectionMap'));
 
 ChartJS.register(ArcElement, Tooltip, Legend, ChartDataLabels);
 
-// Create a lookup for District ID -> Name
+// Create a lookup for District ID -> Name & Nepali Name
 const districtLookup: Record<number, string> = {};
+const districtLookupNp: Record<number, string> = {};
+const provinceLookup: Record<number, string> = {};
+const provinceNamesMap: Record<number, string> = {
+  1: "Koshi", 2: "Madhesh", 3: "Bagmati", 4: "Gandaki",
+  5: "Lumbini", 6: "Karnali", 7: "Sudurpashchim"
+};
+
 districtsData.forEach((d: any) => {
   districtLookup[d.id] = d.name;
+  districtLookupNp[d.id] = d.name_np || d.name;
+  provinceLookup[d.id] = provinceNamesMap[d.parentId] || "Other";
 });
 
 // Define expected Types
@@ -26,6 +41,9 @@ export interface CandidateResult {
   Remarks: string;
   Gender?: string;
   Age?: number;
+  Qualification?: string;
+  StateName?: string;
+  DistrictName?: string;
 }
 
 // Custom colors for popular parties (Nepali API names)
@@ -55,10 +73,24 @@ function App() {
   const [leaders, setLeaders] = useState<CandidateResult[]>([]);
   const [allCandidates, setAllCandidates] = useState<CandidateResult[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [lang, setLang] = useState<'np' | 'en'>('en');
+  const [lang, setLang] = useState<'np' | 'en'>('np');
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const [liveStatus, setLiveStatus] = useState<'connecting' | 'live' | 'polling'>('connecting');
-  const channelRef = useRef<any>(null);
+  const [prByDistrict, setPRByDistrict] = useState<{ dist_id: number; const_id: number; party_name: string; total_votes: number }[]>([]);
+  const [prData, setPRData] = useState<{ party_name: string; total_votes: number }[]>([]);
+  const [shareCandidate, setShareCandidate] = useState<CandidateResult | null>(null);
+  const [isShareModalOpen, setIsShareModalOpen] = useState(false);
+  const [mapMode, setMapMode] = useState<'fptp' | 'pr'>('fptp');
+  const [prSearchTerm, setPrSearchTerm] = useState('');
+  const [prSortBy, setPrSortBy] = useState<'name' | 'votes' | 'best-district'>('votes');
+
+  // Advanced Table Filters
+  const [filterState, setFilterState] = useState('all');
+  const [filterDistrict, setFilterDistrict] = useState('all');
+  const [filterArea, setFilterArea] = useState('all');
+
+  const { width, height } = useWindowSize();
+  // const channelRef = useRef<any>(null);
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', theme === 'dark');
@@ -68,17 +100,29 @@ function App() {
   function processData(data: CandidateResult[]) {
     if (!data.length) return;
     setAllCandidates(data);
-    setLastUpdated(new Date().toLocaleTimeString('en-US') + ' NPT');
+    // Explicitly lock the timezone logic to Nepal (NPT) regardless of the host server location (e.g. JST)
+    const nptTime = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'Asia/Kathmandu',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true
+    }).format(new Date());
+    setLastUpdated(`${nptTime} NPT`);
 
     const leaderMap: Record<string, CandidateResult> = {};
     data.forEach(c => {
-      const key = `${c.MetaDistId}-${c.MetaConstId}`;
+      const key = `${c.MetaDistId} -${c.MetaConstId} `;
       const cur = leaderMap[key];
       if (!cur || (c.TotalVoteReceived || 0) > (cur.TotalVoteReceived || 0)) leaderMap[key] = c;
     });
     const leaderList = Object.values(leaderMap).sort(
       (a, b) => (b.TotalVoteReceived || 0) - (a.TotalVoteReceived || 0)
-    );
+    ).map(l => ({
+      ...l,
+      StateName: l.StateName || provinceLookup[l.MetaDistId] || 'Other',
+      DistrictName: l.DistrictName || districtLookup[l.MetaDistId] || `Dist ${l.MetaDistId}`
+    }));
     setLeaders(leaderList);
 
     const statsObj: Record<string, { leads: number, won: number }> = {};
@@ -93,7 +137,8 @@ function App() {
 
   // Initial load from Supabase or local backend
   async function loadData() {
-    // Option 1: Supabase
+    // Option 1: Supabase (COMMENTED OUT FOR HOTFIX)
+    /*
     if (supabase) {
       const { data, error } = await supabase
         .from('election_results')
@@ -104,47 +149,74 @@ function App() {
         return;
       }
     }
+    */
 
     // Option 2: Local backend fallback (dev)
     try {
-      const url = import.meta.env.DEV
-        ? 'http://localhost:3001/api/candidates/all'
-        : `${import.meta.env.BASE_URL}data/all-results.json`;
-      const res = await fetch(url);
-      const raw: CandidateResult[] = await res.json();
-      if (raw.length > 0) { processData(raw); return; }
+      setLiveStatus('connecting');
+      const t = `?t=${new Date().getTime()}`;
+      // Try local JSON first (updated by local scrapers)
+      let res = await fetch(`/data/all-results.json${t}`);
+      if (!res.ok) {
+        // Fallback to GitHub for production/remote environments
+        const ghUrl = `https://raw.githubusercontent.com/Ashok314/election-np/hotfix-local-scrape/frontend/public/data/all-results.json`;
+        res = await fetch(ghUrl + t);
+      }
+
+      const raw: any[] = await res.json();
+      if (raw.length > 0) {
+        processData(raw.map(mapRow));
+        setLiveStatus('live');
+        return;
+      }
     } catch { /* ignore */ }
 
     // Demo fallback
     processData([
-      { MetaDistId: 27, MetaConstId: 1, CandidateName: 'Prakash Man Singh', PoliticalPartyName: 'नेपाली काँग्रेस', TotalVoteReceived: 7143, Remarks: 'Elected', Age: 62, Gender: 'पुरुष' },
-      { MetaDistId: 35, MetaConstId: 2, CandidateName: 'Rabi Lamichhane', PoliticalPartyName: 'राष्ट्रिय स्वतन्त्र पार्टी', TotalVoteReceived: 49264, Remarks: 'Elected', Age: 43, Gender: 'पुरुष' },
-      { MetaDistId: 4, MetaConstId: 5, CandidateName: 'KP Sharma Oli', PoliticalPartyName: 'नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)', TotalVoteReceived: 52319, Remarks: 'Elected', Age: 72, Gender: 'पुरुष' },
+      { MetaDistId: 27, MetaConstId: 1, CandidateName: 'Prakash Man Singh', PoliticalPartyName: 'नेपाली काँग्रेस', TotalVoteReceived: 7143, Remarks: 'Elected', Age: 62, Gender: 'पुरुष', StateName: 'Bagmati', DistrictName: 'काठमाडौं' },
+      { MetaDistId: 35, MetaConstId: 2, CandidateName: 'Rabi Lamichhane', PoliticalPartyName: 'राष्ट्रिय स्वतन्त्र पार्टी', TotalVoteReceived: 49264, Remarks: 'Elected', Age: 43, Gender: 'पुरुष', StateName: 'Bagmati', DistrictName: 'चितवन' },
+      { MetaDistId: 4, MetaConstId: 5, CandidateName: 'KP Sharma Oli', PoliticalPartyName: 'नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)', TotalVoteReceived: 52319, Remarks: 'Elected', Age: 72, Gender: 'पुरुष', StateName: 'Koshi', DistrictName: 'झापा' },
     ]);
   }
 
-  // Subscribe to Supabase Realtime
-  function subscribeRealtime() {
-    if (!supabase) { setLiveStatus('polling'); return; }
-    const channel = supabase
-      .channel('election_results_changes')
-      .on('postgres_changes', { event: '*', schema: 'public', table: 'election_results' }, () => {
-        loadData();
-      })
-      .subscribe((status) => {
-        setLiveStatus(status === 'SUBSCRIBED' ? 'live' : 'connecting');
-      });
-    channelRef.current = channel as any;
-  }
+  // HOTFIX: Disable Supabase Realtime Subscriptions
+  /* function subscribeRealtime() {
+    // By-pass realtime and rely purely on the polling interval
+    setLiveStatus('polling');
+  } */
 
   useEffect(() => {
     loadData();
-    subscribeRealtime();
-    const interval = !supabase ? setInterval(loadData, 30_000) : undefined;
-    return () => {
-      if (channelRef.current) supabase!.removeChannel(channelRef.current as any);
-      if (interval) clearInterval(interval);
-    };
+    // 5-second interval polling for FPTP data
+    const fptpInterval = setInterval(loadData, 5_000);
+
+    // PR data: fetch once on load, then every 60s (doesn't need to be as frequent)
+    async function loadPRData() {
+      try {
+        const t = `?t=${new Date().getTime()}`;
+        // Try local dev server first (public/ folder), fall back to GitHub
+        const tryFetch = async (filename: string) => {
+          try {
+            const local = await fetch(`/data/${filename}${t}`);
+            const data = await local.json();
+            if (Array.isArray(data) && data.length > 0) return data;
+          } catch { /* try GitHub */ }
+          const ghBase = `https://raw.githubusercontent.com/Ashok314/election-np/hotfix-local-scrape/frontend/public/data`;
+          const res = await fetch(`${ghBase}/${filename}${t}`);
+          return res.json();
+        };
+        const [prNat, prDist] = await Promise.all([
+          tryFetch('pr-results.json'),
+          tryFetch('pr-by-district.json'),
+        ]);
+        if (Array.isArray(prNat) && prNat.length > 0) setPRData(prNat);
+        if (Array.isArray(prDist) && prDist.length > 0) setPRByDistrict(prDist);
+      } catch { /* ignore, PR data may not exist yet */ }
+    }
+    loadPRData();
+    const prInterval = setInterval(loadPRData, 60_000);
+
+    return () => { clearInterval(fptpInterval); clearInterval(prInterval); };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const [sortBy, setSortBy] = useState<'votes' | 'district' | 'party'>('votes');
@@ -163,7 +235,11 @@ function App() {
       const isElected = r.Remarks === 'Elected' || r.Remarks === 'निर्वाचित';
       const partyOk = filterParty === 'all' || r.PoliticalPartyName === filterParty;
       const statusOk = filterStatus === 'all' || (filterStatus === 'elected' ? isElected : !isElected);
-      return matches && partyOk && statusOk;
+      const stateOk = filterState === 'all' || r.StateName === filterState;
+      const distOk = filterDistrict === 'all' || r.DistrictName === filterDistrict;
+      const areaOk = filterArea === 'all' || r.MetaConstId === parseInt(filterArea);
+
+      return matches && partyOk && statusOk && stateOk && distOk && areaOk;
     })
     .sort((a, b) => {
       if (sortBy === 'votes') return (b.TotalVoteReceived || 0) - (a.TotalVoteReceived || 0);
@@ -177,7 +253,77 @@ function App() {
     .sort((a, b) => (b[1].leads + b[1].won) - (a[1].leads + a[1].won))
     .slice(0, 5);
 
-  const totalSeats = topParties.reduce((s, [, c]) => s + c.leads + c.won, 0) || 1;
+  const totalElected = leaders.filter(r => r.Remarks === 'Elected' || r.Remarks === 'निर्वाचित').length;
+  const totalPRDistrictsFinished = new Set(prByDistrict.map(d => d.dist_id)).size;
+  // Convert pr-by-district data to CandidateResult shape for the map
+  // Deduplicate: pick only the top party per constituency for coloring
+  const prMapData: CandidateResult[] = useMemo(() => {
+    const leaderMap = new Map<string, typeof prByDistrict[0]>();
+    for (const d of prByDistrict) {
+      const key = `${d.dist_id}-${d.const_id}`;
+      if (!leaderMap.has(key) || d.total_votes > leaderMap.get(key)!.total_votes) {
+        leaderMap.set(key, d);
+      }
+    }
+    return Array.from(leaderMap.values()).map(d => ({
+      MetaDistId: d.dist_id,
+      MetaConstId: d.const_id,
+      CandidateName: d.party_name,
+      PoliticalPartyName: d.party_name,
+      TotalVoteReceived: d.total_votes,
+      Remarks: '',
+    }));
+  }, [prByDistrict]);
+  // Filter and sort for PR Table
+  const filteredPRData = useMemo(() => {
+    // 1. Calculate best district for each party
+    const partyStats = prData.map(p => {
+      const partyRows = prByDistrict.filter(d => d.party_name === p.party_name);
+      const distMap = new Map<number, number>();
+      partyRows.forEach(d => {
+        distMap.set(d.dist_id, (distMap.get(d.dist_id) || 0) + d.total_votes);
+      });
+      let bestDistId = -1;
+      let bestDistVotes = 0;
+      for (const [dId, votes] of distMap.entries()) {
+        if (votes > bestDistVotes) {
+          bestDistVotes = votes;
+          bestDistId = dId;
+        }
+      }
+      return {
+        ...p,
+        bestDistId,
+        bestDistVotes,
+        bestDistName: bestDistId > 0 ? (districtLookup[bestDistId] || `Dist ${bestDistId}`) : '—'
+      };
+    });
+
+    // 2. Filter
+    const q = prSearchTerm.toLowerCase();
+    const filtered = partyStats.filter(p => {
+      return !q ||
+        p.party_name.toLowerCase().includes(q) ||
+        p.bestDistName.toLowerCase().includes(q);
+    });
+
+    // 3. Sort
+    return filtered.sort((a, b) => {
+      if (prSortBy === 'votes') return b.total_votes - a.total_votes;
+      if (prSortBy === 'best-district') return b.bestDistVotes - a.bestDistVotes;
+      return a.party_name.localeCompare(b.party_name);
+    });
+  }, [prData, prByDistrict, prSearchTerm, prSortBy]);
+
+  // Full flat list for hover tooltips in PR mode
+  const prAllCandidates: CandidateResult[] = prByDistrict.map(d => ({
+    MetaDistId: d.dist_id,
+    MetaConstId: d.const_id,
+    CandidateName: d.party_name,
+    PoliticalPartyName: d.party_name,
+    TotalVoteReceived: d.total_votes,
+    Remarks: '',
+  }));
 
   // ── Strings ──────────────────────────────────────────────────────────────
   const t = {
@@ -198,6 +344,9 @@ function App() {
     colStatus: lang === 'en' ? 'Status' : 'अवस्था',
     statusElected: lang === 'en' ? 'Elected' : 'निर्वाचित',
     statusLeading: lang === 'en' ? 'Leading' : 'अग्रता',
+    totalDeclared: lang === 'en' ? 'DECLARATIONS' : 'विजयी',
+    prFinished: lang === 'en' ? 'PR DISTRICTS' : 'समानुपातिक जिल्ला',
+    colEdu: lang === 'en' ? 'Qualification' : 'शिक्षा',
   };
 
   const isDark = theme === 'dark';
@@ -208,8 +357,9 @@ function App() {
 
   return (
     <div className={`min-h-screen transition-colors duration-300 flex flex-col ${bg}`}>
+      {totalElected >= 165 && <Confetti width={width} height={height} recycle={false} numberOfPieces={500} />}
 
-      {/* ── Maintenance Banner ── */}
+      {/* ── Maintenance Banner ──
       <div className="w-full bg-amber-500 text-amber-950 px-4 py-2.5 text-center text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-sm z-[100]">
         <span className="text-lg leading-none">⚠️</span>
         <div>
@@ -221,54 +371,66 @@ function App() {
           </a>
         </div>
       </div>
+      */}
 
       {/* ── Header ── */}
-      <header className={`sticky top-0 z-50 border-b backdrop-blur-md px-6 py-3 flex items-center justify-between ${headerBg}`}>
+      <header className={`lg:sticky relative top-0 z-[9999] border-b backdrop-blur-md px-6 py-3 flex items-center justify-between ${headerBg}`}>
         <div>
           <h1 className="text-2xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-300">
             {t.title}
           </h1>
           <p className={`text-xs font-medium ${subText}`}>{t.subTitle}</p>
+          {/* Mobile-only Metric */}
+          <div className="flex lg:hidden items-center gap-3 mt-1 text-[9px] font-black tracking-wide">
+            <div className={`flex items-center gap-1 ${theme === 'dark' ? 'text-emerald-400' : 'text-emerald-600'}`}>
+              🏆 {totalElected} / 165
+            </div>
+            <div className={`w-px h-2 ${theme === 'dark' ? 'bg-zinc-800' : 'bg-slate-200'}`} />
+            <div className={`flex items-center gap-1 ${theme === 'dark' ? 'text-violet-400' : 'text-violet-600'}`}>
+              🗳️ {totalPRDistrictsFinished} / 77
+            </div>
+          </div>
         </div>
 
-        {/* Seat race bar */}
-        <div className="hidden lg:flex items-center gap-4 flex-1 mx-8">
-          <div className="flex h-3 w-full rounded-full overflow-hidden gap-0.5">
-            {topParties.map(([party, counts]) => {
-              const total = counts.leads + counts.won;
-              const pct = (total / totalSeats) * 100;
-              return (
-                <div
-                  key={party}
-                  className="h-full rounded-full transition-all duration-700"
-                  style={{ width: `${pct}%`, backgroundColor: getPartyColor(party) }}
-                  title={`${party}: ${total} seats`}
-                />
-              );
-            })}
+        {/* Stats Section with Metrics */}
+        <div className="hidden lg:flex items-center gap-4 flex-1 mx-8 justify-center">
+          {/* FPTP Pill */}
+          <div className={`flex items-center gap-3 px-5 py-2 rounded-xl backdrop-blur-md shadow-sm border ${theme === 'dark' ? 'bg-zinc-800/40 border-zinc-800' : 'bg-slate-100/50 border-slate-200'}`}>
+            <div className="flex flex-col items-end leading-none translate-y-[2px]">
+              <span className={`text-[9px] uppercase font-black tracking-[0.2em] ${theme === 'dark' ? 'text-zinc-500' : 'text-slate-400'}`}>{t.totalDeclared}</span>
+              <span className="text-xl font-black mt-1 bg-clip-text text-transparent bg-gradient-to-br from-emerald-400 to-teal-600">
+                {totalElected} <span className={`text-sm tracking-tight ${theme === 'dark' ? 'text-zinc-600' : 'text-slate-400'}`}>/ 165</span>
+              </span>
+            </div>
+            <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-emerald-500/20 flex items-center justify-center to-teal-500/10 border border-emerald-500/20">
+              <span className="text-xl">🏆</span>
+            </div>
           </div>
-          <div className="flex flex-wrap gap-x-3 gap-y-1">
-            {topParties.slice(0, 3).map(([party, counts]) => (
-              <div key={party} className="flex items-center gap-1">
-                <div className="w-2 h-2 rounded-full" style={{ backgroundColor: getPartyColor(party) }} />
-                <span className={`text-xs font-bold ${isDark ? 'text-zinc-300' : 'text-gray-600'}`}>
-                  {counts.leads + counts.won}
-                </span>
-              </div>
-            ))}
+
+          {/* PR Pill */}
+          <div className={`flex items-center gap-3 px-5 py-2 rounded-xl backdrop-blur-md shadow-sm border ${theme === 'dark' ? 'bg-zinc-800/40 border-zinc-800' : 'bg-slate-100/50 border-slate-200'}`}>
+            <div className="flex flex-col items-end leading-none translate-y-[2px]">
+              <span className={`text-[9px] uppercase font-black tracking-[0.2em] ${theme === 'dark' ? 'text-zinc-500' : 'text-slate-400'}`}>{t.prFinished}</span>
+              <span className="text-xl font-black mt-1 bg-clip-text text-transparent bg-gradient-to-br from-violet-400 to-indigo-600">
+                {totalPRDistrictsFinished} <span className={`text-sm tracking-tight ${theme === 'dark' ? 'text-zinc-600' : 'text-slate-400'}`}>/ 77</span>
+              </span>
+            </div>
+            <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-violet-500/20 flex items-center justify-center to-indigo-500/10 border border-violet-500/20">
+              <span className="text-xl">🗳️</span>
+            </div>
           </div>
         </div>
 
         <div className="flex items-center gap-2">
           {/* Live status badge */}
-          <div className={`flex items-center gap-1.5 text-xs px-2 py-1 rounded-full border ${liveStatus === 'live' ? (isDark ? 'border-emerald-700 text-emerald-400' : 'border-emerald-300 text-emerald-600') :
+          <div className={`flex items-center justify-center gap-1.5 w-28 text-[10px] font-bold tracking-wider px-2 py-1 rounded-full border ${liveStatus === 'live' ? (isDark ? 'border-emerald-700 text-emerald-400' : 'border-emerald-300 text-emerald-600') :
             liveStatus === 'polling' ? (isDark ? 'border-zinc-700 text-zinc-400' : 'border-gray-300 text-gray-500') :
               (isDark ? 'border-zinc-700 text-zinc-500' : 'border-gray-200 text-gray-400')
             }`}>
             <div className={`w-1.5 h-1.5 rounded-full ${liveStatus === 'live' ? 'bg-emerald-400 live' :
               liveStatus === 'polling' ? 'bg-amber-400' : 'bg-zinc-600'
               }`} />
-            {liveStatus === 'live' ? 'LIVE' : liveStatus === 'polling' ? 'POLLING' : 'CONNECTING'}
+            {liveStatus === 'live' ? 'LIVE' : liveStatus === 'polling' ? 'POLLING' : 'CONNECT'}
           </div>
           <span className={`text-xs ${subText}`}>{t.lastUpdated} {lastUpdated}</span>
           <div className={`w-px h-4 ${isDark ? 'bg-zinc-700' : 'bg-gray-300'}`} />
@@ -283,33 +445,64 @@ function App() {
         </div>
       </header>
 
-      {/* ── Body: Split Layout ── */}
-      <div className="flex flex-col lg:flex-row min-h-[calc(100vh-57px)]">
+      {/* ── Main Content ── */}
+      < div className="flex flex-col lg:flex-row min-h-[calc(100vh-57px)]" >
 
         {/* LEFT: Map */}
-        <div className="lg:w-[58%] p-4 flex flex-col gap-4">
-          <div className={`rounded-2xl border overflow-hidden ${card}`} style={{ height: 'calc(100vh - 100px)', minHeight: 480 }}>
-            <div className={`px-4 py-3 border-b flex items-center gap-2 ${isDark ? 'border-zinc-800' : 'border-gray-100'}`}>
+        < div className="lg:w-[58%] p-4 flex flex-col gap-4" >
+          <div className={`rounded-2xl border overflow-hidden flex flex-col ${card}`}>
+            <div className={`px-4 py-3 border-b flex items-center gap-2 flex-wrap ${isDark ? 'border-zinc-800' : 'border-gray-100'}`}>
               <div className="w-1.5 h-5 bg-emerald-500 rounded-full" />
               <span className={`font-bold text-sm ${isDark ? 'text-zinc-200' : 'text-gray-700'}`}>{t.mapTitle}</span>
-              <span className={`text-xs ml-auto ${subText}`}>{leaders.length} constituencies</span>
+              <span className={`text-xs ${subText}`}>{leaders.length} constituencies</span>
+              {/* Map Mode Toggle */}
+              <div className={`ml-auto flex items-center rounded-lg overflow-hidden border text-[10px] font-bold tracking-wider ${isDark ? 'border-zinc-700' : 'border-gray-200'}`}>
+                <button
+                  onClick={() => setMapMode('fptp')}
+                  className={`px-3 py-1.5 transition-colors ${mapMode === 'fptp'
+                    ? (isDark ? 'bg-emerald-600 text-white' : 'bg-emerald-500 text-white')
+                    : (isDark ? 'text-zinc-400 hover:bg-zinc-800' : 'text-gray-500 hover:bg-gray-50')
+                    }`}
+                >
+                  {lang === 'en' ? 'FPTP' : 'प्रत्यक्ष'}
+                </button>
+                <button
+                  onClick={() => setMapMode('pr')}
+                  className={`px-3 py-1.5 transition-colors ${mapMode === 'pr'
+                    ? (isDark ? 'bg-blue-600 text-white' : 'bg-blue-500 text-white')
+                    : (isDark ? 'text-zinc-400 hover:bg-zinc-800' : 'text-gray-500 hover:bg-gray-50')
+                    }`}
+                >
+                  {lang === 'en' ? 'PR' : 'समानुपातिक'}
+                </button>
+              </div>
             </div>
-            <div className="h-[calc(100%-45px)]">
+            <div className="flex-grow min-h-0">
               <Suspense fallback={
                 <div className={`flex items-center justify-center h-full ${subText}`}>
                   Loading map…
                 </div>
               }>
                 <ElectionMap
-                  resultsData={leaders}
-                  allCandidates={allCandidates}
+                  resultsData={mapMode === 'pr' ? prMapData : leaders}
+                  allCandidates={mapMode === 'pr' ? prAllCandidates : allCandidates}
                   partyColors={PARTY_COLORS}
                   theme={theme}
                   lang={lang}
+                  onShare={(c) => { setShareCandidate(c); setIsShareModalOpen(true); }}
                 />
               </Suspense>
             </div>
           </div>
+
+          <PRHighlights
+            prData={prData}
+            prByDistrict={prByDistrict}
+            theme={theme}
+            lang={lang}
+            districtLookup={districtLookup}
+            districtLookupNp={districtLookupNp}
+          />
         </div>
 
         {/* RIGHT: Stats + Insights + Table */}
@@ -317,56 +510,79 @@ function App() {
 
           {/* Party Cards */}
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            {topParties.map(([party, counts]) => (
-              <div key={party} className={`rounded-2xl border p-3 relative overflow-hidden group ${card}`}>
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-2xl" style={{ backgroundColor: getPartyColor(party) }} />
-                <div className="w-3 h-1 rounded-full mb-2" style={{ backgroundColor: getPartyColor(party) }} />
-                <div className="text-3xl font-black" style={{ color: getPartyColor(party) }}>
-                  {counts.leads + counts.won}
+            {
+              topParties.map(([party, counts]) => (
+                <div key={party} className={`rounded-r-xl border p-3 border-l-4 relative overflow-hidden group ${card}`} style={{ borderLeftColor: getPartyColor(party) }}>
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300" style={{ backgroundColor: getPartyColor(party) }} />
+
+                  {/* Smaller stats on top */}
+                  <div className={`flex gap-2 mb-1.5 text-[10px] font-bold uppercase`}>
+                    <span style={{ color: '#60a5fa' }}>{counts.leads} {t.leads}</span>
+                    <span style={{ color: '#34d399' }}>{counts.won} {t.won}</span>
+                  </div>
+
+                  {/* Massive Total */}
+                  <div className="text-3xl font-black leading-none" style={{ color: getPartyColor(party) }}>
+                    {counts.leads + counts.won}
+                  </div>
+
+                  {/* Title */}
+                  <div className={`text-[10px] font-bold mt-1.5 leading-tight break-words uppercase tracking-wide ${isDark ? 'text-zinc-400' : 'text-slate-500'}`}>
+                    {party}
+                  </div>
                 </div>
-                <div className={`text-[10px] font-medium mt-1 leading-tight break-words ${isDark ? 'text-zinc-400' : 'text-gray-500'}`}>
-                  {party}
-                </div>
-                <div className={`flex gap-2 mt-2 text-[10px] font-bold uppercase`}>
-                  <span style={{ color: '#60a5fa' }}>{counts.leads} {t.leads}</span>
-                  <span style={{ color: '#34d399' }}>{counts.won} {t.won}</span>
-                </div>
-              </div>
-            ))}
+              ))
+            }
           </div>
 
-          {/* Donut Chart */}
+          {/* Charts: FPTP Seat Share + PR Vote Share side-by-side */}
           <div className={`rounded-2xl border p-4 ${card}`}>
-            <div className={`font-bold text-sm mb-3 flex items-center gap-2 ${isDark ? 'text-zinc-200' : 'text-gray-700'}`}>
-              <div className="w-1.5 h-5 bg-emerald-500 rounded-full" />
-              {lang === 'en' ? 'Vote Share' : 'मत विभाजन'}
-            </div>
-            <div className="h-44">
-              <Doughnut
-                data={{
-                  labels: topParties.map(([p]) => p),
-                  datasets: [{
-                    data: topParties.map(([, c]) => c.leads + c.won),
-                    backgroundColor: topParties.map(([p]) => getPartyColor(p)),
-                    borderWidth: 0,
-                    hoverOffset: 4,
-                  }]
-                }}
-                options={{
-                  responsive: true,
-                  maintainAspectRatio: false,
-                  cutout: '60%',
-                  plugins: {
-                    legend: { position: 'right', labels: { color: isDark ? '#a1a1aa' : '#4b5563', padding: 12, font: { size: 11 } } },
-                    datalabels: { display: true, color: '#fff', font: { weight: 'bold', size: 12 }, formatter: (v: number) => v > 0 ? v : '' }
-                  }
-                }}
-              />
+            <div className="flex gap-4">
+              {/* FPTP Seat Share */}
+              <div className="flex-1 min-w-0">
+                <div className={`text-[10px] font-bold uppercase tracking-wider mb-2 flex items-center gap-1 ${subText}`}>
+                  <div className="w-1.5 h-3 bg-emerald-500 rounded-full" />
+                  {lang === 'en' ? 'Seat Share' : 'सिट विभाजन'}
+                </div>
+                <div className="h-36">
+                  <Doughnut
+                    data={{
+                      labels: topParties.map(([p]) => p),
+                      datasets: [{ data: topParties.map(([, c]) => c.leads + c.won), backgroundColor: topParties.map(([p]) => getPartyColor(p)), borderWidth: 0, hoverOffset: 4 }]
+                    }}
+                    options={{ responsive: true, maintainAspectRatio: false, cutout: '62%', plugins: { legend: { display: false }, datalabels: { display: true, color: '#fff', font: { weight: 'bold', size: 11 }, formatter: (v: number) => v > 0 ? v : '' } } }}
+                  />
+                </div>
+              </div>
+              {/* Divider */}
+              <div className={`w-px self-stretch ${isDark ? 'bg-zinc-800' : 'bg-gray-100'}`} />
+              {/* PR Vote Share */}
+              <div className="flex-1 min-w-0">
+                <div className={`text-[10px] font-bold uppercase tracking-wider mb-2 flex items-center gap-1 ${subText}`}>
+                  <div className="w-1.5 h-3 bg-blue-500 rounded-full" />
+                  {lang === 'en' ? 'PR Vote Share' : 'समानुपातिक मत'}
+                </div>
+                <div className="h-36">
+                  {prData.length > 0 ? (
+                    <Doughnut
+                      data={{
+                        labels: prData.slice(0, 8).map(p => p.party_name),
+                        datasets: [{ data: prData.slice(0, 8).map(p => p.total_votes), backgroundColor: prData.slice(0, 8).map(p => getPartyColor(p.party_name)), borderWidth: 0, hoverOffset: 4 }]
+                      }}
+                      options={{ responsive: true, maintainAspectRatio: false, cutout: '62%', plugins: { legend: { display: false }, datalabels: { display: true, color: '#fff', font: { weight: 'bold', size: 10 }, formatter: (v: number, ctx: any) => { const total = (ctx.dataset.data as number[]).reduce((a: number, b: number) => a + b, 0); const pct = ((v / total) * 100).toFixed(0); return Number(pct) > 4 ? `${pct}%` : ''; } } } }}
+                    />
+                  ) : (
+                    <div className={`flex items-center justify-center h-full text-[10px] italic ${subText}`}>
+                      {lang === 'en' ? 'Awaiting PR data…' : 'PR तथ्यांक लोड हुँदैछ…'}
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Insight Cards */}
-          <div className={`rounded-2xl border p-4 ${card}`}>
+          < div className={`rounded-2xl border p-4 ${card}`}>
             <div className={`font-bold text-sm mb-3 flex items-center gap-2 ${isDark ? 'text-zinc-200' : 'text-gray-700'}`}>
               <div className="w-1.5 h-5 bg-amber-500 rounded-full" />
               {t.insights}
@@ -376,175 +592,309 @@ function App() {
               leaders={leaders}
               theme={theme}
               lang={lang}
+              districtLookup={districtLookup}
+              districtLookupNp={districtLookupNp}
             />
-          </div>
+          </div >
 
           <div className={`text-center text-[10px] pb-2 ${isDark ? 'text-zinc-700' : 'text-gray-400'}`}>
             Official ECN data · Nepal Election 2082 · Built for Nepalis
           </div>
-        </div>
-      </div>
+        </div >
+      </div >
 
-      {/* ── Full-Width Candidates Table ── */}
-      <div className="px-4 pb-8">
-        <div className={`rounded-2xl border overflow-hidden ${card}`}>
-          {/* Table header + controls */}
+      {/* ── Tables: Pratakshya + Samanupatik side-by-side ── */}
+      <div className="px-4 pb-8 flex flex-col lg:flex-row gap-4">
+
+        {/* ── प्रत्यक्ष (FPTP) Table ── */}
+        <div className={`flex-1 min-w-0 rounded-2xl border overflow-hidden ${card}`}>
           <div className={`px-5 py-3 border-b flex flex-wrap items-center gap-3 ${isDark ? 'border-zinc-800' : 'border-slate-200'}`}>
             <div className={`font-bold text-sm flex items-center gap-2 ${isDark ? 'text-zinc-200' : 'text-gray-700'}`}>
-              <div className="w-1.5 h-5 bg-purple-500 rounded-full" />
-              {t.tableTitle}
-              <span className={`text-xs font-normal ${isDark ? 'text-zinc-500' : 'text-slate-400'}`}>
-                {filteredLeaders.length}/{leaders.length}
-              </span>
+              <div className="w-1.5 h-5 bg-emerald-500 rounded-full" />
+              {lang === 'en' ? 'Pratakshya (FPTP)' : 'प्रत्यक्ष'}
+              <span className={`text-xs font-normal ${isDark ? 'text-zinc-500' : 'text-slate-400'}`}>{filteredLeaders.length}/{leaders.length}</span>
             </div>
-
             <div className="flex flex-wrap gap-2 ml-auto items-center">
-              {/* Search */}
-              <input
-                placeholder={t.searchPlaceholder}
-                value={searchTerm}
-                onChange={e => setSearchTerm(e.target.value)}
-                className={`text-xs rounded-xl pl-3 pr-3 py-1.5 w-52 focus:outline-none focus:ring-1 focus:ring-emerald-500 ${isDark ? 'bg-zinc-800 border border-zinc-700 text-zinc-200 placeholder-zinc-500' : 'bg-slate-50 border border-slate-200 text-gray-700 placeholder-gray-400'
-                  }`}
-              />
-
-              {/* Party filter */}
-              <select
-                value={filterParty}
-                onChange={e => setFilterParty(e.target.value)}
-                className={`text-xs rounded-xl px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-emerald-500 ${isDark ? 'bg-zinc-800 border border-zinc-700 text-zinc-200' : 'bg-slate-50 border border-slate-200 text-gray-700'
-                  }`}
-              >
+              <input placeholder={t.searchPlaceholder} value={searchTerm} onChange={e => setSearchTerm(e.target.value)}
+                className={`text-xs rounded-xl pl-3 pr-3 py-1.5 w-40 focus:outline-none focus:ring-1 focus:ring-emerald-500 ${isDark ? 'bg-zinc-800 border border-zinc-700 text-zinc-200 placeholder-zinc-500' : 'bg-slate-50 border border-slate-200 text-gray-700 placeholder-gray-400'}`} />
+              <select value={filterParty} onChange={e => setFilterParty(e.target.value)}
+                className={`text-xs rounded-xl px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-emerald-500 ${isDark ? 'bg-zinc-800 border border-zinc-700 text-zinc-200' : 'bg-slate-50 border border-slate-200 text-gray-700'}`}>
                 <option value="all">{lang === 'en' ? 'All Parties' : 'सबै दल'}</option>
-                {Object.keys(overallStats).map(p => (
-                  <option key={p} value={p}>{p}</option>
-                ))}
+                {Object.keys(overallStats).map(p => <option key={p} value={p}>{p}</option>)}
               </select>
-
-              {/* Status filter */}
-              <select
-                value={filterStatus}
-                onChange={e => setFilterStatus(e.target.value)}
-                className={`text-xs rounded-xl px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-emerald-500 ${isDark ? 'bg-zinc-800 border border-zinc-700 text-zinc-200' : 'bg-slate-50 border border-slate-200 text-gray-700'
-                  }`}
-              >
-                <option value="all">{lang === 'en' ? 'All Status' : 'सबै अवस्था'}</option>
+              <select value={filterStatus} onChange={e => setFilterStatus(e.target.value)}
+                className={`text-xs rounded-xl px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-emerald-500 ${isDark ? 'bg-zinc-800 border border-zinc-700 text-zinc-200' : 'bg-slate-50 border border-slate-200 text-gray-700'}`}>
+                <option value="all">{lang === 'en' ? 'All' : 'सबै'}</option>
                 <option value="elected">{lang === 'en' ? 'Elected' : 'निर्वाचित'}</option>
                 <option value="leading">{lang === 'en' ? 'Leading' : 'अग्रता'}</option>
               </select>
 
-              {/* Sort */}
+              {/* Advanced Hierarchical Filters */}
+              <select value={filterState} onChange={e => { setFilterState(e.target.value); setFilterDistrict('all'); setFilterArea('all'); }}
+                className={`text-xs rounded-xl px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-emerald-500 ${isDark ? 'bg-zinc-800 border border-zinc-700 text-zinc-200' : 'bg-slate-50 border border-slate-200 text-gray-700'}`}>
+                <option value="all">{lang === 'en' ? 'Province' : 'प्रदेश'}</option>
+                {Array.from(new Set(allCandidates.map(c => c.StateName || provinceLookup[c.MetaDistId]).filter(Boolean))).sort().map(s => <option key={s} value={s}>{s}</option>)}
+              </select>
+
+              <select value={filterDistrict} onChange={e => { setFilterDistrict(e.target.value); setFilterArea('all'); }}
+                className={`text-xs rounded-xl px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-emerald-500 ${isDark ? 'bg-zinc-800 border border-zinc-700 text-zinc-200' : 'bg-slate-50 border border-slate-200 text-gray-700'}`}>
+                <option value="all">{lang === 'en' ? 'District' : 'जिल्ला'}</option>
+                {Array.from(new Set(allCandidates
+                  .filter(c => filterState === 'all' || (c.StateName || provinceLookup[c.MetaDistId]) === filterState)
+                  .map(c => c.DistrictName || districtLookup[c.MetaDistId])
+                  .filter(Boolean))).sort().map(d => <option key={d} value={d}>{d}</option>)}
+              </select>
+
+              <select value={filterArea} onChange={e => setFilterArea(e.target.value)}
+                className={`text-xs rounded-xl px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-emerald-500 ${isDark ? 'bg-zinc-800 border border-zinc-700 text-zinc-200' : 'bg-slate-50 border border-slate-200 text-gray-700'}`}>
+                <option value="all">{lang === 'en' ? 'Area' : 'क्षेत्र'}</option>
+                {Array.from(new Set(leaders.filter(l => (filterState === 'all' || l.StateName === filterState) && (filterDistrict === 'all' || l.DistrictName === filterDistrict)).map(l => l.MetaConstId))).sort((a, b) => a - b).map(c => <option key={c} value={c}>{c}</option>)}
+              </select>
+
               <div className={`flex rounded-xl overflow-hidden border text-xs ${isDark ? 'border-zinc-700' : 'border-slate-200'}`}>
                 {(['votes', 'district', 'party'] as const).map(opt => (
-                  <button
-                    key={opt}
-                    onClick={() => setSortBy(opt)}
-                    className={`px-2.5 py-1.5 transition-colors ${sortBy === opt
-                      ? 'bg-emerald-500 text-white'
-                      : isDark ? 'bg-zinc-800 text-zinc-400 hover:bg-zinc-700' : 'bg-white text-gray-500 hover:bg-slate-50'
-                      }`}
-                  >
-                    {opt === 'votes' ? (lang === 'en' ? 'Votes ↓' : 'मत ↓') :
-                      opt === 'district' ? (lang === 'en' ? 'District' : 'जिल्ला') :
-                        (lang === 'en' ? 'Party' : 'दल')}
+                  <button key={opt} onClick={() => setSortBy(opt)}
+                    className={`px-2.5 py-1.5 transition-colors ${sortBy === opt ? 'bg-emerald-500 text-white' : isDark ? 'bg-zinc-800 text-zinc-400 hover:bg-zinc-700' : 'bg-white text-gray-500 hover:bg-slate-50'}`}>
+                    {opt === 'votes' ? (lang === 'en' ? 'Votes ↓' : 'मत ↓') : opt === 'district' ? (lang === 'en' ? 'District' : 'जिल्ला') : (lang === 'en' ? 'Party' : 'दल')}
                   </button>
                 ))}
               </div>
             </div>
           </div>
-
-          {/* Table */}
           <div className="overflow-x-auto" style={{ maxHeight: 480 }}>
             <table className="w-full text-xs text-left">
-              <thead className={`sticky top-0 z-10 uppercase font-semibold tracking-wide ${isDark ? 'bg-zinc-950 text-zinc-500' : 'bg-slate-100 text-slate-400'
-                }`}>
+              <thead className={`sticky top-0 z-10 uppercase font-semibold tracking-wide ${isDark ? 'bg-zinc-950 text-zinc-500' : 'bg-slate-100 text-slate-400'}`}>
                 <tr>
-                  <th className="px-5 py-2.5">{t.colConst}</th>
-                  <th className="px-5 py-2.5">{t.colCand}</th>
-                  <th className="px-5 py-2.5">{lang === 'en' ? 'Party' : 'दल'}</th>
-                  <th className="px-5 py-2.5 text-right">{t.colVotes}</th>
-                  <th className="px-5 py-2.5 text-center">{t.colStatus}</th>
+                  <th className="px-4 py-2.5">{t.colConst}</th>
+                  <th className="px-4 py-2.5">{t.colCand}{lang === 'en' ? ' (Qualification)' : ' (शैक्षिक योग्यता)'}</th>
+                  <th className="px-4 py-2.5">{lang === 'en' ? 'Party' : 'दल'}</th>
+                  <th className="px-4 py-2.5 text-right">{t.colVotes}</th>
+                  <th className="px-4 py-2.5 text-center">{t.colStatus}</th>
+                  <th className="px-4 py-2.5 text-center">Share</th>
                 </tr>
               </thead>
-              <tbody className={`divide-y ${isDark ? 'divide-zinc-800/60' : 'divide-slate-100'
-                }`}>
+              <tbody className={`divide-y ${isDark ? 'divide-zinc-800/60' : 'divide-slate-100'}`}>
                 {filteredLeaders.map((row, idx) => {
                   const distName = districtLookup[row.MetaDistId] || `Dist ${row.MetaDistId}`;
                   const isElected = row.Remarks === 'Elected' || row.Remarks === 'निर्वाचित';
                   const partyColor = getPartyColor(row.PoliticalPartyName);
                   return (
-                    <tr key={idx} className={`transition-colors group ${isDark ? 'hover:bg-zinc-800/40' : 'hover:bg-slate-50'
-                      }`}>
-                      <td className={`px-5 py-3 font-medium whitespace-nowrap ${isDark ? 'text-zinc-400' : 'text-slate-500'
-                        }`}>
-                        {distName}
-                        <span className={`ml-1 text-[10px] ${isDark ? 'text-zinc-600' : 'text-slate-400'
-                          }`}>· {row.MetaConstId}</span>
-                      </td>
-                      <td className={`px-5 py-3 font-semibold ${isDark ? 'text-zinc-100 group-hover:text-emerald-400' : 'text-gray-900 group-hover:text-emerald-600'
-                        } transition-colors`}>
-                        {row.CandidateName || '—'}
-                      </td>
-                      <td className="px-5 py-3">
-                        <div className="flex items-center gap-1.5">
-                          <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: partyColor }} />
-                          <span className={`text-xs truncate max-w-[180px] ${isDark ? 'text-zinc-400' : 'text-slate-600'
-                            }`}>{row.PoliticalPartyName}</span>
+                    <tr key={idx} className={`transition-colors group ${isDark ? 'hover:bg-zinc-800/40' : 'hover:bg-slate-50'}`}>
+                      <td className={`px-4 py-2.5 font-medium whitespace-nowrap ${isDark ? 'text-zinc-400' : 'text-slate-500'}`}>
+                        <div className="flex flex-col">
+                          <span className="text-[10px] opacity-70 font-bold tracking-tight uppercase">
+                            {row.StateName || provinceLookup[row.MetaDistId]} · {row.DistrictName || districtLookup[row.MetaDistId]}
+                          </span>
+                          <span className="text-sm">
+                            {distName}<span className={`ml-1 text-[10px] ${isDark ? 'text-zinc-600' : 'text-slate-400'}`}>· {row.MetaConstId}</span>
+                          </span>
                         </div>
                       </td>
-                      <td className={`px-5 py-3 text-right font-mono font-bold ${isDark ? 'text-zinc-200' : 'text-gray-800'
-                        }`}>
+                      <td className={`px-4 py-2.5 font-semibold ${isDark ? 'text-zinc-100 group-hover:text-emerald-400' : 'text-gray-900 group-hover:text-emerald-600'} transition-colors`}>
+                        {row.CandidateName || '—'}
+                        <span className={`px-4 py-2.5 ${isDark ? 'text-zinc-500' : 'text-slate-400'} italic truncate max-w-[40px]`}>
+                          ({row.Qualification || '—'})
+                        </span>
+                      </td>
+                      <td className="px-4 py-2.5">
+                        <div className="flex items-center gap-1.5">
+                          <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: partyColor }} />
+                          <span className={`text-xs truncate max-w-[140px] ${isDark ? 'text-zinc-400' : 'text-slate-600'}`}>{row.PoliticalPartyName}</span>
+                        </div>
+                      </td>
+                      <td className={`px-4 py-2.5 text-right font-mono font-bold ${isDark ? 'text-zinc-200' : 'text-gray-800'}`}>
                         {(row.TotalVoteReceived || 0).toLocaleString()}
                       </td>
-                      <td className="px-5 py-3 text-center">
-                        <span className={`text-[9px] font-bold uppercase px-2 py-0.5 rounded-full border ${isElected
-                          ? 'bg-emerald-50 text-emerald-600 border-emerald-200 dark:bg-emerald-500/10 dark:text-emerald-400 dark:border-emerald-500/20'
-                          : 'bg-blue-50 text-blue-600 border-blue-200 dark:bg-blue-500/10 dark:text-blue-400 dark:border-blue-500/20'
-                          }`}>
+                      <td className="px-4 py-2.5 text-center">
+                        <span className={`text-[9px] font-bold uppercase px-2 py-0.5 rounded-full border ${isElected ? 'bg-emerald-50 text-emerald-600 border-emerald-200' : 'bg-blue-50 text-blue-600 border-blue-200'}`}>
                           {isElected ? t.statusElected : t.statusLeading}
                         </span>
+                      </td>
+                      <td className="px-4 py-2.5 text-center">
+                        <button
+                          onClick={() => { setShareCandidate(row); setIsShareModalOpen(true); }}
+                          className={`group/share flex items-center gap-1.5 mx-auto px-3 py-1.5 rounded-xl transition-all font-bold text-[10px] uppercase tracking-wider border ${isDark
+                            ? 'bg-zinc-800/50 border-zinc-700 text-emerald-400 hover:bg-emerald-500 hover:text-white hover:border-emerald-400'
+                            : 'bg-emerald-50 border-emerald-100 text-emerald-600 hover:bg-emerald-500 hover:text-white hover:border-emerald-400 font-black'}`}
+                        >
+                          <span className="transition-transform group-hover/share:-translate-y-0.5 group-hover/share:translate-x-0.5">📤</span>
+                          <span className="hidden sm:inline-block">{lang === 'en' ? 'Share' : 'शेयर'}</span>
+                        </button>
                       </td>
                     </tr>
                   );
                 })}
                 {filteredLeaders.length === 0 && (
-                  <tr>
-                    <td colSpan={5} className={`px-5 py-10 text-center text-xs italic ${isDark ? 'text-zinc-600' : 'text-slate-400'
-                      }`}>
-                      {lang === 'en' ? 'No results found' : 'कुनै नतिजा भेटिएन'}
-                    </td>
-                  </tr>
+                  <tr><td colSpan={6} className={`px-5 py-10 text-center text-xs italic ${isDark ? 'text-zinc-600' : 'text-slate-400'}`}>
+                    {lang === 'en' ? 'No results found' : 'कुनै नतिजा भेटिएन'}
+                  </td></tr>
                 )}
               </tbody>
             </table>
           </div>
         </div>
+
+        {/* ── समानुपातिक (PR) Table ── */}
+        <div className={`lg:w-[420px] rounded-2xl border overflow-hidden flex-shrink-0 ${card}`}>
+          <div className={`px-5 py-3 border-b flex flex-col sm:flex-row sm:items-center gap-3 ${isDark ? 'border-zinc-800' : 'border-slate-200'}`}>
+            <div className={`font-bold text-sm flex items-center gap-2 ${isDark ? 'text-zinc-200' : 'text-gray-700'}`}>
+              <div className="w-1.5 h-5 bg-blue-500 rounded-full" />
+              {lang === 'en' ? 'Samanupatik (PR)' : 'समानुपातिक'}
+            </div>
+
+            <div className="flex flex-wrap items-center gap-2 ml-auto">
+              <input
+                type="text"
+                placeholder={lang === 'en' ? 'Search...' : 'खोज्नुहोस्...'}
+                value={prSearchTerm}
+                onChange={(e) => setPrSearchTerm(e.target.value)}
+                className={`text-[10px] rounded-xl px-3 py-1.5 w-28 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all ${isDark ? 'bg-zinc-800 border-zinc-700 text-zinc-100 placeholder-zinc-500' : 'bg-slate-50 border-slate-200 text-gray-700 placeholder-gray-400'}`}
+              />
+
+              <div className={`flex rounded-xl overflow-hidden border text-[10px] font-bold ${isDark ? 'border-zinc-700' : 'border-slate-200'}`}>
+                {(['votes', 'name', 'best-district'] as const).map((opt) => (
+                  <button
+                    key={opt}
+                    onClick={() => setPrSortBy(opt)}
+                    className={`px-2 py-1.5 transition-all ${prSortBy === opt
+                      ? 'bg-blue-600 text-white'
+                      : isDark ? 'bg-zinc-800 text-zinc-400 hover:bg-zinc-700' : 'bg-white text-gray-500 hover:bg-slate-50'
+                      }`}
+                  >
+                    {opt === 'votes' ? (lang === 'en' ? 'Votes' : 'मत') :
+                      opt === 'name' ? (lang === 'en' ? 'A-Z' : 'दल') :
+                        (lang === 'en' ? 'Best' : 'उत्कृष्ट')}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="overflow-y-auto" style={{ maxHeight: 480 }}>
+            {prData.length > 0 ? (
+              <table className="w-full text-xs text-left">
+                <thead className={`sticky top-0 z-10 uppercase font-semibold tracking-wide ${isDark ? 'bg-zinc-950 text-zinc-500' : 'bg-slate-100 text-slate-400'}`}>
+                  <tr>
+                    <th className="px-4 py-2.5">#</th>
+                    <th className="px-4 py-2.5">{lang === 'en' ? 'Party' : 'दल'}</th>
+                    <th className="px-4 py-2.5 text-right">{lang === 'en' ? 'Best District' : 'उत्कृष्ट जिल्ला'}</th>
+                    <th className="px-4 py-2.5 text-right">{lang === 'en' ? 'Nat. Votes' : 'कुल मत'}</th>
+                  </tr>
+                </thead>
+                <tbody className={`divide-y ${isDark ? 'divide-zinc-800/60' : 'divide-slate-100'}`}>
+                  {filteredPRData.map((p, idx) => {
+                    const color = getPartyColor(p.party_name);
+                    const totalPRVotes = prData.reduce((s, x) => s + x.total_votes, 0);
+                    const pct = totalPRVotes > 0 ? ((p.total_votes / totalPRVotes) * 100).toFixed(1) : '0.0';
+
+                    // Find best district for this party
+                    const partyDistricts = prByDistrict.filter(d => d.party_name === p.party_name);
+                    const distVotes = new Map<number, number>();
+                    partyDistricts.forEach(d => {
+                      distVotes.set(d.dist_id, (distVotes.get(d.dist_id) || 0) + d.total_votes);
+                    });
+
+                    let bestDistId = -1;
+                    let bestDistVotes = 0;
+                    for (const [d, v] of distVotes.entries()) {
+                      if (v > bestDistVotes) { bestDistVotes = v; bestDistId = d; }
+                    }
+                    const bestDistName = bestDistId > 0 ? (districtLookup[bestDistId] || `Dist ${bestDistId}`) : '—';
+
+                    return (
+                      <tr key={p.party_name} className={`transition-colors ${isDark ? 'hover:bg-zinc-800/40' : 'hover:bg-slate-50'}`}>
+                        <td className={`px-4 py-2.5 font-mono text-[10px] ${isDark ? 'text-zinc-600' : 'text-slate-400'}`}>{idx + 1}</td>
+                        <td className="px-4 py-2.5">
+                          <div className="flex items-center gap-1.5">
+                            <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: color }} />
+                            <span className={`font-medium truncate max-w-[150px] ${isDark ? 'text-zinc-300' : 'text-gray-700'}`}>{p.party_name}</span>
+                          </div>
+                        </td>
+                        <td className="px-4 py-2.5 text-right">
+                          {bestDistId > 0 ? (
+                            <>
+                              <div className={`font-medium ${isDark ? 'text-zinc-300' : 'text-gray-700'}`}>{bestDistName}</div>
+                              <div className={`text-[9px] font-mono ${isDark ? 'text-zinc-500' : 'text-slate-500'}`}>{bestDistVotes.toLocaleString()} votes</div>
+                            </>
+                          ) : (
+                            <span className={isDark ? 'text-zinc-600' : 'text-slate-400'}>—</span>
+                          )}
+                        </td>
+                        <td className="px-4 py-2.5 text-right">
+                          <div className={`font-mono font-bold text-[11px] ${isDark ? 'text-zinc-200' : 'text-gray-800'}`}>{p.total_votes.toLocaleString()}</div>
+                          <div className={`text-[9px] ${isDark ? 'text-zinc-600' : 'text-slate-400'}`}>{pct}%</div>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            ) : (
+              <div className={`px-5 py-12 text-center text-xs italic ${isDark ? 'text-zinc-600' : 'text-slate-400'}`}>
+                {lang === 'en' ? 'Awaiting PR data…' : 'PR तथ्यांक लोड हुँदैछ…'}
+              </div>
+            )}
+
+
+
+          </div>
+        </div>
+
       </div>
 
-      {/* Footer */}
-      <footer className={`mt-4 py-8 text-center text-xs font-medium border-t flex flex-col items-center justify-center gap-2 ${isDark ? 'border-zinc-800 text-zinc-500' : 'border-gray-200 text-gray-500'}`}>
-        <div>
-          Vibe Coded with antigravity by{' '}
-          <a
-            href="https://github.com/Ashok314"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`font-semibold hover:underline transition-colors ${isDark ? 'text-emerald-400 hover:text-emerald-300' : 'text-emerald-600 hover:text-emerald-500'}`}
-          >
-            @Ashok314
-          </a>
+      {/* ── Footer / Site-wide Share ── */}
+      <footer className={`mt-12 py-12 px-6 border-t ${isDark ? 'bg-zinc-950/80 border-zinc-800' : 'bg-slate-50 border-slate-200'}`}>
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+          <div>
+            <div className="flex items-center gap-3 mb-2">
+              <span className="text-2xl">🇳🇵</span>
+              <h2 className="text-xl font-black uppercase tracking-tighter">Nepal Election <span className="text-emerald-500">2082</span></h2>
+            </div>
+            <p className={`text-xs max-w-sm ${subText}`}>
+              Real-time Samanupatik and Pratakshya insights powered by official ECN data. Built for transparency and accessibility.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center md:items-end gap-4">
+            <span className={`text-[10px] font-black tracking-widest uppercase ${subText}`}>Share this dashboard</span>
+            <div className="flex gap-4">
+              <button
+                onClick={() => window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent("Check out the 2082 Nepal Election Live Dashboard! Real-time Samanupatik and FPTP results.")}&url=${encodeURIComponent(window.location.href)}`, '_blank')}
+                className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all border ${isDark ? 'bg-zinc-800 border-zinc-700 hover:scale-110 active:scale-95 text-white' : 'bg-white border-zinc-200 hover:scale-110 active:scale-95 text-zinc-900 shadow-sm'}`}
+              >
+                <span className="text-xl font-black">𝕏</span>
+              </button>
+              <button
+                onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_blank')}
+                className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all border ${isDark ? 'bg-blue-600/10 border-blue-600/20 hover:scale-110 active:scale-95 text-blue-400' : 'bg-blue-50 border-blue-100 hover:scale-110 active:scale-95 text-blue-600 shadow-sm'}`}
+              >
+                <span className="text-xl font-black">f</span>
+              </button>
+              <button
+                onClick={() => { navigator.clipboard.writeText(window.location.href); alert("Link copied!"); }}
+                className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all border ${isDark ? 'bg-emerald-600/10 border-emerald-600/20 hover:scale-110 active:scale-95 text-emerald-400' : 'bg-emerald-50 border-emerald-100 hover:scale-110 active:scale-95 text-emerald-600 shadow-sm'}`}
+              >
+                <span className="text-xl font-black">🔗</span>
+              </button>
+            </div>
+          </div>
         </div>
-        <a
-          href="https://buymeacoffee.com/ashok314"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`px-3 py-1.5 rounded-full border transition-all hover:scale-105 flex items-center gap-2 ${isDark ? 'border-zinc-700 bg-zinc-800 text-zinc-300 hover:bg-zinc-700 hover:text-white' : 'border-gray-200 bg-gray-50 text-gray-700 hover:bg-gray-100 hover:text-gray-900'}`}
-        >
-          ☕ Buy me a coffee
-        </a>
+        <div className={`mt-12 pt-8 text-center text-[10px] border-t max-w-6xl mx-auto ${isDark ? 'border-zinc-900 text-zinc-700' : 'border-slate-100 text-slate-400'}`}>
+          © 2026 Nepal Election Dashboard · Not affiliated with Election Commission Nepal · For educational purposes only.
+        </div>
       </footer>
-    </div>
+
+      {shareCandidate && (
+        <CandidateShareModal
+          candidate={shareCandidate}
+          isOpen={isShareModalOpen}
+          onClose={() => setIsShareModalOpen(false)}
+          getPartyColor={getPartyColor}
+          lang={lang}
+          theme={theme}
+          districtName={districtLookup[shareCandidate.MetaDistId] || `Dist ${shareCandidate.MetaDistId}`}
+        />
+      )}
+    </div >
   );
 }
-
 export default App;

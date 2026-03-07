@@ -2,6 +2,10 @@
 
 A beautifully designed, real-time dashboard for tracking the House of Representatives (HOR) Nepal elections. Features an interactive choropleth map, live candidate sorting, and multi-language support.
 
+## Screen Captures
+![Screen Capture](https://raw.githubusercontent.com/Ashok314/election-np/main/frontend/public/og-image.webp)
+
+
 > **⚠️ DISCLAIMER** 
 > This project is completely vibe-coded and should **NOT** be used as a credible or official source for election results. We do not guarantee real-time data fetch accuracy, completeness, or consistency with the official Election Commission Nepal (ECN) systems.
 
@@ -55,6 +59,24 @@ Since the live Supabase instance occasionally exhausts its free tier IO budget, 
    npm install
    node push-ecn-to-supabase.js
    ```
+
+### 🚨 Temporary Supabase-Free Local Scraper (Hotfix)
+If the Supabase database is down or you do not want to set up local PostgreSQL/Supabase CLI, a lightweight file-system-only hotfix is available on the `hotfix-local-scrape` branch. It works instantly without needing *any* `.env` files or databases!
+
+1. Checkout the hotfix branch:
+   ```bash
+   git checkout hotfix-local-scrape
+   ```
+2. Run the specialized local scraper (automatically handles batching and writes data to a local `all-results.json` file):
+   ```bash
+   cd backend
+   npm install
+   # Run this on a 5-minute cron interval (not to overwhelm the ECN servers)
+   node local-hotfix-scraper.js
+   ```
+3. The frontend (running via `npm run dev`) automatically polls this generated JSON file natively every 5 seconds.
+4. **Deployment**: When `.github/workflows/deploy.yml` is configured to listen to this branch, running the scraper automatically commits the JSON and triggers a GitHub Pages deployment to statically host the live data!
+
 ## Architecture
 - **Frontend**: React + Vite + Tailwind CSS + Leaflet
 - **Backend**: Supabase Postgres + Realtime
