@@ -414,7 +414,7 @@
     "MetaConstId": 2,
     "CandidateName": "सुहाङ नेम्बाङ",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 8281,
+    "TotalVoteReceived": 9151,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 36
@@ -424,7 +424,7 @@
     "MetaConstId": 2,
     "CandidateName": "सुदिप राई",
     "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 6444,
+    "TotalVoteReceived": 7344,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 37
@@ -434,7 +434,7 @@
     "MetaConstId": 2,
     "CandidateName": "भेषराज आचार्य",
     "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 4346,
+    "TotalVoteReceived": 4988,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 61
@@ -444,7 +444,7 @@
     "MetaConstId": 2,
     "CandidateName": "गोकुल बहादुर राई",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 2224,
+    "TotalVoteReceived": 2335,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 32
@@ -454,7 +454,7 @@
     "MetaConstId": 2,
     "CandidateName": "ओम बहादुर गुरुङ्ग",
     "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 619,
+    "TotalVoteReceived": 675,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 47
@@ -464,7 +464,7 @@
     "MetaConstId": 2,
     "CandidateName": "दिवस राई",
     "PoliticalPartyName": "राष्ट्रिय परिवर्तन पार्टी",
-    "TotalVoteReceived": 294,
+    "TotalVoteReceived": 311,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 37
@@ -474,7 +474,7 @@
     "MetaConstId": 2,
     "CandidateName": "पवित्रा लिम्बु तुम्वाङफे",
     "PoliticalPartyName": "राष्ट्रिय जनमुक्ति पार्टी",
-    "TotalVoteReceived": 274,
+    "TotalVoteReceived": 300,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 51
@@ -484,7 +484,7 @@
     "MetaConstId": 2,
     "CandidateName": "श्याम बहादुर लिम्वु",
     "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
-    "TotalVoteReceived": 238,
+    "TotalVoteReceived": 244,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 39
@@ -504,7 +504,7 @@
     "MetaConstId": 2,
     "CandidateName": "गणेश प्रसाद दुलाल",
     "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 77,
+    "TotalVoteReceived": 82,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 64
@@ -514,7 +514,7 @@
     "MetaConstId": 2,
     "CandidateName": "बल बहादुर आङदेम्बे",
     "PoliticalPartyName": "जनता समाजवादी पार्टी(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 72,
+    "TotalVoteReceived": 75,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 64
@@ -524,7 +524,7 @@
     "MetaConstId": 2,
     "CandidateName": "याम वहादुर लिम्बु",
     "PoliticalPartyName": "नेपाल जनमुक्ति पार्टी",
-    "TotalVoteReceived": 48,
+    "TotalVoteReceived": 50,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 49
@@ -534,7 +534,7 @@
     "MetaConstId": 2,
     "CandidateName": "होम प्रसाद खतिवडा",
     "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "TotalVoteReceived": 28,
+    "TotalVoteReceived": 31,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 68
@@ -554,7 +554,7 @@
     "MetaConstId": 1,
     "CandidateName": "निशा डाँगी",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 20105,
+    "TotalVoteReceived": 22761,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 29
@@ -564,7 +564,7 @@
     "MetaConstId": 1,
     "CandidateName": "केवलराम राई",
     "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 5506,
+    "TotalVoteReceived": 6146,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 48
@@ -574,7 +574,7 @@
     "MetaConstId": 1,
     "CandidateName": "केशव राज पाण्डे",
     "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 5186,
+    "TotalVoteReceived": 5877,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 54
@@ -584,7 +584,7 @@
     "MetaConstId": 1,
     "CandidateName": "रामचन्द्र उप्रेती",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 4274,
+    "TotalVoteReceived": 4674,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 67
@@ -594,7 +594,7 @@
     "MetaConstId": 1,
     "CandidateName": "हेमराज कार्की",
     "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 808,
+    "TotalVoteReceived": 872,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 60
@@ -602,19 +602,9 @@
   {
     "MetaDistId": 4,
     "MetaConstId": 1,
-    "CandidateName": "अशेष घिमिरे",
-    "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 461,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 40
-  },
-  {
-    "MetaDistId": 4,
-    "MetaConstId": 1,
     "CandidateName": "सन्तोष तामाङ्ग",
     "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
-    "TotalVoteReceived": 428,
+    "TotalVoteReceived": 546,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 42
@@ -622,9 +612,19 @@
   {
     "MetaDistId": 4,
     "MetaConstId": 1,
+    "CandidateName": "अशेष घिमिरे",
+    "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
+    "TotalVoteReceived": 506,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 40
+  },
+  {
+    "MetaDistId": 4,
+    "MetaConstId": 1,
     "CandidateName": "नरेश कुमार लावती",
     "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
-    "TotalVoteReceived": 259,
+    "TotalVoteReceived": 280,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 46
@@ -634,7 +634,7 @@
     "MetaConstId": 1,
     "CandidateName": "मान बहादुर साँवा(लिम्बु)",
     "PoliticalPartyName": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
-    "TotalVoteReceived": 74,
+    "TotalVoteReceived": 79,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 53
@@ -644,7 +644,7 @@
     "MetaConstId": 1,
     "CandidateName": "दुर्गा प्रसाद साँवा लिम्वु",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 51,
+    "TotalVoteReceived": 60,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 40
@@ -654,7 +654,7 @@
     "MetaConstId": 1,
     "CandidateName": "ओलीन राजवंशी",
     "PoliticalPartyName": "नेपाल सद्भावना पार्टी",
-    "TotalVoteReceived": 36,
+    "TotalVoteReceived": 53,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 60
@@ -664,7 +664,7 @@
     "MetaConstId": 1,
     "CandidateName": "गणेश कुमार खरेल",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 14,
+    "TotalVoteReceived": 16,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 48
@@ -674,7 +674,7 @@
     "MetaConstId": 1,
     "CandidateName": "रमा मेचे",
     "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 11,
+    "TotalVoteReceived": 14,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 57
@@ -684,7 +684,7 @@
     "MetaConstId": 1,
     "CandidateName": "हिरण्य प्रसाद भट्टराई",
     "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
-    "TotalVoteReceived": 10,
+    "TotalVoteReceived": 13,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 83
@@ -694,7 +694,7 @@
     "MetaConstId": 1,
     "CandidateName": "खान्द्रु करुवा",
     "PoliticalPartyName": "नेपाल जनमुक्ति पार्टी",
-    "TotalVoteReceived": 7,
+    "TotalVoteReceived": 12,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 61
@@ -6994,7 +6994,7 @@
     "MetaConstId": 4,
     "CandidateName": "तपेश्वर यादव",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 16978,
+    "TotalVoteReceived": 17707,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 33
@@ -7004,7 +7004,7 @@
     "MetaConstId": 4,
     "CandidateName": "अजय शंकर नायक",
     "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 2807,
+    "TotalVoteReceived": 2883,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 48
@@ -7014,7 +7014,7 @@
     "MetaConstId": 4,
     "CandidateName": "चन्द्र कला कुमारी यादव",
     "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 2592,
+    "TotalVoteReceived": 2625,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 43
@@ -7024,7 +7024,7 @@
     "MetaConstId": 4,
     "CandidateName": "बिरेन्द्र प्रसाद महतो",
     "PoliticalPartyName": "जनमत पार्टी",
-    "TotalVoteReceived": 2413,
+    "TotalVoteReceived": 2568,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 56
@@ -7034,7 +7034,7 @@
     "MetaConstId": 4,
     "CandidateName": "राज किशोर यादव",
     "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 2257,
+    "TotalVoteReceived": 2258,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 52
@@ -7044,7 +7044,7 @@
     "MetaConstId": 4,
     "CandidateName": "धर्मनाथ प्रसाद साह",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 2154,
+    "TotalVoteReceived": 2171,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 65
@@ -7054,7 +7054,7 @@
     "MetaConstId": 4,
     "CandidateName": "भरत साह",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 251,
+    "TotalVoteReceived": 272,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 42
@@ -7064,7 +7064,7 @@
     "MetaConstId": 4,
     "CandidateName": "सुभेन्द्र कुमार साह",
     "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 147,
+    "TotalVoteReceived": 152,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 38
@@ -7074,7 +7074,7 @@
     "MetaConstId": 4,
     "CandidateName": "विनय प्रविण",
     "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
-    "TotalVoteReceived": 114,
+    "TotalVoteReceived": 122,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 39
@@ -7084,7 +7084,7 @@
     "MetaConstId": 4,
     "CandidateName": "बिश्‍वेन्द्र पासवान",
     "PoliticalPartyName": "बहुजन शक्ति पार्टी",
-    "TotalVoteReceived": 98,
+    "TotalVoteReceived": 100,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 65
@@ -7094,7 +7094,7 @@
     "MetaConstId": 4,
     "CandidateName": "दिलिप कुमार महरा",
     "PoliticalPartyName": "बहुजन एकता पार्टी नेपाल(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 82,
+    "TotalVoteReceived": 83,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 40
@@ -7114,7 +7114,7 @@
     "MetaConstId": 4,
     "CandidateName": "मो र्इवराइन अन्सारी",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 48,
+    "TotalVoteReceived": 51,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 27
@@ -7134,10 +7134,20 @@
     "MetaConstId": 4,
     "CandidateName": "किशोरी यादव",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 21,
+    "TotalVoteReceived": 22,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 53
+  },
+  {
+    "MetaDistId": 16,
+    "MetaConstId": 4,
+    "CandidateName": "रामेश्वर साह",
+    "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
+    "TotalVoteReceived": 21,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 66
   },
   {
     "MetaDistId": 16,
@@ -7162,12 +7172,12 @@
   {
     "MetaDistId": 16,
     "MetaConstId": 4,
-    "CandidateName": "रामेश्वर साह",
-    "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
-    "TotalVoteReceived": 18,
+    "CandidateName": "विसेश्‍वर यादव",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 13,
     "Remarks": null,
     "Gender": "पुरुष",
-    "Age": 66
+    "Age": 46
   },
   {
     "MetaDistId": 16,
@@ -7178,16 +7188,6 @@
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 44
-  },
-  {
-    "MetaDistId": 16,
-    "MetaConstId": 4,
-    "CandidateName": "विसेश्‍वर यादव",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 12,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 46
   },
   {
     "MetaDistId": 16,
@@ -7218,6 +7218,16 @@
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 25
+  },
+  {
+    "MetaDistId": 16,
+    "MetaConstId": 4,
+    "CandidateName": "धनवीर कापैर केवट",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 7,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 48
   },
   {
     "MetaDistId": 16,
@@ -7278,16 +7288,6 @@
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 43
-  },
-  {
-    "MetaDistId": 16,
-    "MetaConstId": 4,
-    "CandidateName": "धनवीर कापैर केवट",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 48
   },
   {
     "MetaDistId": 16,
@@ -11384,7 +11384,7 @@
     "MetaConstId": 2,
     "CandidateName": "रबिन महतो",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 17655,
+    "TotalVoteReceived": 23806,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 38
@@ -11394,7 +11394,7 @@
     "MetaConstId": 2,
     "CandidateName": "महिन्द्र राय यादव",
     "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 3892,
+    "TotalVoteReceived": 5868,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 88
@@ -11404,7 +11404,7 @@
     "MetaConstId": 2,
     "CandidateName": "राजेन्द्र महतो",
     "PoliticalPartyName": "राष्ट्रिय मुक्ति पार्टी नेपाल(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 2110,
+    "TotalVoteReceived": 3588,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 67
@@ -11414,7 +11414,7 @@
     "MetaConstId": 2,
     "CandidateName": "डा.सरोज कुमार",
     "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 1679,
+    "TotalVoteReceived": 2436,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 44
@@ -11424,7 +11424,7 @@
     "MetaConstId": 2,
     "CandidateName": "रजी अहमद",
     "PoliticalPartyName": "नेपाल संघीय समाजवादी पार्टी(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 705,
+    "TotalVoteReceived": 933,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 34
@@ -11434,7 +11434,7 @@
     "MetaConstId": 2,
     "CandidateName": "नागेश्‍वर साह",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 624,
+    "TotalVoteReceived": 822,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 46
@@ -11442,9 +11442,19 @@
   {
     "MetaDistId": 22,
     "MetaConstId": 2,
+    "CandidateName": "विपीन कापर",
+    "PoliticalPartyName": "जनमत पार्टी",
+    "TotalVoteReceived": 559,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 60
+  },
+  {
+    "MetaDistId": 22,
+    "MetaConstId": 2,
     "CandidateName": "कृष्ण यादव",
     "PoliticalPartyName": "नेपालका लागि नेपाली पार्टी",
-    "TotalVoteReceived": 337,
+    "TotalVoteReceived": 422,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 27
@@ -11454,7 +11464,7 @@
     "MetaConstId": 2,
     "CandidateName": "भरत चौधरी",
     "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 336,
+    "TotalVoteReceived": 363,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 41
@@ -11462,19 +11472,9 @@
   {
     "MetaDistId": 22,
     "MetaConstId": 2,
-    "CandidateName": "विपीन कापर",
-    "PoliticalPartyName": "जनमत पार्टी",
-    "TotalVoteReceived": 305,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 60
-  },
-  {
-    "MetaDistId": 22,
-    "MetaConstId": 2,
     "CandidateName": "मनोज कुमार राय",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 95,
+    "TotalVoteReceived": 117,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 40
@@ -11484,7 +11484,7 @@
     "MetaConstId": 2,
     "CandidateName": "राज किशोर राय यादव",
     "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 74,
+    "TotalVoteReceived": 98,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 57
@@ -11492,19 +11492,19 @@
   {
     "MetaDistId": 22,
     "MetaConstId": 2,
-    "CandidateName": "उमेश कुमार सिंह",
-    "PoliticalPartyName": "गतिशील लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 50,
+    "CandidateName": "चन्द्र भुषण साह",
+    "PoliticalPartyName": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
+    "TotalVoteReceived": 70,
     "Remarks": null,
     "Gender": "पुरुष",
-    "Age": 61
+    "Age": 33
   },
   {
     "MetaDistId": 22,
     "MetaConstId": 2,
     "CandidateName": "राम केवल राय",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 47,
+    "TotalVoteReceived": 64,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 44
@@ -11512,9 +11512,19 @@
   {
     "MetaDistId": 22,
     "MetaConstId": 2,
+    "CandidateName": "उमेश कुमार सिंह",
+    "PoliticalPartyName": "गतिशील लोकतान्त्रिक पार्टी",
+    "TotalVoteReceived": 60,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 61
+  },
+  {
+    "MetaDistId": 22,
+    "MetaConstId": 2,
     "CandidateName": "अब्दुल कुदुस मंसुरी",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 41,
+    "TotalVoteReceived": 53,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 31
@@ -11524,7 +11534,7 @@
     "MetaConstId": 2,
     "CandidateName": "राम नरेश राम",
     "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 34,
+    "TotalVoteReceived": 40,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 47
@@ -11532,19 +11542,9 @@
   {
     "MetaDistId": 22,
     "MetaConstId": 2,
-    "CandidateName": "चन्द्र भुषण साह",
-    "PoliticalPartyName": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 33,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 33
-  },
-  {
-    "MetaDistId": 22,
-    "MetaConstId": 2,
     "CandidateName": "तेज नारायण मुसहर",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 30,
+    "TotalVoteReceived": 35,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 56
@@ -11554,7 +11554,7 @@
     "MetaConstId": 2,
     "CandidateName": "रामबावु राय",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 30,
+    "TotalVoteReceived": 33,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 47
@@ -11562,9 +11562,29 @@
   {
     "MetaDistId": 22,
     "MetaConstId": 2,
+    "CandidateName": "गुन्जेश्‍वर प्रसाद शाह",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 21,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 58
+  },
+  {
+    "MetaDistId": 22,
+    "MetaConstId": 2,
+    "CandidateName": "चन्ेश्वर साह",
+    "PoliticalPartyName": "युनाईटेड नेपाल डिमोक्रयाटीक पार्टी",
+    "TotalVoteReceived": 17,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 37
+  },
+  {
+    "MetaDistId": 22,
+    "MetaConstId": 2,
     "CandidateName": "दिपेश कुमार यादव",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 12,
+    "TotalVoteReceived": 15,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 25
@@ -11574,7 +11594,7 @@
     "MetaConstId": 2,
     "CandidateName": "राम नारायण राय",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 12,
+    "TotalVoteReceived": 14,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 54
@@ -11582,19 +11602,9 @@
   {
     "MetaDistId": 22,
     "MetaConstId": 2,
-    "CandidateName": "चन्ेश्वर साह",
-    "PoliticalPartyName": "युनाईटेड नेपाल डिमोक्रयाटीक पार्टी",
-    "TotalVoteReceived": 9,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 37
-  },
-  {
-    "MetaDistId": 22,
-    "MetaConstId": 2,
     "CandidateName": "कंचन चौधरी",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 9,
+    "TotalVoteReceived": 11,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 34
@@ -11602,29 +11612,9 @@
   {
     "MetaDistId": 22,
     "MetaConstId": 2,
-    "CandidateName": "विकाउ राय",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 9,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 48
-  },
-  {
-    "MetaDistId": 22,
-    "MetaConstId": 2,
-    "CandidateName": "गुन्जेश्‍वर प्रसाद शाह",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 8,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 58
-  },
-  {
-    "MetaDistId": 22,
-    "MetaConstId": 2,
     "CandidateName": "मनोज कुमार यादव",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 7,
+    "TotalVoteReceived": 11,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 35
@@ -11632,9 +11622,19 @@
   {
     "MetaDistId": 22,
     "MetaConstId": 2,
+    "CandidateName": "विकाउ राय",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 10,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 48
+  },
+  {
+    "MetaDistId": 22,
+    "MetaConstId": 2,
     "CandidateName": "नागेन्द्र चौधरी",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 6,
+    "TotalVoteReceived": 9,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 27
@@ -11644,7 +11644,7 @@
     "MetaConstId": 2,
     "CandidateName": "विरेन्द्र ठाकुर लोहार",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
+    "TotalVoteReceived": 9,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 46
@@ -11654,7 +11654,7 @@
     "MetaConstId": 2,
     "CandidateName": "राम नाथ साह",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 4,
+    "TotalVoteReceived": 6,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 45
@@ -11664,7 +11664,7 @@
     "MetaConstId": 2,
     "CandidateName": "राम अधिन राय",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 2,
+    "TotalVoteReceived": 6,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 70
@@ -11674,7 +11674,7 @@
     "MetaConstId": 2,
     "CandidateName": "मनोज कुमार  यादव",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
+    "TotalVoteReceived": 3,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 35
@@ -12534,7 +12534,7 @@
     "MetaConstId": 1,
     "CandidateName": "आसिका तामाङ",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 17630,
+    "TotalVoteReceived": 18378,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 37
@@ -12544,7 +12544,7 @@
     "MetaConstId": 1,
     "CandidateName": "भुमि प्रसाद त्रिपाठी",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 7082,
+    "TotalVoteReceived": 7546,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 60
@@ -12554,7 +12554,7 @@
     "MetaConstId": 1,
     "CandidateName": "राजेन्द्र प्रसाद पाण्डे",
     "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 5409,
+    "TotalVoteReceived": 5720,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 69
@@ -12564,7 +12564,7 @@
     "MetaConstId": 1,
     "CandidateName": "कृष्ण रिजाल",
     "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 3775,
+    "TotalVoteReceived": 3861,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 43
@@ -12584,7 +12584,7 @@
     "MetaConstId": 1,
     "CandidateName": "गिता प्रसाद आचार्य",
     "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 173,
+    "TotalVoteReceived": 200,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 69
@@ -12594,7 +12594,7 @@
     "MetaConstId": 1,
     "CandidateName": "श्‍यामराजा पाण्डे",
     "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
-    "TotalVoteReceived": 123,
+    "TotalVoteReceived": 125,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 56
@@ -12604,7 +12604,7 @@
     "MetaConstId": 1,
     "CandidateName": "निरन्‍जन संजेल",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 80,
+    "TotalVoteReceived": 85,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 44
@@ -12614,7 +12614,7 @@
     "MetaConstId": 1,
     "CandidateName": "प्रलाद सिलवाल",
     "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 63,
+    "TotalVoteReceived": 66,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 30
@@ -12624,7 +12624,7 @@
     "MetaConstId": 1,
     "CandidateName": "जालपा देवि रेग्‍मी",
     "PoliticalPartyName": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 43,
+    "TotalVoteReceived": 44,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 42
@@ -12634,7 +12634,7 @@
     "MetaConstId": 1,
     "CandidateName": "डम्‍बर बहादुर लिम्‍बु",
     "PoliticalPartyName": "संयुक्त नागरिक पार्टी",
-    "TotalVoteReceived": 27,
+    "TotalVoteReceived": 29,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 61
@@ -13594,7 +13594,7 @@
     "MetaConstId": 2,
     "CandidateName": "सुनिल के.सी.",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 32845,
+    "TotalVoteReceived": 34238,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 43
@@ -13604,7 +13604,7 @@
     "MetaConstId": 2,
     "CandidateName": "कबिर शर्मा",
     "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 8634,
+    "TotalVoteReceived": 8874,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 37
@@ -13614,7 +13614,7 @@
     "MetaConstId": 2,
     "CandidateName": "कुन्ती देवी पोखरेल(उपाध्याय)",
     "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 5019,
+    "TotalVoteReceived": 5210,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 38
@@ -13624,7 +13624,7 @@
     "MetaConstId": 2,
     "CandidateName": "मणिराम फुयाल",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 4528,
+    "TotalVoteReceived": 4759,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 60
@@ -13634,7 +13634,7 @@
     "MetaConstId": 2,
     "CandidateName": "नितेश पौडेल",
     "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 1869,
+    "TotalVoteReceived": 1912,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 38
@@ -13644,7 +13644,7 @@
     "MetaConstId": 2,
     "CandidateName": "पवन पोखरेल",
     "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
-    "TotalVoteReceived": 866,
+    "TotalVoteReceived": 895,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 45
@@ -13654,7 +13654,7 @@
     "MetaConstId": 2,
     "CandidateName": "मुकुन्द कार्की",
     "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 564,
+    "TotalVoteReceived": 588,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 45
@@ -13664,7 +13664,7 @@
     "MetaConstId": 2,
     "CandidateName": "अनुप बोहरा",
     "PoliticalPartyName": "राष्ट्रिय परिवर्तन पार्टी",
-    "TotalVoteReceived": 222,
+    "TotalVoteReceived": 226,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 34
@@ -13694,7 +13694,7 @@
     "MetaConstId": 2,
     "CandidateName": "प्रकास बुढाथोकी",
     "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "TotalVoteReceived": 34,
+    "TotalVoteReceived": 35,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 45
@@ -13704,7 +13704,7 @@
     "MetaConstId": 2,
     "CandidateName": "आनन्द सिंखडा",
     "PoliticalPartyName": "जय मातृभूमि पार्टी",
-    "TotalVoteReceived": 28,
+    "TotalVoteReceived": 29,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 71
@@ -13714,7 +13714,7 @@
     "MetaConstId": 2,
     "CandidateName": "राज कुमार श्रेष्‍ठ",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 18,
+    "TotalVoteReceived": 20,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 36
@@ -13724,7 +13724,7 @@
     "MetaConstId": 2,
     "CandidateName": "उपेन्द्र कार्की",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
-    "TotalVoteReceived": 16,
+    "TotalVoteReceived": 18,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 62
@@ -13734,7 +13734,7 @@
     "MetaConstId": 2,
     "CandidateName": "त्रिलोक बहादुर चन्द",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 16,
+    "TotalVoteReceived": 17,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 50
@@ -13772,6 +13772,16 @@
   {
     "MetaDistId": 26,
     "MetaConstId": 2,
+    "CandidateName": "विरेन्द्र कुमार साह",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 8,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 47
+  },
+  {
+    "MetaDistId": 26,
+    "MetaConstId": 2,
     "CandidateName": "रुपक सिंखडा",
     "PoliticalPartyName": "स्वतन्त्र",
     "TotalVoteReceived": 7,
@@ -13798,16 +13808,6 @@
     "Remarks": null,
     "Gender": "महिला",
     "Age": 41
-  },
-  {
-    "MetaDistId": 26,
-    "MetaConstId": 2,
-    "CandidateName": "विरेन्द्र कुमार साह",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 47
   },
   {
     "MetaDistId": 26,
@@ -13870,1511 +13870,11 @@
     "Age": 48
   },
   {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "रविन्‍द्र पटेल",
-    "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 2799,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 48
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "गोविन्द चौधरी",
-    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 1591,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 67
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "प्रभु साह",
-    "PoliticalPartyName": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 1248,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 54
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "रामकृपाल प्रसाद यादव",
-    "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 984,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 41
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "कुन्दन प्रसाद कुशवाहा",
-    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 632,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 46
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "पुनम देवी",
-    "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 258,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 39
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "चनचन चौधरी थारु",
-    "PoliticalPartyName": "नागरिक उन्मुक्ति पार्टी, नेपाल(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 35,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 40
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "शेख प्रवेज आलम",
-    "PoliticalPartyName": "जनमत पार्टी",
-    "TotalVoteReceived": 30,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 29
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "शेख साजिद",
-    "PoliticalPartyName": "नेपाल संघीय समाजवादी पार्टी(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 20,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 32
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "विजय कुमार साह तेली",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 15,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 36
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "पिन्टु दास तत्मा",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 11,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 25
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "हिरामती देवी कोइरी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 8,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 50
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "प्रभु राय यादव",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 7,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 31
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "जमशेद अंसारी",
-    "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 6,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 55
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "सिकिन्द्र राय यादव",
-    "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 54
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "उपेन्द्र मुखिया वीन",
-    "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 52
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "धिरज चौधरी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 28
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "कृष्णा राम चमार",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 2,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 27
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "छविलाल महतो",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 2,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 45
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "दरोगा साह",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 2,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 26
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "शेख ओसी महमद",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 2,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 61
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "रेखा कुमारी पटेल",
-    "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 34
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "वीरेन्द्र कुमार गुप्‍ता",
-    "PoliticalPartyName": "नेपाल लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 65
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "उत्तर बहादुर राना मगर",
-    "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 50
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "उपेन्द्र पंडित कुम्हार",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 42
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "जहुर आलम",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 30
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "पुनित राम महरा",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 38
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "भागनारायण राय",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 52
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "राजेश साह",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 38
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "शिव चन्द्र शाह",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 28
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "हरिन्द्र राय यादव",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 45
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "शम्‍भु प्रसाद यादव",
-    "PoliticalPartyName": "संयुक्त नागरिक पार्टी",
-    "TotalVoteReceived": 0,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 56
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "नेजाम मंसुरी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 0,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 47
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "बिजय कुमार चौधरी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 0,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 35
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "भरत राय यादव",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 0,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 58
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "भोला पाण्डेय",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 0,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 47
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "राजेन्द्र महरा",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 0,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 42
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "रतनेश महतो कोइरी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 0,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 37
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "लालबाबु प्रसाद कुशवाहा",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 0,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 31
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 3,
-    "CandidateName": "सुरेन्द्र बैठा",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 0,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 57
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "गणेश पौडेल",
-    "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 17413,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 43
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "देव प्रसाद तिमलसेना",
-    "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 7597,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 55
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "राम कुमार भट्टराइ",
-    "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 6227,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 62
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "रामजी साह सोनार",
-    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 1705,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 46
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "रा‌जकुमार दास तत्मा",
-    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 688,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 41
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "तुलसी राज गिरी",
-    "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
-    "TotalVoteReceived": 329,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 53
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "ऋषीराज धमला",
-    "PoliticalPartyName": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 290,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 50
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "राम कल्याण राउत",
-    "PoliticalPartyName": "जनमत पार्टी",
-    "TotalVoteReceived": 157,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 28
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "सुरेन्द्र प्रसाद पटेल",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 141,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 45
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "नवराज अर्याल",
-    "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 120,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 53
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "रुपलाल राय यादव",
-    "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 96,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 47
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "विर बहादुर थोकर",
-    "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
-    "TotalVoteReceived": 57,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 49
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "किशोरी सहनी",
-    "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "TotalVoteReceived": 57,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 45
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "सत्य नारायण भगत बीन",
-    "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 35,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 56
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "केशव राई",
-    "PoliticalPartyName": "संयुक्त नागरिक पार्टी",
-    "TotalVoteReceived": 28,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 41
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "बैजु प्रसाद पटेल",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 28,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 51
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "सत्यनारायण महरा",
-    "PoliticalPartyName": "बहुजन एकता पार्टी नेपाल(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 19,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 54
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "दावा सिं रुम्बा",
-    "PoliticalPartyName": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
-    "TotalVoteReceived": 15,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 58
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "गौतम कुमार साह",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 15,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 35
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "समसुन खातुन",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 13,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 41
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "दिनेश प्रसाद साह",
-    "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
-    "TotalVoteReceived": 12,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 53
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "किरण कुमार काफले",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 8,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 42
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "चन्द्रिका लाल साह",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 8,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 30
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "जाहाना खातुन",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 7,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 37
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "अन्जु चौधरी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 37
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "उमेश दाहाल",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 33
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "पवन कुमार चौधरी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 37
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "सुजिता कुमारी गौतम",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 41
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "प्रेम कुमारी त्रिपाठी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 4,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 30
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "मुक्ति नारायण चौधरी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 4,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 45
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "लक्ष्मीनिया चौधरी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 3,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 49
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "सोम प्रसाद तिमलसीना",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 3,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 38
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "समिर बाबु कार्की",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 3,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 44
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "विन्दा लाल साह",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 2,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 68
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "हरिहर मुखिया बिन",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 2,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 68
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "जितेन्द्र प्रसाद बीन",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 31
-  },
-  {
-    "MetaDistId": 32,
-    "MetaConstId": 4,
-    "CandidateName": "कुसुम खातुन",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 0,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 50
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "गणेश धिमाल",
-    "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 21026,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 43
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "अच्युत प्रसाद मैनाली",
-    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 7680,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 60
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "शम्भु बहादुर बुढाथोकी",
-    "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 7294,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 52
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "सन्तोष दंगाल",
-    "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 1818,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 40
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "अनवर अंसारी",
-    "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
-    "TotalVoteReceived": 537,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 54
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "रामवावु प्रसाद यादव",
-    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 507,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 52
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "जय किशोर पाण्डेय",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 458,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 39
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "लक्ष्मी प्रसाद सा कलवार",
-    "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 394,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 61
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "कमरुल्लाह अंसारी",
-    "PoliticalPartyName": "जनमत पार्टी",
-    "TotalVoteReceived": 226,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 47
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "भुलावन कुमार पासवान",
-    "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 201,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 35
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "भूवन प्रसाद चौधरी",
-    "PoliticalPartyName": "नागरिक उन्मुक्ति पार्टी, नेपाल(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 159,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 57
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "सुक दोर्जे गोले",
-    "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
-    "TotalVoteReceived": 81,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 38
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "बिजय यादव",
-    "PoliticalPartyName": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 49,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 36
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "लक्ष्मी नारायण प्रसाद साह",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 16,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 51
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "रबिना देवी चौधरी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 12,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 41
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "प्रेम कुमारी थापा खडका",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 11,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 50
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "हमिद मंसुरी",
-    "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 8,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 52
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "बिदुर खरेल",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 6,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 49
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "रोशन कुमार उप्रेती",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 47
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 1,
-    "CandidateName": "सीमा कुमारी तिमिल्सेना",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 45
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "चन्दन कुमार सिंह",
-    "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 8120,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 42
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "रामकिशोर प्रसाद यादव",
-    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 5345,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 56
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "बलबिर प्रसाद चौधरी",
-    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 3883,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 65
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "भैयाराम प्रसाद यादव",
-    "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 1874,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 52
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "रमेश  प्रसाद यादव",
-    "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 330,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 59
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "राजेश साह",
-    "PoliticalPartyName": "जनमत पार्टी",
-    "TotalVoteReceived": 180,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 39
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "शिवचन्द्र प्रसाद कुशवाहा",
-    "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 103,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 59
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "मेघराज पासवान",
-    "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
-    "TotalVoteReceived": 51,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 33
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "आत्‍माराम प्रसाद साह",
-    "PoliticalPartyName": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 46,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 65
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "लालबाबु प्रसाद साह तेली",
-    "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 35,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 56
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "श्यामबाबु प्रसाद चौधरी",
-    "PoliticalPartyName": "जनता लोकतान्त्रिक पार्टी, नेपाल",
-    "TotalVoteReceived": 28,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 35
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "सुधिर कुमार साह",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 28,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 26
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "प्रदेशी साह",
-    "PoliticalPartyName": "नेपाल जनता पार्टी",
-    "TotalVoteReceived": 14,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 34
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "ईन्जाद अंसारी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 8,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 26
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "अमरदेव प्रसाद यादव",
-    "PoliticalPartyName": "राष्ट्रिय मुक्ति पार्टी नेपाल(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 7,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 61
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "राजबली प्रसाद",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 6,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 59
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "सुरेन्द्र प्रसाद यादव",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 4,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 30
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "चन्दन कुमार यादव",
-    "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
-    "TotalVoteReceived": 3,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 30
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "अनिता कुमारी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 3,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 31
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "मुरली मनोहर प्रसाद साह",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 3,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 39
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "मुकेश प्रसाद कुशवाहा",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 2,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 29
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "अमरेश कुमार पाण्डे",
-    "PoliticalPartyName": "जन अधिकार पार्टी",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 37
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "छोटेलाल साह",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 33
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "जालन्‍दर महतो",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 51
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "दिनेश प्रसाद यादव",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 39
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "नगिना देबी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 45
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "प्रयाग प्रसाद चौधरी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 50
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "राधा देवी महरा",
-    "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
-    "TotalVoteReceived": 0,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 38
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 2,
-    "CandidateName": "जालमहमद अंसारी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 0,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 51
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "अरबिन्द साह",
-    "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 37633,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 41
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "फरमुल्लाह मंसुर",
-    "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 9083,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 71
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "रामवावु कुमार यादव",
-    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 6573,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 50
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "ज्वाला कुमारी साह",
-    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 4686,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 44
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "प्रमोद प्रसाद गुप्‍ता",
-    "PoliticalPartyName": "जनमत पार्टी",
-    "TotalVoteReceived": 3613,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 47
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "भरत प्रसाद साह",
-    "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 1656,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 64
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "तिेर्थ बहादुर गुरुङ",
-    "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
-    "TotalVoteReceived": 1084,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 43
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "राजेन्द्र प्रसाद जैसवार",
-    "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 295,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 56
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "वालाकृष्‍ण शर्मा",
-    "PoliticalPartyName": "राष्ट्रिय जनमोर्चा",
-    "TotalVoteReceived": 129,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 58
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "मुमतज बेगम",
-    "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 128,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 39
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "सम्‍‍झना गोले",
-    "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
-    "TotalVoteReceived": 122,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 47
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "रामएकबाल राउत",
-    "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
-    "TotalVoteReceived": 55,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 50
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "संजय कुमार सहनी",
-    "PoliticalPartyName": "जन अधिकार पार्टी",
-    "TotalVoteReceived": 52,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 28
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "प्रहलाद प्रसाद साह कलवार",
-    "PoliticalPartyName": "नेपाल जनता पार्टी",
-    "TotalVoteReceived": 42,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 73
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "लक्ष्मण लामा",
-    "PoliticalPartyName": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 21,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 45
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "दिनेश प्रसाद सिह",
-    "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 11,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 55
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "राकेश कुमार साह कानु",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 11,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 37
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "सन्तोष पंडित कुम्हार",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 11,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 36
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "सविना गोले",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 11,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 49
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "चन्द्र प्रकाश सुवेदी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 9,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 59
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "लाल मुकेश ठाकुर",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 6,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 38
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "सुनिल पासवान",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 40
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "उमरावती देवी साह",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 4,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 56
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 3,
-    "CandidateName": "सुरेश प्रसाद शर्मा सुवेदी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 2,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 64
-  },
-  {
     "MetaDistId": 33,
     "MetaConstId": 4,
     "CandidateName": "रहवर अंसारी",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 34918,
+    "TotalVoteReceived": 35448,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 39
@@ -15384,7 +13884,7 @@
     "MetaConstId": 4,
     "CandidateName": "कृष्ण कुमार श्रेष्ठ",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 9159,
+    "TotalVoteReceived": 9394,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 58
@@ -15394,7 +13894,7 @@
     "MetaConstId": 4,
     "CandidateName": "श्‍यामबाबु गुप्ता",
     "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 6333,
+    "TotalVoteReceived": 6446,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 41
@@ -15404,7 +13904,7 @@
     "MetaConstId": 4,
     "CandidateName": "सन्जु साह कानु",
     "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 5122,
+    "TotalVoteReceived": 5126,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 41
@@ -15414,7 +13914,7 @@
     "MetaConstId": 4,
     "CandidateName": "अजय कुशवाहा",
     "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 1452,
+    "TotalVoteReceived": 1773,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 27
@@ -15434,7 +13934,7 @@
     "MetaConstId": 4,
     "CandidateName": "विनय यादव",
     "PoliticalPartyName": "राष्ट्रिय एकता दल",
-    "TotalVoteReceived": 730,
+    "TotalVoteReceived": 734,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 42
@@ -15444,7 +13944,7 @@
     "MetaConstId": 4,
     "CandidateName": "दिलिप कुमार शर्मा नेपाल",
     "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 684,
+    "TotalVoteReceived": 695,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 54
@@ -15454,7 +13954,7 @@
     "MetaConstId": 4,
     "CandidateName": "सर्वेन्द्र खनाल",
     "PoliticalPartyName": "राष्ट्रिय परिवर्तन पार्टी",
-    "TotalVoteReceived": 423,
+    "TotalVoteReceived": 425,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 59
@@ -15464,7 +13964,7 @@
     "MetaConstId": 4,
     "CandidateName": "हसनजान मिया",
     "PoliticalPartyName": "जनमत पार्टी",
-    "TotalVoteReceived": 377,
+    "TotalVoteReceived": 384,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 54
@@ -15474,7 +13974,7 @@
     "MetaConstId": 4,
     "CandidateName": "समीम मीया अंसारी",
     "PoliticalPartyName": "राष्ट्र निर्माण दल नेपाल",
-    "TotalVoteReceived": 239,
+    "TotalVoteReceived": 248,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 52
@@ -15494,7 +13994,7 @@
     "MetaConstId": 4,
     "CandidateName": "गोपाल बहादुर खत्री",
     "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 133,
+    "TotalVoteReceived": 134,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 43
@@ -15514,7 +14014,7 @@
     "MetaConstId": 4,
     "CandidateName": "सुरेश प्रसाद",
     "PoliticalPartyName": "नेपाल लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 66,
+    "TotalVoteReceived": 67,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 55
@@ -15532,6 +14032,16 @@
   {
     "MetaDistId": 33,
     "MetaConstId": 4,
+    "CandidateName": "निराजन कुमार",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 48,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 27
+  },
+  {
+    "MetaDistId": 33,
+    "MetaConstId": 4,
     "CandidateName": "सरस्‍वती उपाध्‍या",
     "PoliticalPartyName": "राष्ट्रिय जनमोर्चा",
     "TotalVoteReceived": 46,
@@ -15542,19 +14052,9 @@
   {
     "MetaDistId": 33,
     "MetaConstId": 4,
-    "CandidateName": "निराजन कुमार",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 46,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 27
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 4,
     "CandidateName": "संजु चौधरी",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 36,
+    "TotalVoteReceived": 37,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 48
@@ -15584,7 +14084,7 @@
     "MetaConstId": 4,
     "CandidateName": "साकिब आलम मंसुरी",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 14,
+    "TotalVoteReceived": 15,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 30
@@ -15602,6 +14102,16 @@
   {
     "MetaDistId": 33,
     "MetaConstId": 4,
+    "CandidateName": "दिपक सिंह चौधरी",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 8,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 30
+  },
+  {
+    "MetaDistId": 33,
+    "MetaConstId": 4,
     "CandidateName": "नसिमा खातुन",
     "PoliticalPartyName": "स्वतन्त्र",
     "TotalVoteReceived": 8,
@@ -15612,12 +14122,12 @@
   {
     "MetaDistId": 33,
     "MetaConstId": 4,
-    "CandidateName": "दिपक सिंह चौधरी",
+    "CandidateName": "धिरेन्द्र चौधरी",
     "PoliticalPartyName": "स्वतन्त्र",
     "TotalVoteReceived": 7,
     "Remarks": null,
     "Gender": "पुरुष",
-    "Age": 30
+    "Age": 37
   },
   {
     "MetaDistId": 33,
@@ -15648,16 +14158,6 @@
     "Remarks": null,
     "Gender": "महिला",
     "Age": 35
-  },
-  {
-    "MetaDistId": 33,
-    "MetaConstId": 4,
-    "CandidateName": "धिरेन्द्र चौधरी",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 6,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 37
   },
   {
     "MetaDistId": 33,
@@ -16044,7 +14544,7 @@
     "MetaConstId": 2,
     "CandidateName": "सुशील कुमार कानु",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 25250,
+    "TotalVoteReceived": 26364,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 36
@@ -16054,7 +14554,7 @@
     "MetaConstId": 2,
     "CandidateName": "अजय कुमार चौरसिया",
     "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 10080,
+    "TotalVoteReceived": 10557,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 61
@@ -16064,7 +14564,7 @@
     "MetaConstId": 2,
     "CandidateName": "रिमा कुमारी यादव",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 9844,
+    "TotalVoteReceived": 10262,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 29
@@ -16072,19 +14572,9 @@
   {
     "MetaDistId": 34,
     "MetaConstId": 2,
-    "CandidateName": "अशोक कुमार अग्रवाल",
-    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 1354,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 60
-  },
-  {
-    "MetaDistId": 34,
-    "MetaConstId": 2,
     "CandidateName": "वीना जैसवाल",
     "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 1223,
+    "TotalVoteReceived": 1546,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 35
@@ -16092,9 +14582,19 @@
   {
     "MetaDistId": 34,
     "MetaConstId": 2,
+    "CandidateName": "अशोक कुमार अग्रवाल",
+    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
+    "TotalVoteReceived": 1512,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 60
+  },
+  {
+    "MetaDistId": 34,
+    "MetaConstId": 2,
     "CandidateName": "मनोज कुमार चौधरी",
     "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 842,
+    "TotalVoteReceived": 855,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 46
@@ -16104,10 +14604,20 @@
     "MetaConstId": 2,
     "CandidateName": "अमिताभ बच्चन दास तत्मा",
     "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 311,
+    "TotalVoteReceived": 315,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 43
+  },
+  {
+    "MetaDistId": 34,
+    "MetaConstId": 2,
+    "CandidateName": "श्याम प्रसाद गुप्ता",
+    "PoliticalPartyName": "जनमत पार्टी",
+    "TotalVoteReceived": 209,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 44
   },
   {
     "MetaDistId": 34,
@@ -16122,19 +14632,9 @@
   {
     "MetaDistId": 34,
     "MetaConstId": 2,
-    "CandidateName": "श्याम प्रसाद गुप्ता",
-    "PoliticalPartyName": "जनमत पार्टी",
-    "TotalVoteReceived": 194,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 44
-  },
-  {
-    "MetaDistId": 34,
-    "MetaConstId": 2,
     "CandidateName": "संतोष कुमार पटेल",
     "PoliticalPartyName": "नेपाल जनता पार्टी",
-    "TotalVoteReceived": 141,
+    "TotalVoteReceived": 149,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 40
@@ -16144,7 +14644,7 @@
     "MetaConstId": 2,
     "CandidateName": "कृष्ण मुरारी प्रजापति",
     "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
-    "TotalVoteReceived": 108,
+    "TotalVoteReceived": 111,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 38
@@ -16154,7 +14654,7 @@
     "MetaConstId": 2,
     "CandidateName": "लक्ष्‍मी नारायण गु्प्‍ता",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 83,
+    "TotalVoteReceived": 85,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 29
@@ -16164,7 +14664,7 @@
     "MetaConstId": 2,
     "CandidateName": "पुन्देश्‍वर प्रसाद यादव",
     "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 79,
+    "TotalVoteReceived": 82,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 41
@@ -16174,10 +14674,20 @@
     "MetaConstId": 2,
     "CandidateName": "शिव बचन ठाकुर लोहार",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 43,
+    "TotalVoteReceived": 45,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 40
+  },
+  {
+    "MetaDistId": 34,
+    "MetaConstId": 2,
+    "CandidateName": "देव शंकर यादव",
+    "PoliticalPartyName": "जन अधिकार पार्टी",
+    "TotalVoteReceived": 30,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 36
   },
   {
     "MetaDistId": 34,
@@ -16212,16 +14722,6 @@
   {
     "MetaDistId": 34,
     "MetaConstId": 2,
-    "CandidateName": "देव शंकर यादव",
-    "PoliticalPartyName": "जन अधिकार पार्टी",
-    "TotalVoteReceived": 13,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 36
-  },
-  {
-    "MetaDistId": 34,
-    "MetaConstId": 2,
     "CandidateName": "संतोष महतो",
     "PoliticalPartyName": "स्वतन्त्र",
     "TotalVoteReceived": 11,
@@ -16232,22 +14732,22 @@
   {
     "MetaDistId": 34,
     "MetaConstId": 2,
+    "CandidateName": "विकाश कुमार साह",
+    "PoliticalPartyName": "नेपाल लोकतान्त्रिक पार्टी",
+    "TotalVoteReceived": 10,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 45
+  },
+  {
+    "MetaDistId": 34,
+    "MetaConstId": 2,
     "CandidateName": "राकेश कुमार सहनी",
     "PoliticalPartyName": "स्वतन्त्र",
     "TotalVoteReceived": 10,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 26
-  },
-  {
-    "MetaDistId": 34,
-    "MetaConstId": 2,
-    "CandidateName": "विकाश कुमार साह",
-    "PoliticalPartyName": "नेपाल लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 9,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 45
   },
   {
     "MetaDistId": 34,
@@ -16312,22 +14812,22 @@
   {
     "MetaDistId": 34,
     "MetaConstId": 2,
+    "CandidateName": "साहेव प्रसाद राम",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 3,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 35
+  },
+  {
+    "MetaDistId": 34,
+    "MetaConstId": 2,
     "CandidateName": "रामनेरेश प्रसाद चौरसिया",
     "PoliticalPartyName": "स्वतन्त्र",
     "TotalVoteReceived": 2,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 42
-  },
-  {
-    "MetaDistId": 34,
-    "MetaConstId": 2,
-    "CandidateName": "साहेव प्रसाद राम",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 2,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 35
   },
   {
     "MetaDistId": 34,
@@ -16584,7 +15084,7 @@
     "MetaConstId": 4,
     "CandidateName": "टेक वहादुर शाक्य",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 11045,
+    "TotalVoteReceived": 11438,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 50
@@ -16594,7 +15094,7 @@
     "MetaConstId": 4,
     "CandidateName": "रमेश रिजाल",
     "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 4028,
+    "TotalVoteReceived": 4557,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 69
@@ -16604,7 +15104,7 @@
     "MetaConstId": 4,
     "CandidateName": "जालिम मियाँ मंसुरी",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 3101,
+    "TotalVoteReceived": 3646,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 78
@@ -16614,7 +15114,7 @@
     "MetaConstId": 4,
     "CandidateName": "जयप्रकाश थारु",
     "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 2261,
+    "TotalVoteReceived": 2307,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 65
@@ -16624,7 +15124,7 @@
     "MetaConstId": 4,
     "CandidateName": "कृपासिन्धु प्रसाद",
     "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 1066,
+    "TotalVoteReceived": 1079,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 58
@@ -16644,7 +15144,7 @@
     "MetaConstId": 4,
     "CandidateName": "विनोद प्रसाद यादव",
     "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
-    "TotalVoteReceived": 151,
+    "TotalVoteReceived": 153,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 35
@@ -16654,7 +15154,7 @@
     "MetaConstId": 4,
     "CandidateName": "सिमा देवी कलवार",
     "PoliticalPartyName": "जनमत पार्टी",
-    "TotalVoteReceived": 79,
+    "TotalVoteReceived": 84,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 55
@@ -16664,7 +15164,7 @@
     "MetaConstId": 4,
     "CandidateName": "शान्त कुमार जोशी",
     "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 43,
+    "TotalVoteReceived": 48,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 59
@@ -16674,7 +15174,7 @@
     "MetaConstId": 4,
     "CandidateName": "अरुण  कुमार  कुशवाहा ",
     "PoliticalPartyName": "नेपाल जनता पार्टी",
-    "TotalVoteReceived": 33,
+    "TotalVoteReceived": 37,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 56
@@ -16684,7 +15184,7 @@
     "MetaConstId": 4,
     "CandidateName": "ईमदाद गद्दी",
     "PoliticalPartyName": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 17,
+    "TotalVoteReceived": 22,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 37
@@ -16694,7 +15194,7 @@
     "MetaConstId": 4,
     "CandidateName": "सुरजी देवी नुनिया",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 16,
+    "TotalVoteReceived": 17,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 45
@@ -16764,7 +15264,7 @@
     "MetaConstId": 4,
     "CandidateName": "गीता देवी बनिया",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
+    "TotalVoteReceived": 2,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 57
@@ -16814,7 +15314,7 @@
     "MetaConstId": 1,
     "CandidateName": "हरि ढकाल",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 29265,
+    "TotalVoteReceived": 30464,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 42
@@ -16824,7 +15324,7 @@
     "MetaConstId": 1,
     "CandidateName": "दावा दोर्जे लामा",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 6934,
+    "TotalVoteReceived": 7143,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 66
@@ -16834,7 +15334,7 @@
     "MetaConstId": 1,
     "CandidateName": "राजेन्द्र प्रसाद वुर्लाकोटी",
     "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 6708,
+    "TotalVoteReceived": 6977,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 66
@@ -16844,7 +15344,7 @@
     "MetaConstId": 1,
     "CandidateName": "कृष्ण राज पन्त",
     "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 2797,
+    "TotalVoteReceived": 2857,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 61
@@ -16854,7 +15354,7 @@
     "MetaConstId": 1,
     "CandidateName": "वलराम शर्मा खनाल",
     "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 1309,
+    "TotalVoteReceived": 1347,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 56
@@ -16864,7 +15364,7 @@
     "MetaConstId": 1,
     "CandidateName": "अनिल तामाङ",
     "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 770,
+    "TotalVoteReceived": 806,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 50
@@ -16874,7 +15374,7 @@
     "MetaConstId": 1,
     "CandidateName": "धन बहादुर गुरुङ्ग",
     "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
-    "TotalVoteReceived": 493,
+    "TotalVoteReceived": 518,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 62
@@ -16884,7 +15384,7 @@
     "MetaConstId": 1,
     "CandidateName": "संजय रिजाल",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 359,
+    "TotalVoteReceived": 388,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 30
@@ -16894,7 +15394,7 @@
     "MetaConstId": 1,
     "CandidateName": "प्रेम लाल चौधरी",
     "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
-    "TotalVoteReceived": 74,
+    "TotalVoteReceived": 77,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 42
@@ -16912,6 +15412,16 @@
   {
     "MetaDistId": 35,
     "MetaConstId": 1,
+    "CandidateName": "गणेश बहादुर श्रेष्ठ",
+    "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "TotalVoteReceived": 58,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 48
+  },
+  {
+    "MetaDistId": 35,
+    "MetaConstId": 1,
     "CandidateName": "अर्जुन प्रजा",
     "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
     "TotalVoteReceived": 57,
@@ -16922,19 +15432,9 @@
   {
     "MetaDistId": 35,
     "MetaConstId": 1,
-    "CandidateName": "गणेश बहादुर श्रेष्ठ",
-    "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "TotalVoteReceived": 57,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 48
-  },
-  {
-    "MetaDistId": 35,
-    "MetaConstId": 1,
     "CandidateName": "बिकाश कामी",
     "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 39,
+    "TotalVoteReceived": 40,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 25
@@ -16962,22 +15462,22 @@
   {
     "MetaDistId": 35,
     "MetaConstId": 1,
+    "CandidateName": "दुर्गा दत्त अर्याल",
+    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "TotalVoteReceived": 9,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 57
+  },
+  {
+    "MetaDistId": 35,
+    "MetaConstId": 1,
     "CandidateName": "अजय ठाकुर हजाम",
     "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
     "TotalVoteReceived": 8,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 39
-  },
-  {
-    "MetaDistId": 35,
-    "MetaConstId": 1,
-    "CandidateName": "दुर्गा दत्त अर्याल",
-    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
-    "TotalVoteReceived": 8,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 57
   },
   {
     "MetaDistId": 35,
@@ -19574,7 +18074,7 @@
     "MetaConstId": 1,
     "CandidateName": "हरी प्रसाद भुसाल",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 24675,
+    "TotalVoteReceived": 25025,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 37
@@ -19584,7 +18084,7 @@
     "MetaConstId": 1,
     "CandidateName": "पिताम्वर भुसाल",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 16950,
+    "TotalVoteReceived": 17151,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 54
@@ -19594,7 +18094,7 @@
     "MetaConstId": 1,
     "CandidateName": "विष्णु प्रसाद खनाल",
     "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 11839,
+    "TotalVoteReceived": 12169,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 56
@@ -19604,7 +18104,7 @@
     "MetaConstId": 1,
     "CandidateName": "राम वहादुर चौहान",
     "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 3379,
+    "TotalVoteReceived": 3411,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 56
@@ -19614,7 +18114,7 @@
     "MetaConstId": 1,
     "CandidateName": "पशुपति नाथ ढकाल",
     "PoliticalPartyName": "राष्ट्रिय जनमोर्चा",
-    "TotalVoteReceived": 1723,
+    "TotalVoteReceived": 1726,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 71
@@ -19624,7 +18124,7 @@
     "MetaConstId": 1,
     "CandidateName": "खिम बहादुर घर्ती मगर",
     "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "TotalVoteReceived": 423,
+    "TotalVoteReceived": 424,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 44
@@ -21344,7 +19844,7 @@
     "MetaConstId": 5,
     "CandidateName": "तौफिक अहमद खान",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 22642,
+    "TotalVoteReceived": 23112,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 38
@@ -21352,19 +19852,9 @@
   {
     "MetaDistId": 46,
     "MetaConstId": 5,
-    "CandidateName": "भरत कुमार शाह",
-    "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 7409,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 71
-  },
-  {
-    "MetaDistId": 46,
-    "MetaConstId": 5,
     "CandidateName": "खिम लाल भट्टराई",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 7278,
+    "TotalVoteReceived": 7666,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 55
@@ -21372,9 +19862,19 @@
   {
     "MetaDistId": 46,
     "MetaConstId": 5,
+    "CandidateName": "भरत कुमार शाह",
+    "PoliticalPartyName": "नेपाली काँग्रेस",
+    "TotalVoteReceived": 7584,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 71
+  },
+  {
+    "MetaDistId": 46,
+    "MetaConstId": 5,
     "CandidateName": "मुहम्मद वकील मुसलमान",
     "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 3337,
+    "TotalVoteReceived": 3961,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 57
@@ -21384,7 +19884,7 @@
     "MetaConstId": 5,
     "CandidateName": "ओम प्रकाश यादव",
     "PoliticalPartyName": "जनमत पार्टी",
-    "TotalVoteReceived": 1624,
+    "TotalVoteReceived": 1674,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 45
@@ -21394,7 +19894,7 @@
     "MetaConstId": 5,
     "CandidateName": "शिवलाल विश्वकर्मा",
     "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 1157,
+    "TotalVoteReceived": 1164,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 41
@@ -21404,7 +19904,7 @@
     "MetaConstId": 5,
     "CandidateName": "मिन प्रसाद घिमिरे",
     "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 781,
+    "TotalVoteReceived": 830,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 67
@@ -21414,7 +19914,7 @@
     "MetaConstId": 5,
     "CandidateName": "सुनिल चौधरी थारु",
     "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 411,
+    "TotalVoteReceived": 412,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 31
@@ -21424,7 +19924,7 @@
     "MetaConstId": 5,
     "CandidateName": "केशव भट्टराई ",
     "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
-    "TotalVoteReceived": 183,
+    "TotalVoteReceived": 200,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 36
@@ -21434,7 +19934,7 @@
     "MetaConstId": 5,
     "CandidateName": "विष्णु प्रसाद भट्टराई",
     "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "TotalVoteReceived": 156,
+    "TotalVoteReceived": 157,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 50
@@ -21454,7 +19954,7 @@
     "MetaConstId": 5,
     "CandidateName": "जयश्वर रेग्मी",
     "PoliticalPartyName": "राष्ट्रिय जनमोर्चा",
-    "TotalVoteReceived": 119,
+    "TotalVoteReceived": 120,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 74
@@ -21464,7 +19964,7 @@
     "MetaConstId": 5,
     "CandidateName": "मुहम्मद बहिद फकिर",
     "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 64,
+    "TotalVoteReceived": 65,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 44
@@ -21484,7 +19984,7 @@
     "MetaConstId": 5,
     "CandidateName": "बिरेन्द्र कुमार धोवी",
     "PoliticalPartyName": "नागरिक उन्मुक्ति पार्टी, नेपाल(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 37,
+    "TotalVoteReceived": 38,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 42
@@ -21494,7 +19994,7 @@
     "MetaConstId": 5,
     "CandidateName": "जगीलाल थापा",
     "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
-    "TotalVoteReceived": 34,
+    "TotalVoteReceived": 35,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 44
@@ -21514,7 +20014,7 @@
     "MetaConstId": 5,
     "CandidateName": "राजु श्रेष्‍ठ",
     "PoliticalPartyName": "नेपाल जनसेवा पार्टी",
-    "TotalVoteReceived": 10,
+    "TotalVoteReceived": 11,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 31
@@ -21524,7 +20024,7 @@
     "MetaConstId": 5,
     "CandidateName": "जगदीश यादव",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 10,
+    "TotalVoteReceived": 11,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 37
@@ -21594,7 +20094,7 @@
     "MetaConstId": 5,
     "CandidateName": "विक्रम प्रसाद यादव",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 3,
+    "TotalVoteReceived": 4,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 56
@@ -22904,7 +21404,7 @@
     "MetaConstId": 2,
     "CandidateName": "सोम शर्मा",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 10987,
+    "TotalVoteReceived": 11159,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 34
@@ -22914,7 +21414,7 @@
     "MetaConstId": 2,
     "CandidateName": "टेक राज पौडेल",
     "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 10516,
+    "TotalVoteReceived": 10658,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 50
@@ -22924,7 +21424,7 @@
     "MetaConstId": 2,
     "CandidateName": "ज्ञामनाथ गैरे",
     "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 9120,
+    "TotalVoteReceived": 9218,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 45
@@ -22934,7 +21434,7 @@
     "MetaConstId": 2,
     "CandidateName": "मन्जु शर्मा",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 5845,
+    "TotalVoteReceived": 6149,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 52
@@ -22944,7 +21444,7 @@
     "MetaConstId": 2,
     "CandidateName": "हर्क बहादुर पुन",
     "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 461,
+    "TotalVoteReceived": 464,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 50
@@ -22974,7 +21474,7 @@
     "MetaConstId": 2,
     "CandidateName": "नर बहादुर बुढा",
     "PoliticalPartyName": "नेशनल रिपब्लिक नेपाल",
-    "TotalVoteReceived": 195,
+    "TotalVoteReceived": 196,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 73
@@ -22984,7 +21484,7 @@
     "MetaConstId": 2,
     "CandidateName": "लोकेन्द्र घिमिरे",
     "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "TotalVoteReceived": 71,
+    "TotalVoteReceived": 77,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 40
@@ -22994,7 +21494,7 @@
     "MetaConstId": 2,
     "CandidateName": "टेक प्रसाद कामी",
     "PoliticalPartyName": "नेपाल मानवतावादी पार्टी",
-    "TotalVoteReceived": 68,
+    "TotalVoteReceived": 69,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 59
@@ -23024,7 +21524,7 @@
     "MetaConstId": 1,
     "CandidateName": "सागर भुसाल",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 26394,
+    "TotalVoteReceived": 26561,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 44
@@ -23034,7 +21534,7 @@
     "MetaConstId": 1,
     "CandidateName": "अर्जुन प्रसाद जोशी",
     "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 15746,
+    "TotalVoteReceived": 15954,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 69
@@ -23044,7 +21544,7 @@
     "MetaConstId": 1,
     "CandidateName": "पदम गिरी",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 14959,
+    "TotalVoteReceived": 15075,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 48
@@ -23054,7 +21554,7 @@
     "MetaConstId": 1,
     "CandidateName": "मनहरि शर्मा",
     "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 4318,
+    "TotalVoteReceived": 4557,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 41
@@ -23064,7 +21564,7 @@
     "MetaConstId": 1,
     "CandidateName": "दुर्गा बहादुर मल्ल",
     "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 522,
+    "TotalVoteReceived": 525,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 71
@@ -23074,7 +21574,7 @@
     "MetaConstId": 1,
     "CandidateName": "यम बहादुर चोचाङ्गी पुन",
     "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
-    "TotalVoteReceived": 121,
+    "TotalVoteReceived": 122,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 45
@@ -23094,7 +21594,7 @@
     "MetaConstId": 1,
     "CandidateName": "वीर वहादुर गुरुङ्ग",
     "PoliticalPartyName": "नेशनल रिपब्लिक नेपाल",
-    "TotalVoteReceived": 94,
+    "TotalVoteReceived": 98,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 43
@@ -23114,7 +21614,7 @@
     "MetaConstId": 1,
     "CandidateName": "लाल कुमारी थापा राना",
     "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
-    "TotalVoteReceived": 39,
+    "TotalVoteReceived": 41,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 39
@@ -23124,10 +21624,20 @@
     "MetaConstId": 1,
     "CandidateName": "माया पाइजा पुन फकामी मगर",
     "PoliticalPartyName": "राष्ट्रिय जनमुक्ति पार्टी",
-    "TotalVoteReceived": 23,
+    "TotalVoteReceived": 29,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 44
+  },
+  {
+    "MetaDistId": 51,
+    "MetaConstId": 1,
+    "CandidateName": "मिना पौडेल (शर्मा)",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 8,
+    "Remarks": null,
+    "Gender": "महिला",
+    "Age": 42
   },
   {
     "MetaDistId": 51,
@@ -23148,16 +21658,6 @@
     "Remarks": null,
     "Gender": "महिला",
     "Age": 51
-  },
-  {
-    "MetaDistId": 51,
-    "MetaConstId": 1,
-    "CandidateName": "मिना पौडेल (शर्मा)",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 7,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 42
   },
   {
     "MetaDistId": 51,
@@ -23544,7 +22044,7 @@
     "MetaConstId": 1,
     "CandidateName": "रमेश कुमार मल्ल",
     "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 8839,
+    "TotalVoteReceived": 9102,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 47
@@ -23554,7 +22054,7 @@
     "MetaConstId": 1,
     "CandidateName": "ललित कुमार चन्द",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 6698,
+    "TotalVoteReceived": 6864,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 42
@@ -23564,7 +22064,7 @@
     "MetaConstId": 1,
     "CandidateName": "केश बहादुर विष्ट",
     "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 5470,
+    "TotalVoteReceived": 5826,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 57
@@ -23574,7 +22074,7 @@
     "MetaConstId": 1,
     "CandidateName": "गुलाव जंग शाह",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 4915,
+    "TotalVoteReceived": 5187,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 60
@@ -23584,7 +22084,7 @@
     "MetaConstId": 1,
     "CandidateName": "चन्द्र बहादुर खड्का",
     "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "TotalVoteReceived": 637,
+    "TotalVoteReceived": 650,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 48
@@ -23594,7 +22094,7 @@
     "MetaConstId": 1,
     "CandidateName": "अनिशा नेपाली",
     "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 345,
+    "TotalVoteReceived": 359,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 32
@@ -23604,7 +22104,7 @@
     "MetaConstId": 1,
     "CandidateName": "ध्रुव राज वली",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 53,
+    "TotalVoteReceived": 59,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 31
@@ -23624,7 +22124,7 @@
     "MetaConstId": 1,
     "CandidateName": "कमला डाँगी",
     "PoliticalPartyName": "राष्ट्रिय जनमोर्चा",
-    "TotalVoteReceived": 46,
+    "TotalVoteReceived": 47,
     "Remarks": null,
     "Gender": "महिला",
     "Age": 31
@@ -23634,7 +22134,7 @@
     "MetaConstId": 1,
     "CandidateName": "धन बहादुर बुढामगर",
     "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 45,
+    "TotalVoteReceived": 47,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 53
@@ -23644,7 +22144,7 @@
     "MetaConstId": 1,
     "CandidateName": "कालिदास वि.क.",
     "PoliticalPartyName": "संयुक्त नागरिक पार्टी",
-    "TotalVoteReceived": 38,
+    "TotalVoteReceived": 40,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 32
@@ -23654,10 +22154,20 @@
     "MetaConstId": 1,
     "CandidateName": "लाल बहादुर थापा क्षेत्री",
     "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
-    "TotalVoteReceived": 24,
+    "TotalVoteReceived": 28,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 51
+  },
+  {
+    "MetaDistId": 55,
+    "MetaConstId": 1,
+    "CandidateName": "बाला सिंह घर्ती",
+    "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
+    "TotalVoteReceived": 8,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 60
   },
   {
     "MetaDistId": 55,
@@ -23668,16 +22178,6 @@
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 30
-  },
-  {
-    "MetaDistId": 55,
-    "MetaConstId": 1,
-    "CandidateName": "बाला सिंह घर्ती",
-    "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
-    "TotalVoteReceived": 7,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 60
   },
   {
     "MetaDistId": 56,
@@ -23824,7 +22324,7 @@
     "MetaConstId": 2,
     "CandidateName": "विपिन कुमार आचार्य",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 20746,
+    "TotalVoteReceived": 25650,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 39
@@ -23834,7 +22334,7 @@
     "MetaConstId": 2,
     "CandidateName": "शंकर पोख्रेल",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 8367,
+    "TotalVoteReceived": 9765,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 63
@@ -23844,7 +22344,7 @@
     "MetaConstId": 2,
     "CandidateName": "किरण किशोर घिमिरे",
     "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 6411,
+    "TotalVoteReceived": 7482,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 63
@@ -23854,7 +22354,7 @@
     "MetaConstId": 2,
     "CandidateName": "निर्मल आचार्य",
     "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 4244,
+    "TotalVoteReceived": 4717,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 49
@@ -23864,7 +22364,7 @@
     "MetaConstId": 2,
     "CandidateName": "ऋषि केश पोख्रेल",
     "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 346,
+    "TotalVoteReceived": 426,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 53
@@ -23874,7 +22374,7 @@
     "MetaConstId": 2,
     "CandidateName": "अम्मर बहादुर बुढा",
     "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
-    "TotalVoteReceived": 234,
+    "TotalVoteReceived": 275,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 51
@@ -23884,7 +22384,7 @@
     "MetaConstId": 2,
     "CandidateName": "मनिराम खनाल",
     "PoliticalPartyName": "राष्ट्रिय जनमोर्चा",
-    "TotalVoteReceived": 88,
+    "TotalVoteReceived": 107,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 50
@@ -23892,49 +22392,9 @@
   {
     "MetaDistId": 56,
     "MetaConstId": 2,
-    "CandidateName": "प्रतिक अधिकारी",
-    "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 42,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 26
-  },
-  {
-    "MetaDistId": 56,
-    "MetaConstId": 2,
-    "CandidateName": "रविन्द्र उच्च नेपाली",
-    "PoliticalPartyName": "राष्ट्रिय जनमुक्ति पार्टी",
-    "TotalVoteReceived": 18,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 55
-  },
-  {
-    "MetaDistId": 56,
-    "MetaConstId": 2,
-    "CandidateName": "ढुण्डीराज थापा",
-    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 17,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 38
-  },
-  {
-    "MetaDistId": 56,
-    "MetaConstId": 2,
-    "CandidateName": "नवीन कुमार शाही",
-    "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
-    "TotalVoteReceived": 14,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 49
-  },
-  {
-    "MetaDistId": 56,
-    "MetaConstId": 2,
     "CandidateName": "जितन पुन",
     "PoliticalPartyName": "नेशनल रिपब्लिक नेपाल",
-    "TotalVoteReceived": 13,
+    "TotalVoteReceived": 49,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 48
@@ -23942,9 +22402,49 @@
   {
     "MetaDistId": 56,
     "MetaConstId": 2,
+    "CandidateName": "प्रतिक अधिकारी",
+    "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "TotalVoteReceived": 48,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 26
+  },
+  {
+    "MetaDistId": 56,
+    "MetaConstId": 2,
+    "CandidateName": "ढुण्डीराज थापा",
+    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
+    "TotalVoteReceived": 24,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 38
+  },
+  {
+    "MetaDistId": 56,
+    "MetaConstId": 2,
+    "CandidateName": "रविन्द्र उच्च नेपाली",
+    "PoliticalPartyName": "राष्ट्रिय जनमुक्ति पार्टी",
+    "TotalVoteReceived": 24,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 55
+  },
+  {
+    "MetaDistId": 56,
+    "MetaConstId": 2,
+    "CandidateName": "नवीन कुमार शाही",
+    "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
+    "TotalVoteReceived": 16,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 49
+  },
+  {
+    "MetaDistId": 56,
+    "MetaConstId": 2,
     "CandidateName": "झरेन्द्र बहादुर खत्री",
     "PoliticalPartyName": "नागरिक उन्मुक्ति पार्टी, नेपाल(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 13,
+    "TotalVoteReceived": 14,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 45
@@ -23954,7 +22454,7 @@
     "MetaConstId": 2,
     "CandidateName": "धर्मराज शर्मा",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 11,
+    "TotalVoteReceived": 14,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 46
@@ -23964,7 +22464,7 @@
     "MetaConstId": 2,
     "CandidateName": "पदम प्रसाद पाण्‍डे",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 11,
+    "TotalVoteReceived": 14,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 52
@@ -23982,22 +22482,22 @@
   {
     "MetaDistId": 56,
     "MetaConstId": 2,
+    "CandidateName": "विष्णु कुमारी भुसाल",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 7,
+    "Remarks": null,
+    "Gender": "महिला",
+    "Age": 44
+  },
+  {
+    "MetaDistId": 56,
+    "MetaConstId": 2,
     "CandidateName": "लाल बहादुर खत्री",
     "PoliticalPartyName": "स्वतन्त्र",
     "TotalVoteReceived": 6,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 53
-  },
-  {
-    "MetaDistId": 56,
-    "MetaConstId": 2,
-    "CandidateName": "विष्णु कुमारी भुसाल",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 44
   },
   {
     "MetaDistId": 56,
@@ -24012,29 +22512,9 @@
   {
     "MetaDistId": 56,
     "MetaConstId": 2,
-    "CandidateName": "बिष्णु बिक्रम सेन वली",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 3,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 29
-  },
-  {
-    "MetaDistId": 56,
-    "MetaConstId": 2,
-    "CandidateName": "रेख बहादुर पुन मगर",
-    "PoliticalPartyName": "मितेरी पार्टी नेपाल",
-    "TotalVoteReceived": 2,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 34
-  },
-  {
-    "MetaDistId": 56,
-    "MetaConstId": 2,
     "CandidateName": "बालाराम पौडेल",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 2,
+    "TotalVoteReceived": 4,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 43
@@ -24044,10 +22524,30 @@
     "MetaConstId": 2,
     "CandidateName": "समिर वली",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 2,
+    "TotalVoteReceived": 4,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 30
+  },
+  {
+    "MetaDistId": 56,
+    "MetaConstId": 2,
+    "CandidateName": "रेख बहादुर पुन मगर",
+    "PoliticalPartyName": "मितेरी पार्टी नेपाल",
+    "TotalVoteReceived": 3,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 34
+  },
+  {
+    "MetaDistId": 56,
+    "MetaConstId": 2,
+    "CandidateName": "बिष्णु बिक्रम सेन वली",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 3,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 29
   },
   {
     "MetaDistId": 56,
@@ -25034,7 +23534,7 @@
     "MetaConstId": 1,
     "CandidateName": "विष्णु बहादुर खड्का",
     "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 14565,
+    "TotalVoteReceived": 14982,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 58
@@ -25044,7 +23544,7 @@
     "MetaConstId": 1,
     "CandidateName": "ध्रुवकुमार शाही",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 10089,
+    "TotalVoteReceived": 10325,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 55
@@ -25054,7 +23554,7 @@
     "MetaConstId": 1,
     "CandidateName": "टेक बहादुर सिंह ठकुरी",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 8587,
+    "TotalVoteReceived": 8729,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 54
@@ -25064,7 +23564,7 @@
     "MetaConstId": 1,
     "CandidateName": "जित बहादुर राना",
     "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 1343,
+    "TotalVoteReceived": 1352,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 54
@@ -25074,7 +23574,7 @@
     "MetaConstId": 1,
     "CandidateName": "रवि हमाल ठकुरी",
     "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 466,
+    "TotalVoteReceived": 467,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 28
@@ -25084,10 +23584,20 @@
     "MetaConstId": 1,
     "CandidateName": "विर बहादुर राना",
     "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 456,
+    "TotalVoteReceived": 457,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 55
+  },
+  {
+    "MetaDistId": 64,
+    "MetaConstId": 1,
+    "CandidateName": "धनसिं सार्कि",
+    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
+    "TotalVoteReceived": 241,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 50
   },
   {
     "MetaDistId": 64,
@@ -25098,16 +23608,6 @@
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 54
-  },
-  {
-    "MetaDistId": 64,
-    "MetaConstId": 1,
-    "CandidateName": "धनसिं सार्कि",
-    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 169,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 50
   },
   {
     "MetaDistId": 64,
@@ -25124,7 +23624,7 @@
     "MetaConstId": 1,
     "CandidateName": "रमेश सेन्चुरी",
     "PoliticalPartyName": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 66,
+    "TotalVoteReceived": 67,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 52
@@ -25134,7 +23634,7 @@
     "MetaConstId": 1,
     "CandidateName": "हिरु शाही",
     "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "TotalVoteReceived": 58,
+    "TotalVoteReceived": 59,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 56
@@ -25154,1399 +23654,949 @@
     "MetaConstId": 1,
     "CandidateName": "प्रकाश बुढा मगर",
     "PoliticalPartyName": "मितेरी पार्टी नेपाल",
-    "TotalVoteReceived": 4,
+    "TotalVoteReceived": 5,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 30
   },
   {
-    "MetaDistId": 75,
-    "MetaConstId": 3,
-    "CandidateName": "ज्ञानेन्द्र सिंह महता",
+    "MetaDistId": 64,
+    "MetaConstId": 2,
+    "CandidateName": "रमेश कुमार सापकोटा",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 9503,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 40
-  },
-  {
-    "MetaDistId": 75,
-    "MetaConstId": 3,
-    "CandidateName": "हरि प्रसाद बोहरा",
-    "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 3665,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 59
-  },
-  {
-    "MetaDistId": 75,
-    "MetaConstId": 3,
-    "CandidateName": "दीपक प्रकाश भट्ट",
-    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 3321,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 53
-  },
-  {
-    "MetaDistId": 75,
-    "MetaConstId": 3,
-    "CandidateName": "मान बहादुर सुनार",
-    "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 1785,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 70
-  },
-  {
-    "MetaDistId": 75,
-    "MetaConstId": 3,
-    "CandidateName": "पुर्ण वहादुर चन्द",
-    "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 1189,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 51
-  },
-  {
-    "MetaDistId": 75,
-    "MetaConstId": 3,
-    "CandidateName": "भिम बहादुर कुमाल",
-    "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
-    "TotalVoteReceived": 166,
+    "TotalVoteReceived": 12543,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 46
   },
   {
-    "MetaDistId": 75,
-    "MetaConstId": 3,
-    "CandidateName": "गंगा दत्त जोशी",
-    "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 92,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 67
-  },
-  {
-    "MetaDistId": 75,
-    "MetaConstId": 3,
-    "CandidateName": "विष्णु प्रकाश उपाध्याय",
-    "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "TotalVoteReceived": 40,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 44
-  },
-  {
-    "MetaDistId": 75,
-    "MetaConstId": 3,
-    "CandidateName": "हर्क बहादुर ऐर",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 39,
+    "MetaDistId": 64,
+    "MetaConstId": 2,
+    "CandidateName": "नारायण कुमार कोइराला",
+    "PoliticalPartyName": "नेपाली काँग्रेस",
+    "TotalVoteReceived": 8578,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 52
   },
   {
-    "MetaDistId": 75,
-    "MetaConstId": 3,
-    "CandidateName": "लाल बहादुर कुँवर",
-    "PoliticalPartyName": "राष्ट्रिय जनमोर्चा",
-    "TotalVoteReceived": 35,
+    "MetaDistId": 64,
+    "MetaConstId": 2,
+    "CandidateName": "कुलमणि देवकोटा",
+    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
+    "TotalVoteReceived": 6839,
     "Remarks": null,
     "Gender": "पुरुष",
-    "Age": 44
+    "Age": 52
   },
   {
-    "MetaDistId": 75,
-    "MetaConstId": 3,
-    "CandidateName": "मीनु गिरी",
+    "MetaDistId": 64,
+    "MetaConstId": 2,
+    "CandidateName": "झक बहादुर मल्ल",
+    "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
+    "TotalVoteReceived": 3259,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 46
+  },
+  {
+    "MetaDistId": 64,
+    "MetaConstId": 2,
+    "CandidateName": "राजेन्द्र रामजाली",
+    "PoliticalPartyName": "श्रम संस्कृति पार्टी",
+    "TotalVoteReceived": 973,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 50
+  },
+  {
+    "MetaDistId": 64,
+    "MetaConstId": 2,
+    "CandidateName": "कबि राम पुरी",
+    "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "TotalVoteReceived": 672,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 56
+  },
+  {
+    "MetaDistId": 64,
+    "MetaConstId": 2,
+    "CandidateName": "धर्मराज देवकोटा",
+    "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "TotalVoteReceived": 111,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 41
+  },
+  {
+    "MetaDistId": 64,
+    "MetaConstId": 2,
+    "CandidateName": "गम्भीर सिह भुल",
+    "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
+    "TotalVoteReceived": 103,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 35
+  },
+  {
+    "MetaDistId": 64,
+    "MetaConstId": 2,
+    "CandidateName": "तुल्छी खडका",
     "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
-    "TotalVoteReceived": 26,
+    "TotalVoteReceived": 67,
     "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 64
+    "Gender": "महिला",
+    "Age": 43
   },
   {
-    "MetaDistId": 75,
-    "MetaConstId": 3,
-    "CandidateName": "कर्ण बहादुर चन्द",
+    "MetaDistId": 64,
+    "MetaConstId": 2,
+    "CandidateName": "पूर्ण बहादुर शाही",
+    "PoliticalPartyName": "राष्ट्रिय जनमोर्चा",
+    "TotalVoteReceived": 62,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 63
+  },
+  {
+    "MetaDistId": 64,
+    "MetaConstId": 2,
+    "CandidateName": "दिप बहादुर नेपाली",
+    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
+    "TotalVoteReceived": 43,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 63
+  },
+  {
+    "MetaDistId": 64,
+    "MetaConstId": 2,
+    "CandidateName": "प्रेम बहादुर तारामी",
     "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
-    "TotalVoteReceived": 20,
+    "TotalVoteReceived": 43,
     "Remarks": null,
     "Gender": "पुरुष",
-    "Age": 55
-  },
-  {
-    "MetaDistId": 75,
-    "MetaConstId": 3,
-    "CandidateName": "थानेश्वर लेखक",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 16,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 43
-  },
-  {
-    "MetaDistId": 75,
-    "MetaConstId": 3,
-    "CandidateName": "लक्ष्‍मी कुमारी विष्ट भट्ट",
-    "PoliticalPartyName": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 10,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 48
-  },
-  {
-    "MetaDistId": 75,
-    "MetaConstId": 3,
-    "CandidateName": "लोक राज भट्ट",
-    "PoliticalPartyName": "राष्ट्रिय मुक्ति पार्टी नेपाल(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 8,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 39
-  },
-  {
-    "MetaDistId": 75,
-    "MetaConstId": 3,
-    "CandidateName": "वीर सिंह क्षेत्री",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 6,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 44
-  },
-  {
-    "MetaDistId": 75,
-    "MetaConstId": 3,
-    "CandidateName": "किरन थापा",
-    "PoliticalPartyName": "मितेरी पार्टी नेपाल",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 43
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "विक्रम खनाल",
-    "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 14254,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 55
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "हृदयेश त्रिपाठी",
-    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 5698,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 66
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "विनोद कुमार चौधरी",
-    "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 4085,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 70
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "राम प्रसाद पाण्डेय",
-    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 2377,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 51
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "नवनित कुमार मिश्र",
-    "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 791,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 30
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "राजु प्रसाद हरिजन",
-    "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "TotalVoteReceived": 431,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 50
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "गणेश बहादुर चौधरी",
-    "PoliticalPartyName": "जनमत पार्टी",
-    "TotalVoteReceived": 328,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 59
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "सिन्‍धु जलेसा बुढाथोकी",
-    "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 326,
-    "Remarks": null,
-    "Gender": "महिला",
     "Age": 56
   },
   {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "भिमसेन सुतप्राई मगर",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 319,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 54
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "बिजय कंडेल",
-    "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
-    "TotalVoteReceived": 128,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 41
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "सत्रुधन चौधरी",
-    "PoliticalPartyName": "नागरिक उन्मुक्ति पार्टी, नेपाल(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 94,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 58
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "चिरंजीवी खराल",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 89,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 54
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "रामचन्द्र चौधरी थारु",
-    "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 44,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 39
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "रितमान कामु मगर",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 29,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 50
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "विनोद रेग्मी",
-    "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "MetaDistId": 64,
+    "MetaConstId": 2,
+    "CandidateName": "पवन थापा मगर",
+    "PoliticalPartyName": "गतिशील लोकतान्त्रिक पार्टी",
     "TotalVoteReceived": 26,
     "Remarks": null,
     "Gender": "पुरुष",
-    "Age": 47
+    "Age": 28
   },
   {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "ढुण्डी राज पोख्रेल",
-    "PoliticalPartyName": "राष्ट्रिय जनमोर्चा",
-    "TotalVoteReceived": 11,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 62
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "पुर्ण बहादुर विश्वकर्मा",
-    "PoliticalPartyName": "राष्ट्रिय जनमुक्ति पार्टी",
-    "TotalVoteReceived": 11,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 66
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "ओम बहादुर चौधरी थारु",
+    "MetaDistId": 64,
+    "MetaConstId": 2,
+    "CandidateName": "रमेश परियार",
     "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 10,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 31
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "भरत लोनिया",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 9,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 60
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "अलियास मिया",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 6,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 73
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "होम बहादुर सुनार",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 6,
+    "TotalVoteReceived": 13,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 40
   },
   {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "गंगा देवी थारु महतो",
+    "MetaDistId": 64,
+    "MetaConstId": 2,
+    "CandidateName": "कृष्ण खत्री",
     "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 7,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 27
+  },
+  {
+    "MetaDistId": 64,
+    "MetaConstId": 2,
+    "CandidateName": "हृदयन्द्र  अधिकारी ",
+    "PoliticalPartyName": "नेपाल जनसेवा पार्टी",
     "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 53
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "मिन प्रसाद ढकाल",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 32
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "इन्द्र कुमार गुरुङ्ग",
-    "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
-    "TotalVoteReceived": 4,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 48
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "गोपिचन्द्र हरिजन",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 2,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 39
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "शैलेन्द्र सिँह सदासंकर",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 26
   },
   {
-    "MetaDistId": 77,
+    "MetaDistId": 64,
     "MetaConstId": 2,
-    "CandidateName": "नरेन्द्र कुमार गुप्‍ता",
-    "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 15673,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 51
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "भीम बहादुर थापा क्षेत्री",
-    "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 6464,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 54
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "देबेन्‍द्र यादव",
-    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 2546,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 36
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "लेखनाथ खरेल",
-    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 1915,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 51
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "धुब्र बहादुर प्रधान",
-    "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 1692,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 77
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "देवेन्द्र पौडेल",
-    "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 1053,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 61
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "जिवन मल्लाह",
-    "PoliticalPartyName": "जनमत पार्टी",
-    "TotalVoteReceived": 334,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 49
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "गोविन्‍द प्रसाद चौधरी",
-    "PoliticalPartyName": "राष्ट्रिय मुक्ति पार्टी नेपाल(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 317,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 65
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "राम बहादुर केवट",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 231,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 47
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "संजय कुमार हरिजन",
-    "PoliticalPartyName": "संयुक्त नागरिक पार्टी",
-    "TotalVoteReceived": 169,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 45
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "इन्द्र बहादुर गुरुङ्ग",
-    "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
-    "TotalVoteReceived": 97,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 57
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "पार्वता पौड्याल",
-    "PoliticalPartyName": "राष्ट्रिय जनमोर्चा",
-    "TotalVoteReceived": 94,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 50
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "चन्द्रभुषण पाठक",
-    "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 65,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 48
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "प्रेम प्रसाद ढकाल",
-    "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "TotalVoteReceived": 41,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 65
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "ध्रुव प्रसाद कहार",
-    "PoliticalPartyName": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 29,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 54
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "यु बहादुर राना",
-    "PoliticalPartyName": "राष्ट्रिय जनमुक्ति पार्टी",
-    "TotalVoteReceived": 16,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 61
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "रञ्जना सुवाल",
-    "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
-    "TotalVoteReceived": 7,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 44
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "सन्जय हरिजन",
-    "PoliticalPartyName": "बहुजन शक्ति पार्टी",
-    "TotalVoteReceived": 7,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 37
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "अशोक तेली",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 31
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "सुरेश तेली",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 65
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "मनोज हरिजन",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 4,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 33
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "उमा शंकर खरविन्द",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 3,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 58
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "राजेन्द्र प्रसाद यादव",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 3,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 45
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "लाल बहादुर कुवर",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 3,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 69
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "विष्‍णु प्रसाद ढकाल",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 3,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 41
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "हरि नारायण हरिजन",
+    "CandidateName": "उदीराम चुनारा",
     "PoliticalPartyName": "स्वतन्त्र",
     "TotalVoteReceived": 2,
     "Remarks": null,
     "Gender": "पुरुष",
-    "Age": 44
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "दामोदर बर्मा सुनार",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 39
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "हद्दीस अलि मिया",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
     "Age": 56
   },
   {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "विष्णु प्रसाद पौडेल",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 0,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 62
-  },
-  {
-    "MetaDistId": 77,
+    "MetaDistId": 65,
     "MetaConstId": 1,
-    "CandidateName": "विक्रम खनाल",
+    "CandidateName": "सुरेश कुमार चौधरी",
     "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 14254,
-    "Remarks": null,
+    "TotalVoteReceived": 32792,
+    "Remarks": "Elected",
     "Gender": "पुरुष",
-    "Age": 55
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "हृदयेश त्रिपाठी",
-    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 5698,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 66
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "विनोद कुमार चौधरी",
-    "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 4085,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 70
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "राम प्रसाद पाण्डेय",
-    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 2377,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 51
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "नवनित कुमार मिश्र",
-    "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 791,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 30
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "राजु प्रसाद हरिजन",
-    "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "TotalVoteReceived": 431,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 50
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "गणेश बहादुर चौधरी",
-    "PoliticalPartyName": "जनमत पार्टी",
-    "TotalVoteReceived": 328,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 59
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "सिन्‍धु जलेसा बुढाथोकी",
-    "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 326,
-    "Remarks": null,
-    "Gender": "महिला",
     "Age": 56
   },
   {
-    "MetaDistId": 77,
+    "MetaDistId": 65,
     "MetaConstId": 1,
-    "CandidateName": "भिमसेन सुतप्राई मगर",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 319,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 54
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "बिजय कंडेल",
-    "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
-    "TotalVoteReceived": 128,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 41
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "सत्रुधन चौधरी",
-    "PoliticalPartyName": "नागरिक उन्मुक्ति पार्टी, नेपाल(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 94,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 58
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "चिरंजीवी खराल",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 89,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 54
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "रामचन्द्र चौधरी थारु",
-    "PoliticalPartyName": "श्रम संस्कृति पार्टी",
-    "TotalVoteReceived": 44,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 39
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "रितमान कामु मगर",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 29,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 50
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "विनोद रेग्मी",
-    "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 26,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 47
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "ढुण्डी राज पोख्रेल",
-    "PoliticalPartyName": "राष्ट्रिय जनमोर्चा",
-    "TotalVoteReceived": 11,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 62
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "पुर्ण बहादुर विश्वकर्मा",
-    "PoliticalPartyName": "राष्ट्रिय जनमुक्ति पार्टी",
-    "TotalVoteReceived": 11,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 66
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "ओम बहादुर चौधरी थारु",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 10,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 31
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "भरत लोनिया",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 9,
+    "CandidateName": "नारायण प्रसाद गौडेल",
+    "PoliticalPartyName": "नेपाली काँग्रेस",
+    "TotalVoteReceived": 15301,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 60
   },
   {
-    "MetaDistId": 77,
+    "MetaDistId": 65,
     "MetaConstId": 1,
-    "CandidateName": "अलियास मिया",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 6,
+    "CandidateName": "सुर्य प्रसाद ढकाल",
+    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
+    "TotalVoteReceived": 11095,
     "Remarks": null,
     "Gender": "पुरुष",
-    "Age": 73
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "होम बहादुर सुनार",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 6,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 40
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "गंगा देवी थारु महतो",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "महिला",
     "Age": 53
   },
   {
-    "MetaDistId": 77,
+    "MetaDistId": 65,
     "MetaConstId": 1,
-    "CandidateName": "मिन प्रसाद ढकाल",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 32
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "इन्द्र कुमार गुरुङ्ग",
-    "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
-    "TotalVoteReceived": 4,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 48
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "गोपिचन्द्र हरिजन",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 2,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 39
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 1,
-    "CandidateName": "शैलेन्द्र सिँह सदासंकर",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 26
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "नरेन्द्र कुमार गुप्‍ता",
-    "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 15673,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 51
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "भीम बहादुर थापा क्षेत्री",
-    "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 6464,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 54
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "देबेन्‍द्र यादव",
-    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
-    "TotalVoteReceived": 2546,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 36
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "लेखनाथ खरेल",
-    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 1915,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 51
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "धुब्र बहादुर प्रधान",
-    "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 1692,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 77
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "देवेन्द्र पौडेल",
+    "CandidateName": "नरेन्द्र प्रसाद पाण्डे",
     "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 1053,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 61
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "जिवन मल्लाह",
-    "PoliticalPartyName": "जनमत पार्टी",
-    "TotalVoteReceived": 334,
+    "TotalVoteReceived": 6033,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 49
   },
   {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "गोविन्‍द प्रसाद चौधरी",
-    "PoliticalPartyName": "राष्ट्रिय मुक्ति पार्टी नेपाल(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 317,
+    "MetaDistId": 65,
+    "MetaConstId": 1,
+    "CandidateName": "प्रदिप कुमार शाह",
+    "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "TotalVoteReceived": 3234,
     "Remarks": null,
     "Gender": "पुरुष",
-    "Age": 65
+    "Age": 63
   },
   {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "राम बहादुर केवट",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 231,
+    "MetaDistId": 65,
+    "MetaConstId": 1,
+    "CandidateName": "कृष्णा के.सी.",
+    "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "TotalVoteReceived": 1240,
+    "Remarks": null,
+    "Gender": "महिला",
+    "Age": 46
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 1,
+    "CandidateName": "भरत निधी तिवारी",
+    "PoliticalPartyName": "श्रम संस्कृति पार्टी",
+    "TotalVoteReceived": 463,
     "Remarks": null,
     "Gender": "पुरुष",
-    "Age": 47
+    "Age": 34
   },
   {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "संजय कुमार हरिजन",
-    "PoliticalPartyName": "संयुक्त नागरिक पार्टी",
-    "TotalVoteReceived": 169,
+    "MetaDistId": 65,
+    "MetaConstId": 1,
+    "CandidateName": "धन बहादुर खड्का",
+    "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
+    "TotalVoteReceived": 246,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 43
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 1,
+    "CandidateName": "दिपक वुढाथोकी",
+    "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "TotalVoteReceived": 186,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 29
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 1,
+    "CandidateName": "तुलसी राम सापकोटा",
+    "PoliticalPartyName": "राष्ट्रिय जनमोर्चा",
+    "TotalVoteReceived": 126,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 68
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 1,
+    "CandidateName": "राजेन्द्र कुमार विश्वकर्मा",
+    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
+    "TotalVoteReceived": 84,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 45
   },
   {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "इन्द्र बहादुर गुरुङ्ग",
-    "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
-    "TotalVoteReceived": 97,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 57
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "पार्वता पौड्याल",
-    "PoliticalPartyName": "राष्ट्रिय जनमोर्चा",
-    "TotalVoteReceived": 94,
+    "MetaDistId": 65,
+    "MetaConstId": 1,
+    "CandidateName": "सुर्जा थापा",
+    "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
+    "TotalVoteReceived": 56,
     "Remarks": null,
     "Gender": "महिला",
+    "Age": 40
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 1,
+    "CandidateName": "दिवाकर​ शर्मा",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 39,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 39
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 1,
+    "CandidateName": "फेरुलाल चौधरी",
+    "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
+    "TotalVoteReceived": 12,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 48
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "मोहम्मद इश्तियाक राई",
+    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
+    "TotalVoteReceived": 24628,
+    "Remarks": "Elected",
+    "Gender": "पुरुष",
+    "Age": 46
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "विवेक कुमार श्रेष्ठ",
+    "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "TotalVoteReceived": 18682,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 43
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "सुधान्सु कोइराला",
+    "PoliticalPartyName": "नेपाली काँग्रेस",
+    "TotalVoteReceived": 17596,
+    "Remarks": null,
+    "Gender": "पुरुष",
     "Age": 50
   },
   {
-    "MetaDistId": 77,
+    "MetaDistId": 65,
     "MetaConstId": 2,
-    "CandidateName": "चन्द्रभुषण पाठक",
-    "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 65,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 48
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "प्रेम प्रसाद ढकाल",
-    "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "TotalVoteReceived": 41,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 65
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "ध्रुव प्रसाद कहार",
-    "PoliticalPartyName": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 29,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 54
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "यु बहादुर राना",
-    "PoliticalPartyName": "राष्ट्रिय जनमुक्ति पार्टी",
-    "TotalVoteReceived": 16,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 61
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "रञ्जना सुवाल",
-    "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
-    "TotalVoteReceived": 7,
-    "Remarks": null,
-    "Gender": "महिला",
-    "Age": 44
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "सन्जय हरिजन",
-    "PoliticalPartyName": "बहुजन शक्ति पार्टी",
-    "TotalVoteReceived": 7,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 37
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "अशोक तेली",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 31
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "सुरेश तेली",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 5,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 65
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "मनोज हरिजन",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 4,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 33
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "उमा शंकर खरविन्द",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 3,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 58
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "राजेन्द्र प्रसाद यादव",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 3,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 45
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "लाल बहादुर कुवर",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 3,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 69
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "विष्‍णु प्रसाद ढकाल",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 3,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 41
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "हरि नारायण हरिजन",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 2,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 44
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "दामोदर बर्मा सुनार",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 39
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "हद्दीस अलि मिया",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 1,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 56
-  },
-  {
-    "MetaDistId": 77,
-    "MetaConstId": 2,
-    "CandidateName": "विष्णु प्रसाद पौडेल",
-    "PoliticalPartyName": "स्वतन्त्र",
-    "TotalVoteReceived": 0,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 62
-  },
-  {
-    "MetaDistId": 78,
-    "MetaConstId": 1,
-    "CandidateName": "गोपाल शर्मा",
-    "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
-    "TotalVoteReceived": 7272,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 48
-  },
-  {
-    "MetaDistId": 78,
-    "MetaConstId": 1,
-    "CandidateName": "जनार्दन शर्मा",
-    "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
-    "TotalVoteReceived": 5160,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 62
-  },
-  {
-    "MetaDistId": 78,
-    "MetaConstId": 1,
-    "CandidateName": "राजु के.सी.",
-    "PoliticalPartyName": "नेपाली काँग्रेस",
-    "TotalVoteReceived": 4842,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 44
-  },
-  {
-    "MetaDistId": 78,
-    "MetaConstId": 1,
-    "CandidateName": "मान बहादुर शाही",
-    "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
-    "TotalVoteReceived": 1251,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 39
-  },
-  {
-    "MetaDistId": 78,
-    "MetaConstId": 1,
-    "CandidateName": "नन्दराम देवकोटा",
-    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
-    "TotalVoteReceived": 621,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 54
-  },
-  {
-    "MetaDistId": 78,
-    "MetaConstId": 1,
-    "CandidateName": "चन्द्र वहादुर वुढा",
-    "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
-    "TotalVoteReceived": 291,
-    "Remarks": null,
-    "Gender": "पुरुष",
-    "Age": 37
-  },
-  {
-    "MetaDistId": 78,
-    "MetaConstId": 1,
-    "CandidateName": "गोपाल खडका",
+    "CandidateName": "ऋषि राज देवकोटा",
     "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
-    "TotalVoteReceived": 98,
+    "TotalVoteReceived": 1723,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 48
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "दिपेन्द्र बिष्‍ट",
+    "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
+    "TotalVoteReceived": 1456,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 37
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "कमरुद्दीन राई",
+    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
+    "TotalVoteReceived": 908,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 48
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "इरफान अहमद शेख",
+    "PoliticalPartyName": "राष्ट्रिय जनमत पार्टी",
+    "TotalVoteReceived": 775,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 40
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "मो. आजाद साई",
+    "PoliticalPartyName": "जनमत पार्टी",
+    "TotalVoteReceived": 210,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 34
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "राम चरण चौधरी",
+    "PoliticalPartyName": "श्रम संस्कृति पार्टी",
+    "TotalVoteReceived": 136,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 42
   },
   {
-    "MetaDistId": 78,
-    "MetaConstId": 1,
-    "CandidateName": "सत्‍यनारायण श्रेष्ठ",
-    "PoliticalPartyName": "राष्ट्रिय जनमोर्चा",
-    "TotalVoteReceived": 57,
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "महेन्द्र प्रकाश चन्द",
+    "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "TotalVoteReceived": 122,
     "Remarks": null,
     "Gender": "पुरुष",
-    "Age": 62
+    "Age": 45
   },
   {
-    "MetaDistId": 78,
-    "MetaConstId": 1,
-    "CandidateName": "नरेन्द्र के.सी",
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "सिताराम यादव",
+    "PoliticalPartyName": "राष्ट्रिय एकता दल",
+    "TotalVoteReceived": 94,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 41
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "शैलेन्द्र कुमार कर्ण",
     "PoliticalPartyName": "उज्यालो नेपाल पार्टी",
-    "TotalVoteReceived": 31,
+    "TotalVoteReceived": 91,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 58
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "अब्दुल उमर साई",
+    "PoliticalPartyName": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
+    "TotalVoteReceived": 66,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 44
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "जगदीश ढकाल",
+    "PoliticalPartyName": "राष्ट्रिय जनमोर्चा",
+    "TotalVoteReceived": 54,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 54
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "सौभाग्य जंग शाह",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 39,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 37
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "प्रकाश शाह",
+    "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
+    "TotalVoteReceived": 36,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 48
   },
   {
-    "MetaDistId": 78,
-    "MetaConstId": 1,
-    "CandidateName": "शेर बहादुर के.सी.",
-    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
-    "TotalVoteReceived": 20,
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "माजिद अली शेष",
+    "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "TotalVoteReceived": 30,
     "Remarks": null,
     "Gender": "पुरुष",
-    "Age": 70
+    "Age": 53
   },
   {
-    "MetaDistId": 78,
-    "MetaConstId": 1,
-    "CandidateName": "प्रेमा दमाई नेपाली",
-    "PoliticalPartyName": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
-    "TotalVoteReceived": 6,
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "गोपाल प्रसाद गीरी",
+    "PoliticalPartyName": "जय मातृभूमि पार्टी",
+    "TotalVoteReceived": 27,
     "Remarks": null,
-    "Gender": "महिला",
+    "Gender": "पुरुष",
+    "Age": 58
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "मनोज कुमार चौधरी",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 16,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 50
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 2,
+    "CandidateName": "विपेन्द्र लामा तामाङ्ग",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 12,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 37
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "खगेन्द्र सुनार",
+    "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "TotalVoteReceived": 29551,
+    "Remarks": "Elected",
+    "Gender": "पुरुष",
+    "Age": 35
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "सुमन मल्ल",
+    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
+    "TotalVoteReceived": 19615,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 42
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "अमर सिह पुन",
+    "PoliticalPartyName": "नेपाली काँग्रेस",
+    "TotalVoteReceived": 13215,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 56
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "दिपक कुमार गौरी मगर",
+    "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
+    "TotalVoteReceived": 4015,
+    "Remarks": null,
+    "Gender": "पुरुष",
     "Age": 44
   },
   {
-    "MetaDistId": 78,
-    "MetaConstId": 1,
-    "CandidateName": "धन बहादुर वि.क.",
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "तारक सिंह थारु",
+    "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "TotalVoteReceived": 1912,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 62
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "ध्रुव राज थारु",
+    "PoliticalPartyName": "नागरिक उन्मुक्ति पार्टी, नेपाल(एकल चुनाव चिन्ह)",
+    "TotalVoteReceived": 474,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 39
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "फिरोज खाँ",
+    "PoliticalPartyName": "जनमत पार्टी",
+    "TotalVoteReceived": 469,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 29
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "ओमकार थापा मगर",
+    "PoliticalPartyName": "श्रम संस्कृति पार्टी",
+    "TotalVoteReceived": 339,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 41
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "मन बहादुर सुनार",
+    "PoliticalPartyName": "राष्ट्रिय जनमोर्चा",
+    "TotalVoteReceived": 114,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 50
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "चन्द्र विर कामी",
+    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "TotalVoteReceived": 106,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 56
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "बिधा शर्मा",
+    "PoliticalPartyName": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
+    "TotalVoteReceived": 95,
+    "Remarks": null,
+    "Gender": "महिला",
+    "Age": 47
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "मुबारक अली दर्जी",
+    "PoliticalPartyName": "राष्ट्रिय जनमत पार्टी",
+    "TotalVoteReceived": 81,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 36
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "सुर्य लाल यादव",
+    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
+    "TotalVoteReceived": 75,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 44
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "तेज प्रसाद भण्डारी",
+    "PoliticalPartyName": "प्रगतिशील लोकतान्त्रिक पार्टी",
+    "TotalVoteReceived": 48,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 51
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "भुमी महत्तरा",
     "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
-    "TotalVoteReceived": 5,
+    "TotalVoteReceived": 42,
+    "Remarks": null,
+    "Gender": "महिला",
+    "Age": 40
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "मनोज कुमार थारु",
+    "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
+    "TotalVoteReceived": 37,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 37
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "रुप कुमार चन्द",
+    "PoliticalPartyName": "मितेरी पार्टी नेपाल",
+    "TotalVoteReceived": 17,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 37
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "सूर्य प्रसाद रेग्मी",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 16,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 45
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "भगवती शाह",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 12,
+    "Remarks": null,
+    "Gender": "महिला",
+    "Age": 60
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "भिम बहादुर सुनार",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 11,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 45
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "पदम बहादुर घर्ती मगर",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 8,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 28
+  },
+  {
+    "MetaDistId": 65,
+    "MetaConstId": 3,
+    "CandidateName": "चेत बहादुर वली",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 7,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 29
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "ठाकुर सिंह थारु",
+    "PoliticalPartyName": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "TotalVoteReceived": 14765,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 51
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "सालीक राम अधिकारी",
+    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
+    "TotalVoteReceived": 4059,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 56
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "संजय कुमार गौतम",
+    "PoliticalPartyName": "नेपाली काँग्रेस",
+    "TotalVoteReceived": 2275,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 62
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "वीष्णु प्रसाद चौधरी",
+    "PoliticalPartyName": "नेपाली कम्युनिष्ट पार्टी",
+    "TotalVoteReceived": 1815,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 53
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "अब्दुल खान",
+    "PoliticalPartyName": "नागरिक उन्मुक्ति पार्टी, नेपाल(एकल चुनाव चिन्ह)",
+    "TotalVoteReceived": 666,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 39
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "विर बहादुर कामी",
+    "PoliticalPartyName": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "TotalVoteReceived": 285,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 48
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "यमनाथ घिमिरे",
+    "PoliticalPartyName": "जनमत पार्टी",
+    "TotalVoteReceived": 122,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 46
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "धन बहादुर वि.क",
+    "PoliticalPartyName": "श्रम संस्कृति पार्टी",
+    "TotalVoteReceived": 86,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 51
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "दत्ता थारु",
+    "PoliticalPartyName": "आम जनता पार्टी(एकल चुनाव चिन्ह)",
+    "TotalVoteReceived": 65,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 47
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "लोक बहादुर राना मगर",
+    "PoliticalPartyName": "राष्ट्रिय जनमोर्चा",
+    "TotalVoteReceived": 62,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 53
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "मेघ बहादुर कामी",
+    "PoliticalPartyName": "नेपाल मानवतावादी पार्टी",
+    "TotalVoteReceived": 55,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 52
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "तिमोथी चौधरी",
+    "PoliticalPartyName": "नेपाल कम्युनिस्ट पार्टी (माओवादी)",
+    "TotalVoteReceived": 52,
     "Remarks": null,
     "Gender": "पुरुष",
     "Age": 43
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "श्याम प्रसाद थारु",
+    "PoliticalPartyName": "राष्ट्रिय परिवर्तन पार्टी",
+    "TotalVoteReceived": 29,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 61
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "मोहन पौडेल",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 25,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 35
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "मनोज यादव",
+    "PoliticalPartyName": "जनता समाजवादी पार्टी, नेपाल",
+    "TotalVoteReceived": 19,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 31
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "इन्द्र बहादुर रावल",
+    "PoliticalPartyName": "नेपाल कम्युनिष्ट पार्टी (संयुक्त)",
+    "TotalVoteReceived": 17,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 60
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "ज्योती योन्जन",
+    "PoliticalPartyName": "मंगोल नेशनल अर्गनाइजेसन",
+    "TotalVoteReceived": 16,
+    "Remarks": null,
+    "Gender": "महिला",
+    "Age": 43
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "पवित्रा शाही",
+    "PoliticalPartyName": "नेपाल मजदुर किसान पार्टी",
+    "TotalVoteReceived": 9,
+    "Remarks": null,
+    "Gender": "महिला",
+    "Age": 51
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "घनश्याम अधिकारी",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 9,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 43
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "चन्द्रा कुमारी राजगुरु",
+    "PoliticalPartyName": "नेपाल जनमुक्ति पार्टी",
+    "TotalVoteReceived": 4,
+    "Remarks": null,
+    "Gender": "महिला",
+    "Age": 58
+  },
+  {
+    "MetaDistId": 66,
+    "MetaConstId": 1,
+    "CandidateName": "निर्मल अधिकारी",
+    "PoliticalPartyName": "स्वतन्त्र",
+    "TotalVoteReceived": 0,
+    "Remarks": null,
+    "Gender": "पुरुष",
+    "Age": 33
   }
 ]
