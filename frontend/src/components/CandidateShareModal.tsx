@@ -188,7 +188,7 @@ const CandidateShareModal: React.FC<CandidateShareModalProps> = ({
 
                             {/* Visible URL for branding */}
                             <div className="mt-auto pt-2 text-[8px] font-bold opacity-60 tracking-widest text-right">
-                                {window.location.hostname}
+                                {(window.location.host + (import.meta.env.BASE_URL !== '/' ? import.meta.env.BASE_URL : '')).replace(/\/$/, '')}
                             </div>
                         </div>
                     </div>
