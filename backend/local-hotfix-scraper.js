@@ -132,9 +132,9 @@ async function scrapeData() {
 
             if (requestCount % 10 === 0) {
                 console.log(`[WAIT] Batch of 10 reached. Waiting 3 seconds to avoid rate limit...`);
-                await delay(5000);
+                await delay(3000);
             } else {
-                await delay(1000);
+                await delay(500);
             }
         }
     }
