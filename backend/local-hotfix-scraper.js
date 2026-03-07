@@ -146,11 +146,15 @@ async function scrapeData() {
 
 async function main() {
     try {
-        console.log("Starting scrape...");
+        const now = new Date().toLocaleString();
+        console.log(`\n======================================================`);
+        console.log(`▶️ [${now}] Starting scheduled scrape...`);
+        console.log(`======================================================`);
         const startTime = Date.now();
         const count = await scrapeData();
         const endTime = Date.now();
-        console.log(`Scrape finished. Total candidates in database: ${count}`);
+        console.log(`✅ [${new Date().toLocaleString()}] Scrape finished.`);
+        console.log(`Total candidates in database: ${count}`);
         console.log(`Scrape took ${((endTime - startTime) / 1000).toFixed(2)} seconds.`);
 
         if (count > 0) {
