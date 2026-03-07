@@ -144,6 +144,25 @@ async function scrapeData() {
     return existingDataMap.size;
 }
 
+async function runGit(command) {
+    let retries = 5;
+    while (retries > 0) {
+        try {
+            execSync(command, { stdio: 'inherit', env: process.env });
+            return;
+        } catch (e) {
+            if (e.message.includes('index.lock')) {
+                console.log(`[GIT] Index locked, retrying in 2s... (${retries} left)`);
+                await new Promise(r => setTimeout(r, 2000));
+                retries--;
+            } else {
+                throw e;
+            }
+        }
+    }
+    throw new Error(`Git command failed after retries: ${command}`);
+}
+
 async function main() {
     try {
         const now = new Date().toLocaleString();
@@ -158,17 +177,16 @@ async function main() {
         console.log(`Scrape took ${((endTime - startTime) / 1000).toFixed(2)} seconds.`);
 
         if (count > 0) {
-            console.log("Pushing to git hotfix-local-scrape branch...");
             execSync('git add ../frontend/public/data/all-results.json', { stdio: 'inherit' });
 
             const status = execSync('git status --porcelain', { env: process.env }).toString();
             if (status.includes('all-results.json')) {
                 try {
-                    execSync('git commit --amend --no-edit --no-verify ../frontend/public/data/all-results.json', { stdio: 'inherit', env: process.env });
+                    await runGit('git commit --amend --no-edit --no-verify ../frontend/public/data/all-results.json');
                 } catch {
-                    execSync('git commit -m "chore: update FPTP leads data" --no-verify', { stdio: 'inherit', env: process.env });
+                    await runGit('git commit -m "chore: update FPTP leads data" --no-verify');
                 }
-                execSync('git push -f origin hotfix-local-scrape', { stdio: 'inherit', env: process.env });
+                await runGit('git push -f origin hotfix-local-scrape');
                 console.log("[SUCCESS] Git force-push complete.");
             } else {
                 console.log("No new data changes to commit.");

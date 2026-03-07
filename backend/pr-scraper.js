@@ -147,6 +147,25 @@ async function scrapePRData() {
     return partyTotals.size;
 }
 
+async function runGit(command) {
+    let retries = 5;
+    while (retries > 0) {
+        try {
+            execSync(command, { stdio: 'inherit', env: process.env });
+            return;
+        } catch (e) {
+            if (e.message.includes('index.lock')) {
+                console.log(`[GIT] Index locked, retrying in 2s... (${retries} left)`);
+                await new Promise(r => setTimeout(r, 2000));
+                retries--;
+            } else {
+                throw e;
+            }
+        }
+    }
+    throw new Error(`Git command failed after retries: ${command}`);
+}
+
 async function main() {
     try {
         const now = new Date().toLocaleString();
@@ -160,15 +179,15 @@ async function main() {
 
         if (count > 0) {
             console.log('Pushing PR data to git...');
-            execSync('git add ../frontend/public/data/pr-results.json ../frontend/public/data/pr-by-district.json', { stdio: 'inherit' });
+            await runGit('git add ../frontend/public/data/pr-results.json ../frontend/public/data/pr-by-district.json');
             const status = execSync('git status --porcelain', { env: process.env }).toString();
             if (status.includes('pr-results.json') || status.includes('pr-by-district.json')) {
                 try {
-                    execSync('git commit --amend --no-edit --no-verify ../frontend/public/data/pr-results.json ../frontend/public/data/pr-by-district.json', { stdio: 'inherit', env: process.env });
+                    await runGit('git commit --amend --no-edit --no-verify ../frontend/public/data/pr-results.json ../frontend/public/data/pr-by-district.json');
                 } catch {
-                    execSync('git commit -m "chore: update PR election data" --no-verify', { stdio: 'inherit', env: process.env });
+                    await runGit('git commit -m "chore: update PR election data" --no-verify');
                 }
-                execSync('git push -f origin hotfix-local-scrape', { stdio: 'inherit', env: process.env });
+                await runGit('git push -f origin hotfix-local-scrape');
                 console.log("[SUCCESS] Git force-push complete.");
             } else {
                 console.log('No changes to commit.');
