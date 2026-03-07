@@ -161,11 +161,13 @@ async function main() {
             console.log("Pushing to git hotfix-local-scrape branch...");
             execSync('git add ../frontend/public/data/all-results.json', { stdio: 'inherit' });
 
-            const status = execSync('git status --porcelain').toString();
+            const status = execSync('git status --porcelain', { env: process.env }).toString();
             if (status.includes('all-results.json')) {
-                execSync('git commit -m "chore: auto-update local election data" --no-verify', { stdio: 'inherit' });
-                execSync('git push origin hotfix-local-scrape', { stdio: 'inherit' });
-                console.log("[SUCCESS] Git push complete.");
+                execSync('git commit --amend --no-edit --no-verify ../frontend/public/data/all-results.json', { stdio: 'inherit', env: process.env });
+                // Running inside cron strips the MacOS credential helper context.
+                // We pass in process.env so the credential-osxkeychain works.
+                execSync('git push -f origin hotfix-local-scrape', { stdio: 'inherit', env: process.env });
+                console.log("[SUCCESS] Git force-push complete.");
             } else {
                 console.log("No new data changes to commit.");
             }

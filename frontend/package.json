@@ -17,8 +17,10 @@
     "leaflet": "^1.9.4",
     "react": "^19.2.0",
     "react-chartjs-2": "^5.3.1",
+    "react-confetti": "^6.4.0",
     "react-dom": "^19.2.0",
-    "react-leaflet": "^5.0.0"
+    "react-leaflet": "^5.0.0",
+    "react-use": "^17.6.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

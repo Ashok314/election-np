@@ -2,6 +2,8 @@ import { useState, useEffect, lazy, Suspense } from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 import { Doughnut } from 'react-chartjs-2';
+import Confetti from 'react-confetti';
+import { useWindowSize } from 'react-use';
 import districtsData from './data/districts.json';
 import InsightCards from './components/InsightCards';
 import { mapRow } from './lib/supabase'; // { supabase, mapRow }
@@ -60,6 +62,7 @@ function App() {
   const [lang, setLang] = useState<'np' | 'en'>('en');
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const [liveStatus, setLiveStatus] = useState<'connecting' | 'live' | 'polling'>('connecting');
+  const { width, height } = useWindowSize();
   // const channelRef = useRef<any>(null);
 
   useEffect(() => {
@@ -70,11 +73,19 @@ function App() {
   function processData(data: CandidateResult[]) {
     if (!data.length) return;
     setAllCandidates(data);
-    setLastUpdated(new Date().toLocaleTimeString('en-US') + ' NPT');
+    // Explicitly lock the timezone logic to Nepal (NPT) regardless of the host server location (e.g. JST)
+    const nptTime = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'Asia/Kathmandu',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true
+    }).format(new Date());
+    setLastUpdated(`${nptTime} NPT`);
 
     const leaderMap: Record<string, CandidateResult> = {};
     data.forEach(c => {
-      const key = `${c.MetaDistId}-${c.MetaConstId}`;
+      const key = `${c.MetaDistId} -${c.MetaConstId} `;
       const cur = leaderMap[key];
       if (!cur || (c.TotalVoteReceived || 0) > (cur.TotalVoteReceived || 0)) leaderMap[key] = c;
     });
@@ -179,7 +190,7 @@ function App() {
     .sort((a, b) => (b[1].leads + b[1].won) - (a[1].leads + a[1].won))
     .slice(0, 5);
 
-  const totalSeats = topParties.reduce((s, [, c]) => s + c.leads + c.won, 0) || 1;
+  const totalElected = leaders.filter(r => r.Remarks === 'Elected' || r.Remarks === 'निर्वाचित').length;
 
   // ── Strings ──────────────────────────────────────────────────────────────
   const t = {
@@ -200,6 +211,7 @@ function App() {
     colStatus: lang === 'en' ? 'Status' : 'अवस्था',
     statusElected: lang === 'en' ? 'Elected' : 'निर्वाचित',
     statusLeading: lang === 'en' ? 'Leading' : 'अग्रता',
+    totalDeclared: lang === 'en' ? 'DECLARATIONS' : 'विजयी',
   };
 
   const isDark = theme === 'dark';
@@ -210,6 +222,7 @@ function App() {
 
   return (
     <div className={`min-h-screen transition-colors duration-300 flex flex-col ${bg}`}>
+      {totalElected >= 165 && <Confetti width={width} height={height} recycle={false} numberOfPieces={500} />}
 
       {/* ── Maintenance Banner ──
       <div className="w-full bg-amber-500 text-amber-950 px-4 py-2.5 text-center text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-sm z-[100]">
@@ -226,7 +239,7 @@ function App() {
       */}
 
       {/* ── Header ── */}
-      <header className={`sticky top-0 z-50 border-b backdrop-blur-md px-6 py-3 flex items-center justify-between ${headerBg}`}>
+      <header className={`sticky top-0 z-[9999] border-b backdrop-blur-md px-6 py-3 flex items-center justify-between ${headerBg}`}>
         <div>
           <h1 className="text-2xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-300">
             {t.title}
@@ -234,44 +247,31 @@ function App() {
           <p className={`text-xs font-medium ${subText}`}>{t.subTitle}</p>
         </div>
 
-        {/* Seat race bar */}
-        <div className="hidden lg:flex items-center gap-4 flex-1 mx-8">
-          <div className="flex h-3 w-full rounded-full overflow-hidden gap-0.5">
-            {topParties.map(([party, counts]) => {
-              const total = counts.leads + counts.won;
-              const pct = (total / totalSeats) * 100;
-              return (
-                <div
-                  key={party}
-                  className="h-full rounded-full transition-all duration-700"
-                  style={{ width: `${pct}%`, backgroundColor: getPartyColor(party) }}
-                  title={`${party}: ${total} seats`}
-                />
-              );
-            })}
-          </div>
-          <div className="flex flex-wrap gap-x-3 gap-y-1">
-            {topParties.slice(0, 3).map(([party, counts]) => (
-              <div key={party} className="flex items-center gap-1">
-                <div className="w-2 h-2 rounded-full" style={{ backgroundColor: getPartyColor(party) }} />
-                <span className={`text-xs font-bold ${isDark ? 'text-zinc-300' : 'text-gray-600'}`}>
-                  {counts.leads + counts.won}
-                </span>
-              </div>
-            ))}
+        {/* Total Elected Metric Pill */}
+        <div className="hidden lg:flex items-center gap-4 flex-1 mx-8 justify-center">
+          <div className={`flex items-center gap-3 px-5 py-2 rounded-xl backdrop-blur-md shadow-sm border ${theme === 'dark' ? 'bg-zinc-800/80 border-zinc-700' : 'bg-slate-100 border-slate-200'}`}>
+            <div className="flex flex-col items-end leading-none translate-y-[2px]">
+              <span className={`text-[10px] uppercase font-bold tracking-widest ${theme === 'dark' ? 'text-zinc-500' : 'text-slate-400'}`}>{t.totalDeclared}</span>
+              <span className="text-xl font-black mt-1 bg-clip-text text-transparent bg-gradient-to-br from-emerald-400 to-teal-600">
+                {totalElected} <span className={`text-sm tracking-tight ${theme === 'dark' ? 'text-zinc-600' : 'text-slate-400'}`}>/ 165</span>
+              </span>
+            </div>
+            <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-emerald-500/20 flex items-center justify-center to-teal-500/10 border border-emerald-500/20">
+              <span className="text-xl">🏆</span>
+            </div>
           </div>
         </div>
 
         <div className="flex items-center gap-2">
           {/* Live status badge */}
-          <div className={`flex items-center gap-1.5 text-xs px-2 py-1 rounded-full border ${liveStatus === 'live' ? (isDark ? 'border-emerald-700 text-emerald-400' : 'border-emerald-300 text-emerald-600') :
+          <div className={`flex items-center justify-center gap-1.5 w-28 text-[10px] font-bold tracking-wider px-2 py-1 rounded-full border ${liveStatus === 'live' ? (isDark ? 'border-emerald-700 text-emerald-400' : 'border-emerald-300 text-emerald-600') :
             liveStatus === 'polling' ? (isDark ? 'border-zinc-700 text-zinc-400' : 'border-gray-300 text-gray-500') :
               (isDark ? 'border-zinc-700 text-zinc-500' : 'border-gray-200 text-gray-400')
             }`}>
             <div className={`w-1.5 h-1.5 rounded-full ${liveStatus === 'live' ? 'bg-emerald-400 live' :
               liveStatus === 'polling' ? 'bg-amber-400' : 'bg-zinc-600'
               }`} />
-            {liveStatus === 'live' ? 'LIVE' : liveStatus === 'polling' ? 'POLLING' : 'CONNECTING'}
+            {liveStatus === 'live' ? 'LIVE' : liveStatus === 'polling' ? 'POLLING' : 'CONNECT'}
           </div>
           <span className={`text-xs ${subText}`}>{t.lastUpdated} {lastUpdated}</span>
           <div className={`w-px h-4 ${isDark ? 'bg-zinc-700' : 'bg-gray-300'}`} />
@@ -286,11 +286,11 @@ function App() {
         </div>
       </header>
 
-      {/* ── Body: Split Layout ── */}
-      <div className="flex flex-col lg:flex-row min-h-[calc(100vh-57px)]">
+      {/* ── Main Content ── */}
+      < div className="flex flex-col lg:flex-row min-h-[calc(100vh-57px)]" >
 
         {/* LEFT: Map */}
-        <div className="lg:w-[58%] p-4 flex flex-col gap-4">
+        < div className="lg:w-[58%] p-4 flex flex-col gap-4" >
           <div className={`rounded-2xl border overflow-hidden ${card}`} style={{ height: 'calc(100vh - 100px)', minHeight: 480 }}>
             <div className={`px-4 py-3 border-b flex items-center gap-2 ${isDark ? 'border-zinc-800' : 'border-gray-100'}`}>
               <div className="w-1.5 h-5 bg-emerald-500 rounded-full" />
@@ -313,33 +313,41 @@ function App() {
               </Suspense>
             </div>
           </div>
-        </div>
+        </div >
 
         {/* RIGHT: Stats + Insights + Table */}
-        <div className="lg:w-[42%] p-4 flex flex-col gap-4 overflow-y-auto">
+        < div className="lg:w-[42%] p-4 flex flex-col gap-4 overflow-y-auto" >
 
           {/* Party Cards */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            {topParties.map(([party, counts]) => (
-              <div key={party} className={`rounded-2xl border p-3 relative overflow-hidden group ${card}`}>
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-2xl" style={{ backgroundColor: getPartyColor(party) }} />
-                <div className="w-3 h-1 rounded-full mb-2" style={{ backgroundColor: getPartyColor(party) }} />
-                <div className="text-3xl font-black" style={{ color: getPartyColor(party) }}>
-                  {counts.leads + counts.won}
+          < div className="grid grid-cols-2 sm:grid-cols-3 gap-3" >
+            {
+              topParties.map(([party, counts]) => (
+                <div key={party} className={`rounded-r-xl border p-3 border-l-4 relative overflow-hidden group ${card}`} style={{ borderLeftColor: getPartyColor(party) }}>
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300" style={{ backgroundColor: getPartyColor(party) }} />
+
+                  {/* Smaller stats on top */}
+                  <div className={`flex gap-2 mb-1.5 text-[10px] font-bold uppercase`}>
+                    <span style={{ color: '#60a5fa' }}>{counts.leads} {t.leads}</span>
+                    <span style={{ color: '#34d399' }}>{counts.won} {t.won}</span>
+                  </div>
+
+                  {/* Massive Total */}
+                  <div className="text-3xl font-black leading-none" style={{ color: getPartyColor(party) }}>
+                    {counts.leads + counts.won}
+                  </div>
+
+                  {/* Title */}
+                  <div className={`text-[10px] font-bold mt-1.5 leading-tight break-words uppercase tracking-wide ${isDark ? 'text-zinc-400' : 'text-slate-500'}`}>
+                    {party}
+                  </div>
                 </div>
-                <div className={`text-[10px] font-medium mt-1 leading-tight break-words ${isDark ? 'text-zinc-400' : 'text-gray-500'}`}>
-                  {party}
-                </div>
-                <div className={`flex gap-2 mt-2 text-[10px] font-bold uppercase`}>
-                  <span style={{ color: '#60a5fa' }}>{counts.leads} {t.leads}</span>
-                  <span style={{ color: '#34d399' }}>{counts.won} {t.won}</span>
-                </div>
-              </div>
-            ))}
-          </div>
+              ))
+            }
+          </div >
 
           {/* Donut Chart */}
-          <div className={`rounded-2xl border p-4 ${card}`}>
+          < div className={`rounded-2xl border p-4 ${card}`
+          }>
             <div className={`font-bold text-sm mb-3 flex items-center gap-2 ${isDark ? 'text-zinc-200' : 'text-gray-700'}`}>
               <div className="w-1.5 h-5 bg-emerald-500 rounded-full" />
               {lang === 'en' ? 'Vote Share' : 'मत विभाजन'}
@@ -366,10 +374,10 @@ function App() {
                 }}
               />
             </div>
-          </div>
+          </div >
 
           {/* Insight Cards */}
-          <div className={`rounded-2xl border p-4 ${card}`}>
+          < div className={`rounded-2xl border p-4 ${card}`}>
             <div className={`font-bold text-sm mb-3 flex items-center gap-2 ${isDark ? 'text-zinc-200' : 'text-gray-700'}`}>
               <div className="w-1.5 h-5 bg-amber-500 rounded-full" />
               {t.insights}
@@ -382,16 +390,16 @@ function App() {
               districtLookup={districtLookup}
               districtLookupNp={districtLookupNp}
             />
-          </div>
+          </div >
 
           <div className={`text-center text-[10px] pb-2 ${isDark ? 'text-zinc-700' : 'text-gray-400'}`}>
             Official ECN data · Nepal Election 2082 · Built for Nepalis
           </div>
-        </div>
-      </div>
+        </div >
+      </div >
 
       {/* ── Full-Width Candidates Table ── */}
-      <div className="px-4 pb-8">
+      < div className="px-4 pb-8" >
         <div className={`rounded-2xl border overflow-hidden ${card}`}>
           {/* Table header + controls */}
           <div className={`px-5 py-3 border-b flex flex-wrap items-center gap-3 ${isDark ? 'border-zinc-800' : 'border-slate-200'}`}>
@@ -524,10 +532,10 @@ function App() {
             </table>
           </div>
         </div>
-      </div>
+      </div >
 
       {/* Footer */}
-      <footer className={`mt-4 py-8 text-center text-xs font-medium border-t flex flex-col items-center justify-center gap-2 ${isDark ? 'border-zinc-800 text-zinc-500' : 'border-gray-200 text-gray-500'}`}>
+      < footer className={`mt-4 py-8 text-center text-xs font-medium border-t flex flex-col items-center justify-center gap-2 ${isDark ? 'border-zinc-800 text-zinc-500' : 'border-gray-200 text-gray-500'}`}>
         <div>
           Vibe Coded with antigravity by{' '}
           <a
@@ -547,8 +555,8 @@ function App() {
         >
           ☕ Buy me a coffee
         </a>
-      </footer>
-    </div>
+      </footer >
+    </div >
   );
 }
 

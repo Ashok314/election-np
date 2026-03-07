@@ -64,24 +64,26 @@ export default function InsightCards({ allCandidates, leaders, theme, lang, dist
 
     // 2. Highest vote received
     const topVote = [...leaders].sort((a, b) => (b.TotalVoteReceived || 0) - (a.TotalVoteReceived || 0))[0];
+    const topVoteDist = topVote ? (lang === 'en' ? districtLookup[topVote.MetaDistId] : districtLookupNp[topVote.MetaDistId]) : '';
     const highestVote: InsightItem = {
         emoji: '🗳️',
         label: 'Most Votes',
         labelNp: 'सर्वाधिक मत',
         value: (topVote?.TotalVoteReceived || 0).toLocaleString(),
-        sub: `${topVote?.CandidateName || '—'} · ${topVote?.PoliticalPartyName || ''}`,
+        sub: topVote ? `${topVote.CandidateName} · ${topVote.PoliticalPartyName} · ${topVoteDist}` : '—',
         color: '#10b981',
     };
 
     // 3. Youngest leading candidate
     const withAge = leaders.filter(c => c.Age && c.Age > 0).sort((a, b) => (a.Age || 99) - (b.Age || 99));
     const youngest = withAge[0];
+    const youngestDist = youngest ? (lang === 'en' ? districtLookup[youngest.MetaDistId] : districtLookupNp[youngest.MetaDistId]) : '';
     const youngestCard: InsightItem = youngest ? {
         emoji: '🧒',
         label: 'Youngest Leading',
         labelNp: 'कान्छो अग्रता',
         value: `${youngest.Age} yrs`,
-        sub: `${youngest.CandidateName} · ${youngest.PoliticalPartyName}`,
+        sub: `${youngest.CandidateName} · ${youngest.PoliticalPartyName} · ${youngestDist}`,
         color: '#6366f1',
     } : {
         emoji: '🧒',
@@ -94,12 +96,13 @@ export default function InsightCards({ allCandidates, leaders, theme, lang, dist
 
     // 4. Oldest leading candidate
     const oldest = withAge.length ? withAge[withAge.length - 1] : null;
+    const oldestDist = oldest ? (lang === 'en' ? districtLookup[oldest.MetaDistId] : districtLookupNp[oldest.MetaDistId]) : '';
     const oldestCard: InsightItem = oldest ? {
         emoji: '👴',
         label: 'Oldest Leading',
         labelNp: 'जेष्ठ अग्रता',
         value: `${oldest.Age} yrs`,
-        sub: `${oldest.CandidateName} · ${oldest.PoliticalPartyName}`,
+        sub: `${oldest.CandidateName} · ${oldest.PoliticalPartyName} · ${oldestDist}`,
         color: '#8b5cf6',
     } : {
         emoji: '👴',
@@ -133,7 +136,7 @@ export default function InsightCards({ allCandidates, leaders, theme, lang, dist
         label: 'Most Contested',
         labelNp: 'सबैभन्दा भिडन्त',
         value: `${mostContested[1]} candidates`,
-        sub: `Dist ${mostContested[0].split('-')[0]} • Const ${mostContested[0].split('-')[1]}`,
+        sub: `${lang === 'en' ? districtLookup[parseInt(mostContested[0].split('-')[0])] : districtLookupNp[parseInt(mostContested[0].split('-')[0])]} • Const ${mostContested[0].split('-')[1]}`,
         color: '#f97316',
     } : {
         emoji: '🏟️',
