@@ -1,0 +1,56 @@
+[
+  {
+    "dist_id": 9,
+    "const_id": 6,
+    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "total_votes": 24123
+  },
+  {
+    "dist_id": 26,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "total_votes": 18830
+  },
+  {
+    "dist_id": 34,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "total_votes": 3428
+  },
+  {
+    "dist_id": 37,
+    "const_id": 1,
+    "party_name": "नेपाली काँग्रेस",
+    "total_votes": 1377
+  },
+  {
+    "dist_id": 39,
+    "const_id": 2,
+    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "total_votes": 1327
+  },
+  {
+    "dist_id": 49,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "total_votes": 1194
+  },
+  {
+    "dist_id": 60,
+    "const_id": 1,
+    "party_name": "नेपाली कम्युनिष्ट पार्टी",
+    "total_votes": 1080
+  },
+  {
+    "dist_id": 63,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "total_votes": 3036
+  },
+  {
+    "dist_id": 65,
+    "const_id": 1,
+    "party_name": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "total_votes": 6986
+  }
+]
