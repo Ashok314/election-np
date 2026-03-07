@@ -1,10 +1,10 @@
-import { useState, useEffect, useRef, lazy, Suspense } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 import { Doughnut } from 'react-chartjs-2';
 import districtsData from './data/districts.json';
 import InsightCards from './components/InsightCards';
-import { supabase, mapRow } from './lib/supabase';
+import { mapRow } from './lib/supabase'; // { supabase, mapRow }
 
 const ElectionMap = lazy(() => import('./components/ElectionMap'));
 
@@ -60,7 +60,7 @@ function App() {
   const [lang, setLang] = useState<'np' | 'en'>('en');
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const [liveStatus, setLiveStatus] = useState<'connecting' | 'live' | 'polling'>('connecting');
-  const channelRef = useRef<any>(null);
+  // const channelRef = useRef<any>(null);
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', theme === 'dark');
@@ -133,16 +133,20 @@ function App() {
   }
 
   // HOTFIX: Disable Supabase Realtime Subscriptions
-  function subscribeRealtime() {
+  /* function subscribeRealtime() {
     // By-pass realtime and rely purely on the polling interval
     setLiveStatus('polling');
-  }
+  } */
 
   useEffect(() => {
     loadData();
     // 5-second interval polling for local hotfix
-    const interval = setInterval(loadData, 5000);
+    const interval = setInterval(loadData, 5000); // !supabase ? setInterval(loadData, 30_000) : undefined;
     return () => clearInterval(interval);
+    /* return () => {
+      if (channelRef.current) supabase!.removeChannel(channelRef.current as any);
+      if (interval) clearInterval(interval);
+    }; */
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const [sortBy, setSortBy] = useState<'votes' | 'district' | 'party'>('votes');

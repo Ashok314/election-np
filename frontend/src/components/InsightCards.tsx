@@ -5,6 +5,8 @@ interface Props {
     leaders: CandidateResult[];           // one per constituency
     theme: 'dark' | 'light';
     lang: 'en' | 'np';
+    districtLookup: Record<number, string>;
+    districtLookupNp: Record<number, string>;
 }
 
 interface InsightItem {
@@ -16,7 +18,7 @@ interface InsightItem {
     color: string;
 }
 
-export default function InsightCards({ allCandidates, leaders, theme, lang }: Props) {
+export default function InsightCards({ allCandidates, leaders, theme, lang, districtLookup, districtLookupNp }: Props) {
     if (!leaders.length) return null;
 
     const card = (theme === 'dark')
@@ -43,7 +45,9 @@ export default function InsightCards({ allCandidates, leaders, theme, lang }: Pr
                 if (margin < minMargin) {
                     minMargin = margin;
                     const [d, c] = key.split('-');
-                    closestConst = `Dist ${d} • Const ${c}`;
+                    const distId = parseInt(d, 10);
+                    const distName = (lang === 'np' ? districtLookupNp[distId] : districtLookup[distId]) || `District ${d}`;
+                    closestConst = `${distName} • Area ${c}`;
                     closestSub = `${sorted[0].CandidateName} leads by ${margin.toLocaleString()} votes`;
                 }
             }
