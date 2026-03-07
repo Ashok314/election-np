@@ -239,12 +239,16 @@ function App() {
       */}
 
       {/* ── Header ── */}
-      <header className={`sticky top-0 z-[9999] border-b backdrop-blur-md px-6 py-3 flex items-center justify-between ${headerBg}`}>
+      <header className={`lg:sticky relative top-0 z-[9999] border-b backdrop-blur-md px-6 py-3 flex items-center justify-between ${headerBg}`}>
         <div>
           <h1 className="text-2xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-300">
             {t.title}
           </h1>
           <p className={`text-xs font-medium ${subText}`}>{t.subTitle}</p>
+          {/* Mobile-only Metric */}
+          <div className={`flex lg:hidden items-center gap-1.5 mt-1 text-[10px] font-bold ${theme === 'dark' ? 'text-zinc-400' : 'text-slate-500'}`}>
+            <span className="text-emerald-500">🏆 {totalElected}</span> / 165 {t.totalDeclared}
+          </div>
         </div>
 
         {/* Total Elected Metric Pill */}
