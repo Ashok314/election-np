@@ -112,8 +112,8 @@ function App() {
     // Option 2: Local backend fallback (dev)
     try {
       setLiveStatus('connecting');
-      // HOTFIX: Aggressively read local JSON instead of hitting an API in dev mode
-      const url = `${import.meta.env.BASE_URL}data/all-results.json`;
+      // HOTFIX: Read data directly from GitHub's raw server on the hotfix branch to decouple data updates from UI builds
+      const url = `https://raw.githubusercontent.com/Ashok314/election-np/hotfix-local-scrape/frontend/public/data/all-results.json`;
       const res = await fetch(url + `?t=${new Date().getTime()}`); // Cache-bust
       const raw: any[] = await res.json();
       if (raw.length > 0) {
