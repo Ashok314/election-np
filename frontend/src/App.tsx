@@ -8,6 +8,7 @@ import 'leaflet/dist/leaflet.css';
 import './index.css';
 import districtsData from './data/districts.json';
 import InsightCards from './components/InsightCards';
+import PRHighlights from './components/PRHighlights';
 import { mapRow } from './lib/supabase'; // { supabase, mapRow }
 
 const ElectionMap = lazy(() => import('./components/ElectionMap'));
@@ -221,6 +222,7 @@ function App() {
     .slice(0, 5);
 
   const totalElected = leaders.filter(r => r.Remarks === 'Elected' || r.Remarks === 'निर्वाचित').length;
+  const totalPRDistrictsFinished = new Set(prByDistrict.map(d => d.dist_id)).size;
   // Convert pr-by-district data to CandidateResult shape for the map
   // Deduplicate: pick only the top party per constituency for coloring
   const prMapData: CandidateResult[] = useMemo(() => {
@@ -311,6 +313,7 @@ function App() {
     statusElected: lang === 'en' ? 'Elected' : 'निर्वाचित',
     statusLeading: lang === 'en' ? 'Leading' : 'अग्रता',
     totalDeclared: lang === 'en' ? 'DECLARATIONS' : 'विजयी',
+    prFinished: lang === 'en' ? 'PR DISTRICTS' : 'समानुपातिक जिल्ला',
   };
 
   const isDark = theme === 'dark';
@@ -345,22 +348,42 @@ function App() {
           </h1>
           <p className={`text-xs font-medium ${subText}`}>{t.subTitle}</p>
           {/* Mobile-only Metric */}
-          <div className={`flex lg:hidden items-center gap-1.5 mt-1 text-[10px] font-bold ${theme === 'dark' ? 'text-zinc-400' : 'text-slate-500'}`}>
-            <span className="text-emerald-500">🏆 {totalElected}</span> / 165 {t.totalDeclared}
+          <div className="flex lg:hidden items-center gap-3 mt-1 text-[9px] font-black tracking-wide">
+            <div className={`flex items-center gap-1 ${theme === 'dark' ? 'text-emerald-400' : 'text-emerald-600'}`}>
+              🏆 {totalElected} / 165
+            </div>
+            <div className={`w-px h-2 ${theme === 'dark' ? 'bg-zinc-800' : 'bg-slate-200'}`} />
+            <div className={`flex items-center gap-1 ${theme === 'dark' ? 'text-violet-400' : 'text-violet-600'}`}>
+              🗳️ {totalPRDistrictsFinished} / 77
+            </div>
           </div>
         </div>
 
-        {/* Total Elected Metric Pill */}
+        {/* Stats Section with Metrics */}
         <div className="hidden lg:flex items-center gap-4 flex-1 mx-8 justify-center">
-          <div className={`flex items-center gap-3 px-5 py-2 rounded-xl backdrop-blur-md shadow-sm border ${theme === 'dark' ? 'bg-zinc-800/80 border-zinc-700' : 'bg-slate-100 border-slate-200'}`}>
+          {/* FPTP Pill */}
+          <div className={`flex items-center gap-3 px-5 py-2 rounded-xl backdrop-blur-md shadow-sm border ${theme === 'dark' ? 'bg-zinc-800/40 border-zinc-800' : 'bg-slate-100/50 border-slate-200'}`}>
             <div className="flex flex-col items-end leading-none translate-y-[2px]">
-              <span className={`text-[10px] uppercase font-bold tracking-widest ${theme === 'dark' ? 'text-zinc-500' : 'text-slate-400'}`}>{t.totalDeclared}</span>
+              <span className={`text-[9px] uppercase font-black tracking-[0.2em] ${theme === 'dark' ? 'text-zinc-500' : 'text-slate-400'}`}>{t.totalDeclared}</span>
               <span className="text-xl font-black mt-1 bg-clip-text text-transparent bg-gradient-to-br from-emerald-400 to-teal-600">
                 {totalElected} <span className={`text-sm tracking-tight ${theme === 'dark' ? 'text-zinc-600' : 'text-slate-400'}`}>/ 165</span>
               </span>
             </div>
             <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-emerald-500/20 flex items-center justify-center to-teal-500/10 border border-emerald-500/20">
               <span className="text-xl">🏆</span>
+            </div>
+          </div>
+
+          {/* PR Pill */}
+          <div className={`flex items-center gap-3 px-5 py-2 rounded-xl backdrop-blur-md shadow-sm border ${theme === 'dark' ? 'bg-zinc-800/40 border-zinc-800' : 'bg-slate-100/50 border-slate-200'}`}>
+            <div className="flex flex-col items-end leading-none translate-y-[2px]">
+              <span className={`text-[9px] uppercase font-black tracking-[0.2em] ${theme === 'dark' ? 'text-zinc-500' : 'text-slate-400'}`}>{t.prFinished}</span>
+              <span className="text-xl font-black mt-1 bg-clip-text text-transparent bg-gradient-to-br from-violet-400 to-indigo-600">
+                {totalPRDistrictsFinished} <span className={`text-sm tracking-tight ${theme === 'dark' ? 'text-zinc-600' : 'text-slate-400'}`}>/ 77</span>
+              </span>
+            </div>
+            <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-violet-500/20 flex items-center justify-center to-indigo-500/10 border border-violet-500/20">
+              <span className="text-xl">🗳️</span>
             </div>
           </div>
         </div>
@@ -437,13 +460,22 @@ function App() {
               </Suspense>
             </div>
           </div>
-        </div >
+
+          <PRHighlights
+            prData={prData}
+            prByDistrict={prByDistrict}
+            theme={theme}
+            lang={lang}
+            districtLookup={districtLookup}
+            districtLookupNp={districtLookupNp}
+          />
+        </div>
 
         {/* RIGHT: Stats + Insights + Table */}
-        < div className="lg:w-[42%] p-4 flex flex-col gap-4 overflow-y-auto" >
+        <div className="lg:w-[42%] p-4 flex flex-col gap-4 overflow-y-auto">
 
           {/* Party Cards */}
-          < div className="grid grid-cols-2 sm:grid-cols-3 gap-3" >
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {
               topParties.map(([party, counts]) => (
                 <div key={party} className={`rounded-r-xl border p-3 border-l-4 relative overflow-hidden group ${card}`} style={{ borderLeftColor: getPartyColor(party) }}>
@@ -467,7 +499,7 @@ function App() {
                 </div>
               ))
             }
-          </div >
+          </div>
 
           {/* Charts: FPTP Seat Share + PR Vote Share side-by-side */}
           <div className={`rounded-2xl border p-4 ${card}`}>

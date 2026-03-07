@@ -2,6 +2,10 @@
 
 A beautifully designed, real-time dashboard for tracking the House of Representatives (HOR) Nepal elections. Features an interactive choropleth map, live candidate sorting, and multi-language support.
 
+## Screen Captures
+![Screen Capture](https://raw.githubusercontent.com/Ashok314/election-np/main/frontend/public/og-image.webp)
+
+
 > **⚠️ DISCLAIMER** 
 > This project is completely vibe-coded and should **NOT** be used as a credible or official source for election results. We do not guarantee real-time data fetch accuracy, completeness, or consistency with the official Election Commission Nepal (ECN) systems.
 
