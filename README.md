@@ -22,9 +22,39 @@ Everything you need to know about the election is instantly available just by mo
 * **Real-time Updates**: Powered by Supabase Realtime.
 * **AI Powered Insights**: Powered by Gemini 3 Pro.
 
+## Quickstart (Local Development) 🚀
+Since the live Supabase instance occasionally exhausts its free tier IO budget, the dashboard is designed to be ridiculously easy to run locally in under two minutes:
 
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Ashok314/election-np.git
+   cd election-np
+   ```
 
+2. **Start the local Supabase instance:**
+   Install the Supabase CLI if you haven't already (`brew install supabase/tap/supabase` on Mac), then run:
+   ```bash
+   supabase start
+   ```
+   This immediately spins up a local Postgres database, applies all schema migrations automatically, and provides you with the local `VITE_SUPABASE_URL` and anon keys!
 
+3. **Install and run the frontend:**
+   ```bash
+   cd frontend
+   npm install
+   
+   # Copy the sample env and replace with your local Supabase keys
+   cp .env.example .env.local 
+   
+   npm run dev
+   ```
+
+4. **(Optional) Run the Scraper locally:**
+   ```bash
+   cd backend
+   npm install
+   node push-ecn-to-supabase.js
+   ```
 ## Architecture
 - **Frontend**: React + Vite + Tailwind CSS + Leaflet
 - **Backend**: Supabase Postgres + Realtime

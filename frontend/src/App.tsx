@@ -207,7 +207,20 @@ function App() {
   const headerBg = isDark ? 'bg-zinc-900/60 border-zinc-800' : 'bg-white/90 border-slate-200';
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${bg}`}>
+    <div className={`min-h-screen transition-colors duration-300 flex flex-col ${bg}`}>
+
+      {/* ── Maintenance Banner ── */}
+      <div className="w-full bg-amber-500 text-amber-950 px-4 py-2.5 text-center text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-sm z-[100]">
+        <span className="text-lg leading-none">⚠️</span>
+        <div>
+          {lang === 'en'
+            ? 'Dashboard is currently UNDER MAINTENANCE due to unexpectedly high traffic exhausting our database limits! We will be back running steadily in a few hours.'
+            : 'अत्यधिक ट्राफिकका कारण हाम्रो डाटाबेसको सिमा नाघेकोले ड्यासबोर्ड हाल मर्मतसम्भार (UNDER MAINTENANCE) मा छ! हामी केही घण्टामा पुनः नियमित रूपमा सञ्चालनमा आउनेछौं।'}
+          <a href="https://github.com/Ashok314/election-np" target="_blank" rel="noopener noreferrer" className="ml-2 underline font-bold hover:text-amber-800">
+            {lang === 'en' ? 'For Developers: Clone & run locally in 2 minutes 🚀' : 'विकासकर्ताहरूका लागि: क्लोन गर्नुहोस् र २ मिनेटमा स्थानीय रूपमा चलाउनुहोस् 🚀'}
+          </a>
+        </div>
+      </div>
 
       {/* ── Header ── */}
       <header className={`sticky top-0 z-50 border-b backdrop-blur-md px-6 py-3 flex items-center justify-between ${headerBg}`}>
