@@ -211,7 +211,7 @@ function App() {
   return (
     <div className={`min-h-screen transition-colors duration-300 flex flex-col ${bg}`}>
 
-      {/* ── Maintenance Banner ── */}
+      {/* ── Maintenance Banner ──
       <div className="w-full bg-amber-500 text-amber-950 px-4 py-2.5 text-center text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-sm z-[100]">
         <span className="text-lg leading-none">⚠️</span>
         <div>
@@ -223,6 +223,7 @@ function App() {
           </a>
         </div>
       </div>
+      */}
 
       {/* ── Header ── */}
       <header className={`sticky top-0 z-50 border-b backdrop-blur-md px-6 py-3 flex items-center justify-between ${headerBg}`}>
