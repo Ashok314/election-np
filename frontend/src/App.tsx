@@ -18,9 +18,16 @@ ChartJS.register(ArcElement, Tooltip, Legend, ChartDataLabels);
 // Create a lookup for District ID -> Name & Nepali Name
 const districtLookup: Record<number, string> = {};
 const districtLookupNp: Record<number, string> = {};
+const provinceLookup: Record<number, string> = {};
+const provinceNamesMap: Record<number, string> = {
+  1: "Koshi", 2: "Madhesh", 3: "Bagmati", 4: "Gandaki",
+  5: "Lumbini", 6: "Karnali", 7: "Sudurpashchim"
+};
+
 districtsData.forEach((d: any) => {
   districtLookup[d.id] = d.name;
   districtLookupNp[d.id] = d.name_np || d.name;
+  provinceLookup[d.id] = provinceNamesMap[d.parentId] || "Other";
 });
 
 // Define expected Types
@@ -34,6 +41,8 @@ export interface CandidateResult {
   Gender?: string;
   Age?: number;
   Qualification?: string;
+  StateName?: string;
+  DistrictName?: string;
 }
 
 // Custom colors for popular parties (Nepali API names)
@@ -71,6 +80,12 @@ function App() {
   const [mapMode, setMapMode] = useState<'fptp' | 'pr'>('fptp');
   const [prSearchTerm, setPrSearchTerm] = useState('');
   const [prSortBy, setPrSortBy] = useState<'name' | 'votes' | 'best-district'>('votes');
+
+  // Advanced Table Filters
+  const [filterState, setFilterState] = useState('all');
+  const [filterDistrict, setFilterDistrict] = useState('all');
+  const [filterArea, setFilterArea] = useState('all');
+
   const { width, height } = useWindowSize();
   // const channelRef = useRef<any>(null);
 
@@ -100,7 +115,11 @@ function App() {
     });
     const leaderList = Object.values(leaderMap).sort(
       (a, b) => (b.TotalVoteReceived || 0) - (a.TotalVoteReceived || 0)
-    );
+    ).map(l => ({
+      ...l,
+      StateName: l.StateName || provinceLookup[l.MetaDistId] || 'Other',
+      DistrictName: l.DistrictName || districtLookup[l.MetaDistId] || `Dist ${l.MetaDistId}`
+    }));
     setLeaders(leaderList);
 
     const statsObj: Record<string, { leads: number, won: number }> = {};
@@ -151,9 +170,9 @@ function App() {
 
     // Demo fallback
     processData([
-      { MetaDistId: 27, MetaConstId: 1, CandidateName: 'Prakash Man Singh', PoliticalPartyName: 'नेपाली काँग्रेस', TotalVoteReceived: 7143, Remarks: 'Elected', Age: 62, Gender: 'पुरुष' },
-      { MetaDistId: 35, MetaConstId: 2, CandidateName: 'Rabi Lamichhane', PoliticalPartyName: 'राष्ट्रिय स्वतन्त्र पार्टी', TotalVoteReceived: 49264, Remarks: 'Elected', Age: 43, Gender: 'पुरुष' },
-      { MetaDistId: 4, MetaConstId: 5, CandidateName: 'KP Sharma Oli', PoliticalPartyName: 'नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)', TotalVoteReceived: 52319, Remarks: 'Elected', Age: 72, Gender: 'पुरुष' },
+      { MetaDistId: 27, MetaConstId: 1, CandidateName: 'Prakash Man Singh', PoliticalPartyName: 'नेपाली काँग्रेस', TotalVoteReceived: 7143, Remarks: 'Elected', Age: 62, Gender: 'पुरुष', StateName: 'Bagmati', DistrictName: 'काठमाडौं' },
+      { MetaDistId: 35, MetaConstId: 2, CandidateName: 'Rabi Lamichhane', PoliticalPartyName: 'राष्ट्रिय स्वतन्त्र पार्टी', TotalVoteReceived: 49264, Remarks: 'Elected', Age: 43, Gender: 'पुरुष', StateName: 'Bagmati', DistrictName: 'चितवन' },
+      { MetaDistId: 4, MetaConstId: 5, CandidateName: 'KP Sharma Oli', PoliticalPartyName: 'नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)', TotalVoteReceived: 52319, Remarks: 'Elected', Age: 72, Gender: 'पुरुष', StateName: 'Koshi', DistrictName: 'झापा' },
     ]);
   }
 
@@ -213,7 +232,11 @@ function App() {
       const isElected = r.Remarks === 'Elected' || r.Remarks === 'निर्वाचित';
       const partyOk = filterParty === 'all' || r.PoliticalPartyName === filterParty;
       const statusOk = filterStatus === 'all' || (filterStatus === 'elected' ? isElected : !isElected);
-      return matches && partyOk && statusOk;
+      const stateOk = filterState === 'all' || r.StateName === filterState;
+      const distOk = filterDistrict === 'all' || r.DistrictName === filterDistrict;
+      const areaOk = filterArea === 'all' || r.MetaConstId === parseInt(filterArea);
+
+      return matches && partyOk && statusOk && stateOk && distOk && areaOk;
     })
     .sort((a, b) => {
       if (sortBy === 'votes') return (b.TotalVoteReceived || 0) - (a.TotalVoteReceived || 0);
@@ -424,7 +447,7 @@ function App() {
 
         {/* LEFT: Map */}
         < div className="lg:w-[58%] p-4 flex flex-col gap-4" >
-          <div className={`rounded-2xl border overflow-hidden ${card}`} style={{ height: 'calc(100vh - 100px)', minHeight: 480 }}>
+          <div className={`rounded-2xl border overflow-hidden flex flex-col ${card}`}>
             <div className={`px-4 py-3 border-b flex items-center gap-2 flex-wrap ${isDark ? 'border-zinc-800' : 'border-gray-100'}`}>
               <div className="w-1.5 h-5 bg-emerald-500 rounded-full" />
               <span className={`font-bold text-sm ${isDark ? 'text-zinc-200' : 'text-gray-700'}`}>{t.mapTitle}</span>
@@ -451,7 +474,7 @@ function App() {
                 </button>
               </div>
             </div>
-            <div className="h-[calc(100%-45px)]">
+            <div className="flex-grow min-h-0">
               <Suspense fallback={
                 <div className={`flex items-center justify-center h-full ${subText}`}>
                   Loading map…
@@ -601,6 +624,29 @@ function App() {
                 <option value="elected">{lang === 'en' ? 'Elected' : 'निर्वाचित'}</option>
                 <option value="leading">{lang === 'en' ? 'Leading' : 'अग्रता'}</option>
               </select>
+
+              {/* Advanced Hierarchical Filters */}
+              <select value={filterState} onChange={e => { setFilterState(e.target.value); setFilterDistrict('all'); setFilterArea('all'); }}
+                className={`text-xs rounded-xl px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-emerald-500 ${isDark ? 'bg-zinc-800 border border-zinc-700 text-zinc-200' : 'bg-slate-50 border border-slate-200 text-gray-700'}`}>
+                <option value="all">{lang === 'en' ? 'Province' : 'प्रदेश'}</option>
+                {Array.from(new Set(allCandidates.map(c => c.StateName || provinceLookup[c.MetaDistId]).filter(Boolean))).sort().map(s => <option key={s} value={s}>{s}</option>)}
+              </select>
+
+              <select value={filterDistrict} onChange={e => { setFilterDistrict(e.target.value); setFilterArea('all'); }}
+                className={`text-xs rounded-xl px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-emerald-500 ${isDark ? 'bg-zinc-800 border border-zinc-700 text-zinc-200' : 'bg-slate-50 border border-slate-200 text-gray-700'}`}>
+                <option value="all">{lang === 'en' ? 'District' : 'जिल्ला'}</option>
+                {Array.from(new Set(allCandidates
+                  .filter(c => filterState === 'all' || (c.StateName || provinceLookup[c.MetaDistId]) === filterState)
+                  .map(c => c.DistrictName || districtLookup[c.MetaDistId])
+                  .filter(Boolean))).sort().map(d => <option key={d} value={d}>{d}</option>)}
+              </select>
+
+              <select value={filterArea} onChange={e => setFilterArea(e.target.value)}
+                className={`text-xs rounded-xl px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-emerald-500 ${isDark ? 'bg-zinc-800 border border-zinc-700 text-zinc-200' : 'bg-slate-50 border border-slate-200 text-gray-700'}`}>
+                <option value="all">{lang === 'en' ? 'Area' : 'क्षेत्र'}</option>
+                {Array.from(new Set(leaders.filter(l => (filterState === 'all' || l.StateName === filterState) && (filterDistrict === 'all' || l.DistrictName === filterDistrict)).map(l => l.MetaConstId))).sort((a, b) => a - b).map(c => <option key={c} value={c}>{c}</option>)}
+              </select>
+
               <div className={`flex rounded-xl overflow-hidden border text-xs ${isDark ? 'border-zinc-700' : 'border-slate-200'}`}>
                 {(['votes', 'district', 'party'] as const).map(opt => (
                   <button key={opt} onClick={() => setSortBy(opt)}
@@ -630,7 +676,14 @@ function App() {
                   return (
                     <tr key={idx} className={`transition-colors group ${isDark ? 'hover:bg-zinc-800/40' : 'hover:bg-slate-50'}`}>
                       <td className={`px-4 py-2.5 font-medium whitespace-nowrap ${isDark ? 'text-zinc-400' : 'text-slate-500'}`}>
-                        {distName}<span className={`ml-1 text-[10px] ${isDark ? 'text-zinc-600' : 'text-slate-400'}`}>· {row.MetaConstId}</span>
+                        <div className="flex flex-col">
+                          <span className="text-[10px] opacity-70 font-bold tracking-tight uppercase">
+                            {row.StateName || provinceLookup[row.MetaDistId]} · {row.DistrictName || districtLookup[row.MetaDistId]}
+                          </span>
+                          <span className="text-sm">
+                            {distName}<span className={`ml-1 text-[10px] ${isDark ? 'text-zinc-600' : 'text-slate-400'}`}>· {row.MetaConstId}</span>
+                          </span>
+                        </div>
                       </td>
                       <td className={`px-4 py-2.5 font-semibold ${isDark ? 'text-zinc-100 group-hover:text-emerald-400' : 'text-gray-900 group-hover:text-emerald-600'} transition-colors`}>
                         {row.CandidateName || '—'}

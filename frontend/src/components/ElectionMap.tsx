@@ -25,7 +25,6 @@ interface Props {
     mapMode?: 'fptp' | 'pr';
 }
 
-
 // ── Component ────────────────────────────────────────────────────────────────
 
 function useIsMobile() {
@@ -43,7 +42,6 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
     const mapDivRef = useRef<HTMLDivElement>(null);
     const mapRef = useRef<L.Map | null>(null);
     const isMobile = useIsMobile();
-    const [showMobileOverlay, setShowMobileOverlay] = useState(false);
     const geojsonLayerRef = useRef<L.GeoJSON | null>(null);
     const tileLayerRef = useRef<L.TileLayer | null>(null);
     const [hoverInfo, setHoverInfo] = useState<{
@@ -58,9 +56,12 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
         mouseY: number;
     } | null>(null);
 
+    const [zoomLevel, setZoomLevel] = useState(7);
+    const [isCollapsed, setIsCollapsed] = useState(false);
+
     // Build fast lookup maps
     const leaderByConstKey = useRef<Record<string, CandidateResult>>({});
-    const leaderByDistKey = useRef<Record<string, CandidateResult>>({});  // district fallback for PR mode
+    const leaderByDistKey = useRef<Record<string, CandidateResult>>({});
     const allByConstKey = useRef<Record<string, CandidateResult[]>>({});
 
     useEffect(() => {
@@ -68,7 +69,6 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
         leaderByDistKey.current = {};
         resultsData.forEach(r => {
             leaderByConstKey.current[`${r.MetaDistId}-${r.MetaConstId}`] = r;
-            // Also index by district only (used as fallback for PR district-level data)
             if (!leaderByDistKey.current[`${r.MetaDistId}`] ||
                 (r.TotalVoteReceived || 0) > (leaderByDistKey.current[`${r.MetaDistId}`].TotalVoteReceived || 0)) {
                 leaderByDistKey.current[`${r.MetaDistId}`] = r;
@@ -80,7 +80,6 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
             if (!allByConstKey.current[key]) allByConstKey.current[key] = [];
             allByConstKey.current[key].push(r);
         });
-        // Sort each constituency by votes desc
         Object.keys(allByConstKey.current).forEach(key => {
             allByConstKey.current[key].sort((a, b) => (b.TotalVoteReceived || 0) - (a.TotalVoteReceived || 0));
         });
@@ -93,9 +92,7 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
     const styleFeature = useCallback((feature: any) => {
         const distId = feature?.properties?.distId;
         const constId = feature?.properties?.constId;
-        // Exact constituency match first; fall back to district-level (used in PR mode)
-        const leader = leaderByConstKey.current[`${distId}-${constId}`]
-            || leaderByDistKey.current[`${distId}`];
+        const leader = leaderByConstKey.current[`${distId}-${constId}`] || leaderByDistKey.current[`${distId}`];
         const color = leader ? getPartyColor(leader.PoliticalPartyName) : (theme === 'dark' ? '#27272a' : '#e5e7eb');
         const isElected = leader?.Remarks === 'Elected' || leader?.Remarks === 'निर्वाचित';
         const hasData = !!leader;
@@ -109,22 +106,23 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
         };
     }, [getPartyColor, theme]);
 
-    // Initialize map once (no tile — tile added by theme effect)
     useEffect(() => {
         if (!mapDivRef.current || mapRef.current) return;
-
         const map = L.map(mapDivRef.current, {
             center: [28.3, 84.1],
             zoom: isMobile ? 6 : 7,
             minZoom: 2,
-            zoomControl: !isMobile,
-            dragging: !isMobile, // Disable single-finger drag on mobile to allow page scroll
+            zoomControl: false,
+            dragging: true, // Always allow dragging
             touchZoom: true,
             scrollWheelZoom: false,
+            doubleClickZoom: true,
             attributionControl: false,
         });
 
-        // Japan Easter Egg Marker
+        // Add zoom control for all platforms for accessibility
+        L.control.zoom({ position: 'topright' }).addTo(map);
+
         const japanIcon = L.divIcon({
             html: `<div style="font-family: monospace; font-size: 10px; color: #ec4899; white-space: nowrap; font-weight: bold; text-shadow: 0 0 4px rgba(255,255,255,0.8); background: rgba(255,255,255,0.6); backdrop-filter: blur(4px); padding: 4px 8px; border-radius: 4px; border: 1px solid #fbcfe8; pointer-events: none;">Made with ❤️ in Japan</div>`,
             className: 'empty-class',
@@ -133,6 +131,7 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
         L.marker([36.2048, 138.2529], { icon: japanIcon, interactive: false }).addTo(map);
 
         mapRef.current = map;
+        map.on('zoomend', () => setZoomLevel(map.getZoom()));
 
         return () => {
             map.remove();
@@ -141,13 +140,10 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
         };
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-    // Swap tile layer when theme changes
     useEffect(() => {
         const map = mapRef.current;
         if (!map) return;
-        if (tileLayerRef.current) {
-            tileLayerRef.current.remove();
-        }
+        if (tileLayerRef.current) tileLayerRef.current.remove();
         const tileUrl = theme === 'dark'
             ? 'https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png'
             : 'https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png';
@@ -156,30 +152,6 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
         tileLayerRef.current = tile;
     }, [theme]);
 
-    // Handle mobile overlay trigger
-    useEffect(() => {
-        if (!isMobile || !mapDivRef.current) return;
-        const el = mapDivRef.current;
-        let timer: any;
-
-        const handleTouchStart = (e: TouchEvent) => {
-            if (e.touches.length === 1) {
-                setShowMobileOverlay(true);
-                clearTimeout(timer);
-                timer = setTimeout(() => setShowMobileOverlay(false), 2500);
-            } else {
-                setShowMobileOverlay(false);
-            }
-        };
-
-        el.addEventListener('touchstart', handleTouchStart, { passive: true });
-        return () => {
-            el.removeEventListener('touchstart', handleTouchStart);
-            clearTimeout(timer);
-        };
-    }, [isMobile]);
-
-    // Load & render GeoJSON
     useEffect(() => {
         const map = mapRef.current;
         if (!map) return;
@@ -188,10 +160,7 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
         fetch(`${BASE}data/nepal-constituencies.geojson`)
             .then(r => r.json())
             .then((geojson) => {
-                if (geojsonLayerRef.current) {
-                    geojsonLayerRef.current.remove();
-                }
-
+                if (geojsonLayerRef.current) geojsonLayerRef.current.remove();
                 const layer = L.geoJSON(geojson, {
                     style: styleFeature,
                     onEachFeature: (feature, layer) => {
@@ -199,47 +168,58 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
                         const distId: number = props.distId;
                         const constId: number = props.constId;
 
+                        const areaLabel = `${lang === 'np' ? props.districtNameNp : props.districtName} ${props.constId}`;
+                        const areaIdOnly = `${props.constId}`;
+
+                        if (zoomLevel >= 10) {
+                            // Deep zoom: area number only for clarity
+                            layer.bindTooltip(areaIdOnly, {
+                                permanent: true,
+                                direction: 'center',
+                                className: `bg-transparent border-none shadow-none font-bold text-[10px] pointer-events-none opacity-80 ${theme === 'dark' ? 'text-zinc-400' : 'text-gray-500'}`
+                            });
+                        } else if (zoomLevel >= 8) {
+                            // Medium zoom: District + Area
+                            layer.bindTooltip(areaLabel, {
+                                permanent: true,
+                                direction: 'center',
+                                className: `bg-transparent border-none shadow-none font-bold text-[9px] pointer-events-none opacity-60 ${theme === 'dark' ? 'text-zinc-500' : 'text-gray-400'}`
+                            });
+                        } else {
+                            layer.unbindTooltip();
+                        }
+
                         layer.on('mousemove', (e: L.LeafletMouseEvent) => {
                             let candidates: CandidateResult[] = [];
                             let hoverTitleEn = '';
                             let hoverTitleNp = '';
 
                             if (mapMode === 'pr') {
-                                // For PR, aggregate all parties across the whole district (since PR is district-oriented)
                                 const distData = allCandidates.filter(r => r.MetaDistId === distId);
                                 const partyMap = new Map<string, number>();
                                 distData.forEach(r => {
                                     partyMap.set(r.PoliticalPartyName, (partyMap.get(r.PoliticalPartyName) || 0) + (r.TotalVoteReceived || 0));
                                 });
+                                // Process candidates for PR mode
                                 candidates = Array.from(partyMap.entries())
                                     .map(([party, votes]) => ({
-                                        MetaDistId: distId,
-                                        MetaConstId: 0,
-                                        CandidateName: party,
-                                        PoliticalPartyName: party,
-                                        TotalVoteReceived: votes,
-                                        Remarks: ''
+                                        MetaDistId: distId, MetaConstId: 0, CandidateName: party, PoliticalPartyName: party, TotalVoteReceived: votes, Remarks: ''
                                     }))
                                     .sort((a, b) => (b.TotalVoteReceived || 0) - (a.TotalVoteReceived || 0))
                                     .slice(0, 5);
-
                                 hoverTitleEn = `${props.districtName} (District Totals)`;
                                 hoverTitleNp = `${props.districtNameNp} (जिल्ला नतिजा)`;
                             } else {
-                                // For FPTP, show only this constituency
                                 candidates = allByConstKey.current[`${distId}-${constId}`] || [];
                                 hoverTitleEn = `${props.districtName} • Const ${constId}`;
                                 hoverTitleNp = `${props.districtNameNp} • क्षेत्र ${constId}`;
                             }
 
-                            // Build party counts for district (seats won/leads)
                             const distParties: Record<string, number> = {};
-                            resultsData
-                                .filter(r => r.MetaDistId === distId)
-                                .forEach(r => {
-                                    const p = r.PoliticalPartyName || 'Other';
-                                    distParties[p] = (distParties[p] || 0) + 1;
-                                });
+                            resultsData.filter(r => r.MetaDistId === distId).forEach(r => {
+                                const p = r.PoliticalPartyName || 'Other';
+                                distParties[p] = (distParties[p] || 0) + 1;
+                            });
 
                             const containerRect = mapDivRef.current?.getBoundingClientRect();
                             if (!containerRect) return;
@@ -255,8 +235,12 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
                                 mouseX: e.originalEvent.clientX - containerRect.left,
                                 mouseY: e.originalEvent.clientY - containerRect.top,
                             });
-
                             (layer as L.Path).setStyle({ weight: 2.5, color: '#10b981', fillOpacity: 0.95 });
+                        });
+
+                        layer.on('click', (e: L.LeafletMouseEvent) => {
+                            L.DomEvent.stopPropagation(e);
+                            layer.fire('mousemove', e);
                         });
 
                         layer.on('mouseout', () => {
@@ -265,14 +249,12 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
                         });
                     },
                 });
-
                 layer.addTo(map);
                 geojsonLayerRef.current = layer;
             })
             .catch(e => console.error('Failed to load GeoJSON:', e));
-    }, [resultsData, styleFeature]); // eslint-disable-line react-hooks/exhaustive-deps
+    }, [resultsData, styleFeature, zoomLevel, lang]); // eslint-disable-line react-hooks/exhaustive-deps
 
-    // Update styles when data changes
     useEffect(() => {
         if (geojsonLayerRef.current) {
             geojsonLayerRef.current.setStyle(styleFeature as any);
@@ -280,22 +262,32 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
     }, [resultsData, styleFeature]);
 
     return (
-        <div className="relative w-full h-full" style={{ minHeight: 480 }}>
-            <div ref={mapDivRef} className="w-full h-full rounded-2xl overflow-hidden" style={{ minHeight: 480 }} />
+        <div className={`relative w-full transition-all duration-500 ease-in-out ${isCollapsed ? 'h-32' : 'h-[65vh] lg:h-[85vh]'}`} style={{ minHeight: isCollapsed ? 128 : 500 }}>
+            <div ref={mapDivRef} className="w-full h-full rounded-2xl overflow-hidden" style={{ touchAction: 'auto' }} />
+
+            {/* Collapse / Expand Toggle */}
+            <button
+                onClick={() => setIsCollapsed(!isCollapsed)}
+                className={`absolute top-4 left-4 z-[1001] px-3 py-1.5 rounded-xl font-bold text-xs shadow-lg backdrop-blur-md border transition-all ${theme === 'dark'
+                    ? 'bg-zinc-900/80 border-zinc-700 text-zinc-100'
+                    : 'bg-white/80 border-gray-200 text-gray-900'
+                    }`}
+            >
+                {isCollapsed ? (lang === 'en' ? '🔽 Show Map' : '🔽 नक्सा देखाउनुहोस्') : (lang === 'en' ? '🔼 Hide Map' : '🔼 नक्सा लुकाउनुहोस्')}
+            </button>
 
             {/* Hover Panel */}
-            {hoverInfo && (
+            {hoverInfo && !isCollapsed && (
                 <div
-                    className={`absolute z-[9999] pointer-events-none rounded-2xl shadow-2xl border text-sm max-w-xs w-72 ${theme === 'dark'
-                        ? 'bg-zinc-900/95 border-zinc-700 text-zinc-100 backdrop-blur-md'
-                        : 'bg-white/95 border-gray-200 text-gray-900 backdrop-blur-md'
-                        }`}
-                    style={{
-                        left: hoverInfo.mouseX + 16,
+                    onPointerEnter={(e) => e.stopPropagation()}
+                    onPointerDown={(e) => e.stopPropagation()}
+                    className={`absolute z-[9999] rounded-2xl shadow-2xl border text-sm max-w-xs w-72 transition-all duration-200 pointer-events-auto ${theme === 'dark' ? 'bg-zinc-900/95 border-zinc-700 text-zinc-100 backdrop-blur-md' : 'bg-white/95 border-gray-200 text-gray-900 backdrop-blur-md'
+                        } ${isMobile ? 'left-4 right-4 bottom-12 !w-auto max-w-none translate-y-0 opacity-100' : ''}`}
+                    style={isMobile ? {} : {
+                        left: Math.min(window.innerWidth - 300, hoverInfo.mouseX + 16),
                         top: Math.max(8, hoverInfo.mouseY - 60),
                     }}
                 >
-                    {/* Header */}
                     <div className={`px-4 pt-3 pb-2 border-b ${theme === 'dark' ? 'border-zinc-700' : 'border-gray-100'}`}>
                         <div className={`text-[10px] font-bold uppercase tracking-wider ${theme === 'dark' ? 'text-zinc-500' : 'text-gray-400'}`}>
                             {hoverInfo.level === 'constituency' ? (lang === 'np' ? 'निर्वाचन क्षेत्र' : 'Constituency') : 'District'}
@@ -305,9 +297,8 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
                         </div>
                     </div>
 
-                    {/* Candidate list */}
                     {hoverInfo.candidates.length > 0 ? (
-                        <div className="px-4 pt-3 pb-3 space-y-2">
+                        <div className="px-4 pt-3 pb-3 space-y-2 max-h-[40vh] overflow-y-auto">
                             {hoverInfo.candidates.map((c, idx) => {
                                 const total = hoverInfo.candidates.reduce((s, x) => s + (x.TotalVoteReceived || 0), 0);
                                 const pct = total > 0 ? Math.round(((c.TotalVoteReceived || 0) / total) * 100) : 0;
@@ -338,9 +329,7 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
                                             </div>
                                         </div>
                                         {isLeader && (
-                                            <span className={`text-[9px] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded-full flex-shrink-0 ${c.Remarks === 'Elected' || c.Remarks === 'निर्वाचित'
-                                                ? 'bg-emerald-500/20 text-emerald-400'
-                                                : 'bg-blue-500/20 text-blue-400'
+                                            <span className={`text-[9px] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded-full flex-shrink-0 ${c.Remarks === 'Elected' || c.Remarks === 'निर्वाचित' ? 'bg-emerald-500/20 text-emerald-400' : 'bg-blue-500/20 text-blue-400'
                                                 }`}>
                                                 {c.Remarks === 'Elected' || c.Remarks === 'निर्वाचित' ? '✓' : '▲'}
                                             </span>
@@ -348,11 +337,6 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
                                     </div>
                                 );
                             })}
-                            {hoverInfo.candidates.length > 0 && hoverInfo.candidates.length < 2 && (
-                                <div className={`text-[10px] italic ${theme === 'dark' ? 'text-zinc-600' : 'text-gray-400'}`}>
-                                    No other candidates reported yet
-                                </div>
-                            )}
                         </div>
                     ) : (
                         <div className={`px-4 py-3 text-xs italic ${theme === 'dark' ? 'text-zinc-500' : 'text-gray-400'}`}>
@@ -360,73 +344,53 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
                         </div>
                     )}
 
-                    {/* District party breakdown mini-bars */}
                     {Object.keys(hoverInfo.parties).length > 0 && (
                         <div className={`px-4 pb-3 pt-1 border-t ${theme === 'dark' ? 'border-zinc-800' : 'border-gray-100'}`}>
                             <div className={`text-[9px] uppercase tracking-wider font-bold mb-1.5 ${theme === 'dark' ? 'text-zinc-600' : 'text-gray-400'}`}>
                                 District total
                             </div>
                             <div className="flex gap-0.5 h-2 rounded overflow-hidden">
-                                {Object.entries(hoverInfo.parties)
-                                    .sort((a, b) => b[1] - a[1])
-                                    .slice(0, 6)
-                                    .map(([party, count]) => {
-                                        const total = Object.values(hoverInfo.parties).reduce((s, v) => s + v, 0);
-                                        const pct = (count / total) * 100;
-                                        return (
-                                            <div
-                                                key={party}
-                                                title={`${party}: ${count}`}
-                                                className="h-2 rounded-sm"
-                                                style={{ width: `${pct}%`, backgroundColor: getPartyColor(party) }}
-                                            />
-                                        );
-                                    })}
+                                {Object.entries(hoverInfo.parties).sort((a, b) => b[1] - a[1]).slice(0, 6).map(([party, count]) => {
+                                    const total = Object.values(hoverInfo.parties).reduce((s, v) => s + v, 0);
+                                    const pct = (count / total) * 100;
+                                    return <div key={party} title={`${party}: ${count}`} className="h-2 rounded-sm" style={{ width: `${pct}%`, backgroundColor: getPartyColor(party) }} />;
+                                })}
                             </div>
                         </div>
                     )}
                 </div>
             )}
 
-            {/* Mobile Scroll Overlay */}
-            {isMobile && showMobileOverlay && (
-                <div className="absolute inset-0 z-[5000] bg-black/40 backdrop-blur-[2px] flex items-center justify-center p-6 text-center pointer-events-none">
-                    <div className="bg-zinc-900/90 border border-zinc-700 rounded-2xl px-6 py-4 shadow-2xl animate-in fade-in zoom-in duration-200">
-                        <div className="text-2xl mb-2">✌️</div>
-                        <div className="text-white font-bold text-sm">
-                            {lang === 'en' ? 'Use two fingers to move the map' : 'नक्सा सार्न दुई औंला प्रयोग गर्नुहोस्'}
+            {/* Map Legend: Status */}
+            {!isCollapsed && (
+                <>
+                    <div className={`absolute bottom-4 left-4 z-[1000] rounded-xl px-3 py-2 text-[10px] border ${theme === 'dark' ? 'bg-zinc-900/90 border-zinc-700' : 'bg-white/90 border-gray-200'}`}>
+                        <div className={`font-bold uppercase tracking-widest mb-1.5 ${theme === 'dark' ? 'text-zinc-500' : 'text-gray-400'}`}>Status</div>
+                        <div className={`flex items-center gap-1.5 mb-1 ${theme === 'dark' ? 'text-zinc-300' : 'text-gray-600'}`}>
+                            <div className="w-5 h-2.5 rounded-sm border border-white" style={{ backgroundColor: '#10b981' }} />
+                            <span>Elected</span>
+                        </div>
+                        <div className={`flex items-center gap-1.5 mb-1 ${theme === 'dark' ? 'text-zinc-300' : 'text-gray-600'}`}>
+                            <div className="w-5 h-2.5 rounded-sm border-2 border-dashed border-emerald-400" style={{ backgroundColor: 'rgba(16,185,129,0.4)' }} />
+                            <span>Leading</span>
+                        </div>
+                        <div className={`flex items-center gap-1.5 ${theme === 'dark' ? 'text-zinc-300' : 'text-gray-600'}`}>
+                            <div className={`w-5 h-2.5 rounded-sm opacity-20 ${theme === 'dark' ? 'bg-zinc-600' : 'bg-gray-400'}`} />
+                            <span>No data</span>
                         </div>
                     </div>
-                </div>
-            )}
 
-            {/* Map Legend: Status */}
-            <div className={`absolute bottom-4 left-4 z-[1000] rounded-xl px-3 py-2 text-[10px] border ${theme === 'dark' ? 'bg-zinc-900/90 border-zinc-700' : 'bg-white/90 border-gray-200'}`}>
-                <div className={`font-bold uppercase tracking-widest mb-1.5 ${theme === 'dark' ? 'text-zinc-500' : 'text-gray-400'}`}>Status</div>
-                <div className={`flex items-center gap-1.5 mb-1 ${theme === 'dark' ? 'text-zinc-300' : 'text-gray-600'}`}>
-                    <div className="w-5 h-2.5 rounded-sm border border-white" style={{ backgroundColor: '#10b981' }} />
-                    <span>Elected</span>
-                </div>
-                <div className={`flex items-center gap-1.5 mb-1 ${theme === 'dark' ? 'text-zinc-300' : 'text-gray-600'}`}>
-                    <div className="w-5 h-2.5 rounded-sm border-2 border-dashed border-emerald-400" style={{ backgroundColor: 'rgba(16,185,129,0.4)' }} />
-                    <span>Leading</span>
-                </div>
-                <div className={`flex items-center gap-1.5 ${theme === 'dark' ? 'text-zinc-300' : 'text-gray-600'}`}>
-                    <div className={`w-5 h-2.5 rounded-sm opacity-20 ${theme === 'dark' ? 'bg-zinc-600' : 'bg-gray-400'}`} />
-                    <span>No data</span>
-                </div>
-            </div>
-
-            {/* Map Legend: Parties */}
-            <div className={`absolute bottom-4 right-4 z-[1000] rounded-xl px-3 py-2 text-[10px] border ${theme === 'dark' ? 'bg-zinc-900/90 border-zinc-700' : 'bg-white/90 border-gray-200'}`}>
-                {Object.entries(partyColors).slice(0, 6).map(([party, color]) => (
-                    <div key={party} className="flex items-center gap-1.5 mb-1 last:mb-0">
-                        <div className="w-2.5 h-2.5 rounded-sm flex-shrink-0" style={{ backgroundColor: color }} />
-                        <span className={`truncate max-w-[110px] ${theme === 'dark' ? 'text-zinc-300' : 'text-gray-600'}`}>{party}</span>
+                    {/* Map Legend: Parties */}
+                    <div className={`absolute bottom-4 right-4 z-[1000] rounded-xl px-3 py-2 text-[10px] border hidden sm:block ${theme === 'dark' ? 'bg-zinc-900/90 border-zinc-700' : 'bg-white/90 border-gray-200'}`}>
+                        {Object.entries(partyColors).slice(0, 6).map(([party, color]) => (
+                            <div key={party} className="flex items-center gap-1.5 mb-1 last:mb-0">
+                                <div className="w-2.5 h-2.5 rounded-sm flex-shrink-0" style={{ backgroundColor: color }} />
+                                <span className={`truncate max-w-[110px] ${theme === 'dark' ? 'text-zinc-300' : 'text-gray-600'}`}>{party}</span>
+                            </div>
+                        ))}
                     </div>
-                ))}
-            </div>
-
+                </>
+            )}
         </div>
     );
 }

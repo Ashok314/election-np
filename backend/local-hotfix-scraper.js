@@ -50,23 +50,51 @@ async function scrapeData() {
     };
 
     const constLookupPath = path.join(__dirname, 'data', 'lookup', 'constituencies.json');
-    if (!fs.existsSync(constLookupPath)) {
-        console.error("No constituencies.json lookup found!");
+    const distLookupPath = path.join(__dirname, 'data', 'lookup', 'districts.json');
+
+    if (!fs.existsSync(constLookupPath) || !fs.existsSync(distLookupPath)) {
+        console.error("Required lookup files (constituencies.json/districts.json) not found!");
         await browser.close();
         return;
     }
     const constsList = JSON.parse(fs.readFileSync(constLookupPath, 'utf8'));
+    const distsList = JSON.parse(fs.readFileSync(distLookupPath, 'utf8'));
+
+    // Create lookup maps
+    const provinceNames = {
+        1: "Koshi", 2: "Madhesh", 3: "Bagmati", 4: "Gandaki",
+        5: "Lumbini", 6: "Karnali", 7: "Sudurpashchim"
+    };
+    const distInfoMap = new Map();
+    distsList.forEach(d => {
+        distInfoMap.set(d.id, {
+            name: d.name,
+            state: provinceNames[d.parentId] || "Other"
+        });
+    });
 
     const existingDataMap = new Map();
     if (fs.existsSync(OUTPUT_PATH)) {
         try {
             const existing = JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8'));
             existing.forEach(row => {
+                // MIGRATION: Ensure existing rows have state/district names
+                const distId = parseInt(row.dist_id);
+                if (distId && distId > 0 && (!row.state_name || !row.district_name)) {
+                    const info = distInfoMap.get(distId);
+                    if (info) {
+                        row.state_name = info.state;
+                        row.district_name = info.name;
+                    }
+                }
                 const key = `${row.dist_id}-${row.const_id}-${row.candidate_name}`;
                 existingDataMap.set(key, row);
             });
+            console.log(`[MIGRATION] Backfilled missing regional data for ${existing.length} records.`);
+            // Save initial migration result
+            fs.writeFileSync(OUTPUT_PATH, JSON.stringify(existing, null, 2), 'utf8');
         } catch (e) {
-            console.warn("Could not read existing all-results.json, starting fresh.");
+            console.warn("Could not read/migrate existing all-results.json, starting fresh.");
         }
     }
 
@@ -101,17 +129,22 @@ async function scrapeData() {
                     });
 
                     // Format to exactly mimic Supabase Postgres schema shape
-                    const formattedRows = Array.from(uniqueCandidates.values()).map(row => ({
-                        dist_id: distId,
-                        const_id: c,
-                        candidate_name: row.CandidateName,
-                        party_name: row.PoliticalPartyName,
-                        votes: row.TotalVoteReceived || 0,
-                        remarks: row.Remarks,
-                        gender: row.Gender,
-                        age: row.Age,
-                        qualification: row.QUALIFICATION,
-                    }));
+                    const formattedRows = Array.from(uniqueCandidates.values()).map(row => {
+                        const info = distInfoMap.get(distId) || { name: `Dist ${distId}`, state: "Other" };
+                        return {
+                            dist_id: distId,
+                            const_id: c,
+                            candidate_name: row.CandidateName,
+                            party_name: row.PoliticalPartyName,
+                            votes: row.TotalVoteReceived || 0,
+                            remarks: row.Remarks,
+                            gender: row.Gender,
+                            age: row.Age,
+                            qualification: row.QUALIFICATION,
+                            state_name: info.state,
+                            district_name: info.name,
+                        };
+                    });
 
                     formattedRows.forEach(row => {
                         const key = `${row.dist_id}-${row.const_id}-${row.candidate_name}`;
