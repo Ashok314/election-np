@@ -10,6 +10,7 @@ import districtsData from './data/districts.json';
 import InsightCards from './components/InsightCards';
 import PRHighlights from './components/PRHighlights';
 import { mapRow } from './lib/supabase'; // { supabase, mapRow }
+import CandidateShareModal from './components/CandidateShareModal';
 
 const ElectionMap = lazy(() => import('./components/ElectionMap'));
 
@@ -77,6 +78,8 @@ function App() {
   const [liveStatus, setLiveStatus] = useState<'connecting' | 'live' | 'polling'>('connecting');
   const [prByDistrict, setPRByDistrict] = useState<{ dist_id: number; const_id: number; party_name: string; total_votes: number }[]>([]);
   const [prData, setPRData] = useState<{ party_name: string; total_votes: number }[]>([]);
+  const [shareCandidate, setShareCandidate] = useState<CandidateResult | null>(null);
+  const [isShareModalOpen, setIsShareModalOpen] = useState(false);
   const [mapMode, setMapMode] = useState<'fptp' | 'pr'>('fptp');
   const [prSearchTerm, setPrSearchTerm] = useState('');
   const [prSortBy, setPrSortBy] = useState<'name' | 'votes' | 'best-district'>('votes');
@@ -486,6 +489,7 @@ function App() {
                   partyColors={PARTY_COLORS}
                   theme={theme}
                   lang={lang}
+                  onShare={(c) => { setShareCandidate(c); setIsShareModalOpen(true); }}
                 />
               </Suspense>
             </div>
@@ -666,6 +670,7 @@ function App() {
                   <th className="px-4 py-2.5">{lang === 'en' ? 'Party' : 'दल'}</th>
                   <th className="px-4 py-2.5 text-right">{t.colVotes}</th>
                   <th className="px-4 py-2.5 text-center">{t.colStatus}</th>
+                  <th className="px-4 py-2.5 text-center">Share</th>
                 </tr>
               </thead>
               <tbody className={`divide-y ${isDark ? 'divide-zinc-800/60' : 'divide-slate-100'}`}>
@@ -705,11 +710,22 @@ function App() {
                           {isElected ? t.statusElected : t.statusLeading}
                         </span>
                       </td>
+                      <td className="px-4 py-2.5 text-center">
+                        <button
+                          onClick={() => { setShareCandidate(row); setIsShareModalOpen(true); }}
+                          className={`group/share flex items-center gap-1.5 mx-auto px-3 py-1.5 rounded-xl transition-all font-bold text-[10px] uppercase tracking-wider border ${isDark
+                            ? 'bg-zinc-800/50 border-zinc-700 text-emerald-400 hover:bg-emerald-500 hover:text-white hover:border-emerald-400'
+                            : 'bg-emerald-50 border-emerald-100 text-emerald-600 hover:bg-emerald-500 hover:text-white hover:border-emerald-400 font-black'}`}
+                        >
+                          <span className="transition-transform group-hover/share:-translate-y-0.5 group-hover/share:translate-x-0.5">📤</span>
+                          <span className="hidden sm:inline-block">{lang === 'en' ? 'Share' : 'शेयर'}</span>
+                        </button>
+                      </td>
                     </tr>
                   );
                 })}
                 {filteredLeaders.length === 0 && (
-                  <tr><td colSpan={5} className={`px-5 py-10 text-center text-xs italic ${isDark ? 'text-zinc-600' : 'text-slate-400'}`}>
+                  <tr><td colSpan={6} className={`px-5 py-10 text-center text-xs italic ${isDark ? 'text-zinc-600' : 'text-slate-400'}`}>
                     {lang === 'en' ? 'No results found' : 'कुनै नतिजा भेटिएन'}
                   </td></tr>
                 )}
@@ -825,30 +841,60 @@ function App() {
 
       </div>
 
-      {/* Footer */}
-      <footer className={`mt-4 py-8 text-center text-xs font-medium border-t flex flex-col items-center justify-center gap-2 ${isDark ? 'border-zinc-800 text-zinc-500' : 'border-gray-200 text-gray-500'}`}>
-        <div>
-          Vibe Coded with antigravity by{' '}
-          <a
-            href="https://github.com/Ashok314"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`font-semibold hover:underline transition-colors ${isDark ? 'text-emerald-400 hover:text-emerald-300' : 'text-emerald-600 hover:text-emerald-500'}`}
-          >
-            @Ashok314
-          </a>
+      {/* ── Footer / Site-wide Share ── */}
+      <footer className={`mt-12 py-12 px-6 border-t ${isDark ? 'bg-zinc-950/80 border-zinc-800' : 'bg-slate-50 border-slate-200'}`}>
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+          <div>
+            <div className="flex items-center gap-3 mb-2">
+              <span className="text-2xl">🇳🇵</span>
+              <h2 className="text-xl font-black uppercase tracking-tighter">Nepal Election <span className="text-emerald-500">2082</span></h2>
+            </div>
+            <p className={`text-xs max-w-sm ${subText}`}>
+              Real-time Samanupatik and Pratakshya insights powered by official ECN data. Built for transparency and accessibility.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center md:items-end gap-4">
+            <span className={`text-[10px] font-black tracking-widest uppercase ${subText}`}>Share this dashboard</span>
+            <div className="flex gap-4">
+              <button
+                onClick={() => window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent("Check out the 2082 Nepal Election Live Dashboard! Real-time Samanupatik and FPTP results.")}&url=${encodeURIComponent(window.location.href)}`, '_blank')}
+                className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all border ${isDark ? 'bg-zinc-800 border-zinc-700 hover:scale-110 active:scale-95 text-white' : 'bg-white border-zinc-200 hover:scale-110 active:scale-95 text-zinc-900 shadow-sm'}`}
+              >
+                <span className="text-xl font-black">𝕏</span>
+              </button>
+              <button
+                onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_blank')}
+                className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all border ${isDark ? 'bg-blue-600/10 border-blue-600/20 hover:scale-110 active:scale-95 text-blue-400' : 'bg-blue-50 border-blue-100 hover:scale-110 active:scale-95 text-blue-600 shadow-sm'}`}
+              >
+                <span className="text-xl font-black">f</span>
+              </button>
+              <button
+                onClick={() => { navigator.clipboard.writeText(window.location.href); alert("Link copied!"); }}
+                className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all border ${isDark ? 'bg-emerald-600/10 border-emerald-600/20 hover:scale-110 active:scale-95 text-emerald-400' : 'bg-emerald-50 border-emerald-100 hover:scale-110 active:scale-95 text-emerald-600 shadow-sm'}`}
+              >
+                <span className="text-xl font-black">🔗</span>
+              </button>
+            </div>
+          </div>
         </div>
-        <a
-          href="https://buymeacoffee.com/ashok314"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`px-3 py-1.5 rounded-full border transition-all hover:scale-105 flex items-center gap-2 ${isDark ? 'border-zinc-700 bg-zinc-800 text-zinc-300 hover:bg-zinc-700 hover:text-white' : 'border-gray-200 bg-gray-50 text-gray-700 hover:bg-gray-100 hover:text-gray-900'}`}
-        >
-          ☕ Buy me a coffee
-        </a>
-      </footer >
+        <div className={`mt-12 pt-8 text-center text-[10px] border-t max-w-6xl mx-auto ${isDark ? 'border-zinc-900 text-zinc-700' : 'border-slate-100 text-slate-400'}`}>
+          © 2026 Nepal Election Dashboard · Not affiliated with Election Commission Nepal · For educational purposes only.
+        </div>
+      </footer>
+
+      {shareCandidate && (
+        <CandidateShareModal
+          candidate={shareCandidate}
+          isOpen={isShareModalOpen}
+          onClose={() => setIsShareModalOpen(false)}
+          getPartyColor={getPartyColor}
+          lang={lang}
+          theme={theme}
+          districtName={districtLookup[shareCandidate.MetaDistId] || `Dist ${shareCandidate.MetaDistId}`}
+        />
+      )}
     </div >
   );
 }
-
 export default App;

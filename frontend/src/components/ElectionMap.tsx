@@ -23,6 +23,7 @@ interface Props {
     theme: 'dark' | 'light';
     lang: 'en' | 'np';
     mapMode?: 'fptp' | 'pr';
+    onShare: (candidate: CandidateResult) => void;
 }
 
 // ── Component ────────────────────────────────────────────────────────────────
@@ -38,7 +39,7 @@ function useIsMobile() {
     return isMobile;
 }
 
-export default function ElectionMap({ resultsData, allCandidates, partyColors, theme, lang, mapMode = 'fptp' }: Props) {
+export default function ElectionMap({ resultsData, allCandidates, partyColors, theme, lang, mapMode = 'fptp', onShare }: Props) {
     const mapDivRef = useRef<HTMLDivElement>(null);
     const mapRef = useRef<L.Map | null>(null);
     const isMobile = useIsMobile();
@@ -240,7 +241,13 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
 
                         layer.on('click', (e: L.LeafletMouseEvent) => {
                             L.DomEvent.stopPropagation(e);
-                            layer.fire('mousemove', e);
+                            // Shortcut: Direct click on district opens Share Modal
+                            const distId = feature.properties.distId;
+                            const constId = feature.properties.constId;
+                            const leader = leaderByConstKey.current[`${distId}-${constId}`] || leaderByDistKey.current[`${distId}`];
+                            if (leader) {
+                                onShare(leader);
+                            }
                         });
 
                         layer.on('mouseout', () => {
@@ -253,7 +260,7 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
                 geojsonLayerRef.current = layer;
             })
             .catch(e => console.error('Failed to load GeoJSON:', e));
-    }, [resultsData, styleFeature, zoomLevel, lang]); // eslint-disable-line react-hooks/exhaustive-deps
+    }, [resultsData, styleFeature, zoomLevel, lang, mapMode, allCandidates, onShare]); // eslint-disable-line react-hooks/exhaustive-deps
 
     useEffect(() => {
         if (geojsonLayerRef.current) {
@@ -288,7 +295,18 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
                         top: Math.max(8, hoverInfo.mouseY - 60),
                     }}
                 >
-                    <div className={`px-4 pt-3 pb-2 border-b ${theme === 'dark' ? 'border-zinc-700' : 'border-gray-100'}`}>
+                    <div className={`px-4 pt-3 pb-2 border-b relative ${theme === 'dark' ? 'border-zinc-700' : 'border-gray-100'}`}>
+                        {isMobile && (
+                            <button
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    setHoverInfo(null);
+                                }}
+                                className="absolute top-2 right-2 p-2 rounded-full hover:bg-black/10 transition-colors"
+                            >
+                                <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+                            </button>
+                        )}
                         <div className={`text-[10px] font-bold uppercase tracking-wider ${theme === 'dark' ? 'text-zinc-500' : 'text-gray-400'}`}>
                             {hoverInfo.level === 'constituency' ? (lang === 'np' ? 'निर्वाचन क्षेत्र' : 'Constituency') : 'District'}
                         </div>
@@ -312,9 +330,43 @@ export default function ElectionMap({ resultsData, allCandidates, partyColors, t
                                                 <span className={`font-medium text-xs truncate ${isLeader ? (theme === 'dark' ? 'text-white' : 'text-gray-900') : (theme === 'dark' ? 'text-zinc-300' : 'text-gray-600')}`}>
                                                     {c.CandidateName}
                                                 </span>
-                                                <span className="font-mono text-xs font-bold flex-shrink-0" style={{ color }}>
-                                                    {(c.TotalVoteReceived || 0).toLocaleString()}
-                                                </span>
+                                                {isLeader ? (
+                                                    <div className="flex gap-2">
+                                                        <div className="flex-1">
+                                                            <div className="text-[10px] opacity-70 mb-1 border-b border-white/20 pb-1 uppercase tracking-wider">
+                                                                {c.Remarks === 'Elected' || c.Remarks === 'निर्वाचित'
+                                                                    ? (lang === 'en' ? 'Elected' : 'निर्वाचित')
+                                                                    : (lang === 'en' ? 'Leading' : 'अग्रता')}
+                                                            </div>
+                                                            <div className="font-bold flex justify-between items-center text-sm">
+                                                                <span className="truncate max-w-[140px] leading-tight">{c.CandidateName}</span>
+                                                                <span className="font-mono bg-white/10 px-1.5 py-0.5 rounded text-xs">
+                                                                    {(c.TotalVoteReceived || 0).toLocaleString()}
+                                                                </span>
+                                                            </div>
+                                                            <div className="text-[10px] opacity-80 mt-1 italic font-medium truncate max-w-[180px]">
+                                                                {c.PoliticalPartyName}
+                                                            </div>
+                                                        </div>
+                                                        {isMobile && (
+                                                            <button
+                                                                onClick={(e) => {
+                                                                    e.stopPropagation();
+                                                                    onShare(c);
+                                                                }}
+                                                                className="w-10 h-10 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/20 hover:bg-white/30 transition-all border border-white/20 shadow-lg text-lg"
+                                                                title="Share"
+                                                                onPointerDown={(e) => e.stopPropagation()}
+                                                            >
+                                                                📤
+                                                            </button>
+                                                        )}
+                                                    </div>
+                                                ) : (
+                                                    <span className="font-mono text-xs font-bold flex-shrink-0" style={{ color }}>
+                                                        {(c.TotalVoteReceived || 0).toLocaleString()}
+                                                    </span>
+                                                )}
                                             </div>
                                             {c.Qualification && (
                                                 <div className={`text-[9px] italic ${theme === 'dark' ? 'text-zinc-500' : 'text-slate-400'} truncate`}>
