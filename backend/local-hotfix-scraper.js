@@ -163,10 +163,13 @@ async function main() {
 
             const status = execSync('git status --porcelain', { env: process.env }).toString();
             if (status.includes('all-results.json')) {
-                execSync('git commit -m "chore: update FPTP leads data" --no-verify', { stdio: 'inherit', env: process.env });
-                execSync('git pull --rebase origin hotfix-local-scrape', { stdio: 'inherit', env: process.env });
-                execSync('git push origin hotfix-local-scrape', { stdio: 'inherit', env: process.env });
-                console.log("[SUCCESS] Git push complete.");
+                try {
+                    execSync('git commit --amend --no-edit --no-verify ../frontend/public/data/all-results.json', { stdio: 'inherit', env: process.env });
+                } catch {
+                    execSync('git commit -m "chore: update FPTP leads data" --no-verify', { stdio: 'inherit', env: process.env });
+                }
+                execSync('git push -f origin hotfix-local-scrape', { stdio: 'inherit', env: process.env });
+                console.log("[SUCCESS] Git force-push complete.");
             } else {
                 console.log("No new data changes to commit.");
             }

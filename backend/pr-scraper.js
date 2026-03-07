@@ -163,10 +163,13 @@ async function main() {
             execSync('git add ../frontend/public/data/pr-results.json ../frontend/public/data/pr-by-district.json', { stdio: 'inherit' });
             const status = execSync('git status --porcelain', { env: process.env }).toString();
             if (status.includes('pr-results.json') || status.includes('pr-by-district.json')) {
-                execSync('git commit -m "chore: update PR election data" --no-verify', { stdio: 'inherit', env: process.env });
-                execSync('git pull --rebase origin hotfix-local-scrape', { stdio: 'inherit', env: process.env });
-                execSync('git push origin hotfix-local-scrape', { stdio: 'inherit', env: process.env });
-                console.log('[SUCCESS] Pushed PR data to git.');
+                try {
+                    execSync('git commit --amend --no-edit --no-verify ../frontend/public/data/pr-results.json ../frontend/public/data/pr-by-district.json', { stdio: 'inherit', env: process.env });
+                } catch {
+                    execSync('git commit -m "chore: update PR election data" --no-verify', { stdio: 'inherit', env: process.env });
+                }
+                execSync('git push -f origin hotfix-local-scrape', { stdio: 'inherit', env: process.env });
+                console.log("[SUCCESS] Git force-push complete.");
             } else {
                 console.log('No changes to commit.');
             }

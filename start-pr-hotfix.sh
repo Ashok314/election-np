@@ -35,7 +35,7 @@ screen -dmS election-pr-hotfix bash -c "
         echo \"▶️ [\$(date)] Waking up to scrape PR ECN...\" > \"\$LOG_FILE\"
         cd \"$DIR\" && \"$CAFFEINATE_PATH\" -is \"$NODE_PATH\" pr-scraper.js >> \"\$LOG_FILE\" 2>&1
         echo \"⏸️ [\$(date)] PR Scrape complete, waiting 10 minutes...\" >> \"\$LOG_FILE\"
-        sleep 600
+        sleep 500
     done
 "
 
