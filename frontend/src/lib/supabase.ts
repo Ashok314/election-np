@@ -3,14 +3,25 @@ import districtsData from '../data/districts.json';
 
 // Create a lookup for defensive mapping
 const provinceNames: Record<number, string> = {
-  1: "Koshi", 2: "Madhesh", 3: "Bagmati", 4: "Gandaki",
-  5: "Lumbini", 6: "Karnali", 7: "Sudurpashchim"
+  1: 'Koshi',
+  2: 'Madhesh',
+  3: 'Bagmati',
+  4: 'Gandaki',
+  5: 'Lumbini',
+  6: 'Karnali',
+  7: 'Sudurpashchim',
 };
-const districtMap: Record<number, { name: string, state: string }> = {};
-(districtsData as any).forEach((d: any) => {
+const districtMap: Record<number, { name: string; state: string }> = {};
+interface DistrictJson {
+  id: number;
+  name: string;
+  parentId: number;
+}
+
+(districtsData as DistrictJson[]).forEach((d) => {
   districtMap[d.id] = {
     name: d.name,
-    state: provinceNames[d.parentId] || "Other"
+    state: provinceNames[d.parentId] || 'Other',
   };
 });
 
@@ -18,9 +29,8 @@ const supabaseUrl = import.meta.env.VITE_SUPABASE_URL as string;
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY as string;
 
 // In dev without Supabase creds, fallback gracefully
-export const supabase = supabaseUrl && supabaseAnonKey
-  ? createClient(supabaseUrl, supabaseAnonKey)
-  : null;
+export const supabase =
+  supabaseUrl && supabaseAnonKey ? createClient(supabaseUrl, supabaseAnonKey) : null;
 
 export type ElectionResult = {
   id: number;
