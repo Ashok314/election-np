@@ -347,6 +347,10 @@ function App() {
     totalDeclared: lang === 'en' ? 'DECLARATIONS' : 'विजयी',
     prFinished: lang === 'en' ? 'PR DISTRICTS' : 'समानुपातिक जिल्ला',
     colEdu: lang === 'en' ? 'Qualification' : 'शिक्षा',
+    constituencies: lang === 'en' ? 'Constituencies' : 'क्षेत्रहरू',
+    shareThisDashboard: lang === 'en' ? 'Share this dashboard' : 'डैशबोर्ड शेयर गर्नुहोस्',
+    footerText: lang === 'en' ? 'Real-time Samanupatik and Pratakshya insights powered by official ECN data.' : 'आधिकारिक ECN डेटा द्वारा संचालित समानुपातिक र प्रताक्ष्य अन्तर्दृष्टि।',
+    votes: lang === 'en' ? 'votes' : 'मत',
   };
 
   const isDark = theme === 'dark';
@@ -357,7 +361,8 @@ function App() {
 
   return (
     <div className={`min-h-screen transition-colors duration-300 flex flex-col ${bg}`}>
-      {totalElected >= 165 && <Confetti width={width} height={height} recycle={false} numberOfPieces={500} />}
+      {/* FIXME hardcoded for 2082*/}
+      {totalElected >= 164 && <Confetti width={width} height={height} recycle={false} numberOfPieces={500} />}
 
       {/* ── Maintenance Banner ──
       <div className="w-full bg-amber-500 text-amber-950 px-4 py-2.5 text-center text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-sm z-[100]">
@@ -454,7 +459,7 @@ function App() {
             <div className={`px-4 py-3 border-b flex items-center gap-2 flex-wrap ${isDark ? 'border-zinc-800' : 'border-gray-100'}`}>
               <div className="w-1.5 h-5 bg-emerald-500 rounded-full" />
               <span className={`font-bold text-sm ${isDark ? 'text-zinc-200' : 'text-gray-700'}`}>{t.mapTitle}</span>
-              <span className={`text-xs ${subText}`}>{leaders.length} constituencies</span>
+              <span className={`text-xs ${subText}`}>{leaders.length} {t.constituencies}</span>
               {/* Map Mode Toggle */}
               <div className={`ml-auto flex items-center rounded-lg overflow-hidden border text-[10px] font-bold tracking-wider ${isDark ? 'border-zinc-700' : 'border-gray-200'}`}>
                 <button
@@ -813,7 +818,7 @@ function App() {
                           {bestDistId > 0 ? (
                             <>
                               <div className={`font-medium ${isDark ? 'text-zinc-300' : 'text-gray-700'}`}>{bestDistName}</div>
-                              <div className={`text-[9px] font-mono ${isDark ? 'text-zinc-500' : 'text-slate-500'}`}>{bestDistVotes.toLocaleString()} votes</div>
+                              <div className={`text-[9px] font-mono ${isDark ? 'text-zinc-500' : 'text-slate-500'}`}>{bestDistVotes.toLocaleString()} {t.votes}</div>
                             </>
                           ) : (
                             <span className={isDark ? 'text-zinc-600' : 'text-slate-400'}>—</span>
@@ -850,12 +855,12 @@ function App() {
               <h2 className="text-xl font-black uppercase tracking-tighter">Nepal Election <span className="text-emerald-500">2082</span></h2>
             </div>
             <p className={`text-xs max-w-sm ${subText}`}>
-              Real-time Samanupatik and Pratakshya insights powered by official ECN data. Built for transparency and accessibility.
+              {t.footerText}
             </p>
           </div>
 
           <div className="flex flex-col items-center md:items-end gap-4">
-            <span className={`text-[10px] font-black tracking-widest uppercase ${subText}`}>Share this dashboard</span>
+            <span className={`text-[10px] font-black tracking-widest uppercase ${subText}`}>{t.shareThisDashboard}</span>
             <div className="flex gap-4">
               <button
                 onClick={() => window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent("Check out the 2082 Nepal Election Live Dashboard! Real-time Samanupatik and FPTP results.")}&url=${encodeURIComponent(window.location.href)}`, '_blank')}
@@ -879,7 +884,7 @@ function App() {
           </div>
         </div>
         <div className={`mt-12 pt-8 text-center text-[10px] border-t max-w-6xl mx-auto ${isDark ? 'border-zinc-900 text-zinc-700' : 'border-slate-100 text-slate-400'}`}>
-          © 2026 Nepal Election Dashboard · Not affiliated with Election Commission Nepal · For educational purposes only.
+          © 2026 Election-NP Dashboard
         </div>
       </footer>
 
