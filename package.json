@@ -3,7 +3,6 @@
   "private": true,
   "description": "Root configuration for election-np project",
   "scripts": {
-    "prepare": "husky || true",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "npm run lint --workspace=frontend"
