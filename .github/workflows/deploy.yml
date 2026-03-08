@@ -37,7 +37,7 @@ jobs:
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
           VITE_DATA_BRANCH: ${{ github.ref_name }}
         run: |
-          npm install
+          npm install --include=optional
           npm run build --workspace=frontend
 
       - name: Setup Pages
