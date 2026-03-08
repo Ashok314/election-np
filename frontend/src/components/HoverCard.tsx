@@ -21,6 +21,8 @@ interface HoverCardProps {
   isMobile: boolean;
   onClose?: () => void;
   onShare: (c: CandidateResult) => void;
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
 }
 
 const HoverCard: React.FC<HoverCardProps> = ({
@@ -30,10 +32,13 @@ const HoverCard: React.FC<HoverCardProps> = ({
   isMobile,
   onClose,
   onShare,
+  onMouseEnter,
+  onMouseLeave,
 }) => {
   return (
     <div
-      onPointerEnter={(e) => e.stopPropagation()}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
       onPointerDown={(e) => e.stopPropagation()}
       className={`fixed z-[9999] rounded-2xl shadow-2xl border text-sm max-w-xs w-72 transition-all duration-200 pointer-events-auto bg-surface-card border-border-default text-text-main backdrop-blur-md ${isMobile ? 'left-4 right-4 bottom-12 !w-auto max-w-none translate-y-0 opacity-100' : ''}`}
       style={

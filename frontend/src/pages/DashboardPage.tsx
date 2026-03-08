@@ -52,6 +52,7 @@ const DashboardPage: React.FC<DashboardPageProps> = ({
   const [shareCandidate, setShareCandidate] = useState<CandidateResult | null>(null);
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
   const [hoverInfo, setHoverInfo] = useState<HoverInfo | null>(null);
+  const [isHoverLocked, setIsHoverLocked] = useState(false);
   const isMobile = useIsMobile();
 
   const cardClass = 'bg-surface-card border-border-default shadow-sm';
@@ -256,7 +257,10 @@ const DashboardPage: React.FC<DashboardPageProps> = ({
                 </button>
               </div>
             </div>
-            <div className="flex-grow min-h-0">
+            <div
+              className="flex-grow min-h-0"
+              style={{ pointerEvents: isHoverLocked ? 'none' : 'auto' }}
+            >
               <Suspense
                 fallback={
                   <div className={`flex items-center justify-center h-full ${subTextClass}`}>
@@ -772,7 +776,12 @@ const DashboardPage: React.FC<DashboardPageProps> = ({
           t={t}
           getPartyColor={getPartyColor}
           isMobile={isMobile}
-          onClose={() => setHoverInfo(null)}
+          onMouseEnter={() => setIsHoverLocked(true)}
+          onMouseLeave={() => setIsHoverLocked(false)}
+          onClose={() => {
+            setIsHoverLocked(false);
+            setHoverInfo(null);
+          }}
           onShare={(c) => {
             setShareCandidate(c);
             setIsShareModalOpen(true);
