@@ -38,7 +38,7 @@ jobs:
           VITE_DATA_BRANCH: ${{ github.ref_name }}
         run: |
           cd frontend
-          npm install
+          npm ci
           npm run build
 
       - name: Setup Pages
