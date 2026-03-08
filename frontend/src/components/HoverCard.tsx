@@ -40,12 +40,12 @@ const HoverCard: React.FC<HoverCardProps> = ({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       onPointerDown={(e) => e.stopPropagation()}
-      className={`fixed z-[9999] rounded-2xl shadow-2xl border text-sm max-w-xs w-72 transition-all duration-200 pointer-events-auto bg-surface-card border-border-default text-text-main backdrop-blur-md ${isMobile ? 'left-4 right-4 bottom-12 !w-auto max-w-none translate-y-0 opacity-100' : ''}`}
+      className={`fixed z-[9999] rounded-2xl shadow-2xl border text-sm max-w-xs w-80 transition-all duration-200 pointer-events-auto bg-surface-card border-border-default text-text-main backdrop-blur-md ${isMobile ? 'left-4 right-4 bottom-12 !w-auto max-w-none translate-y-0 opacity-100' : ''}`}
       style={
         isMobile
           ? {}
           : {
-              left: Math.min(window.innerWidth - 300, hoverInfo.mouseX + 16),
+              left: Math.min(window.innerWidth - 340, hoverInfo.mouseX + 16),
               top: Math.max(8, hoverInfo.mouseY - 60),
             }
       }
@@ -56,10 +56,11 @@ const HoverCard: React.FC<HoverCardProps> = ({
             e.stopPropagation();
             onClose?.();
           }}
-          className="absolute top-2 right-2 p-2 rounded-full hover:bg-black/10 dark:hover:bg-white/10 transition-colors"
+          className="absolute top-2.5 right-2.5 p-1.5 rounded-full hover:bg-red-500/10 dark:hover:bg-red-500/20 transition-all active:scale-90 group/close"
+          aria-label="Close"
         >
           <svg
-            className="w-5 h-5 text-gray-500"
+            className="w-5 h-5 text-red-500 group-hover/close:text-red-600 transition-colors"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -67,7 +68,7 @@ const HoverCard: React.FC<HoverCardProps> = ({
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth={2}
+              strokeWidth={2.5}
               d="M6 18L18 6M6 6l12 12"
             />
           </svg>

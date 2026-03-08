@@ -126,9 +126,13 @@ const CandidateShareModal: React.FC<CandidateShareModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/70 backdrop-blur-md animate-in fade-in duration-500 overflow-y-auto">
+    <div
+      className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/70 backdrop-blur-md animate-in fade-in duration-500 overflow-y-auto cursor-pointer"
+      onClick={onClose}
+    >
       <div
-        className={`relative w-full max-w-sm rounded-3xl shadow-2xl overflow-hidden my-auto bg-surface-card border border-border-default`}
+        onClick={(e) => e.stopPropagation()}
+        className={`relative w-full max-w-sm rounded-3xl shadow-2xl overflow-hidden my-auto bg-surface-card border border-border-default cursor-default`}
       >
         {/* Header */}
         <div className="px-6 py-4 flex items-center justify-between">
@@ -137,13 +141,19 @@ const CandidateShareModal: React.FC<CandidateShareModalProps> = ({
           </h3>
           <button
             onClick={onClose}
-            className="p-2 rounded-full hover:bg-surface-main transition-colors text-text-muted"
+            className="p-1.5 rounded-full hover:bg-red-500/10 dark:hover:bg-red-500/20 transition-all active:scale-90 group/close"
+            aria-label="Close"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg
+              className="w-5 h-5 text-red-500 group-hover/close:text-red-600 transition-colors"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth={2}
+                strokeWidth={2.5}
                 d="M6 18L18 6M6 6l12 12"
               />
             </svg>
