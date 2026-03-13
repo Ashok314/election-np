@@ -2,12 +2,13 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 
-const BASE_API_URL = 'https://result.election.gov.np/Handlers/SecureJson.ashx?file=JSONFiles/JSONMap/geojson';
+const BASE_API_URL =
+  'https://result.election.gov.np/Handlers/SecureJson.ashx?file=JSONFiles/JSONMap/geojson';
 const SITE_URL = 'https://result.election.gov.np/';
 const DATA_DIR = path.join(__dirname, 'data', 'geojson');
 
 // Ensure directories exist
-['District', 'Const'].forEach(dir => {
+['District', 'Const'].forEach((dir) => {
   const dirPath = path.join(DATA_DIR, dir);
   if (!fs.existsSync(dirPath)) {
     fs.mkdirSync(dirPath, { recursive: true });
@@ -15,7 +16,7 @@ const DATA_DIR = path.join(__dirname, 'data', 'geojson');
 });
 
 async function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 async function scrapeData() {
@@ -28,7 +29,7 @@ async function scrapeData() {
 
   // 2. Extract CSRF Token from cookies
   const cookies = await page.cookies();
-  const csrfCookie = cookies.find(c => c.name === 'CsrfToken');
+  const csrfCookie = cookies.find((c) => c.name === 'CsrfToken');
 
   if (!csrfCookie) {
     console.error('Failed to retrieve CsrfToken cookie!');
@@ -41,25 +42,29 @@ async function scrapeData() {
 
   // 3. Helper function to fetch JSON securely within page context
   const fetchJsonInBrowser = async (url, token) => {
-    return await page.evaluate(async (fetchUrl, csrf) => {
-      try {
-        const res = await fetch(fetchUrl, {
-          headers: {
-            'X-CSRF-Token': csrf,
-            'Accept': 'application/json, text/javascript, */*; q=0.01',
-            'X-Requested-With': 'XMLHttpRequest'
+    return await page.evaluate(
+      async (fetchUrl, csrf) => {
+        try {
+          const res = await fetch(fetchUrl, {
+            headers: {
+              'X-CSRF-Token': csrf,
+              Accept: 'application/json, text/javascript, */*; q=0.01',
+              'X-Requested-With': 'XMLHttpRequest',
+            },
+          });
+          if (!res.ok) {
+            console.log(`Fetch failed for ${fetchUrl} with status: ${res.status}`);
+            return null;
           }
-        });
-        if (!res.ok) {
-          console.log(`Fetch failed for ${fetchUrl} with status: ${res.status}`);
-          return null;
+          return await res.json();
+        } catch (e) {
+          console.log(`Exception fetching ${fetchUrl}: ${e.message}`);
+          return null; // Return null to indicate failure
         }
-        return await res.json();
-      } catch (e) {
-        console.log(`Exception fetching ${fetchUrl}: ${e.message}`);
-        return null; // Return null to indicate failure
-      }
-    }, url, token);
+      },
+      url,
+      token,
+    );
   };
 
   // Skip State Maps as we already have them.
@@ -71,7 +76,7 @@ async function scrapeData() {
   if (fs.existsSync(districtsPath)) {
     const districtsList = JSON.parse(fs.readFileSync(districtsPath, 'utf8'));
     for (const dist of districtsList) {
-      if (dist.name === "NA" || dist.id <= 52) continue; // Skip placeholders and already fetched
+      if (dist.name === 'NA' || dist.id <= 52) continue; // Skip placeholders and already fetched
 
       const distId = dist.id;
       const url = `${BASE_API_URL}/Const/dist-${distId}.json`;
