@@ -8,3 +8,4 @@ backend/package-lock.json
 
 # logs
 backend/logs/*
+backend/logs.old/*

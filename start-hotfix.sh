@@ -43,7 +43,7 @@ screen -dmS election-hotfix bash -c "
         echo \"▶️ [\$(date)] Waking up to scrape ECN...\" > \"\$LOG_FILE\"
         cd \"$DIR\" && \"$CAFFEINATE_PATH\" -is \"$NODE_PATH\" local-hotfix-scraper.js >> \"\$LOG_FILE\" 2>&1
         echo \"⏸️ [\$(date)] Scrape complete, waiting 5 minutes...\" >> \"\$LOG_FILE\"
-        sleep 180
+        sleep 1000
     done
 "
 

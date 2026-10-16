@@ -155,7 +155,7 @@ async function scrapePRData() {
         console.log(`[WAIT] ${requestCount} requests done. Waiting 3s...`);
         await delay(3000);
       } else {
-        await delay(400);
+        await delay(2000);
       }
     }
   }

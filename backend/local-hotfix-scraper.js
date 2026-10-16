@@ -185,7 +185,7 @@ async function scrapeData() {
         console.log(`[WAIT] Batch of 10 reached. Waiting 3 seconds to avoid rate limit...`);
         await delay(3000);
       } else {
-        await delay(500);
+        await delay(2000);
       }
     }
   }
