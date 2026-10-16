@@ -20,21 +20,17 @@ export default function PRHighlights({ prData, prByDistrict, t }: Props) {
   const subTextClass = 'text-text-muted';
 
   const highlights: PRInsight[] = useMemo(() => {
-    if (!prData.length || !prByDistrict.length) return [];
-
     const items: PRInsight[] = [];
 
     // 1. National Leader
     const natLeader = [...prData].sort((a, b) => b.total_votes - a.total_votes)[0];
-    if (natLeader) {
-      items.push({
-        emoji: '👑',
-        label: t.totalPRLeader,
-        value: natLeader.party_name,
-        sub: `${t.formatVotes(natLeader.total_votes)} ${t.natVotes}`,
-        color: COLORS.blue,
-      });
-    }
+    items.push({
+      emoji: '👑',
+      label: t.totalPRLeader,
+      value: natLeader?.party_name || '—',
+      sub: natLeader ? `${t.formatVotes(natLeader.total_votes)} ${t.natVotes}` : t.resultsPending,
+      color: COLORS.blue,
+    });
 
     // 2. Closest PR Race (District level)
     const distIds = [...new Set(prByDistrict.map((d) => d.dist_id))];
@@ -59,23 +55,20 @@ export default function PRHighlights({ prData, prByDistrict, t }: Props) {
       }
     });
 
-    if (matchDistId > 0) {
-      const dName = t.getDistrictName(matchDistId);
-      items.push({
-        emoji: '🤺',
-        label: t.closestBattle,
-        value: dName,
-        sub: matchDetails,
-        color: COLORS.red,
-      });
-    }
+    items.push({
+      emoji: '🤺',
+      label: t.closestBattle,
+      value: matchDistId > 0 ? t.getDistrictName(matchDistId) : '—',
+      sub: matchDetails || (prByDistrict.length ? t.noData : t.resultsPending),
+      color: COLORS.red,
+    });
 
     // 3. Party Diversity (Total unique parties)
     items.push({
       emoji: '🚩',
       label: t.totalParties,
-      value: t.formatVotes(prData.length),
-      sub: t.prVoteShare,
+      value: prData.length ? t.formatVotes(prData.length) : '—',
+      sub: prData.length ? t.prVoteShare : t.resultsPending,
       color: COLORS.emerald,
     });
 
@@ -84,15 +77,13 @@ export default function PRHighlights({ prData, prByDistrict, t }: Props) {
     items.push({
       emoji: '📊',
       label: t.totalVotesLabel,
-      value: t.formatVotes(totalPrVotes),
-      sub: t.colVotes,
+      value: prData.length ? t.formatVotes(totalPrVotes) : '—',
+      sub: prData.length ? t.colVotes : t.resultsPending,
       color: COLORS.amber,
     });
 
     return items.slice(0, 4);
   }, [prData, prByDistrict, t]);
-
-  if (!highlights.length) return null;
 
   return (
     <div className="grid grid-cols-2 gap-3 mt-4">

@@ -1,16 +1,32 @@
+import type { ElectionConfig } from '../config/election';
 import type { Locale } from './types';
 import { districtLookup, provinceLookup } from '../constants/electionData';
 
-export const en: Locale = {
-  title: 'NEPAL 2082',
-  subTitle: 'Pratinidhi Sabha • Live Counting',
-  lastUpdated: 'Updated:',
-  autoRefresh: 'LIVE',
+export const en = (election: ElectionConfig): Locale => ({
+  title: election.year ? `NEPAL ${election.year}` : 'Next election',
+  subTitle: {
+    upcoming: 'Pratinidhi Sabha • Upcoming election',
+    live: 'Pratinidhi Sabha • Live Counting',
+    archived: 'Pratinidhi Sabha • Election results',
+  }[election.phase],
+  lastUpdated: 'Loaded:',
+  autoRefresh: { upcoming: 'UPCOMING', live: 'LIVE', archived: 'ELECTION ENDED' }[election.phase],
   totalDeclared: 'DECLARATIONS',
   prFinished: 'PR DISTRICTS',
   live: 'LIVE',
   polling: 'POLLING',
   connect: 'CONNECT',
+  archived: 'ELECTION ENDED',
+  upcoming: 'UPCOMING',
+  archiveTitle: 'Election ended — explore the results',
+  archiveDescription: 'This page shows saved results for this election. Live updates have ended.',
+  upcomingTitle: 'Next election',
+  upcomingDescription: 'No results yet. Results will appear here when live coverage starts.',
+
+  electionSelector: 'Choose an election',
+  electionOption: (year) => `${year} election results`,
+  resultsPending: 'Results not yet available',
+  referenceMap: (year) => `Reference map · ${year} constituency boundaries`,
 
   searchPlaceholder: 'Search candidate or constituency...',
   search: 'Search...',
@@ -28,8 +44,8 @@ export const en: Locale = {
   insights: 'Data Insights',
   seatShare: 'Seat Share',
   prVoteShare: 'PR Vote Share',
-  awaitingData: 'Awaiting data...',
-  prLoading: 'PR data loading…',
+  awaitingData: election.phase === 'upcoming' ? 'Results not yet available' : 'Awaiting data...',
+  prLoading: election.phase === 'upcoming' ? 'Results not yet available' : 'PR data loading…',
 
   tableTitle: 'Leading Candidates',
   colConst: 'Constituency',
@@ -91,10 +107,11 @@ export const en: Locale = {
   pr: 'PR',
   constituencies: 'Constituencies',
   votesLabel: 'votes',
-  footerText: 'Real-time Samanupatik and Pratakshya insights powered by official ECN data.',
+  footerText: 'Samanupatik and FPTP results based on ECN data.',
   shareThisDashboard: 'SHARE THIS DASHBOARD',
-  shareDashboardText:
-    'Check out the 2082 Nepal Election Live Dashboard! Real-time Samanupatik and FPTP results.',
+  shareDashboardText: election.year
+    ? `Explore the ${election.year} Nepal Election Dashboard: Samanupatik and FPTP results.`
+    : 'Follow the next Nepal election on the Live Dashboard.',
 
   getDistrictName: (id: number) => districtLookup[id] || `District ${id}`,
   getProvinceName: (idOrName: number | string) => {
@@ -103,7 +120,7 @@ export const en: Locale = {
   },
   formatVotes: (v: number) => v.toLocaleString('en-US'),
   getShareText: (name, party, statusLabel, votes, dist, area, url) =>
-    `${name} (${party}) is ${statusLabel.toLowerCase()} with ${votes} votes in ${dist} ${area}! Check live results: ${url}`,
+    `${name} (${party}) is ${statusLabel.toLowerCase()} with ${votes} votes in ${dist} ${area}! View results: ${url}`,
   getClosestMarginText: (name, margin) => `${name} leads by ${margin} votes`,
   getLandslideMarginText: (party, margin) => `${party} · ${margin} margin`,
-};
+});

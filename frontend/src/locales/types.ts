@@ -9,6 +9,16 @@ export interface Locale {
   live: string;
   polling: string;
   connect: string;
+  archived: string;
+  upcoming: string;
+  archiveTitle: string;
+  archiveDescription: string;
+  upcomingTitle: string;
+  upcomingDescription: string;
+  electionSelector: string;
+  electionOption: (year: number) => string;
+  resultsPending: string;
+  referenceMap: (year: number) => string;
 
   // Search & Filters
   searchPlaceholder: string;

@@ -1,16 +1,41 @@
+import type { ElectionConfig } from '../config/election';
 import type { Locale } from './types';
 import { districtLookupNp, provinceLookup } from '../constants/electionData';
 
-export const np: Locale = {
-  title: 'नेपाल २०८२',
-  subTitle: 'प्रतिनिधि सभा • प्रत्यक्ष मतगणना',
-  lastUpdated: 'अपडेट:',
-  autoRefresh: 'प्रत्यक्ष',
+export const np = (election: ElectionConfig): Locale => ({
+  title: election.year
+    ? `नेपाल ${election.year.toLocaleString('ne-NP', { useGrouping: false })}`
+    : 'आगामी निर्वाचन',
+  subTitle: {
+    upcoming: 'प्रतिनिधि सभा • आगामी निर्वाचन',
+    live: 'प्रतिनिधि सभा • प्रत्यक्ष मतगणना',
+    archived: 'प्रतिनिधि सभा • निर्वाचन नतिजा',
+  }[election.phase],
+  lastUpdated: 'लोड समय:',
+  autoRefresh: { upcoming: 'आगामी', live: 'प्रत्यक्ष', archived: 'निर्वाचन सम्पन्न' }[
+    election.phase
+  ],
   totalDeclared: 'विजयी',
   prFinished: 'समानुपातिक जिल्ला',
   live: 'लाइभ',
   polling: 'मतदान',
   connect: 'सञ्जाल',
+  archived: 'निर्वाचन सम्पन्न',
+  upcoming: 'आगामी',
+  archiveTitle: 'निर्वाचन सम्पन्न — नतिजा हेर्नुहोस्',
+  archiveDescription:
+    'यस पृष्ठमा यस निर्वाचनको सुरक्षित गरिएको नतिजा देखाइएको छ। प्रत्यक्ष अपडेट समाप्त भएको छ।',
+  upcomingTitle: 'आगामी निर्वाचन',
+  upcomingDescription:
+    'अहिले नतिजा उपलब्ध छैन। प्रत्यक्ष अपडेट सुरु भएपछि यहाँ निर्वाचन नतिजा देखाइनेछ।',
+
+  electionSelector: 'निर्वाचन छान्नुहोस्',
+  electionOption: (year) =>
+    `${year.toLocaleString('ne-NP', { useGrouping: false })} को निर्वाचन नतिजा`,
+
+  resultsPending: 'नतिजा अझै उपलब्ध छैन',
+  referenceMap: (year) =>
+    `सन्दर्भ नक्सा · ${year.toLocaleString('ne-NP', { useGrouping: false })} का निर्वाचन क्षेत्रहरू`,
 
   searchPlaceholder: 'उम्मेदवार वा सिट खोज्नुहोस्...',
   search: 'खोज्नुहोस्...',
@@ -28,8 +53,9 @@ export const np: Locale = {
   insights: 'डेटा अन्तर्दृष्टि',
   seatShare: 'सिट विभाजन',
   prVoteShare: 'समानुपातिक मत',
-  awaitingData: 'तथ्यांक लोड हुँदैछ...',
-  prLoading: 'समानुपातिक तथ्यांक लोड हुँदैछ…',
+  awaitingData: election.phase === 'upcoming' ? 'नतिजा अझै उपलब्ध छैन' : 'तथ्यांक लोड हुँदैछ...',
+  prLoading:
+    election.phase === 'upcoming' ? 'नतिजा अझै उपलब्ध छैन' : 'समानुपातिक तथ्यांक लोड हुँदैछ…',
 
   tableTitle: 'अग्रणी उम्मेदवारहरू',
   colConst: 'क्षेत्र',
@@ -90,10 +116,11 @@ export const np: Locale = {
   pr: 'समानुपातिक',
   constituencies: 'क्षेत्रहरू',
   votesLabel: 'मत',
-  footerText: 'आधिकारिक ECN डेटा द्वारा संचालित समानुपातिक र प्रताक्ष्य अन्तर्दृष्टि।',
+  footerText: 'ECN तथ्यांकमा आधारित समानुपातिक र प्रत्यक्ष निर्वाचन नतिजाहरू।',
   shareThisDashboard: 'यो ड्यासबोर्ड शेयर गर्नुहोस्',
-  shareDashboardText:
-    '२०८२ को नेपाल निर्वाचन लाइभ ड्यासबोर्ड हेर्नुहोस्! समानुपातिक र प्रत्यक्ष नतिजाहरू।',
+  shareDashboardText: election.year
+    ? `नेपाल ${election.year.toLocaleString('ne-NP', { useGrouping: false })} निर्वाचन ड्यासबोर्ड: समानुपातिक र प्रत्यक्ष नतिजाहरू हेर्नुहोस्।`
+    : 'आगामी नेपाल निर्वाचनको प्रत्यक्ष नतिजा यस ड्यासबोर्डमा हेर्नुहोस्।',
 
   getDistrictName: (id: number) => districtLookupNp[id] || `क्षेत्र ${id}`,
   getProvinceName: (idOrName: number | string) => {
@@ -112,7 +139,7 @@ export const np: Locale = {
   },
   formatVotes: (v: number) => v.toLocaleString('ne-NP'),
   getShareText: (name, party, statusLabel, votes, dist, area, url) =>
-    `${name} (${party}) ${dist} क्षेत्र नं ${area} मा ${votes} मतका साथ ${statusLabel} हुनुहुन्छ! ताजा नतिजाको लागि: ${url}`,
+    `${name} (${party}) ${dist} क्षेत्र नं ${area} मा ${votes} मतका साथ ${statusLabel} हुनुहुन्छ! नतिजाको लागि: ${url}`,
   getClosestMarginText: (name, margin) => `${name} ${margin} मतले अगाडि`,
   getLandslideMarginText: (party, margin) => `${party} · ${margin} मतान्तर`,
-};
+});

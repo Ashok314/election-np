@@ -36,9 +36,7 @@ const Footer: React.FC<FooterProps> = ({ t }) => {
         <div>
           <div className="flex items-center gap-3 mb-2">
             <span className="text-2xl">🇳🇵</span>
-            <h2 className="text-xl font-black uppercase tracking-tighter">
-              Nepal Election <span className="text-emerald-500">2082</span>
-            </h2>
+            <h2 className="text-xl font-black uppercase tracking-tighter">{t.title}</h2>
           </div>
           <p className={`text-xs max-w-sm ${subTextClass}`}>{t.footerText}</p>
         </div>

@@ -17,7 +17,7 @@ interface InsightItem {
 }
 
 export default function InsightCards({ allCandidates, leaders, t }: Props) {
-  if (!leaders.length) return null;
+  const hasResults = leaders.length > 0;
 
   const cardClass = 'bg-surface-card border-border-default text-text-main';
 
@@ -222,10 +222,10 @@ export default function InsightCards({ allCandidates, leaders, t }: Props) {
             {item.label}
           </div>
           <div className={`font-black text-lg mt-0.5 leading-tight text-text-main`}>
-            {item.value}
+            {hasResults ? item.value || '—' : '—'}
           </div>
           <div className={`text-[10px] mt-1 leading-snug truncate ${subColorClass}`}>
-            {item.sub}
+            {hasResults ? item.sub || t.noData : t.resultsPending}
           </div>
           <div
             className="absolute bottom-0 left-0 h-0.5 w-0 group-hover:w-full transition-all duration-500 rounded-b-2xl"

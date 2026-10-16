@@ -2,6 +2,26 @@
 
 A beautifully designed, real-time dashboard for tracking the House of Representatives (HOR) Nepal elections. Features an interactive choropleth map, live candidate sorting, and multi-language support.
 
+## Election lifecycle and reuse
+
+`frontend/src/config/election.ts` lists elections with their IDs, Nepali and Gregorian years, phases (`upcoming`, `live`, or `archived`), and data paths relative to `frontend/public`. The header selector switches between saved election results and the next election. A live election is selected by default when available; otherwise the first saved election in the list is shown. Keep saved elections in newest-first order. The selected election is retained in the URL through the `election` query parameter so shared links reopen the same election.
+
+- **Completed election (`archived` internally):** loads a saved snapshot from `frontend/public/data/elections/2082/`, shows “Election ended”, and does not poll or fall back to a mutable GitHub data source. This preserves the repository's saved data. No data update timestamp is shown because a verified one is not available.
+- **Upcoming:** shows the full dashboard and map with unpublished-result placeholders, without fetching vote results or assigning an unconfirmed date. The next election's map is a separate copy of the 2026 boundaries and is labeled as a reference map.
+- **Live:** enables the existing 5-second FPTP and 60-second PR refresh intervals. The header labels the time as the browser's load time, not the source data's update time.
+
+For the next election, keep the 2082 entry and snapshot directory intact, set the next entry's years and phase, and point `dataPath` at a separate directory for that election's JSON files. Keep its ID stable to preserve shared links. For the current scraper's existing output, `dataPath: 'data'` retains the original live behavior. Before using the scraper for another election, check its ECN API URLs and response format, lookups, constituency boundaries, and output locations; adapt the scraper or data mapping if the API changes. Changing the dashboard configuration alone does not retarget the scraper. The frontend reads the same normalized JSON shapes per election, so previously saved results remain available without the old API. Live deployments use `VITE_DATA_BRANCH` (default `main`) for the GitHub raw source. Saved results are served with the deployed site.
+
+Each election directory also contains `nepal-constituencies.geojson`; maps are loaded from the selected election's directory. Replace the next election's reference file with its own confirmed boundaries and set `referenceMapYear: null` when available. Keep its phase `upcoming` until results should be read; then select `live` for automatic refresh or `archived` for saved results.
+
+To review the dashboard without running scrapers or their Git operations:
+
+```bash
+npm run dev --workspace=frontend -- --host 127.0.0.1
+```
+
+Open the local URL printed by Vite with the `/election-np/` path. Run `npm test --workspace=frontend`, `npm run lint --workspace=frontend`, and `npm run build --workspace=frontend` to validate changes.
+
 ## Screen Captures
 
 ![Screen Capture](https://raw.githubusercontent.com/Ashok314/election-np/main/frontend/public/og-image.webp)

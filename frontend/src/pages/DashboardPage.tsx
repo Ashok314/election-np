@@ -14,12 +14,14 @@ import CandidateShareModal from '../components/CandidateShareModal';
 import HoverCard from '../components/HoverCard';
 import type { HoverInfo } from '../components/HoverCard';
 import { useIsMobile } from '../hooks/useIsMobile.ts';
+import type { ElectionConfig } from '../config/election';
 
 ChartJS.register(ArcElement, Tooltip, Legend, ChartDataLabels);
 
 const ElectionMap = lazy(() => import('../components/ElectionMap'));
 
 interface DashboardPageProps {
+  election: ElectionConfig;
   lastUpdated: string;
   overallStats: OverallStats;
   leaders: CandidateResult[];
@@ -31,6 +33,7 @@ interface DashboardPageProps {
 }
 
 const DashboardPage: React.FC<DashboardPageProps> = ({
+  election,
   overallStats,
   leaders,
   allCandidates,
@@ -57,6 +60,8 @@ const DashboardPage: React.FC<DashboardPageProps> = ({
 
   const cardClass = 'bg-surface-card border-border-default shadow-sm';
   const subTextClass = 'text-text-muted';
+  const upcoming = election.phase === 'upcoming';
+  const emptyText = upcoming ? t.resultsPending : t.awaitingData;
 
   const filteredLeaders = useMemo(() => {
     return leaders
@@ -238,8 +243,13 @@ const DashboardPage: React.FC<DashboardPageProps> = ({
               <div className="w-1.5 h-5 bg-brand-main rounded-full" />
               <span className={`font-bold text-sm text-text-main`}>{t.mapTitle}</span>
               <span className={`text-xs ${subTextClass}`}>
-                {leaders.length} {t.constituencies}
+                {upcoming ? '—' : leaders.length} {t.constituencies}
               </span>
+              {election.referenceMapYear && (
+                <span className="rounded-full border border-border-default px-2 py-0.5 text-[10px] text-text-muted">
+                  {t.referenceMap(election.referenceMapYear)}
+                </span>
+              )}
               <div
                 className={`ml-auto flex items-center rounded-lg overflow-hidden border text-[10px] font-bold tracking-wider border-border-default`}
               >
@@ -269,6 +279,7 @@ const DashboardPage: React.FC<DashboardPageProps> = ({
                 }
               >
                 <ElectionMap
+                  geojsonPath={`${election.dataPath}/nepal-constituencies.geojson`}
                   resultsData={mapMode === MapMode.PR ? prMapData : leaders}
                   partyColors={PARTY_COLORS}
                   t={t}
@@ -295,6 +306,13 @@ const DashboardPage: React.FC<DashboardPageProps> = ({
         <div className="lg:w-[42%] p-4 flex flex-col gap-4 overflow-y-auto">
           {/* Party Cards */}
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            {!topParties.length && (
+              <div
+                className={`col-span-full rounded-2xl border px-4 py-8 text-center text-xs text-text-muted ${cardClass}`}
+              >
+                {emptyText}
+              </div>
+            )}
             {topParties.map(([party, counts]) => (
               <div
                 key={party}
@@ -339,33 +357,39 @@ const DashboardPage: React.FC<DashboardPageProps> = ({
                   {t.seatShare}
                 </div>
                 <div className="h-36">
-                  <Doughnut
-                    data={{
-                      labels: topParties.map(([p]) => p),
-                      datasets: [
-                        {
-                          data: topParties.map(([, c]) => c.leads + c.won),
-                          backgroundColor: topParties.map(([p]) => getPartyColor(p)),
-                          borderWidth: 0,
-                          hoverOffset: 4,
+                  {topParties.length > 0 ? (
+                    <Doughnut
+                      data={{
+                        labels: topParties.map(([p]) => p),
+                        datasets: [
+                          {
+                            data: topParties.map(([, c]) => c.leads + c.won),
+                            backgroundColor: topParties.map(([p]) => getPartyColor(p)),
+                            borderWidth: 0,
+                            hoverOffset: 4,
+                          },
+                        ],
+                      }}
+                      options={{
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        cutout: '62%',
+                        plugins: {
+                          legend: { display: false },
+                          datalabels: {
+                            display: true,
+                            color: '#fff',
+                            font: { weight: 'bold', size: 11 },
+                            formatter: (v: number) => (v > 0 ? v : ''),
+                          },
                         },
-                      ],
-                    }}
-                    options={{
-                      responsive: true,
-                      maintainAspectRatio: false,
-                      cutout: '62%',
-                      plugins: {
-                        legend: { display: false },
-                        datalabels: {
-                          display: true,
-                          color: '#fff',
-                          font: { weight: 'bold', size: 11 },
-                          formatter: (v: number) => (v > 0 ? v : ''),
-                        },
-                      },
-                    }}
-                  />
+                      }}
+                    />
+                  ) : (
+                    <div className="flex h-full items-center justify-center text-center text-[10px] text-text-muted">
+                      {emptyText}
+                    </div>
+                  )}
                 </div>
               </div>
               <div className="w-px self-stretch bg-border-default" />
@@ -419,7 +443,7 @@ const DashboardPage: React.FC<DashboardPageProps> = ({
                     <div
                       className={`flex items-center justify-center h-full text-[10px] italic ${subTextClass}`}
                     >
-                      {t.awaitingData}
+                      {emptyText}
                     </div>
                   )}
                 </div>
@@ -437,7 +461,7 @@ const DashboardPage: React.FC<DashboardPageProps> = ({
           </div>
 
           <div className="text-center text-[10px] pb-2 text-text-muted opacity-50">
-            Official ECN data · Nepal Election 2082 · Built for Nepalis
+            {t.title} · {t.footerText}
           </div>
         </div>
       </div>
@@ -453,7 +477,7 @@ const DashboardPage: React.FC<DashboardPageProps> = ({
               <div className="w-1.5 h-5 bg-brand-main rounded-full" />
               {t.fptp}
               <span className={`text-xs font-normal text-text-muted`}>
-                {filteredLeaders.length}/{leaders.length}
+                {upcoming ? '—' : `${filteredLeaders.length}/${leaders.length}`}
               </span>
             </div>
             <div className="flex flex-wrap gap-2 ml-auto items-center">
@@ -591,6 +615,13 @@ const DashboardPage: React.FC<DashboardPageProps> = ({
                 </tr>
               </thead>
               <tbody className="divide-y divide-border-default/50">
+                {!filteredLeaders.length && (
+                  <tr>
+                    <td colSpan={6} className="px-4 py-12 text-center text-text-muted">
+                      {emptyText}
+                    </td>
+                  </tr>
+                )}
                 {filteredLeaders.map((row, idx) => {
                   const distName = t.getDistrictName(row.MetaDistId);
                   const isElected =
@@ -726,6 +757,13 @@ const DashboardPage: React.FC<DashboardPageProps> = ({
                 </tr>
               </thead>
               <tbody className="divide-y divide-border-default/50">
+                {!filteredPRData.length && (
+                  <tr>
+                    <td colSpan={4} className="px-4 py-12 text-center text-text-muted">
+                      {emptyText}
+                    </td>
+                  </tr>
+                )}
                 {filteredPRData.map((p, idx) => {
                   const color = getPartyColor(p.party_name);
                   const totalPRVotes = prData.reduce((s, x) => s + x.total_votes, 0);

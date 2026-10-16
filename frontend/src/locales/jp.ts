@@ -1,16 +1,32 @@
+import type { ElectionConfig } from '../config/election';
 import type { Locale } from './types';
 import { districtLookup, provinceLookup } from '../constants/electionData';
 
-export const jp: Locale = {
-  title: 'ネパール 2082',
-  subTitle: '衆議院 • ライブ速報',
-  lastUpdated: '更新日時:',
-  autoRefresh: 'ライブ',
+export const jp = (election: ElectionConfig): Locale => ({
+  title: election.year ? `ネパール ${election.year}` : '次回の選挙',
+  subTitle: {
+    upcoming: '衆議院 • 開催前',
+    live: '衆議院 • ライブ速報',
+    archived: '衆議院 • 選挙結果',
+  }[election.phase],
+  lastUpdated: '読込時刻:',
+  autoRefresh: { upcoming: '開催前', live: 'ライブ', archived: '選挙終了' }[election.phase],
   totalDeclared: '当選確定',
   prFinished: '比例代表地区',
   live: 'ライブ',
   polling: '投票中',
   connect: '接続',
+  archived: '選挙終了',
+  upcoming: '開催前',
+  archiveTitle: '選挙終了 — 結果をご覧いただけます',
+  archiveDescription: 'この選挙の保存済みの結果を表示しています。ライブ更新は終了しています。',
+  upcomingTitle: '次回の選挙',
+  upcomingDescription: 'まだ結果はありません。ライブ速報の開始後に、選挙結果を掲載します。',
+
+  electionSelector: '選挙を選択',
+  electionOption: (year) => `${year}年の選挙結果`,
+  resultsPending: '結果は未発表です',
+  referenceMap: (year) => `参考マップ · ${year}年の選挙区`,
 
   searchPlaceholder: '候補者または選挙区を検索...',
   search: '検索...',
@@ -28,8 +44,8 @@ export const jp: Locale = {
   insights: 'データ分析',
   seatShare: '議席配分',
   prVoteShare: '比例代表得票率',
-  awaitingData: 'データ待機中...',
-  prLoading: '比例代表データ読み込み中…',
+  awaitingData: election.phase === 'upcoming' ? '結果は未発表です' : 'データ待機中...',
+  prLoading: election.phase === 'upcoming' ? '結果は未発表です' : '比例代表データ読み込み中…',
 
   tableTitle: '有力候補者一覧',
   colConst: '選挙区',
@@ -90,10 +106,11 @@ export const jp: Locale = {
   pr: '比例代表',
   constituencies: '選挙区',
   votesLabel: '票',
-  footerText: '公式ECNデータに基づいた比例代表および小選挙区のリアルタイム速報。',
+  footerText: 'ECNデータに基づく比例代表・小選挙区の選挙結果。',
   shareThisDashboard: 'このダッシュボードを共有',
-  shareDashboardText:
-    '2082年ネパール選挙ライブダッシュボードをチェック！ 比例代表と小選挙区のリアルタイム速報。',
+  shareDashboardText: election.year
+    ? `ネパール${election.year}年選挙ダッシュボード：比例代表と小選挙区の選挙結果。`
+    : '次回のネパール選挙をライブダッシュボードで。',
 
   getDistrictName: (id: number) => districtLookup[id] || `地区 ${id}`,
   getProvinceName: (idOrName: number | string) => {
@@ -102,7 +119,7 @@ export const jp: Locale = {
   },
   formatVotes: (v: number) => v.toLocaleString('ja-JP'),
   getShareText: (name, party, statusLabel, votes, dist, area, url) =>
-    `${name} (${party}) は ${dist} ${area} で ${votes} 票を獲得し ${statusLabel} です！ 速報はこちら: ${url}`,
+    `${name} (${party}) は ${dist} ${area} で ${votes} 票を獲得し ${statusLabel} です！ 結果はこちら: ${url}`,
   getClosestMarginText: (name, margin) => `${name} が ${margin} 票差で優勢`,
   getLandslideMarginText: (party, margin) => `${party} · ${margin} 差`,
-};
+});

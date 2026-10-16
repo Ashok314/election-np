@@ -8,6 +8,7 @@ import type { Locale } from '../locales/types';
 import { useIsMobile } from '../hooks/useIsMobile';
 
 interface Props {
+  geojsonPath: string;
   resultsData: CandidateResult[];
   partyColors: Record<string, string>;
   t: Locale;
@@ -15,7 +16,14 @@ interface Props {
   onHover?: (info: { distId: number; constId: number; x: number; y: number } | null) => void;
 }
 
-export default function ElectionMap({ resultsData, partyColors, t, onShare, onHover }: Props) {
+export default function ElectionMap({
+  geojsonPath,
+  resultsData,
+  partyColors,
+  t,
+  onShare,
+  onHover,
+}: Props) {
   const mapDivRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<L.Map | null>(null);
   const isMobile = useIsMobile();
@@ -59,7 +67,7 @@ export default function ElectionMap({ resultsData, partyColors, t, onShare, onHo
       const constId = feature?.properties?.constId;
       const leader =
         leaderByConstKey.current[`${distId}-${constId}`] || leaderByDistKey.current[`${distId}`];
-      const color = leader ? getPartyColor(leader.PoliticalPartyName) : 'var(--bg-card)';
+      const color = leader ? getPartyColor(leader.PoliticalPartyName) : '#94a3b8';
       const isElected =
         leader?.Remarks === ElectionRemarks.ELECTED ||
         leader?.Remarks === ElectionRemarks.ELECTED_NP;
@@ -67,15 +75,9 @@ export default function ElectionMap({ resultsData, partyColors, t, onShare, onHo
       const isLeading = leader && !isElected;
       return {
         fillColor: color,
-        fillOpacity: isElected ? 0.92 : isLeading ? 0.5 : hasData ? 0.75 : 0.15,
-        color: isElected
-          ? '#ffffff'
-          : isLeading
-            ? color
-            : hasData
-              ? color
-              : 'var(--border-default)',
-        weight: isElected ? 1.2 : isLeading ? 0.8 : hasData ? 0.6 : 0.5,
+        fillOpacity: isElected ? 0.92 : isLeading ? 0.5 : hasData ? 0.75 : 0.35,
+        color: isElected ? '#ffffff' : isLeading ? color : hasData ? color : '#64748b',
+        weight: isElected ? 1.2 : isLeading ? 0.8 : hasData ? 0.6 : 0.8,
         dashArray: isLeading ? '4 3' : undefined,
       };
     },
@@ -133,8 +135,11 @@ export default function ElectionMap({ resultsData, partyColors, t, onShare, onHo
     const controller = new AbortController();
     const BASE = import.meta.env.BASE_URL || '/';
 
-    fetch(`${BASE}data/nepal-constituencies.geojson`, { signal: controller.signal })
-      .then((r) => r.json())
+    fetch(`${BASE}${geojsonPath}`, { signal: controller.signal })
+      .then((r) => {
+        if (!r.ok) throw new Error('Map data unavailable');
+        return r.json();
+      })
       .then((data) => setGeojsonData(data))
       .catch((err) => {
         if (err.name !== 'AbortError') {
@@ -143,7 +148,7 @@ export default function ElectionMap({ resultsData, partyColors, t, onShare, onHo
       });
 
     return () => controller.abort();
-  }, []);
+  }, [geojsonPath]);
 
   // 2. Manage Layer Creation
   useEffect(() => {
@@ -258,25 +263,27 @@ export default function ElectionMap({ resultsData, partyColors, t, onShare, onHo
               <span>{t.statusLeading}</span>
             </div>
             <div className="flex items-center gap-1.5 text-text-muted">
-              <div className="w-5 h-2.5 rounded-sm opacity-20 bg-surface-main" />
+              <div className="w-5 h-2.5 rounded-sm border border-slate-500 bg-slate-400/35" />
               <span>{t.noData}</span>
             </div>
           </div>
 
           {/* Map Legend: Parties */}
-          <div className="absolute bottom-4 right-4 z-[1000] rounded-xl px-3 py-2 text-[10px] border hidden sm:block bg-surface-card border-border-default">
-            {Object.entries(partyColors)
-              .slice(0, 6)
-              .map(([party, color]) => (
-                <div key={party} className="flex items-center gap-1.5 mb-1 last:mb-0">
-                  <div
-                    className="w-2.5 h-2.5 rounded-sm flex-shrink-0"
-                    style={{ backgroundColor: color }}
-                  />
-                  <span className="truncate max-w-[110px] text-text-muted">{party}</span>
-                </div>
-              ))}
-          </div>
+          {resultsData.length > 0 && (
+            <div className="absolute bottom-4 right-4 z-[1000] rounded-xl px-3 py-2 text-[10px] border hidden sm:block bg-surface-card border-border-default">
+              {Object.entries(partyColors)
+                .slice(0, 6)
+                .map(([party, color]) => (
+                  <div key={party} className="flex items-center gap-1.5 mb-1 last:mb-0">
+                    <div
+                      className="w-2.5 h-2.5 rounded-sm flex-shrink-0"
+                      style={{ backgroundColor: color }}
+                    />
+                    <span className="truncate max-w-[110px] text-text-muted">{party}</span>
+                  </div>
+                ))}
+            </div>
+          )}
         </>
       )}
     </div>

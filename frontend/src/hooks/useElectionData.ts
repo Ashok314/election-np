@@ -9,8 +9,10 @@ import type {
 import { LiveStatus, ElectionRemarks } from '../types/election';
 import { provinceLookup, districtLookup } from '../constants/electionData';
 import { fetchFPTPData, fetchPRData, fetchPRByDistrictData } from '../services/api';
+import { getRefreshIntervals } from '../config/election';
+import type { ElectionConfig } from '../config/election';
 
-export const useElectionData = () => {
+export const useElectionData = (election: ElectionConfig) => {
   const [lastUpdated, setLastUpdated] = useState<string>('—');
   const [overallStats, setOverallStats] = useState<OverallStats>({});
   const [leaders, setLeaders] = useState<CandidateResult[]>([]);
@@ -19,66 +21,74 @@ export const useElectionData = () => {
   const [prData, setPRData] = useState<PRResult[]>([]);
   const [prByDistrict, setPRByDistrict] = useState<PRByDistrict[]>([]);
 
-  const processData = useCallback((data: CandidateResult[]) => {
-    if (!data.length) return;
-    setAllCandidates(data);
+  const processData = useCallback(
+    (data: CandidateResult[]) => {
+      if (!data.length) return;
+      setAllCandidates(data);
 
-    const nptTime = new Intl.DateTimeFormat('en-US', {
-      timeZone: 'Asia/Kathmandu',
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit',
-      hour12: true,
-    }).format(new Date());
-    setLastUpdated(`${nptTime} NPT`);
+      const nptTime = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'Asia/Kathmandu',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true,
+      }).format(new Date());
+      if (election.phase === 'live') setLastUpdated(`${nptTime} NPT`);
 
-    const leaderMap: Record<string, CandidateResult> = {};
-    data.forEach((c) => {
-      const key = `${c.MetaDistId}-${c.MetaConstId}`;
-      const cur = leaderMap[key];
-      if (!cur || (c.TotalVoteReceived || 0) > (cur.TotalVoteReceived || 0)) {
-        leaderMap[key] = c;
-      }
-    });
+      const leaderMap: Record<string, CandidateResult> = {};
+      data.forEach((c) => {
+        const key = `${c.MetaDistId}-${c.MetaConstId}`;
+        const cur = leaderMap[key];
+        if (!cur || (c.TotalVoteReceived || 0) > (cur.TotalVoteReceived || 0)) {
+          leaderMap[key] = c;
+        }
+      });
 
-    const leaderList = Object.values(leaderMap)
-      .sort((a, b) => (b.TotalVoteReceived || 0) - (a.TotalVoteReceived || 0))
-      .map((l) => ({
-        ...l,
-        StateName: l.StateName || provinceLookup[l.MetaDistId] || 'Other',
-        DistrictName: l.DistrictName || districtLookup[l.MetaDistId] || `Dist ${l.MetaDistId}`,
-      }));
-    setLeaders(leaderList);
+      const leaderList = Object.values(leaderMap)
+        .sort((a, b) => (b.TotalVoteReceived || 0) - (a.TotalVoteReceived || 0))
+        .map((l) => ({
+          ...l,
+          StateName: l.StateName || provinceLookup[l.MetaDistId] || 'Other',
+          DistrictName: l.DistrictName || districtLookup[l.MetaDistId] || `Dist ${l.MetaDistId}`,
+        }));
+      setLeaders(leaderList);
 
-    const statsObj: OverallStats = {};
-    leaderList.forEach((c) => {
-      const p = c.PoliticalPartyName || 'Independent/Others';
-      if (!statsObj[p]) statsObj[p] = { leads: 0, won: 0 };
-      if (c.Remarks === ElectionRemarks.ELECTED || c.Remarks === ElectionRemarks.ELECTED_NP) {
-        statsObj[p].won += 1;
-      } else {
-        statsObj[p].leads += 1;
-      }
-    });
-    setOverallStats(statsObj);
-  }, []);
+      const statsObj: OverallStats = {};
+      leaderList.forEach((c) => {
+        const p = c.PoliticalPartyName || 'Independent/Others';
+        if (!statsObj[p]) statsObj[p] = { leads: 0, won: 0 };
+        if (c.Remarks === ElectionRemarks.ELECTED || c.Remarks === ElectionRemarks.ELECTED_NP) {
+          statsObj[p].won += 1;
+        } else {
+          statsObj[p].leads += 1;
+        }
+      });
+      setOverallStats(statsObj);
+    },
+    [election.phase],
+  );
 
   const loadData = useCallback(async () => {
+    if (election.phase === 'upcoming') return;
     setLiveStatus(LiveStatus.CONNECTING);
-    const data = await fetchFPTPData();
+    const data = await fetchFPTPData(election);
     if (data.length > 0) {
       processData(data);
       setLiveStatus(LiveStatus.LIVE);
     } else {
       // Fallback or error state
     }
-  }, [processData]);
+  }, [processData, election]);
 
   const loadPRData = useCallback(async () => {
-    const [prNat, prDist] = await Promise.all([fetchPRData(), fetchPRByDistrictData()]);
+    if (election.phase === 'upcoming') return;
+    const [prNat, prDist] = await Promise.all([
+      fetchPRData(election),
+      fetchPRByDistrictData(election),
+    ]);
     if (prNat.length > 0) setPRData(prNat);
     if (prDist.length > 0) setPRByDistrict(prDist);
-  }, []);
+  }, [election]);
 
   useEffect(() => {
     // Start initial loading
@@ -87,14 +97,17 @@ export const useElectionData = () => {
 
     void loadPRData();
 
-    const fptpInterval = setInterval(loadData, 5000);
-    const prInterval = setInterval(loadPRData, 60000);
+    const intervals = getRefreshIntervals(election.phase);
+    if (!intervals) return;
+
+    const fptpInterval = setInterval(loadData, intervals.fptp);
+    const prInterval = setInterval(loadPRData, intervals.pr);
 
     return () => {
       clearInterval(fptpInterval);
       clearInterval(prInterval);
     };
-  }, [loadData, loadPRData]);
+  }, [loadData, loadPRData, election.phase]);
 
   const totalPRDistrictsFinished = new Set(prByDistrict.map((d) => d.dist_id)).size;
   const totalElected = leaders.filter(
