@@ -1,0 +1,126 @@
+import type { ElectionConfig } from '../config/election';
+import type { Locale } from './types';
+import { districtLookup, provinceLookup } from '../constants/electionData';
+
+export const en = (election: ElectionConfig): Locale => ({
+  title: election.year ? `NEPAL ${election.year}` : 'Next election',
+  subTitle: {
+    upcoming: 'Pratinidhi Sabha • Upcoming election',
+    live: 'Pratinidhi Sabha • Live Counting',
+    archived: 'Pratinidhi Sabha • Election results',
+  }[election.phase],
+  lastUpdated: 'Loaded:',
+  autoRefresh: { upcoming: 'UPCOMING', live: 'LIVE', archived: 'ELECTION ENDED' }[election.phase],
+  totalDeclared: 'DECLARATIONS',
+  prFinished: 'PR DISTRICTS',
+  live: 'LIVE',
+  polling: 'POLLING',
+  connect: 'CONNECT',
+  archived: 'ELECTION ENDED',
+  upcoming: 'UPCOMING',
+  archiveTitle: 'Election ended — explore the results',
+  archiveDescription: 'This page shows saved results for this election. Live updates have ended.',
+  upcomingTitle: 'Next election',
+  upcomingDescription: 'No results yet. Results will appear here when live coverage starts.',
+
+  electionSelector: 'Choose an election',
+  electionOption: (year) => `${year} election results`,
+  resultsPending: 'Results not yet available',
+  referenceMap: (year) => `Reference map · ${year} constituency boundaries`,
+
+  searchPlaceholder: 'Search candidate or constituency...',
+  search: 'Search...',
+  allParties: 'All Parties',
+  all: 'All',
+  province: 'Province',
+  district: 'District',
+  area: 'Area',
+  votesSort: 'Votes ↓',
+  best: 'Best',
+
+  mapTitle: 'Constituency Map',
+  showMap: '🔽 Show Map',
+  hideMap: '🔼 Hide Map',
+  insights: 'Data Insights',
+  seatShare: 'Seat Share',
+  prVoteShare: 'PR Vote Share',
+  awaitingData: election.phase === 'upcoming' ? 'Results not yet available' : 'Awaiting data...',
+  prLoading: election.phase === 'upcoming' ? 'Results not yet available' : 'PR data loading…',
+
+  tableTitle: 'Leading Candidates',
+  colConst: 'Constituency',
+  colCand: 'Candidate',
+  colParty: 'Party',
+  colVotes: 'Votes',
+  colStatus: 'Status',
+  colEdu: 'Qualification',
+  qualification: 'Qualification',
+  party: 'Party',
+  natVotes: 'Nat. Votes',
+  bestDistrict: 'Best District',
+
+  leads: 'Leads',
+  won: 'Won',
+  statusElected: 'Elected',
+  statusLeading: 'Leading',
+  electedRaw: 'Elected',
+  leadingRaw: 'Leading',
+
+  totalPRLeader: 'National PR Leader',
+  closestBattle: 'Closest PR Battle',
+  totalParties: 'Total PR Parties',
+  totalVotesLabel: 'Total PR Votes',
+  closestRace: 'Closest Race',
+  prVoteTotals: (count, total) =>
+    `Showing national PR vote totals · ${count} parties · ${total} total votes`,
+  seatProjectionsDisclaimer:
+    "* Seat projections are proportional estimates only. Official allocation uses d'Hondt method with threshold.",
+  sharePct: '% share',
+  mostVotes: 'Most Votes',
+  youngestLeading: 'Youngest Leading',
+  oldestLeading: 'Oldest Leading',
+  womenLeading: 'Women Leading',
+  mostContested: 'Most Contested',
+  landslideLead: 'Landslide Lead',
+  totalCandidates: 'Total Candidates',
+  independentForce: 'Independent Force',
+  winningParties: 'Winning Parties',
+  noData: 'No data',
+  yrs: 'yrs',
+  candidates: 'candidates',
+  diff: 'diff',
+  margin: 'margin',
+
+  share: 'Share',
+  shareWinCard: 'Share Win Card',
+  downloadForTikTok: 'Download for TikTok/FB',
+  post: 'Post',
+  copyURL: 'Copy URL',
+  copyText: 'Copy Text',
+  textCopied: '✓ Text Copied',
+  linkCopied: '✓ Copied',
+  downloadFailed: 'Download failed. Please try again or take a screenshot.',
+  runnersUp: 'Runners Up',
+  votesReceived: 'VOTES RECEIVED',
+
+  fptp: 'FPTP',
+  pr: 'PR',
+  constituencies: 'Constituencies',
+  votesLabel: 'votes',
+  footerText: 'Samanupatik and FPTP results based on ECN data.',
+  shareThisDashboard: 'SHARE THIS DASHBOARD',
+  shareDashboardText: election.year
+    ? `Explore the ${election.year} Nepal Election Dashboard: Samanupatik and FPTP results.`
+    : 'Follow the next Nepal election on the Live Dashboard.',
+
+  getDistrictName: (id: number) => districtLookup[id] || `District ${id}`,
+  getProvinceName: (idOrName: number | string) => {
+    if (typeof idOrName === 'number') return provinceLookup[idOrName] || 'Other';
+    return idOrName;
+  },
+  formatVotes: (v: number) => v.toLocaleString('en-US'),
+  getShareText: (name, party, statusLabel, votes, dist, area, url) =>
+    `${name} (${party}) is ${statusLabel.toLowerCase()} with ${votes} votes in ${dist} ${area}! View results: ${url}`,
+  getClosestMarginText: (name, margin) => `${name} leads by ${margin} votes`,
+  getLandslideMarginText: (party, margin) => `${party} · ${margin} margin`,
+});

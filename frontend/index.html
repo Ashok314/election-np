@@ -1,42 +1,46 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/ashok314.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🇳🇵 Election Dashboard</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/ashok314.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🇳🇵 Election Dashboard</title>
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Nepal Election Live Dashboard" />
+    <meta
+      property="og:description"
+      content="A fast, interactive, and beautiful live election result tracker for Nepal."
+    />
+    <meta property="og:image" content="https://ashok314.github.io/election-np/og-image.webp" />
+    <meta property="og:url" content="https://ashok314.github.io/election-np/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
 
-  <!-- Open Graph / Social Sharing -->
-  <meta property="og:title" content="Nepal Election Live Dashboard" />
-  <meta property="og:description"
-    content="A fast, interactive, and beautiful live election result tracker for Nepal." />
-  <meta property="og:image" content="https://ashok314.github.io/election-np/og-image.webp" />
-  <meta property="og:url" content="https://ashok314.github.io/election-np/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_US" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nepal Election Live Dashboard" />
+    <meta
+      name="twitter:description"
+      content="A fast, interactive, and beautiful live election result tracker for Nepal."
+    />
+    <meta name="twitter:image" content="https://ashok314.github.io/election-np/og-image.webp" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Nepal Election Live Dashboard" />
-  <meta name="twitter:description"
-    content="A fast, interactive, and beautiful live election result tracker for Nepal." />
-  <meta name="twitter:image" content="https://ashok314.github.io/election-np/og-image.webp" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4CNHDFWQE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4CNHDFWQE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      gtag('config', 'G-P4CNHDFWQE');
+    </script>
+  </head>
 
-    gtag('config', 'G-P4CNHDFWQE');
-  </script>
-</head>
-
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
-
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

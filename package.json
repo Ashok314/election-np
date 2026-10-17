@@ -1,0 +1,32 @@
+{
+  "name": "@election-np/root",
+  "private": true,
+  "description": "Root configuration for election-np project",
+  "scripts": {
+    "prepare": "husky install || true",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "npm run lint --workspace=frontend"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.2"
+  },
+  "lint-staged": {
+    "frontend/**/*.{ts,tsx,js,jsx}": [
+      "prettier --write",
+      "npm run lint --prefix frontend"
+    ],
+    "backend/**/*.{js,jsx}": [
+      "prettier --write"
+    ],
+    "*.{json,md,css,scss}": [
+      "prettier --write"
+    ]
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ]
+}
